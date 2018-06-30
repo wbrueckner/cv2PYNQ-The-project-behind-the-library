@@ -1,0 +1,20 @@
+
+
+Implementation tool: Xilinx Vivado v.2017.4
+Project:             erode
+Solution:            solution1
+Device target:       xc7z020clg400-1
+Report date:         Mon Jun 25 15:05:56 +0200 2018
+
+#=== Post-Implementation Resource usage ===
+SLICE:          514
+LUT:           1290
+FF:            1456
+DSP:              8
+BRAM:             3
+SRL:             77
+#=== Final timing ===
+CP required:    6.000
+CP achieved post-synthesis:    6.899
+CP achieved post-implementation:    5.802
+Timing met

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="filter2D_hls_5.h" path="C:\Users\sdi_admin\CloudStation\HLS\filter2D_5\filter2D_hls_5.h"/>
+    <originFiles name="filter2D_hls_5.cpp" path="C:\Users\sdi_admin\CloudStation\HLS\filter2D_5\filter2D_hls_5.cpp"/>
+  </source>
+  <testbench>
+    <originFiles name="filter2D_hls_5_test.cpp" path="C:\Users\sdi_admin\CloudStation\HLS\filter2D_5\filter2D_hls_5_test.cpp"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

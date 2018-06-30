@@ -1,0 +1,90 @@
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
+| Date         : Mon Jun 25 15:04:11 2018
+| Host         : DESKTOP-H32TPSL running 64-bit major release  (build 9200)
+| Command      : report_timing -file ./report/erode_hls_timing_synth.rpt
+| Design       : erode_hls
+| Device       : 7z020-clg400
+| Speed File   : -1  PRODUCTION 1.11 2014-09-11
+------------------------------------------------------------------------------------
+
+Timing Report
+
+Slack (VIOLATED) :        -0.899ns  (required time - arrival time)
+  Source:                 Block_Mat_exit406734_U0/erode_hls_mul_32sbkb_U1/erode_hls_mul_32sbkb_MulnS_0_U/buff2_reg[0]/C
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@3.000ns period=6.000ns})
+  Destination:            Block_Mat_exit406734_U0/erode_hls_mul_32scud_U2/erode_hls_mul_32scud_MulnS_1_U/buff1_reg/B[11]
+                            (rising edge-triggered cell DSP48E1 clocked by ap_clk  {rise@0.000ns fall@3.000ns period=6.000ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            6.000ns  (ap_clk rise@6.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        6.365ns  (logic 3.476ns (54.614%)  route 2.889ns (45.386%))
+  Logic Levels:           10  (CARRY4=8 LUT1=1 LUT3=1)
+  Clock Path Skew:        -0.049ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.924ns = ( 6.924 - 6.000 ) 
+    Source Clock Delay      (SCD):    0.973ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=1558, unset)         0.973     0.973    Block_Mat_exit406734_U0/erode_hls_mul_32sbkb_U1/erode_hls_mul_32sbkb_MulnS_0_U/ap_clk
+                         FDRE                                         r  Block_Mat_exit406734_U0/erode_hls_mul_32sbkb_U1/erode_hls_mul_32sbkb_MulnS_0_U/buff2_reg[0]/C
+  -------------------------------------------------------------------    -------------------
+                         FDRE (Prop_fdre_C_Q)         0.518     1.491 r  Block_Mat_exit406734_U0/erode_hls_mul_32sbkb_U1/erode_hls_mul_32sbkb_MulnS_0_U/buff2_reg[0]/Q
+                         net (fo=1, unplaced)         0.666     2.157    Block_Mat_exit406734_U0/erode_hls_mul_32sbkb_MulnS_0_U/buff2_reg[0]
+                         CARRY4 (Prop_carry4_S[0]_O[2])
+                                                      0.839     2.996 f  Block_Mat_exit406734_U0/p_neg_i_fu_114_p2_carry/O[2]
+                         net (fo=2, unplaced)         0.463     3.459    Block_Mat_exit406734_U0/p_neg_i_fu_114_p2[2]
+                         LUT1 (Prop_lut1_I0_O)        0.301     3.760 r  Block_Mat_exit406734_U0/col_packets_fu_142_p30_carry_i_1/O
+                         net (fo=1, unplaced)         0.333     4.093    Block_Mat_exit406734_U0/p_0_in[0]
+                         CARRY4 (Prop_carry4_CYINIT_CO[3])
+                                                      0.595     4.688 r  Block_Mat_exit406734_U0/col_packets_fu_142_p30_carry/CO[3]
+                         net (fo=1, unplaced)         0.009     4.697    Block_Mat_exit406734_U0/col_packets_fu_142_p30_carry_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     4.814 r  Block_Mat_exit406734_U0/col_packets_fu_142_p30_carry__0/CO[3]
+                         net (fo=1, unplaced)         0.000     4.814    Block_Mat_exit406734_U0/col_packets_fu_142_p30_carry__0_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     4.931 r  Block_Mat_exit406734_U0/col_packets_fu_142_p30_carry__1/CO[3]
+                         net (fo=1, unplaced)         0.000     4.931    Block_Mat_exit406734_U0/col_packets_fu_142_p30_carry__1_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     5.048 r  Block_Mat_exit406734_U0/col_packets_fu_142_p30_carry__2/CO[3]
+                         net (fo=1, unplaced)         0.000     5.048    Block_Mat_exit406734_U0/col_packets_fu_142_p30_carry__2_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     5.165 r  Block_Mat_exit406734_U0/col_packets_fu_142_p30_carry__3/CO[3]
+                         net (fo=1, unplaced)         0.000     5.165    Block_Mat_exit406734_U0/col_packets_fu_142_p30_carry__3_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     5.282 r  Block_Mat_exit406734_U0/col_packets_fu_142_p30_carry__4/CO[3]
+                         net (fo=1, unplaced)         0.000     5.282    Block_Mat_exit406734_U0/col_packets_fu_142_p30_carry__4_n_0
+                         CARRY4 (Prop_carry4_CI_O[3])
+                                                      0.331     5.613 r  Block_Mat_exit406734_U0/col_packets_fu_142_p30_carry__5/O[3]
+                         net (fo=1, unplaced)         0.618     6.231    Block_Mat_exit406734_U0/erode_hls_mul_32sbkb_U1/erode_hls_mul_32sbkb_MulnS_0_U/p_neg_t_i_fu_133_p2[27]
+                         LUT3 (Prop_lut3_I0_O)        0.307     6.538 r  Block_Mat_exit406734_U0/erode_hls_mul_32sbkb_U1/erode_hls_mul_32sbkb_MulnS_0_U/b_inferred_i_3/O
+                         net (fo=2, unplaced)         0.800     7.338    Block_Mat_exit406734_U0/erode_hls_mul_32scud_U2/erode_hls_mul_32scud_MulnS_1_U/in[28]
+                         DSP48E1                                      r  Block_Mat_exit406734_U0/erode_hls_mul_32scud_U2/erode_hls_mul_32scud_MulnS_1_U/buff1_reg/B[11]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)     6.000     6.000 r  
+                                                      0.000     6.000 r  ap_clk (IN)
+                         net (fo=1558, unset)         0.924     6.924    Block_Mat_exit406734_U0/erode_hls_mul_32scud_U2/erode_hls_mul_32scud_MulnS_1_U/ap_clk
+                         DSP48E1                                      r  Block_Mat_exit406734_U0/erode_hls_mul_32scud_U2/erode_hls_mul_32scud_MulnS_1_U/buff1_reg/CLK
+                         clock pessimism              0.000     6.924    
+                         clock uncertainty           -0.035     6.889    
+                         DSP48E1 (Setup_dsp48e1_CLK_B[11])
+                                                     -0.450     6.439    Block_Mat_exit406734_U0/erode_hls_mul_32scud_U2/erode_hls_mul_32scud_MulnS_1_U/buff1_reg
+  -------------------------------------------------------------------
+                         required time                          6.439    
+                         arrival time                          -7.338    
+  -------------------------------------------------------------------
+                         slack                                 -0.899    
+
+
+
+

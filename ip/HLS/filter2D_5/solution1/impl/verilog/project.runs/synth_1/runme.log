@@ -1,0 +1,1461 @@
+
+*** Running vivado
+    with args -log filter2D_hls_5.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source filter2D_hls_5.tcl
+
+
+****** Vivado v2017.4 (64-bit)
+  **** SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+  **** IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source filter2D_hls_5.tcl -notrace
+Command: synth_design -top filter2D_hls_5 -part xc7z020clg400-1 -no_iobuf -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 3028 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 405.242 ; gain = 104.270
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'filter2D_hls_5' [C:/Users/sdi_admin/CloudStation/HLS/filter2D_5/solution1/impl/verilog/filter2D_hls_5.v:12]
+	Parameter C_S_AXI_CONTROL_BUS_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_CONTROL_BUS_ADDR_WIDTH bound to: 7 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_CONTROL_BUS_WSTRB_WIDTH bound to: 4 - type: integer 
+	Parameter C_S_AXI_WSTRB_WIDTH bound to: 4 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'filter2D_hls_5_CONTROL_BUS_s_axi' [C:/Users/sdi_admin/CloudStation/HLS/filter2D_5/solution1/impl/verilog/filter2D_hls_5_CONTROL_BUS_s_axi.v:9]
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 7 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter ADDR_AP_CTRL bound to: 7'b0000000 
+	Parameter ADDR_GIE bound to: 7'b0000100 
+	Parameter ADDR_IER bound to: 7'b0001000 
+	Parameter ADDR_ISR bound to: 7'b0001100 
+	Parameter ADDR_ROWS_DATA_0 bound to: 7'b0010100 
+	Parameter ADDR_ROWS_CTRL bound to: 7'b0011000 
+	Parameter ADDR_COLS_DATA_0 bound to: 7'b0011100 
+	Parameter ADDR_COLS_CTRL bound to: 7'b0100000 
+	Parameter ADDR_PAR_V_BASE bound to: 7'b1000000 
+	Parameter ADDR_PAR_V_HIGH bound to: 7'b1011111 
+	Parameter WRIDLE bound to: 2'b00 
+	Parameter WRDATA bound to: 2'b01 
+	Parameter WRRESP bound to: 2'b10 
+	Parameter WRRESET bound to: 2'b11 
+	Parameter RDIDLE bound to: 2'b00 
+	Parameter RDDATA bound to: 2'b01 
+	Parameter RDRESET bound to: 2'b10 
+	Parameter ADDR_BITS bound to: 7 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'filter2D_hls_5_CONTROL_BUS_s_axi_ram' [C:/Users/sdi_admin/CloudStation/HLS/filter2D_5/solution1/impl/verilog/filter2D_hls_5_CONTROL_BUS_s_axi.v:460]
+	Parameter BYTES bound to: 4 - type: integer 
+	Parameter DEPTH bound to: 7 - type: integer 
+	Parameter AWIDTH bound to: 3 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'filter2D_hls_5_CONTROL_BUS_s_axi_ram' (1#1) [C:/Users/sdi_admin/CloudStation/HLS/filter2D_5/solution1/impl/verilog/filter2D_hls_5_CONTROL_BUS_s_axi.v:460]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/sdi_admin/CloudStation/HLS/filter2D_5/solution1/impl/verilog/filter2D_hls_5_CONTROL_BUS_s_axi.v:261]
+INFO: [Synth 8-256] done synthesizing module 'filter2D_hls_5_CONTROL_BUS_s_axi' (2#1) [C:/Users/sdi_admin/CloudStation/HLS/filter2D_5/solution1/impl/verilog/filter2D_hls_5_CONTROL_BUS_s_axi.v:9]
+INFO: [Synth 8-638] synthesizing module 'Block_Mat_exit212359' [C:/Users/sdi_admin/CloudStation/HLS/filter2D_5/solution1/impl/verilog/Block_Mat_exit212359.v:10]
+	Parameter ap_ST_fsm_state1 bound to: 3'b001 
+	Parameter ap_ST_fsm_state2 bound to: 3'b010 
+	Parameter ap_ST_fsm_state3 bound to: 3'b100 
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [C:/Users/sdi_admin/CloudStation/HLS/filter2D_5/solution1/impl/verilog/Block_Mat_exit212359.v:58]
+INFO: [Synth 8-638] synthesizing module 'filter2D_hls_5_mubkb' [C:/Users/sdi_admin/CloudStation/HLS/filter2D_5/solution1/impl/verilog/filter2D_hls_5_mubkb.v:30]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 3 - type: integer 
+	Parameter din0_WIDTH bound to: 20 - type: integer 
+	Parameter din1_WIDTH bound to: 9 - type: integer 
+	Parameter dout_WIDTH bound to: 20 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'filter2D_hls_5_mubkb_DSP48_0' [C:/Users/sdi_admin/CloudStation/HLS/filter2D_5/solution1/impl/verilog/filter2D_hls_5_mubkb.v:4]
+INFO: [Synth 8-256] done synthesizing module 'filter2D_hls_5_mubkb_DSP48_0' (3#1) [C:/Users/sdi_admin/CloudStation/HLS/filter2D_5/solution1/impl/verilog/filter2D_hls_5_mubkb.v:4]
+INFO: [Synth 8-256] done synthesizing module 'filter2D_hls_5_mubkb' (4#1) [C:/Users/sdi_admin/CloudStation/HLS/filter2D_5/solution1/impl/verilog/filter2D_hls_5_mubkb.v:30]
+INFO: [Synth 8-256] done synthesizing module 'Block_Mat_exit212359' (5#1) [C:/Users/sdi_admin/CloudStation/HLS/filter2D_5/solution1/impl/verilog/Block_Mat_exit212359.v:10]
+INFO: [Synth 8-638] synthesizing module 'Loop_1_proc' [C:/Users/sdi_admin/CloudStation/HLS/filter2D_5/solution1/impl/verilog/Loop_1_proc.v:10]
+	Parameter ap_ST_fsm_state1 bound to: 6'b000001 
+	Parameter ap_ST_fsm_pp0_stage0 bound to: 6'b000010 
+	Parameter ap_ST_fsm_pp0_stage1 bound to: 6'b000100 
+	Parameter ap_ST_fsm_pp0_stage2 bound to: 6'b001000 
+	Parameter ap_ST_fsm_pp0_stage3 bound to: 6'b010000 
+	Parameter ap_ST_fsm_state8 bound to: 6'b100000 
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [C:/Users/sdi_admin/CloudStation/HLS/filter2D_5/solution1/impl/verilog/Loop_1_proc.v:56]
+INFO: [Synth 8-256] done synthesizing module 'Loop_1_proc' (6#1) [C:/Users/sdi_admin/CloudStation/HLS/filter2D_5/solution1/impl/verilog/Loop_1_proc.v:10]
+INFO: [Synth 8-638] synthesizing module 'Block_proc' [C:/Users/sdi_admin/CloudStation/HLS/filter2D_5/solution1/impl/verilog/Block_proc.v:10]
+	Parameter ap_ST_fsm_state1 bound to: 26'b00000000000000000000000001 
+	Parameter ap_ST_fsm_state2 bound to: 26'b00000000000000000000000010 
+	Parameter ap_ST_fsm_state3 bound to: 26'b00000000000000000000000100 
+	Parameter ap_ST_fsm_state4 bound to: 26'b00000000000000000000001000 
+	Parameter ap_ST_fsm_state5 bound to: 26'b00000000000000000000010000 
+	Parameter ap_ST_fsm_state6 bound to: 26'b00000000000000000000100000 
+	Parameter ap_ST_fsm_state7 bound to: 26'b00000000000000000001000000 
+	Parameter ap_ST_fsm_state8 bound to: 26'b00000000000000000010000000 
+	Parameter ap_ST_fsm_state9 bound to: 26'b00000000000000000100000000 
+	Parameter ap_ST_fsm_state10 bound to: 26'b00000000000000001000000000 
+	Parameter ap_ST_fsm_state11 bound to: 26'b00000000000000010000000000 
+	Parameter ap_ST_fsm_state12 bound to: 26'b00000000000000100000000000 
+	Parameter ap_ST_fsm_state13 bound to: 26'b00000000000001000000000000 
+	Parameter ap_ST_fsm_state14 bound to: 26'b00000000000010000000000000 
+	Parameter ap_ST_fsm_state15 bound to: 26'b00000000000100000000000000 
+	Parameter ap_ST_fsm_state16 bound to: 26'b00000000001000000000000000 
+	Parameter ap_ST_fsm_state17 bound to: 26'b00000000010000000000000000 
+	Parameter ap_ST_fsm_state18 bound to: 26'b00000000100000000000000000 
+	Parameter ap_ST_fsm_state19 bound to: 26'b00000001000000000000000000 
+	Parameter ap_ST_fsm_state20 bound to: 26'b00000010000000000000000000 
+	Parameter ap_ST_fsm_state21 bound to: 26'b00000100000000000000000000 
+	Parameter ap_ST_fsm_state22 bound to: 26'b00001000000000000000000000 
+	Parameter ap_ST_fsm_state23 bound to: 26'b00010000000000000000000000 
+	Parameter ap_ST_fsm_state24 bound to: 26'b00100000000000000000000000 
+	Parameter ap_ST_fsm_state25 bound to: 26'b01000000000000000000000000 
+	Parameter ap_ST_fsm_state26 bound to: 26'b10000000000000000000000000 
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [C:/Users/sdi_admin/CloudStation/HLS/filter2D_5/solution1/impl/verilog/Block_proc.v:243]
+INFO: [Synth 8-256] done synthesizing module 'Block_proc' (7#1) [C:/Users/sdi_admin/CloudStation/HLS/filter2D_5/solution1/impl/verilog/Block_proc.v:10]
+INFO: [Synth 8-638] synthesizing module 'Filter2D' [C:/Users/sdi_admin/CloudStation/HLS/filter2D_5/solution1/impl/verilog/Filter2D.v:10]
+	Parameter ap_ST_fsm_state1 bound to: 6'b000001 
+	Parameter ap_ST_fsm_state2 bound to: 6'b000010 
+	Parameter ap_ST_fsm_state3 bound to: 6'b000100 
+	Parameter ap_ST_fsm_state4 bound to: 6'b001000 
+	Parameter ap_ST_fsm_pp0_stage0 bound to: 6'b010000 
+	Parameter ap_ST_fsm_state19 bound to: 6'b100000 
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [C:/Users/sdi_admin/CloudStation/HLS/filter2D_5/solution1/impl/verilog/Filter2D.v:233]
+INFO: [Synth 8-5534] Detected attribute (* use_dsp48 = "no" *) [C:/Users/sdi_admin/CloudStation/HLS/filter2D_5/solution1/impl/verilog/Filter2D.v:826]
+WARNING: [Synth 8-5974] attribute "use_dsp48" has been deprecated, please use "use_dsp" instead 
+INFO: [Synth 8-638] synthesizing module 'Filter2D_k_buf_0_cud' [C:/Users/sdi_admin/CloudStation/HLS/filter2D_5/solution1/impl/verilog/Filter2D_k_buf_0_cud.v:54]
+	Parameter DataWidth bound to: 8 - type: integer 
+	Parameter AddressRange bound to: 1920 - type: integer 
+	Parameter AddressWidth bound to: 11 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'Filter2D_k_buf_0_cud_ram' [C:/Users/sdi_admin/CloudStation/HLS/filter2D_5/solution1/impl/verilog/Filter2D_k_buf_0_cud.v:9]
+	Parameter DWIDTH bound to: 8 - type: integer 
+	Parameter AWIDTH bound to: 11 - type: integer 
+	Parameter MEM_SIZE bound to: 1920 - type: integer 
+INFO: [Synth 8-5534] Detected attribute (* ram_style = "block" *) [C:/Users/sdi_admin/CloudStation/HLS/filter2D_5/solution1/impl/verilog/Filter2D_k_buf_0_cud.v:24]
+INFO: [Synth 8-256] done synthesizing module 'Filter2D_k_buf_0_cud_ram' (8#1) [C:/Users/sdi_admin/CloudStation/HLS/filter2D_5/solution1/impl/verilog/Filter2D_k_buf_0_cud.v:9]
+INFO: [Synth 8-256] done synthesizing module 'Filter2D_k_buf_0_cud' (9#1) [C:/Users/sdi_admin/CloudStation/HLS/filter2D_5/solution1/impl/verilog/Filter2D_k_buf_0_cud.v:54]
+INFO: [Synth 8-638] synthesizing module 'filter2D_hls_5_muhbi' [C:/Users/sdi_admin/CloudStation/HLS/filter2D_5/solution1/impl/verilog/filter2D_hls_5_muhbi.v:11]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter din0_WIDTH bound to: 8 - type: integer 
+	Parameter din1_WIDTH bound to: 8 - type: integer 
+	Parameter din2_WIDTH bound to: 8 - type: integer 
+	Parameter din3_WIDTH bound to: 8 - type: integer 
+	Parameter din4_WIDTH bound to: 8 - type: integer 
+	Parameter din5_WIDTH bound to: 3 - type: integer 
+	Parameter dout_WIDTH bound to: 8 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'filter2D_hls_5_muhbi' (10#1) [C:/Users/sdi_admin/CloudStation/HLS/filter2D_5/solution1/impl/verilog/filter2D_hls_5_muhbi.v:11]
+INFO: [Synth 8-638] synthesizing module 'filter2D_hls_5_maibs' [C:/Users/sdi_admin/CloudStation/HLS/filter2D_5/solution1/impl/verilog/filter2D_hls_5_maibs.v:48]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 3 - type: integer 
+	Parameter din0_WIDTH bound to: 8 - type: integer 
+	Parameter din1_WIDTH bound to: 8 - type: integer 
+	Parameter din2_WIDTH bound to: 16 - type: integer 
+	Parameter dout_WIDTH bound to: 17 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'filter2D_hls_5_maibs_DSP48_1' [C:/Users/sdi_admin/CloudStation/HLS/filter2D_5/solution1/impl/verilog/filter2D_hls_5_maibs.v:10]
+WARNING: [Synth 8-5974] attribute "use_dsp48" has been deprecated, please use "use_dsp" instead 
+INFO: [Synth 8-256] done synthesizing module 'filter2D_hls_5_maibs_DSP48_1' (11#1) [C:/Users/sdi_admin/CloudStation/HLS/filter2D_5/solution1/impl/verilog/filter2D_hls_5_maibs.v:10]
+INFO: [Synth 8-256] done synthesizing module 'filter2D_hls_5_maibs' (12#1) [C:/Users/sdi_admin/CloudStation/HLS/filter2D_5/solution1/impl/verilog/filter2D_hls_5_maibs.v:48]
+INFO: [Synth 8-638] synthesizing module 'filter2D_hls_5_majbC' [C:/Users/sdi_admin/CloudStation/HLS/filter2D_5/solution1/impl/verilog/filter2D_hls_5_majbC.v:48]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 3 - type: integer 
+	Parameter din0_WIDTH bound to: 8 - type: integer 
+	Parameter din1_WIDTH bound to: 8 - type: integer 
+	Parameter din2_WIDTH bound to: 18 - type: integer 
+	Parameter dout_WIDTH bound to: 19 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'filter2D_hls_5_majbC_DSP48_2' [C:/Users/sdi_admin/CloudStation/HLS/filter2D_5/solution1/impl/verilog/filter2D_hls_5_majbC.v:10]
+WARNING: [Synth 8-5974] attribute "use_dsp48" has been deprecated, please use "use_dsp" instead 
+INFO: [Synth 8-256] done synthesizing module 'filter2D_hls_5_majbC_DSP48_2' (13#1) [C:/Users/sdi_admin/CloudStation/HLS/filter2D_5/solution1/impl/verilog/filter2D_hls_5_majbC.v:10]
+INFO: [Synth 8-256] done synthesizing module 'filter2D_hls_5_majbC' (14#1) [C:/Users/sdi_admin/CloudStation/HLS/filter2D_5/solution1/impl/verilog/filter2D_hls_5_majbC.v:48]
+INFO: [Synth 8-638] synthesizing module 'filter2D_hls_5_makbM' [C:/Users/sdi_admin/CloudStation/HLS/filter2D_5/solution1/impl/verilog/filter2D_hls_5_makbM.v:48]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 3 - type: integer 
+	Parameter din0_WIDTH bound to: 8 - type: integer 
+	Parameter din1_WIDTH bound to: 8 - type: integer 
+	Parameter din2_WIDTH bound to: 17 - type: integer 
+	Parameter dout_WIDTH bound to: 18 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'filter2D_hls_5_makbM_DSP48_3' [C:/Users/sdi_admin/CloudStation/HLS/filter2D_5/solution1/impl/verilog/filter2D_hls_5_makbM.v:10]
+WARNING: [Synth 8-5974] attribute "use_dsp48" has been deprecated, please use "use_dsp" instead 
+INFO: [Synth 8-256] done synthesizing module 'filter2D_hls_5_makbM_DSP48_3' (15#1) [C:/Users/sdi_admin/CloudStation/HLS/filter2D_5/solution1/impl/verilog/filter2D_hls_5_makbM.v:10]
+INFO: [Synth 8-256] done synthesizing module 'filter2D_hls_5_makbM' (16#1) [C:/Users/sdi_admin/CloudStation/HLS/filter2D_5/solution1/impl/verilog/filter2D_hls_5_makbM.v:48]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/sdi_admin/CloudStation/HLS/filter2D_5/solution1/impl/verilog/Filter2D.v:2847]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/sdi_admin/CloudStation/HLS/filter2D_5/solution1/impl/verilog/Filter2D.v:2849]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/sdi_admin/CloudStation/HLS/filter2D_5/solution1/impl/verilog/Filter2D.v:2851]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/sdi_admin/CloudStation/HLS/filter2D_5/solution1/impl/verilog/Filter2D.v:2853]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/sdi_admin/CloudStation/HLS/filter2D_5/solution1/impl/verilog/Filter2D.v:2855]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/sdi_admin/CloudStation/HLS/filter2D_5/solution1/impl/verilog/Filter2D.v:2959]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/sdi_admin/CloudStation/HLS/filter2D_5/solution1/impl/verilog/Filter2D.v:2987]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/sdi_admin/CloudStation/HLS/filter2D_5/solution1/impl/verilog/Filter2D.v:2989]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/sdi_admin/CloudStation/HLS/filter2D_5/solution1/impl/verilog/Filter2D.v:2991]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/sdi_admin/CloudStation/HLS/filter2D_5/solution1/impl/verilog/Filter2D.v:2993]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/sdi_admin/CloudStation/HLS/filter2D_5/solution1/impl/verilog/Filter2D.v:2995]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/sdi_admin/CloudStation/HLS/filter2D_5/solution1/impl/verilog/Filter2D.v:2999]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/sdi_admin/CloudStation/HLS/filter2D_5/solution1/impl/verilog/Filter2D.v:3003]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/sdi_admin/CloudStation/HLS/filter2D_5/solution1/impl/verilog/Filter2D.v:3167]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/sdi_admin/CloudStation/HLS/filter2D_5/solution1/impl/verilog/Filter2D.v:3169]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/sdi_admin/CloudStation/HLS/filter2D_5/solution1/impl/verilog/Filter2D.v:3171]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/sdi_admin/CloudStation/HLS/filter2D_5/solution1/impl/verilog/Filter2D.v:3173]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/sdi_admin/CloudStation/HLS/filter2D_5/solution1/impl/verilog/Filter2D.v:3175]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/sdi_admin/CloudStation/HLS/filter2D_5/solution1/impl/verilog/Filter2D.v:3177]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/sdi_admin/CloudStation/HLS/filter2D_5/solution1/impl/verilog/Filter2D.v:3257]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/sdi_admin/CloudStation/HLS/filter2D_5/solution1/impl/verilog/Filter2D.v:3287]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/sdi_admin/CloudStation/HLS/filter2D_5/solution1/impl/verilog/Filter2D.v:3327]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/sdi_admin/CloudStation/HLS/filter2D_5/solution1/impl/verilog/Filter2D.v:3329]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/sdi_admin/CloudStation/HLS/filter2D_5/solution1/impl/verilog/Filter2D.v:3341]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/sdi_admin/CloudStation/HLS/filter2D_5/solution1/impl/verilog/Filter2D.v:3343]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/sdi_admin/CloudStation/HLS/filter2D_5/solution1/impl/verilog/Filter2D.v:3365]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/sdi_admin/CloudStation/HLS/filter2D_5/solution1/impl/verilog/Filter2D.v:3383]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/sdi_admin/CloudStation/HLS/filter2D_5/solution1/impl/verilog/Filter2D.v:3385]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/sdi_admin/CloudStation/HLS/filter2D_5/solution1/impl/verilog/Filter2D.v:3387]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/sdi_admin/CloudStation/HLS/filter2D_5/solution1/impl/verilog/Filter2D.v:3463]
+INFO: [Synth 8-256] done synthesizing module 'Filter2D' (17#1) [C:/Users/sdi_admin/CloudStation/HLS/filter2D_5/solution1/impl/verilog/Filter2D.v:10]
+INFO: [Synth 8-638] synthesizing module 'Loop_2_proc' [C:/Users/sdi_admin/CloudStation/HLS/filter2D_5/solution1/impl/verilog/Loop_2_proc.v:10]
+	Parameter ap_ST_fsm_state1 bound to: 9'b000000001 
+	Parameter ap_ST_fsm_state2 bound to: 9'b000000010 
+	Parameter ap_ST_fsm_state3 bound to: 9'b000000100 
+	Parameter ap_ST_fsm_state4 bound to: 9'b000001000 
+	Parameter ap_ST_fsm_pp0_stage0 bound to: 9'b000010000 
+	Parameter ap_ST_fsm_pp0_stage1 bound to: 9'b000100000 
+	Parameter ap_ST_fsm_pp0_stage2 bound to: 9'b001000000 
+	Parameter ap_ST_fsm_pp0_stage3 bound to: 9'b010000000 
+	Parameter ap_ST_fsm_state11 bound to: 9'b100000000 
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [C:/Users/sdi_admin/CloudStation/HLS/filter2D_5/solution1/impl/verilog/Loop_2_proc.v:76]
+INFO: [Synth 8-638] synthesizing module 'filter2D_hls_5_mulbW' [C:/Users/sdi_admin/CloudStation/HLS/filter2D_5/solution1/impl/verilog/filter2D_hls_5_mulbW.v:30]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 3 - type: integer 
+	Parameter din0_WIDTH bound to: 9 - type: integer 
+	Parameter din1_WIDTH bound to: 11 - type: integer 
+	Parameter dout_WIDTH bound to: 20 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'filter2D_hls_5_mulbW_DSP48_4' [C:/Users/sdi_admin/CloudStation/HLS/filter2D_5/solution1/impl/verilog/filter2D_hls_5_mulbW.v:4]
+INFO: [Synth 8-256] done synthesizing module 'filter2D_hls_5_mulbW_DSP48_4' (18#1) [C:/Users/sdi_admin/CloudStation/HLS/filter2D_5/solution1/impl/verilog/filter2D_hls_5_mulbW.v:4]
+INFO: [Synth 8-256] done synthesizing module 'filter2D_hls_5_mulbW' (19#1) [C:/Users/sdi_admin/CloudStation/HLS/filter2D_5/solution1/impl/verilog/filter2D_hls_5_mulbW.v:30]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/sdi_admin/CloudStation/HLS/filter2D_5/solution1/impl/verilog/Loop_2_proc.v:937]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/sdi_admin/CloudStation/HLS/filter2D_5/solution1/impl/verilog/Loop_2_proc.v:953]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/sdi_admin/CloudStation/HLS/filter2D_5/solution1/impl/verilog/Loop_2_proc.v:961]
+INFO: [Synth 8-256] done synthesizing module 'Loop_2_proc' (20#1) [C:/Users/sdi_admin/CloudStation/HLS/filter2D_5/solution1/impl/verilog/Loop_2_proc.v:10]
+INFO: [Synth 8-638] synthesizing module 'fifo_w9_d3_A' [C:/Users/sdi_admin/CloudStation/HLS/filter2D_5/solution1/impl/verilog/fifo_w9_d3_A.v:45]
+	Parameter MEM_STYLE bound to: shiftreg - type: string 
+	Parameter DATA_WIDTH bound to: 9 - type: integer 
+	Parameter ADDR_WIDTH bound to: 2 - type: integer 
+	Parameter DEPTH bound to: 4 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'fifo_w9_d3_A_shiftReg' [C:/Users/sdi_admin/CloudStation/HLS/filter2D_5/solution1/impl/verilog/fifo_w9_d3_A.v:11]
+	Parameter DATA_WIDTH bound to: 9 - type: integer 
+	Parameter ADDR_WIDTH bound to: 2 - type: integer 
+	Parameter DEPTH bound to: 4 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'fifo_w9_d3_A_shiftReg' (21#1) [C:/Users/sdi_admin/CloudStation/HLS/filter2D_5/solution1/impl/verilog/fifo_w9_d3_A.v:11]
+INFO: [Synth 8-256] done synthesizing module 'fifo_w9_d3_A' (22#1) [C:/Users/sdi_admin/CloudStation/HLS/filter2D_5/solution1/impl/verilog/fifo_w9_d3_A.v:45]
+INFO: [Synth 8-638] synthesizing module 'fifo_w20_d2_A' [C:/Users/sdi_admin/CloudStation/HLS/filter2D_5/solution1/impl/verilog/fifo_w20_d2_A.v:45]
+	Parameter MEM_STYLE bound to: shiftreg - type: string 
+	Parameter DATA_WIDTH bound to: 20 - type: integer 
+	Parameter ADDR_WIDTH bound to: 2 - type: integer 
+	Parameter DEPTH bound to: 3 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'fifo_w20_d2_A_shiftReg' [C:/Users/sdi_admin/CloudStation/HLS/filter2D_5/solution1/impl/verilog/fifo_w20_d2_A.v:11]
+	Parameter DATA_WIDTH bound to: 20 - type: integer 
+	Parameter ADDR_WIDTH bound to: 2 - type: integer 
+	Parameter DEPTH bound to: 3 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'fifo_w20_d2_A_shiftReg' (23#1) [C:/Users/sdi_admin/CloudStation/HLS/filter2D_5/solution1/impl/verilog/fifo_w20_d2_A.v:11]
+INFO: [Synth 8-256] done synthesizing module 'fifo_w20_d2_A' (24#1) [C:/Users/sdi_admin/CloudStation/HLS/filter2D_5/solution1/impl/verilog/fifo_w20_d2_A.v:45]
+INFO: [Synth 8-638] synthesizing module 'fifo_w8_d1_A' [C:/Users/sdi_admin/CloudStation/HLS/filter2D_5/solution1/impl/verilog/fifo_w8_d1_A.v:45]
+	Parameter MEM_STYLE bound to: auto - type: string 
+	Parameter DATA_WIDTH bound to: 8 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'fifo_w8_d1_A_shiftReg' [C:/Users/sdi_admin/CloudStation/HLS/filter2D_5/solution1/impl/verilog/fifo_w8_d1_A.v:11]
+	Parameter DATA_WIDTH bound to: 8 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'fifo_w8_d1_A_shiftReg' (25#1) [C:/Users/sdi_admin/CloudStation/HLS/filter2D_5/solution1/impl/verilog/fifo_w8_d1_A.v:11]
+INFO: [Synth 8-256] done synthesizing module 'fifo_w8_d1_A' (26#1) [C:/Users/sdi_admin/CloudStation/HLS/filter2D_5/solution1/impl/verilog/fifo_w8_d1_A.v:45]
+INFO: [Synth 8-638] synthesizing module 'fifo_w8_d2_A' [C:/Users/sdi_admin/CloudStation/HLS/filter2D_5/solution1/impl/verilog/fifo_w8_d2_A.v:45]
+	Parameter MEM_STYLE bound to: shiftreg - type: string 
+	Parameter DATA_WIDTH bound to: 8 - type: integer 
+	Parameter ADDR_WIDTH bound to: 2 - type: integer 
+	Parameter DEPTH bound to: 3 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'fifo_w8_d2_A_shiftReg' [C:/Users/sdi_admin/CloudStation/HLS/filter2D_5/solution1/impl/verilog/fifo_w8_d2_A.v:11]
+	Parameter DATA_WIDTH bound to: 8 - type: integer 
+	Parameter ADDR_WIDTH bound to: 2 - type: integer 
+	Parameter DEPTH bound to: 3 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'fifo_w8_d2_A_shiftReg' (27#1) [C:/Users/sdi_admin/CloudStation/HLS/filter2D_5/solution1/impl/verilog/fifo_w8_d2_A.v:11]
+INFO: [Synth 8-256] done synthesizing module 'fifo_w8_d2_A' (28#1) [C:/Users/sdi_admin/CloudStation/HLS/filter2D_5/solution1/impl/verilog/fifo_w8_d2_A.v:45]
+WARNING: [Synth 8-6014] Unused sequential element Block_Mat_exit212359_U0_ap_ready_count_reg was removed.  [C:/Users/sdi_admin/CloudStation/HLS/filter2D_5/solution1/impl/verilog/filter2D_hls_5.v:1049]
+WARNING: [Synth 8-6014] Unused sequential element Block_proc_U0_ap_ready_count_reg was removed.  [C:/Users/sdi_admin/CloudStation/HLS/filter2D_5/solution1/impl/verilog/filter2D_hls_5.v:1057]
+WARNING: [Synth 8-6014] Unused sequential element Loop_1_proc_U0_ap_ready_count_reg was removed.  [C:/Users/sdi_admin/CloudStation/HLS/filter2D_5/solution1/impl/verilog/filter2D_hls_5.v:1065]
+INFO: [Synth 8-256] done synthesizing module 'filter2D_hls_5' (29#1) [C:/Users/sdi_admin/CloudStation/HLS/filter2D_5/solution1/impl/verilog/filter2D_hls_5.v:12]
+WARNING: [Synth 8-3331] design filter2D_hls_5_mulbW_DSP48_4 has unconnected port rst
+WARNING: [Synth 8-3331] design Loop_2_proc has unconnected port rows[31]
+WARNING: [Synth 8-3331] design Loop_2_proc has unconnected port rows[30]
+WARNING: [Synth 8-3331] design Loop_2_proc has unconnected port rows[29]
+WARNING: [Synth 8-3331] design Loop_2_proc has unconnected port rows[28]
+WARNING: [Synth 8-3331] design Loop_2_proc has unconnected port rows[27]
+WARNING: [Synth 8-3331] design Loop_2_proc has unconnected port rows[26]
+WARNING: [Synth 8-3331] design Loop_2_proc has unconnected port rows[25]
+WARNING: [Synth 8-3331] design Loop_2_proc has unconnected port rows[24]
+WARNING: [Synth 8-3331] design Loop_2_proc has unconnected port rows[23]
+WARNING: [Synth 8-3331] design Loop_2_proc has unconnected port rows[22]
+WARNING: [Synth 8-3331] design Loop_2_proc has unconnected port rows[21]
+WARNING: [Synth 8-3331] design Loop_2_proc has unconnected port rows[20]
+WARNING: [Synth 8-3331] design Loop_2_proc has unconnected port rows[19]
+WARNING: [Synth 8-3331] design Loop_2_proc has unconnected port rows[18]
+WARNING: [Synth 8-3331] design Loop_2_proc has unconnected port rows[17]
+WARNING: [Synth 8-3331] design Loop_2_proc has unconnected port rows[16]
+WARNING: [Synth 8-3331] design Loop_2_proc has unconnected port rows[15]
+WARNING: [Synth 8-3331] design Loop_2_proc has unconnected port rows[14]
+WARNING: [Synth 8-3331] design Loop_2_proc has unconnected port rows[13]
+WARNING: [Synth 8-3331] design Loop_2_proc has unconnected port rows[12]
+WARNING: [Synth 8-3331] design Loop_2_proc has unconnected port rows[11]
+WARNING: [Synth 8-3331] design filter2D_hls_5_makbM_DSP48_3 has unconnected port rst
+WARNING: [Synth 8-3331] design filter2D_hls_5_majbC_DSP48_2 has unconnected port rst
+WARNING: [Synth 8-3331] design filter2D_hls_5_maibs_DSP48_1 has unconnected port rst
+WARNING: [Synth 8-3331] design Filter2D_k_buf_0_cud has unconnected port reset
+WARNING: [Synth 8-3331] design Filter2D has unconnected port p_src_rows_V[31]
+WARNING: [Synth 8-3331] design Filter2D has unconnected port p_src_rows_V[30]
+WARNING: [Synth 8-3331] design Filter2D has unconnected port p_src_rows_V[29]
+WARNING: [Synth 8-3331] design Filter2D has unconnected port p_src_rows_V[28]
+WARNING: [Synth 8-3331] design Filter2D has unconnected port p_src_rows_V[27]
+WARNING: [Synth 8-3331] design Filter2D has unconnected port p_src_rows_V[26]
+WARNING: [Synth 8-3331] design Filter2D has unconnected port p_src_rows_V[25]
+WARNING: [Synth 8-3331] design Filter2D has unconnected port p_src_rows_V[24]
+WARNING: [Synth 8-3331] design Filter2D has unconnected port p_src_rows_V[23]
+WARNING: [Synth 8-3331] design Filter2D has unconnected port p_src_rows_V[22]
+WARNING: [Synth 8-3331] design Filter2D has unconnected port p_src_rows_V[21]
+WARNING: [Synth 8-3331] design Filter2D has unconnected port p_src_rows_V[20]
+WARNING: [Synth 8-3331] design Filter2D has unconnected port p_src_rows_V[19]
+WARNING: [Synth 8-3331] design Filter2D has unconnected port p_src_rows_V[18]
+WARNING: [Synth 8-3331] design Filter2D has unconnected port p_src_rows_V[17]
+WARNING: [Synth 8-3331] design Filter2D has unconnected port p_src_rows_V[16]
+WARNING: [Synth 8-3331] design Filter2D has unconnected port p_src_rows_V[15]
+WARNING: [Synth 8-3331] design Filter2D has unconnected port p_src_rows_V[14]
+WARNING: [Synth 8-3331] design Filter2D has unconnected port p_src_rows_V[13]
+WARNING: [Synth 8-3331] design Filter2D has unconnected port p_src_rows_V[12]
+WARNING: [Synth 8-3331] design Filter2D has unconnected port p_src_cols_V[31]
+WARNING: [Synth 8-3331] design Filter2D has unconnected port p_src_cols_V[30]
+WARNING: [Synth 8-3331] design Filter2D has unconnected port p_src_cols_V[29]
+WARNING: [Synth 8-3331] design Filter2D has unconnected port p_src_cols_V[28]
+WARNING: [Synth 8-3331] design Filter2D has unconnected port p_src_cols_V[27]
+WARNING: [Synth 8-3331] design Filter2D has unconnected port p_src_cols_V[26]
+WARNING: [Synth 8-3331] design Filter2D has unconnected port p_src_cols_V[25]
+WARNING: [Synth 8-3331] design Filter2D has unconnected port p_src_cols_V[24]
+WARNING: [Synth 8-3331] design Filter2D has unconnected port p_src_cols_V[23]
+WARNING: [Synth 8-3331] design Filter2D has unconnected port p_src_cols_V[22]
+WARNING: [Synth 8-3331] design Filter2D has unconnected port p_src_cols_V[21]
+WARNING: [Synth 8-3331] design Filter2D has unconnected port p_src_cols_V[20]
+WARNING: [Synth 8-3331] design Filter2D has unconnected port p_src_cols_V[19]
+WARNING: [Synth 8-3331] design Filter2D has unconnected port p_src_cols_V[18]
+WARNING: [Synth 8-3331] design Filter2D has unconnected port p_src_cols_V[17]
+WARNING: [Synth 8-3331] design Filter2D has unconnected port p_src_cols_V[16]
+WARNING: [Synth 8-3331] design Filter2D has unconnected port p_src_cols_V[15]
+WARNING: [Synth 8-3331] design Filter2D has unconnected port p_src_cols_V[14]
+WARNING: [Synth 8-3331] design Filter2D has unconnected port p_src_cols_V[13]
+WARNING: [Synth 8-3331] design Filter2D has unconnected port p_src_cols_V[12]
+WARNING: [Synth 8-3331] design filter2D_hls_5_mubkb_DSP48_0 has unconnected port rst
+WARNING: [Synth 8-3331] design Block_Mat_exit212359 has unconnected port rows[31]
+WARNING: [Synth 8-3331] design Block_Mat_exit212359 has unconnected port rows[30]
+WARNING: [Synth 8-3331] design Block_Mat_exit212359 has unconnected port rows[29]
+WARNING: [Synth 8-3331] design Block_Mat_exit212359 has unconnected port rows[28]
+WARNING: [Synth 8-3331] design Block_Mat_exit212359 has unconnected port rows[27]
+WARNING: [Synth 8-3331] design Block_Mat_exit212359 has unconnected port rows[26]
+WARNING: [Synth 8-3331] design Block_Mat_exit212359 has unconnected port rows[25]
+WARNING: [Synth 8-3331] design Block_Mat_exit212359 has unconnected port rows[24]
+WARNING: [Synth 8-3331] design Block_Mat_exit212359 has unconnected port rows[23]
+WARNING: [Synth 8-3331] design Block_Mat_exit212359 has unconnected port rows[22]
+WARNING: [Synth 8-3331] design Block_Mat_exit212359 has unconnected port rows[21]
+WARNING: [Synth 8-3331] design Block_Mat_exit212359 has unconnected port rows[20]
+WARNING: [Synth 8-3331] design Block_Mat_exit212359 has unconnected port cols[31]
+WARNING: [Synth 8-3331] design Block_Mat_exit212359 has unconnected port cols[30]
+WARNING: [Synth 8-3331] design Block_Mat_exit212359 has unconnected port cols[29]
+WARNING: [Synth 8-3331] design Block_Mat_exit212359 has unconnected port cols[28]
+WARNING: [Synth 8-3331] design Block_Mat_exit212359 has unconnected port cols[27]
+WARNING: [Synth 8-3331] design Block_Mat_exit212359 has unconnected port cols[26]
+WARNING: [Synth 8-3331] design Block_Mat_exit212359 has unconnected port cols[25]
+WARNING: [Synth 8-3331] design Block_Mat_exit212359 has unconnected port cols[24]
+WARNING: [Synth 8-3331] design Block_Mat_exit212359 has unconnected port cols[23]
+WARNING: [Synth 8-3331] design Block_Mat_exit212359 has unconnected port cols[22]
+WARNING: [Synth 8-3331] design Block_Mat_exit212359 has unconnected port cols[21]
+WARNING: [Synth 8-3331] design Block_Mat_exit212359 has unconnected port cols[20]
+WARNING: [Synth 8-3331] design Block_Mat_exit212359 has unconnected port cols[19]
+WARNING: [Synth 8-3331] design Block_Mat_exit212359 has unconnected port cols[18]
+WARNING: [Synth 8-3331] design Block_Mat_exit212359 has unconnected port cols[17]
+WARNING: [Synth 8-3331] design Block_Mat_exit212359 has unconnected port cols[16]
+WARNING: [Synth 8-3331] design Block_Mat_exit212359 has unconnected port cols[15]
+WARNING: [Synth 8-3331] design Block_Mat_exit212359 has unconnected port cols[14]
+WARNING: [Synth 8-3331] design Block_Mat_exit212359 has unconnected port cols[13]
+WARNING: [Synth 8-3331] design Block_Mat_exit212359 has unconnected port cols[12]
+WARNING: [Synth 8-3331] design Block_Mat_exit212359 has unconnected port cols[11]
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 473.332 ; gain = 172.359
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 473.332 ; gain = 172.359
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/sdi_admin/CloudStation/HLS/filter2D_5/solution1/impl/verilog/filter2D_hls_5.xdc]
+Finished Parsing XDC File [C:/Users/sdi_admin/CloudStation/HLS/filter2D_5/solution1/impl/verilog/filter2D_hls_5.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.104 . Memory (MB): peak = 848.555 ; gain = 1.496
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 848.555 ; gain = 547.582
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 848.555 ; gain = 547.582
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 848.555 ; gain = 547.582
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-6014] Unused sequential element int_par_V_shift_reg was removed.  [C:/Users/sdi_admin/CloudStation/HLS/filter2D_5/solution1/impl/verilog/filter2D_hls_5_CONTROL_BUS_s_axi.v:416]
+WARNING: [Synth 8-6014] Unused sequential element a_reg_reg was removed.  [C:/Users/sdi_admin/CloudStation/HLS/filter2D_5/solution1/impl/verilog/filter2D_hls_5_mubkb.v:19]
+WARNING: [Synth 8-6014] Unused sequential element b_reg_reg was removed.  [C:/Users/sdi_admin/CloudStation/HLS/filter2D_5/solution1/impl/verilog/filter2D_hls_5_mubkb.v:20]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [C:/Users/sdi_admin/CloudStation/HLS/filter2D_5/solution1/impl/verilog/filter2D_hls_5_mubkb.v:19]
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+WARNING: [Synth 8-6014] Unused sequential element r_reg_171_reg was removed.  [C:/Users/sdi_admin/CloudStation/HLS/filter2D_5/solution1/impl/verilog/Loop_1_proc.v:243]
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-5544] ROM "ap_NS_fsm" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ap_NS_fsm" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+WARNING: [Synth 8-6014] Unused sequential element m_reg_reg was removed.  [C:/Users/sdi_admin/CloudStation/HLS/filter2D_5/solution1/impl/verilog/filter2D_hls_5_maibs.v:33]
+WARNING: [Synth 8-6014] Unused sequential element a_reg_reg was removed.  [C:/Users/sdi_admin/CloudStation/HLS/filter2D_5/solution1/impl/verilog/filter2D_hls_5_maibs.v:32]
+WARNING: [Synth 8-6014] Unused sequential element b_reg_reg was removed.  [C:/Users/sdi_admin/CloudStation/HLS/filter2D_5/solution1/impl/verilog/filter2D_hls_5_maibs.v:32]
+WARNING: [Synth 8-6014] Unused sequential element m_reg_reg was removed.  [C:/Users/sdi_admin/CloudStation/HLS/filter2D_5/solution1/impl/verilog/filter2D_hls_5_majbC.v:33]
+WARNING: [Synth 8-6014] Unused sequential element a_reg_reg was removed.  [C:/Users/sdi_admin/CloudStation/HLS/filter2D_5/solution1/impl/verilog/filter2D_hls_5_majbC.v:32]
+WARNING: [Synth 8-6014] Unused sequential element b_reg_reg was removed.  [C:/Users/sdi_admin/CloudStation/HLS/filter2D_5/solution1/impl/verilog/filter2D_hls_5_majbC.v:32]
+WARNING: [Synth 8-6014] Unused sequential element m_reg_reg was removed.  [C:/Users/sdi_admin/CloudStation/HLS/filter2D_5/solution1/impl/verilog/filter2D_hls_5_makbM.v:33]
+WARNING: [Synth 8-6014] Unused sequential element a_reg_reg was removed.  [C:/Users/sdi_admin/CloudStation/HLS/filter2D_5/solution1/impl/verilog/filter2D_hls_5_makbM.v:32]
+WARNING: [Synth 8-6014] Unused sequential element b_reg_reg was removed.  [C:/Users/sdi_admin/CloudStation/HLS/filter2D_5/solution1/impl/verilog/filter2D_hls_5_makbM.v:32]
+INFO: [Synth 8-4471] merging register 'k_buf_0_val_6_addr_reg_3645_reg[10:0]' into 'k_buf_0_val_5_addr_reg_3630_reg[10:0]' [C:/Users/sdi_admin/CloudStation/HLS/filter2D_5/solution1/impl/verilog/Filter2D.v:1684]
+INFO: [Synth 8-4471] merging register 'k_buf_0_val_7_addr_reg_3651_reg[10:0]' into 'k_buf_0_val_5_addr_reg_3630_reg[10:0]' [C:/Users/sdi_admin/CloudStation/HLS/filter2D_5/solution1/impl/verilog/Filter2D.v:1685]
+INFO: [Synth 8-4471] merging register 'k_buf_0_val_8_addr_reg_3657_reg[10:0]' into 'k_buf_0_val_5_addr_reg_3630_reg[10:0]' [C:/Users/sdi_admin/CloudStation/HLS/filter2D_5/solution1/impl/verilog/Filter2D.v:1686]
+INFO: [Synth 8-4471] merging register 'k_buf_0_val_9_addr_reg_3663_reg[10:0]' into 'k_buf_0_val_5_addr_reg_3630_reg[10:0]' [C:/Users/sdi_admin/CloudStation/HLS/filter2D_5/solution1/impl/verilog/Filter2D.v:1687]
+INFO: [Synth 8-4471] merging register 'ult_reg_3400_reg[0:0]' into 'tmp_2_i_reg_3396_reg[0:0]' [C:/Users/sdi_admin/CloudStation/HLS/filter2D_5/solution1/impl/verilog/Filter2D.v:1779]
+INFO: [Synth 8-4471] merging register 'ap_reg_pp0_iter3_k_buf_0_val_7_addr_reg_3651_reg[10:0]' into 'ap_reg_pp0_iter3_k_buf_0_val_6_addr_reg_3645_reg[10:0]' [C:/Users/sdi_admin/CloudStation/HLS/filter2D_5/solution1/impl/verilog/Filter2D.v:1003]
+INFO: [Synth 8-4471] merging register 'ap_reg_pp0_iter3_k_buf_0_val_8_addr_reg_3657_reg[10:0]' into 'ap_reg_pp0_iter3_k_buf_0_val_6_addr_reg_3645_reg[10:0]' [C:/Users/sdi_admin/CloudStation/HLS/filter2D_5/solution1/impl/verilog/Filter2D.v:1019]
+INFO: [Synth 8-4471] merging register 'ap_reg_pp0_iter3_k_buf_0_val_9_addr_reg_3663_reg[10:0]' into 'ap_reg_pp0_iter3_k_buf_0_val_6_addr_reg_3645_reg[10:0]' [C:/Users/sdi_admin/CloudStation/HLS/filter2D_5/solution1/impl/verilog/Filter2D.v:1035]
+WARNING: [Synth 8-6014] Unused sequential element ap_reg_pp0_iter3_k_buf_0_val_7_addr_reg_3651_reg was removed.  [C:/Users/sdi_admin/CloudStation/HLS/filter2D_5/solution1/impl/verilog/Filter2D.v:1003]
+WARNING: [Synth 8-6014] Unused sequential element ap_reg_pp0_iter3_k_buf_0_val_8_addr_reg_3657_reg was removed.  [C:/Users/sdi_admin/CloudStation/HLS/filter2D_5/solution1/impl/verilog/Filter2D.v:1019]
+WARNING: [Synth 8-6014] Unused sequential element ap_reg_pp0_iter3_k_buf_0_val_9_addr_reg_3663_reg was removed.  [C:/Users/sdi_admin/CloudStation/HLS/filter2D_5/solution1/impl/verilog/Filter2D.v:1035]
+WARNING: [Synth 8-6014] Unused sequential element k_buf_0_val_6_addr_reg_3645_reg was removed.  [C:/Users/sdi_admin/CloudStation/HLS/filter2D_5/solution1/impl/verilog/Filter2D.v:1684]
+WARNING: [Synth 8-6014] Unused sequential element k_buf_0_val_7_addr_reg_3651_reg was removed.  [C:/Users/sdi_admin/CloudStation/HLS/filter2D_5/solution1/impl/verilog/Filter2D.v:1685]
+WARNING: [Synth 8-6014] Unused sequential element k_buf_0_val_8_addr_reg_3657_reg was removed.  [C:/Users/sdi_admin/CloudStation/HLS/filter2D_5/solution1/impl/verilog/Filter2D.v:1686]
+WARNING: [Synth 8-6014] Unused sequential element k_buf_0_val_9_addr_reg_3663_reg was removed.  [C:/Users/sdi_admin/CloudStation/HLS/filter2D_5/solution1/impl/verilog/Filter2D.v:1687]
+WARNING: [Synth 8-6014] Unused sequential element ult_reg_3400_reg was removed.  [C:/Users/sdi_admin/CloudStation/HLS/filter2D_5/solution1/impl/verilog/Filter2D.v:1779]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/sdi_admin/CloudStation/HLS/filter2D_5/solution1/impl/verilog/Filter2D.v:3203]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/sdi_admin/CloudStation/HLS/filter2D_5/solution1/impl/verilog/Filter2D.v:3213]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/sdi_admin/CloudStation/HLS/filter2D_5/solution1/impl/verilog/Filter2D.v:3203]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/sdi_admin/CloudStation/HLS/filter2D_5/solution1/impl/verilog/Filter2D.v:3213]
+WARNING: [Synth 8-3936] Found unconnected internal register 'x_reg_3611_reg' and it is trimmed from '13' to '11' bits. [C:/Users/sdi_admin/CloudStation/HLS/filter2D_5/solution1/impl/verilog/Filter2D.v:1676]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/sdi_admin/CloudStation/HLS/filter2D_5/solution1/impl/verilog/Filter2D.v:3203]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/sdi_admin/CloudStation/HLS/filter2D_5/solution1/impl/verilog/Filter2D.v:3213]
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-5546] ROM "tmp_93_1_i_fu_1213_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tmp_93_2_i_fu_1219_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tmp_93_i_fu_1207_p2" won't be mapped to RAM because it is too sparse
+DSP Debug: swapped A/B pins for adder 0000017049E2BF10
+DSP Debug: swapped A/B pins for adder 0000017049E2BF10
+DSP Debug: swapped A/B pins for adder 0000017049E2BAF0
+WARNING: [Synth 8-6014] Unused sequential element r_V_2_2_2_i_reg_3906_reg was removed.  [C:/Users/sdi_admin/CloudStation/HLS/filter2D_5/solution1/impl/verilog/Filter2D.v:1797]
+WARNING: [Synth 8-6014] Unused sequential element tmp_74_reg_3948_reg was removed.  [C:/Users/sdi_admin/CloudStation/HLS/filter2D_5/solution1/impl/verilog/Filter2D.v:1816]
+WARNING: [Synth 8-6014] Unused sequential element r_V_2_2_2_i_reg_3906_reg was removed.  [C:/Users/sdi_admin/CloudStation/HLS/filter2D_5/solution1/impl/verilog/Filter2D.v:1797]
+WARNING: [Synth 8-6014] Unused sequential element OP2_V_0_1_i_reg_3250_reg was removed.  [C:/Users/sdi_admin/CloudStation/HLS/filter2D_5/solution1/impl/verilog/Filter2D.v:1572]
+WARNING: [Synth 8-6014] Unused sequential element OP2_V_0_2_i_reg_3255_reg was removed.  [C:/Users/sdi_admin/CloudStation/HLS/filter2D_5/solution1/impl/verilog/Filter2D.v:1573]
+WARNING: [Synth 8-6014] Unused sequential element OP2_V_1_1_i_reg_3275_reg was removed.  [C:/Users/sdi_admin/CloudStation/HLS/filter2D_5/solution1/impl/verilog/Filter2D.v:1577]
+WARNING: [Synth 8-6014] Unused sequential element OP2_V_1_4_i_reg_3290_reg was removed.  [C:/Users/sdi_admin/CloudStation/HLS/filter2D_5/solution1/impl/verilog/Filter2D.v:1580]
+WARNING: [Synth 8-6014] Unused sequential element OP2_V_2_1_i_reg_3300_reg was removed.  [C:/Users/sdi_admin/CloudStation/HLS/filter2D_5/solution1/impl/verilog/Filter2D.v:1582]
+WARNING: [Synth 8-6014] Unused sequential element OP2_V_2_2_i_reg_3305_reg was removed.  [C:/Users/sdi_admin/CloudStation/HLS/filter2D_5/solution1/impl/verilog/Filter2D.v:1583]
+WARNING: [Synth 8-6014] Unused sequential element OP2_V_2_3_i_reg_3310_reg was removed.  [C:/Users/sdi_admin/CloudStation/HLS/filter2D_5/solution1/impl/verilog/Filter2D.v:1584]
+WARNING: [Synth 8-6014] Unused sequential element OP2_V_2_4_i_reg_3315_reg was removed.  [C:/Users/sdi_admin/CloudStation/HLS/filter2D_5/solution1/impl/verilog/Filter2D.v:1585]
+WARNING: [Synth 8-6014] Unused sequential element OP2_V_3_1_i_reg_3325_reg was removed.  [C:/Users/sdi_admin/CloudStation/HLS/filter2D_5/solution1/impl/verilog/Filter2D.v:1587]
+WARNING: [Synth 8-6014] Unused sequential element OP2_V_3_2_i_reg_3330_reg was removed.  [C:/Users/sdi_admin/CloudStation/HLS/filter2D_5/solution1/impl/verilog/Filter2D.v:1588]
+WARNING: [Synth 8-6014] Unused sequential element OP2_V_3_3_i_reg_3335_reg was removed.  [C:/Users/sdi_admin/CloudStation/HLS/filter2D_5/solution1/impl/verilog/Filter2D.v:1589]
+WARNING: [Synth 8-6014] Unused sequential element OP2_V_3_4_i_reg_3340_reg was removed.  [C:/Users/sdi_admin/CloudStation/HLS/filter2D_5/solution1/impl/verilog/Filter2D.v:1590]
+WARNING: [Synth 8-6014] Unused sequential element OP2_V_4_1_i_reg_3350_reg was removed.  [C:/Users/sdi_admin/CloudStation/HLS/filter2D_5/solution1/impl/verilog/Filter2D.v:1592]
+WARNING: [Synth 8-6014] Unused sequential element OP2_V_4_2_i_reg_3355_reg was removed.  [C:/Users/sdi_admin/CloudStation/HLS/filter2D_5/solution1/impl/verilog/Filter2D.v:1593]
+WARNING: [Synth 8-6014] Unused sequential element OP2_V_4_3_i_reg_3360_reg was removed.  [C:/Users/sdi_admin/CloudStation/HLS/filter2D_5/solution1/impl/verilog/Filter2D.v:1594]
+WARNING: [Synth 8-6014] Unused sequential element OP2_V_4_4_i_reg_3365_reg was removed.  [C:/Users/sdi_admin/CloudStation/HLS/filter2D_5/solution1/impl/verilog/Filter2D.v:1595]
+WARNING: [Synth 8-6014] Unused sequential element OP2_V_4_i_reg_3345_reg was removed.  [C:/Users/sdi_admin/CloudStation/HLS/filter2D_5/solution1/impl/verilog/Filter2D.v:1596]
+WARNING: [Synth 8-6014] Unused sequential element ap_reg_pp0_iter5_src_kernel_win_0_va_22_reg_3750_reg was removed.  [C:/Users/sdi_admin/CloudStation/HLS/filter2D_5/solution1/impl/verilog/Filter2D.v:1624]
+WARNING: [Synth 8-6014] Unused sequential element ap_reg_pp0_iter6_src_kernel_win_0_va_21_reg_3745_reg was removed.  [C:/Users/sdi_admin/CloudStation/HLS/filter2D_5/solution1/impl/verilog/Filter2D.v:1631]
+WARNING: [Synth 8-6014] Unused sequential element ap_reg_pp0_iter6_src_kernel_win_0_va_22_reg_3750_reg was removed.  [C:/Users/sdi_admin/CloudStation/HLS/filter2D_5/solution1/impl/verilog/Filter2D.v:1632]
+WARNING: [Synth 8-6014] Unused sequential element ap_reg_pp0_iter6_src_kernel_win_0_va_29_reg_3766_reg was removed.  [C:/Users/sdi_admin/CloudStation/HLS/filter2D_5/solution1/impl/verilog/Filter2D.v:1633]
+WARNING: [Synth 8-6014] Unused sequential element ap_reg_pp0_iter6_src_kernel_win_0_va_30_reg_3771_reg was removed.  [C:/Users/sdi_admin/CloudStation/HLS/filter2D_5/solution1/impl/verilog/Filter2D.v:1634]
+WARNING: [Synth 8-6014] Unused sequential element ap_reg_pp0_iter6_src_kernel_win_0_va_33_reg_3821_reg was removed.  [C:/Users/sdi_admin/CloudStation/HLS/filter2D_5/solution1/impl/verilog/Filter2D.v:1636]
+WARNING: [Synth 8-6014] Unused sequential element ap_reg_pp0_iter6_src_kernel_win_0_va_34_reg_3826_reg was removed.  [C:/Users/sdi_admin/CloudStation/HLS/filter2D_5/solution1/impl/verilog/Filter2D.v:1637]
+WARNING: [Synth 8-6014] Unused sequential element ap_reg_pp0_iter7_src_kernel_win_0_va_21_reg_3745_reg was removed.  [C:/Users/sdi_admin/CloudStation/HLS/filter2D_5/solution1/impl/verilog/Filter2D.v:1641]
+WARNING: [Synth 8-6014] Unused sequential element ap_reg_pp0_iter7_src_kernel_win_0_va_29_reg_3766_reg was removed.  [C:/Users/sdi_admin/CloudStation/HLS/filter2D_5/solution1/impl/verilog/Filter2D.v:1642]
+WARNING: [Synth 8-6014] Unused sequential element ap_reg_pp0_iter7_src_kernel_win_0_va_30_reg_3771_reg was removed.  [C:/Users/sdi_admin/CloudStation/HLS/filter2D_5/solution1/impl/verilog/Filter2D.v:1643]
+WARNING: [Synth 8-6014] Unused sequential element ap_reg_pp0_iter7_src_kernel_win_0_va_31_reg_3776_reg was removed.  [C:/Users/sdi_admin/CloudStation/HLS/filter2D_5/solution1/impl/verilog/Filter2D.v:1644]
+WARNING: [Synth 8-6014] Unused sequential element ap_reg_pp0_iter8_src_kernel_win_0_va_31_reg_3776_reg was removed.  [C:/Users/sdi_admin/CloudStation/HLS/filter2D_5/solution1/impl/verilog/Filter2D.v:1648]
+WARNING: [Synth 8-6014] Unused sequential element ap_reg_pp0_iter8_tmp_72_reg_3923_reg was removed.  [C:/Users/sdi_admin/CloudStation/HLS/filter2D_5/solution1/impl/verilog/Filter2D.v:1649]
+WARNING: [Synth 8-6014] Unused sequential element src_kernel_win_0_va_23_reg_3756_reg was removed.  [C:/Users/sdi_admin/CloudStation/HLS/filter2D_5/solution1/impl/verilog/Filter2D.v:1658]
+WARNING: [Synth 8-6014] Unused sequential element src_kernel_win_0_va_33_reg_3821_reg was removed.  [C:/Users/sdi_admin/CloudStation/HLS/filter2D_5/solution1/impl/verilog/Filter2D.v:1790]
+WARNING: [Synth 8-6014] Unused sequential element src_kernel_win_0_va_34_reg_3826_reg was removed.  [C:/Users/sdi_admin/CloudStation/HLS/filter2D_5/solution1/impl/verilog/Filter2D.v:1791]
+WARNING: [Synth 8-6014] Unused sequential element tmp_73_reg_3933_reg was removed.  [C:/Users/sdi_admin/CloudStation/HLS/filter2D_5/solution1/impl/verilog/Filter2D.v:1815]
+WARNING: [Synth 8-6014] Unused sequential element src_kernel_win_0_va_42_reg_3781_reg was removed.  [C:/Users/sdi_admin/CloudStation/HLS/filter2D_5/solution1/impl/verilog/Filter2D.v:1907]
+WARNING: [Synth 8-6014] Unused sequential element src_kernel_win_0_va_43_reg_3786_reg was removed.  [C:/Users/sdi_admin/CloudStation/HLS/filter2D_5/solution1/impl/verilog/Filter2D.v:1908]
+WARNING: [Synth 8-6014] Unused sequential element src_kernel_win_0_va_2_fu_542_reg was removed.  [C:/Users/sdi_admin/CloudStation/HLS/filter2D_5/solution1/impl/verilog/Filter2D.v:1914]
+WARNING: [Synth 8-6014] Unused sequential element src_kernel_win_0_va_3_fu_546_reg was removed.  [C:/Users/sdi_admin/CloudStation/HLS/filter2D_5/solution1/impl/verilog/Filter2D.v:1915]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [C:/Users/sdi_admin/CloudStation/HLS/filter2D_5/solution1/impl/verilog/Filter2D.v:3115]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [C:/Users/sdi_admin/CloudStation/HLS/filter2D_5/solution1/impl/verilog/Filter2D.v:3115]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [C:/Users/sdi_admin/CloudStation/HLS/filter2D_5/solution1/impl/verilog/Filter2D.v:3059]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [C:/Users/sdi_admin/CloudStation/HLS/filter2D_5/solution1/impl/verilog/Filter2D.v:3059]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [C:/Users/sdi_admin/CloudStation/HLS/filter2D_5/solution1/impl/verilog/Filter2D.v:1253]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [C:/Users/sdi_admin/CloudStation/HLS/filter2D_5/solution1/impl/verilog/Filter2D.v:1253]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [C:/Users/sdi_admin/CloudStation/HLS/filter2D_5/solution1/impl/verilog/Filter2D.v:1270]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [C:/Users/sdi_admin/CloudStation/HLS/filter2D_5/solution1/impl/verilog/Filter2D.v:1270]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [C:/Users/sdi_admin/CloudStation/HLS/filter2D_5/solution1/impl/verilog/Filter2D.v:1287]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [C:/Users/sdi_admin/CloudStation/HLS/filter2D_5/solution1/impl/verilog/Filter2D.v:1287]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [C:/Users/sdi_admin/CloudStation/HLS/filter2D_5/solution1/impl/verilog/Filter2D.v:1797]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [C:/Users/sdi_admin/CloudStation/HLS/filter2D_5/solution1/impl/verilog/Filter2D.v:1797]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [C:/Users/sdi_admin/CloudStation/HLS/filter2D_5/solution1/impl/verilog/Filter2D.v:1799]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [C:/Users/sdi_admin/CloudStation/HLS/filter2D_5/solution1/impl/verilog/Filter2D.v:1799]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [C:/Users/sdi_admin/CloudStation/HLS/filter2D_5/solution1/impl/verilog/Filter2D.v:1304]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [C:/Users/sdi_admin/CloudStation/HLS/filter2D_5/solution1/impl/verilog/Filter2D.v:1304]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [C:/Users/sdi_admin/CloudStation/HLS/filter2D_5/solution1/impl/verilog/Filter2D.v:1321]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [C:/Users/sdi_admin/CloudStation/HLS/filter2D_5/solution1/impl/verilog/Filter2D.v:3123]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [C:/Users/sdi_admin/CloudStation/HLS/filter2D_5/solution1/impl/verilog/Filter2D.v:3123]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [C:/Users/sdi_admin/CloudStation/HLS/filter2D_5/solution1/impl/verilog/Filter2D.v:3139]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [C:/Users/sdi_admin/CloudStation/HLS/filter2D_5/solution1/impl/verilog/Filter2D.v:3139]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [C:/Users/sdi_admin/CloudStation/HLS/filter2D_5/solution1/impl/verilog/Filter2D.v:3107]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [C:/Users/sdi_admin/CloudStation/HLS/filter2D_5/solution1/impl/verilog/Filter2D.v:3107]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [C:/Users/sdi_admin/CloudStation/HLS/filter2D_5/solution1/impl/verilog/Filter2D.v:3075]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [C:/Users/sdi_admin/CloudStation/HLS/filter2D_5/solution1/impl/verilog/Filter2D.v:3075]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [C:/Users/sdi_admin/CloudStation/HLS/filter2D_5/solution1/impl/verilog/Filter2D.v:3099]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [C:/Users/sdi_admin/CloudStation/HLS/filter2D_5/solution1/impl/verilog/Filter2D.v:3099]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [C:/Users/sdi_admin/CloudStation/HLS/filter2D_5/solution1/impl/verilog/Filter2D.v:3091]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [C:/Users/sdi_admin/CloudStation/HLS/filter2D_5/solution1/impl/verilog/Filter2D.v:3091]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [C:/Users/sdi_admin/CloudStation/HLS/filter2D_5/solution1/impl/verilog/Filter2D.v:3131]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [C:/Users/sdi_admin/CloudStation/HLS/filter2D_5/solution1/impl/verilog/Filter2D.v:3131]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [C:/Users/sdi_admin/CloudStation/HLS/filter2D_5/solution1/impl/verilog/Filter2D.v:3083]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [C:/Users/sdi_admin/CloudStation/HLS/filter2D_5/solution1/impl/verilog/Filter2D.v:3083]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [C:/Users/sdi_admin/CloudStation/HLS/filter2D_5/solution1/impl/verilog/Filter2D.v:1797]
+INFO: [Common 17-14] Message 'Synth 8-6014' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-5546] ROM "out_stream_user_V_tm_fu_297_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "internal_empty_n" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "internal_full_n" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "internal_empty_n" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "internal_full_n" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "internal_empty_n" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "internal_empty_n" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "internal_full_n" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-3971] The signal gen_write[1].mem_reg was recognized as a true dual port RAM template.
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 848.555 ; gain = 547.582
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     21 Bit       Adders := 1     
+	   3 Input     21 Bit       Adders := 1     
+	   2 Input     20 Bit       Adders := 1     
+	   3 Input     20 Bit       Adders := 1     
+	   2 Input     19 Bit       Adders := 3     
+	   2 Input     18 Bit       Adders := 3     
+	   2 Input     17 Bit       Adders := 4     
+	   2 Input     12 Bit       Adders := 12    
+	   2 Input     11 Bit       Adders := 6     
+	   3 Input     11 Bit       Adders := 1     
+	   2 Input     10 Bit       Adders := 1     
+	   2 Input      9 Bit       Adders := 1     
+	   3 Input      8 Bit       Adders := 3     
+	   3 Input      3 Bit       Adders := 11    
+	   2 Input      3 Bit       Adders := 28    
+	   2 Input      2 Bit       Adders := 2     
++---XORs : 
+	   2 Input      1 Bit         XORs := 17    
++---Registers : 
+	               32 Bit    Registers := 9     
+	               26 Bit    Registers := 1     
+	               21 Bit    Registers := 1     
+	               20 Bit    Registers := 5     
+	               19 Bit    Registers := 4     
+	               18 Bit    Registers := 12    
+	               17 Bit    Registers := 7     
+	               16 Bit    Registers := 21    
+	               13 Bit    Registers := 1     
+	               12 Bit    Registers := 12    
+	               11 Bit    Registers := 8     
+	               10 Bit    Registers := 2     
+	                9 Bit    Registers := 7     
+	                8 Bit    Registers := 105   
+	                7 Bit    Registers := 1     
+	                6 Bit    Registers := 2     
+	                3 Bit    Registers := 41    
+	                2 Bit    Registers := 9     
+	                1 Bit    Registers := 162   
++---RAMs : 
+	              15K Bit         RAMs := 5     
+	              224 Bit         RAMs := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 16    
+	   2 Input     26 Bit        Muxes := 1     
+	  27 Input     26 Bit        Muxes := 1     
+	   2 Input     20 Bit        Muxes := 3     
+	   2 Input     19 Bit        Muxes := 1     
+	   2 Input     12 Bit        Muxes := 6     
+	   2 Input     11 Bit        Muxes := 5     
+	   3 Input      9 Bit        Muxes := 2     
+	   2 Input      9 Bit        Muxes := 2     
+	   2 Input      8 Bit        Muxes := 64    
+	   3 Input      6 Bit        Muxes := 2     
+	   2 Input      6 Bit        Muxes := 2     
+	   2 Input      5 Bit        Muxes := 2     
+	  25 Input      5 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 12    
+	   4 Input      3 Bit        Muxes := 1     
+	   6 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 43    
+	   4 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 186   
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module filter2D_hls_5 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 4     
++---Registers : 
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module filter2D_hls_5_CONTROL_BUS_s_axi_ram 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 2     
++---RAMs : 
+	              224 Bit         RAMs := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 12    
+	   2 Input      8 Bit        Muxes := 2     
+Module filter2D_hls_5_CONTROL_BUS_s_axi 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	               32 Bit    Registers := 3     
+	                7 Bit    Registers := 1     
+	                2 Bit    Registers := 3     
+	                1 Bit    Registers := 13    
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 1     
+	   6 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 5     
+Module filter2D_hls_5_mubkb_DSP48_0 
+Detailed RTL Component Info : 
++---Registers : 
+	               10 Bit    Registers := 1     
+Module Block_Mat_exit212359 
+Detailed RTL Component Info : 
++---Registers : 
+	               20 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     20 Bit        Muxes := 2     
+	   4 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+Module Loop_1_proc 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	               32 Bit    Registers := 2     
+	               19 Bit    Registers := 1     
+	                8 Bit    Registers := 3     
+	                6 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 7     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input     19 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 3     
+	   3 Input      6 Bit        Muxes := 2     
+	   2 Input      5 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 2     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 7     
+Module Block_proc 
+Detailed RTL Component Info : 
++---Registers : 
+	               26 Bit    Registers := 1     
+	                8 Bit    Registers := 24    
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     26 Bit        Muxes := 1     
+	  27 Input     26 Bit        Muxes := 1     
+	  25 Input      5 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+Module Filter2D_k_buf_0_cud_ram 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
++---RAMs : 
+	              15K Bit         RAMs := 1     
+Module filter2D_hls_5_muhbi 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 4     
+Module filter2D_hls_5_maibs_DSP48_1 
+Detailed RTL Component Info : 
++---Registers : 
+	               18 Bit    Registers := 1     
+Module filter2D_hls_5_majbC_DSP48_2 
+Detailed RTL Component Info : 
++---Registers : 
+	               18 Bit    Registers := 1     
+Module filter2D_hls_5_makbM_DSP48_3 
+Detailed RTL Component Info : 
++---Registers : 
+	               18 Bit    Registers := 1     
+Module Filter2D 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     21 Bit       Adders := 1     
+	   3 Input     21 Bit       Adders := 1     
+	   2 Input     20 Bit       Adders := 1     
+	   3 Input     20 Bit       Adders := 1     
+	   2 Input     19 Bit       Adders := 3     
+	   2 Input     18 Bit       Adders := 3     
+	   2 Input     17 Bit       Adders := 4     
+	   2 Input     12 Bit       Adders := 12    
+	   2 Input     11 Bit       Adders := 4     
+	   3 Input     11 Bit       Adders := 1     
+	   3 Input      8 Bit       Adders := 3     
+	   3 Input      3 Bit       Adders := 11    
++---XORs : 
+	   2 Input      1 Bit         XORs := 9     
++---Registers : 
+	               21 Bit    Registers := 1     
+	               20 Bit    Registers := 2     
+	               19 Bit    Registers := 3     
+	               18 Bit    Registers := 4     
+	               17 Bit    Registers := 7     
+	               16 Bit    Registers := 21    
+	               13 Bit    Registers := 1     
+	               12 Bit    Registers := 12    
+	               11 Bit    Registers := 6     
+	                8 Bit    Registers := 66    
+	                6 Bit    Registers := 1     
+	                3 Bit    Registers := 12    
+	                1 Bit    Registers := 56    
++---Muxes : 
+	   2 Input     12 Bit        Muxes := 6     
+	   2 Input     11 Bit        Muxes := 2     
+	   2 Input      8 Bit        Muxes := 15    
+	   2 Input      6 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 11    
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 8     
+Module filter2D_hls_5_mulbW_DSP48_4 
+Detailed RTL Component Info : 
++---Registers : 
+	                9 Bit    Registers := 1     
+Module Loop_2_proc 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 2     
+	   2 Input     10 Bit       Adders := 1     
+	   2 Input      9 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	               32 Bit    Registers := 2     
+	               20 Bit    Registers := 2     
+	               11 Bit    Registers := 2     
+	               10 Bit    Registers := 1     
+	                9 Bit    Registers := 6     
+	                8 Bit    Registers := 3     
+	                2 Bit    Registers := 3     
+	                1 Bit    Registers := 21    
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input     20 Bit        Muxes := 1     
+	   2 Input     11 Bit        Muxes := 3     
+	   3 Input      9 Bit        Muxes := 2     
+	   2 Input      9 Bit        Muxes := 2     
+	   2 Input      8 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 10    
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 13    
+Module fifo_w9_d3_A 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 5     
+Module fifo_w20_d2_A 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 5     
+Module fifo_w8_d1_A_shiftReg 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module fifo_w8_d1_A 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 4     
+Module fifo_w8_d2_A 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 5     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5544] ROM "p_lshr_f_cast_loc_c_U/internal_full_n" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "p_lshr_f_cast_loc_c_U/internal_empty_n" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "col_packets_cast_loc_U/internal_full_n" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "col_packets_cast_loc_U/internal_empty_n" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+DSP Report: Generating DSP filter2D_hls_5_mubkb_U1/filter2D_hls_5_mubkb_DSP48_0_U/p_reg_reg, operation Mode is: (A2*B2)'.
+DSP Report: register B is absorbed into DSP filter2D_hls_5_mubkb_U1/filter2D_hls_5_mubkb_DSP48_0_U/p_reg_reg.
+DSP Report: register filter2D_hls_5_mubkb_U1/filter2D_hls_5_mubkb_DSP48_0_U/a_reg_reg is absorbed into DSP filter2D_hls_5_mubkb_U1/filter2D_hls_5_mubkb_DSP48_0_U/p_reg_reg.
+DSP Report: register filter2D_hls_5_mubkb_U1/filter2D_hls_5_mubkb_DSP48_0_U/p_reg_reg is absorbed into DSP filter2D_hls_5_mubkb_U1/filter2D_hls_5_mubkb_DSP48_0_U/p_reg_reg.
+DSP Report: operator filter2D_hls_5_mubkb_U1/filter2D_hls_5_mubkb_DSP48_0_U/p_reg_reg0 is absorbed into DSP filter2D_hls_5_mubkb_U1/filter2D_hls_5_mubkb_DSP48_0_U/p_reg_reg.
+INFO: [Synth 8-4471] merging register 'OP2_V_2_3_i_reg_3310_reg[15:0]' into 'OP2_V_2_3_i_reg_3310_reg[15:0]' [C:/Users/sdi_admin/CloudStation/HLS/filter2D_5/solution1/impl/verilog/Filter2D.v:1584]
+INFO: [Synth 8-4471] merging register 'OP2_V_3_4_i_reg_3340_reg[15:0]' into 'OP2_V_3_4_i_reg_3340_reg[15:0]' [C:/Users/sdi_admin/CloudStation/HLS/filter2D_5/solution1/impl/verilog/Filter2D.v:1590]
+INFO: [Synth 8-4471] merging register 'OP2_V_3_2_i_reg_3330_reg[15:0]' into 'OP2_V_3_2_i_reg_3330_reg[15:0]' [C:/Users/sdi_admin/CloudStation/HLS/filter2D_5/solution1/impl/verilog/Filter2D.v:1588]
+INFO: [Synth 8-4471] merging register 'OP2_V_3_3_i_reg_3335_reg[15:0]' into 'OP2_V_3_3_i_reg_3335_reg[15:0]' [C:/Users/sdi_admin/CloudStation/HLS/filter2D_5/solution1/impl/verilog/Filter2D.v:1589]
+INFO: [Synth 8-4471] merging register 'OP2_V_4_1_i_reg_3350_reg[15:0]' into 'OP2_V_4_1_i_reg_3350_reg[15:0]' [C:/Users/sdi_admin/CloudStation/HLS/filter2D_5/solution1/impl/verilog/Filter2D.v:1592]
+INFO: [Synth 8-4471] merging register 'OP2_V_4_i_reg_3345_reg[15:0]' into 'OP2_V_4_i_reg_3345_reg[15:0]' [C:/Users/sdi_admin/CloudStation/HLS/filter2D_5/solution1/impl/verilog/Filter2D.v:1596]
+INFO: [Synth 8-4471] merging register 'OP2_V_4_4_i_reg_3365_reg[15:0]' into 'OP2_V_4_4_i_reg_3365_reg[15:0]' [C:/Users/sdi_admin/CloudStation/HLS/filter2D_5/solution1/impl/verilog/Filter2D.v:1595]
+INFO: [Synth 8-4471] merging register 'OP2_V_4_2_i_reg_3355_reg[15:0]' into 'OP2_V_4_2_i_reg_3355_reg[15:0]' [C:/Users/sdi_admin/CloudStation/HLS/filter2D_5/solution1/impl/verilog/Filter2D.v:1593]
+INFO: [Synth 8-4471] merging register 'OP2_V_4_3_i_reg_3360_reg[15:0]' into 'OP2_V_4_3_i_reg_3360_reg[15:0]' [C:/Users/sdi_admin/CloudStation/HLS/filter2D_5/solution1/impl/verilog/Filter2D.v:1594]
+INFO: [Synth 8-4471] merging register 'OP2_V_2_2_i_reg_3305_reg[15:0]' into 'OP2_V_2_2_i_reg_3305_reg[15:0]' [C:/Users/sdi_admin/CloudStation/HLS/filter2D_5/solution1/impl/verilog/Filter2D.v:1583]
+INFO: [Synth 8-4471] merging register 'r_V_2_2_2_i_reg_3906_reg[15:0]' into 'r_V_2_2_2_i_reg_3906_reg[15:0]' [C:/Users/sdi_admin/CloudStation/HLS/filter2D_5/solution1/impl/verilog/Filter2D.v:1797]
+WARNING: [Synth 8-3936] Found unconnected internal register 'filter2D_hls_5_maibs_U50/filter2D_hls_5_maibs_DSP48_1_U/b_reg_reg' and it is trimmed from '18' to '17' bits. [C:/Users/sdi_admin/CloudStation/HLS/filter2D_5/solution1/impl/verilog/filter2D_hls_5_maibs.v:32]
+WARNING: [Synth 8-3936] Found unconnected internal register 'filter2D_hls_5_maibs_U49/filter2D_hls_5_maibs_DSP48_1_U/b_reg_reg' and it is trimmed from '18' to '17' bits. [C:/Users/sdi_admin/CloudStation/HLS/filter2D_5/solution1/impl/verilog/filter2D_hls_5_maibs.v:32]
+WARNING: [Synth 8-3936] Found unconnected internal register 'filter2D_hls_5_maibs_U48/filter2D_hls_5_maibs_DSP48_1_U/b_reg_reg' and it is trimmed from '18' to '17' bits. [C:/Users/sdi_admin/CloudStation/HLS/filter2D_5/solution1/impl/verilog/filter2D_hls_5_maibs.v:32]
+WARNING: [Synth 8-3936] Found unconnected internal register 'filter2D_hls_5_maibs_U47/filter2D_hls_5_maibs_DSP48_1_U/b_reg_reg' and it is trimmed from '18' to '17' bits. [C:/Users/sdi_admin/CloudStation/HLS/filter2D_5/solution1/impl/verilog/filter2D_hls_5_maibs.v:32]
+WARNING: [Synth 8-3936] Found unconnected internal register 'filter2D_hls_5_maibs_U46/filter2D_hls_5_maibs_DSP48_1_U/b_reg_reg' and it is trimmed from '18' to '17' bits. [C:/Users/sdi_admin/CloudStation/HLS/filter2D_5/solution1/impl/verilog/filter2D_hls_5_maibs.v:32]
+INFO: [Synth 8-5546] ROM "tmp_93_i_fu_1207_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tmp_93_2_i_fu_1219_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tmp_93_1_i_fu_1213_p2" won't be mapped to RAM because it is too sparse
+DSP Debug: swapped A/B pins for adder 00000170578CC5D0
+DSP Debug: swapped A/B pins for adder 0000017059560010
+DSP Debug: swapped A/B pins for adder 00000170578CC5D0
+DSP Debug: swapped A/B pins for adder 0000017059560010
+DSP Report: Generating DSP r_V_2_0_1_i_reg_3831_reg, operation Mode is: (A''*B2)'.
+DSP Report: register OP2_V_0_1_i_reg_3250_reg is absorbed into DSP r_V_2_0_1_i_reg_3831_reg.
+DSP Report: register A is absorbed into DSP r_V_2_0_1_i_reg_3831_reg.
+DSP Report: register A is absorbed into DSP r_V_2_0_1_i_reg_3831_reg.
+DSP Report: register r_V_2_0_1_i_reg_3831_reg is absorbed into DSP r_V_2_0_1_i_reg_3831_reg.
+DSP Report: operator r_V_2_0_1_i_fu_2307_p2 is absorbed into DSP r_V_2_0_1_i_reg_3831_reg.
+DSP Report: Generating DSP p_Val2_4_0_1_i_reg_3871_reg, operation Mode is: (C+(A''*B'')')'.
+DSP Report: register B is absorbed into DSP p_Val2_4_0_1_i_reg_3871_reg.
+DSP Report: register B is absorbed into DSP p_Val2_4_0_1_i_reg_3871_reg.
+DSP Report: register A is absorbed into DSP p_Val2_4_0_1_i_reg_3871_reg.
+DSP Report: register A is absorbed into DSP p_Val2_4_0_1_i_reg_3871_reg.
+DSP Report: register p_Val2_4_0_1_i_reg_3871_reg is absorbed into DSP p_Val2_4_0_1_i_reg_3871_reg.
+DSP Report: register filter2D_hls_5_maibs_U46/filter2D_hls_5_maibs_DSP48_1_U/m_reg_reg is absorbed into DSP p_Val2_4_0_1_i_reg_3871_reg.
+DSP Report: operator filter2D_hls_5_maibs_U46/filter2D_hls_5_maibs_DSP48_1_U/p is absorbed into DSP p_Val2_4_0_1_i_reg_3871_reg.
+DSP Report: operator filter2D_hls_5_maibs_U46/filter2D_hls_5_maibs_DSP48_1_U/m is absorbed into DSP p_Val2_4_0_1_i_reg_3871_reg.
+DSP Report: Generating DSP r_V_2_0_2_i_reg_3836_reg, operation Mode is: (A''*B2)'.
+DSP Report: register OP2_V_0_2_i_reg_3255_reg is absorbed into DSP r_V_2_0_2_i_reg_3836_reg.
+DSP Report: register A is absorbed into DSP r_V_2_0_2_i_reg_3836_reg.
+DSP Report: register A is absorbed into DSP r_V_2_0_2_i_reg_3836_reg.
+DSP Report: register r_V_2_0_2_i_reg_3836_reg is absorbed into DSP r_V_2_0_2_i_reg_3836_reg.
+DSP Report: operator r_V_2_0_2_i_fu_2315_p2 is absorbed into DSP r_V_2_0_2_i_reg_3836_reg.
+DSP Report: Generating DSP tmp35_reg_3876_reg, operation Mode is: (C+(A''*B'')')'.
+DSP Report: register B is absorbed into DSP tmp35_reg_3876_reg.
+DSP Report: register B is absorbed into DSP tmp35_reg_3876_reg.
+DSP Report: register A is absorbed into DSP tmp35_reg_3876_reg.
+DSP Report: register A is absorbed into DSP tmp35_reg_3876_reg.
+DSP Report: register tmp35_reg_3876_reg is absorbed into DSP tmp35_reg_3876_reg.
+DSP Report: register filter2D_hls_5_maibs_U47/filter2D_hls_5_maibs_DSP48_1_U/m_reg_reg is absorbed into DSP tmp35_reg_3876_reg.
+DSP Report: operator filter2D_hls_5_maibs_U47/filter2D_hls_5_maibs_DSP48_1_U/p is absorbed into DSP tmp35_reg_3876_reg.
+DSP Report: operator filter2D_hls_5_maibs_U47/filter2D_hls_5_maibs_DSP48_1_U/m is absorbed into DSP tmp35_reg_3876_reg.
+DSP Report: Generating DSP tmp36_reg_3896_reg, operation Mode is: (C+(A''*B'')')'.
+DSP Report: register B is absorbed into DSP tmp36_reg_3896_reg.
+DSP Report: register B is absorbed into DSP tmp36_reg_3896_reg.
+DSP Report: register A is absorbed into DSP tmp36_reg_3896_reg.
+DSP Report: register A is absorbed into DSP tmp36_reg_3896_reg.
+DSP Report: register tmp36_reg_3896_reg is absorbed into DSP tmp36_reg_3896_reg.
+DSP Report: register filter2D_hls_5_majbC_U51/filter2D_hls_5_majbC_DSP48_2_U/m_reg_reg is absorbed into DSP tmp36_reg_3896_reg.
+DSP Report: operator filter2D_hls_5_majbC_U51/filter2D_hls_5_majbC_DSP48_2_U/p is absorbed into DSP tmp36_reg_3896_reg.
+DSP Report: operator filter2D_hls_5_majbC_U51/filter2D_hls_5_majbC_DSP48_2_U/m is absorbed into DSP tmp36_reg_3896_reg.
+DSP Report: Generating DSP r_V_2_1_1_i_reg_3851_reg, operation Mode is: (A''*B2)'.
+DSP Report: register OP2_V_1_1_i_reg_3275_reg is absorbed into DSP r_V_2_1_1_i_reg_3851_reg.
+DSP Report: register A is absorbed into DSP r_V_2_1_1_i_reg_3851_reg.
+DSP Report: register A is absorbed into DSP r_V_2_1_1_i_reg_3851_reg.
+DSP Report: register r_V_2_1_1_i_reg_3851_reg is absorbed into DSP r_V_2_1_1_i_reg_3851_reg.
+DSP Report: operator r_V_2_1_1_i_fu_2331_p2 is absorbed into DSP r_V_2_1_1_i_reg_3851_reg.
+DSP Report: Generating DSP tmp37_reg_3881_reg, operation Mode is: (C+(A''*B'')')'.
+DSP Report: register B is absorbed into DSP tmp37_reg_3881_reg.
+DSP Report: register B is absorbed into DSP tmp37_reg_3881_reg.
+DSP Report: register A is absorbed into DSP tmp37_reg_3881_reg.
+DSP Report: register A is absorbed into DSP tmp37_reg_3881_reg.
+DSP Report: register tmp37_reg_3881_reg is absorbed into DSP tmp37_reg_3881_reg.
+DSP Report: register filter2D_hls_5_maibs_U48/filter2D_hls_5_maibs_DSP48_1_U/m_reg_reg is absorbed into DSP tmp37_reg_3881_reg.
+DSP Report: operator filter2D_hls_5_maibs_U48/filter2D_hls_5_maibs_DSP48_1_U/p is absorbed into DSP tmp37_reg_3881_reg.
+DSP Report: operator filter2D_hls_5_maibs_U48/filter2D_hls_5_maibs_DSP48_1_U/m is absorbed into DSP tmp37_reg_3881_reg.
+DSP Report: Generating DSP tmp38_reg_3901_reg, operation Mode is: (C+(A''*B'')')'.
+DSP Report: register B is absorbed into DSP tmp38_reg_3901_reg.
+DSP Report: register B is absorbed into DSP tmp38_reg_3901_reg.
+DSP Report: register A is absorbed into DSP tmp38_reg_3901_reg.
+DSP Report: register A is absorbed into DSP tmp38_reg_3901_reg.
+DSP Report: register tmp38_reg_3901_reg is absorbed into DSP tmp38_reg_3901_reg.
+DSP Report: register filter2D_hls_5_makbM_U52/filter2D_hls_5_makbM_DSP48_3_U/m_reg_reg is absorbed into DSP tmp38_reg_3901_reg.
+DSP Report: operator filter2D_hls_5_makbM_U52/filter2D_hls_5_makbM_DSP48_3_U/p is absorbed into DSP tmp38_reg_3901_reg.
+DSP Report: operator filter2D_hls_5_makbM_U52/filter2D_hls_5_makbM_DSP48_3_U/m is absorbed into DSP tmp38_reg_3901_reg.
+DSP Report: Generating DSP r_V_2_2_1_i_reg_3866_reg, operation Mode is: (A''*B2)'.
+DSP Report: register OP2_V_2_1_i_reg_3300_reg is absorbed into DSP r_V_2_2_1_i_reg_3866_reg.
+DSP Report: register A is absorbed into DSP r_V_2_2_1_i_reg_3866_reg.
+DSP Report: register A is absorbed into DSP r_V_2_2_1_i_reg_3866_reg.
+DSP Report: register r_V_2_2_1_i_reg_3866_reg is absorbed into DSP r_V_2_2_1_i_reg_3866_reg.
+DSP Report: operator r_V_2_2_1_i_fu_2352_p2 is absorbed into DSP r_V_2_2_1_i_reg_3866_reg.
+DSP Report: Generating DSP tmp47_reg_3886_reg, operation Mode is: (C+(A''*B'')')'.
+DSP Report: register B is absorbed into DSP tmp47_reg_3886_reg.
+DSP Report: register B is absorbed into DSP tmp47_reg_3886_reg.
+DSP Report: register A is absorbed into DSP tmp47_reg_3886_reg.
+DSP Report: register A is absorbed into DSP tmp47_reg_3886_reg.
+DSP Report: register tmp47_reg_3886_reg is absorbed into DSP tmp47_reg_3886_reg.
+DSP Report: register filter2D_hls_5_maibs_U49/filter2D_hls_5_maibs_DSP48_1_U/m_reg_reg is absorbed into DSP tmp47_reg_3886_reg.
+DSP Report: operator filter2D_hls_5_maibs_U49/filter2D_hls_5_maibs_DSP48_1_U/p is absorbed into DSP tmp47_reg_3886_reg.
+DSP Report: operator filter2D_hls_5_maibs_U49/filter2D_hls_5_maibs_DSP48_1_U/m is absorbed into DSP tmp47_reg_3886_reg.
+DSP Report: Generating DSP r_V_2_1_4_i_reg_3856_reg, operation Mode is: (A2*B2)'.
+DSP Report: register OP2_V_1_4_i_reg_3290_reg is absorbed into DSP r_V_2_1_4_i_reg_3856_reg.
+DSP Report: register A is absorbed into DSP r_V_2_1_4_i_reg_3856_reg.
+DSP Report: register r_V_2_1_4_i_reg_3856_reg is absorbed into DSP r_V_2_1_4_i_reg_3856_reg.
+DSP Report: operator r_V_2_1_4_i_fu_2339_p2 is absorbed into DSP r_V_2_1_4_i_reg_3856_reg.
+DSP Report: Generating DSP tmp48_reg_3891_reg, operation Mode is: (C+(A''*B'')')'.
+DSP Report: register B is absorbed into DSP tmp48_reg_3891_reg.
+DSP Report: register B is absorbed into DSP tmp48_reg_3891_reg.
+DSP Report: register A is absorbed into DSP tmp48_reg_3891_reg.
+DSP Report: register A is absorbed into DSP tmp48_reg_3891_reg.
+DSP Report: register tmp48_reg_3891_reg is absorbed into DSP tmp48_reg_3891_reg.
+DSP Report: register filter2D_hls_5_maibs_U50/filter2D_hls_5_maibs_DSP48_1_U/m_reg_reg is absorbed into DSP tmp48_reg_3891_reg.
+DSP Report: operator filter2D_hls_5_maibs_U50/filter2D_hls_5_maibs_DSP48_1_U/p is absorbed into DSP tmp48_reg_3891_reg.
+DSP Report: operator filter2D_hls_5_maibs_U50/filter2D_hls_5_maibs_DSP48_1_U/m is absorbed into DSP tmp48_reg_3891_reg.
+DSP Report: Generating DSP tmp49_reg_3928_reg, operation Mode is: (C+(A''*B'')')'.
+DSP Report: register B is absorbed into DSP tmp49_reg_3928_reg.
+DSP Report: register B is absorbed into DSP tmp49_reg_3928_reg.
+DSP Report: register A is absorbed into DSP tmp49_reg_3928_reg.
+DSP Report: register A is absorbed into DSP tmp49_reg_3928_reg.
+DSP Report: register tmp49_reg_3928_reg is absorbed into DSP tmp49_reg_3928_reg.
+DSP Report: register filter2D_hls_5_makbM_U53/filter2D_hls_5_makbM_DSP48_3_U/m_reg_reg is absorbed into DSP tmp49_reg_3928_reg.
+DSP Report: operator filter2D_hls_5_makbM_U53/filter2D_hls_5_makbM_DSP48_3_U/p is absorbed into DSP tmp49_reg_3928_reg.
+DSP Report: operator filter2D_hls_5_makbM_U53/filter2D_hls_5_makbM_DSP48_3_U/m is absorbed into DSP tmp49_reg_3928_reg.
+INFO: [Synth 8-5546] ROM "out_stream_user_V_tm_fu_297_p2" won't be mapped to RAM because it is too sparse
+DSP Report: Generating DSP filter2D_hls_5_mulbW_U88/filter2D_hls_5_mulbW_DSP48_4_U/p_reg_reg, operation Mode is: (A2*B2)'.
+DSP Report: register filter2D_hls_5_mulbW_U88/filter2D_hls_5_mulbW_DSP48_4_U/a_reg_reg is absorbed into DSP filter2D_hls_5_mulbW_U88/filter2D_hls_5_mulbW_DSP48_4_U/p_reg_reg.
+DSP Report: register filter2D_hls_5_mulbW_U88/filter2D_hls_5_mulbW_DSP48_4_U/b_reg_reg is absorbed into DSP filter2D_hls_5_mulbW_U88/filter2D_hls_5_mulbW_DSP48_4_U/p_reg_reg.
+DSP Report: register filter2D_hls_5_mulbW_U88/filter2D_hls_5_mulbW_DSP48_4_U/p_reg_reg is absorbed into DSP filter2D_hls_5_mulbW_U88/filter2D_hls_5_mulbW_DSP48_4_U/p_reg_reg.
+DSP Report: operator filter2D_hls_5_mulbW_U88/filter2D_hls_5_mulbW_DSP48_4_U/p_reg_reg0 is absorbed into DSP filter2D_hls_5_mulbW_U88/filter2D_hls_5_mulbW_DSP48_4_U/p_reg_reg.
+INFO: [Synth 8-3971] The signal filter2D_hls_5_CONTROL_BUS_s_axi_U/int_par_V/gen_write[1].mem_reg was recognized as a true dual port RAM template.
+INFO: [Synth 8-3886] merging instance 'Filter2D_U0/p_assign_7_i_reg_3444_reg[0]' (FDE) to 'Filter2D_U0/p_assign_7_4_i_reg_3516_reg[0]'
+INFO: [Synth 8-3886] merging instance 'Filter2D_U0/p_assign_7_i_reg_3444_reg[1]' (FDE) to 'Filter2D_U0/p_assign_6_3_i_reg_3485_reg[1]'
+INFO: [Synth 8-3886] merging instance 'Filter2D_U0/tmp_28_reg_3439_reg[0]' (FDE) to 'Filter2D_U0/tmp_118_i_reg_3431_reg[11]'
+INFO: [Synth 8-3886] merging instance 'Filter2D_U0/tmp_118_i_reg_3431_reg[0]' (FDE) to 'Filter2D_U0/p_assign_7_4_i_reg_3516_reg[0]'
+INFO: [Synth 8-3886] merging instance 'Filter2D_U0/p_assign_7_2_i_reg_3480_reg[0]' (FDE) to 'Filter2D_U0/p_assign_7_4_i_reg_3516_reg[0]'
+INFO: [Synth 8-3886] merging instance 'Filter2D_U0/p_assign_7_2_i_reg_3480_reg[1]' (FDE) to 'Filter2D_U0/p_assign_6_1_i_reg_3449_reg[1]'
+INFO: [Synth 8-3886] merging instance 'Filter2D_U0/tmp_43_reg_3475_reg[0]' (FDE) to 'Filter2D_U0/p_assign_6_2_i_reg_3467_reg[11]'
+INFO: [Synth 8-3886] merging instance 'Filter2D_U0/p_assign_6_2_i_reg_3467_reg[0]' (FDE) to 'Filter2D_U0/p_assign_7_4_i_reg_3516_reg[0]'
+INFO: [Synth 8-3886] merging instance 'Filter2D_U0/p_assign_7_1_i_reg_3462_reg[0]' (FDE) to 'Filter2D_U0/p_assign_7_3_i_reg_3498_reg[0]'
+INFO: [Synth 8-3886] merging instance 'Filter2D_U0/tmp_34_reg_3457_reg[0]' (FDE) to 'Filter2D_U0/p_assign_6_1_i_reg_3449_reg[11]'
+INFO: [Synth 8-3886] merging instance 'Filter2D_U0/p_assign_6_1_i_reg_3449_reg[0]' (FDE) to 'Filter2D_U0/p_assign_7_3_i_reg_3498_reg[0]'
+INFO: [Synth 8-3886] merging instance 'Filter2D_U0/p_assign_7_3_i_reg_3498_reg[0]' (FDE) to 'Filter2D_U0/p_assign_6_3_i_reg_3485_reg[0]'
+INFO: [Synth 8-3886] merging instance 'Filter2D_U0/tmp_50_reg_3493_reg[0]' (FDE) to 'Filter2D_U0/p_assign_6_3_i_reg_3485_reg[11]'
+INFO: [Synth 8-3886] merging instance 'Filter2D_U0/p_assign_6_3_i_reg_3485_reg[1]' (FDE) to 'Filter2D_U0/p_assign_7_4_i_reg_3516_reg[1]'
+INFO: [Synth 8-3886] merging instance 'Filter2D_U0/p_assign_7_4_i_reg_3516_reg[0]' (FDE) to 'Filter2D_U0/p_assign_6_4_i_reg_3503_reg[0]'
+INFO: [Synth 8-3886] merging instance 'Filter2D_U0/tmp_53_reg_3511_reg[0]' (FDE) to 'Filter2D_U0/p_assign_6_4_i_reg_3503_reg[11]'
+INFO: [Synth 8-3886] merging instance 'Filter2D_U0/p_p2_i_i_i_reg_3597_reg[0]' (FDE) to 'Filter2D_U0/ImagLoc_x_reg_3585_reg[0]'
+INFO: [Synth 8-3886] merging instance 'Filter2D_U0/tmp_69_reg_3616_reg[0]' (FDE) to 'Filter2D_U0/x_reg_3611_reg[0]'
+INFO: [Synth 8-3886] merging instance 'Filter2D_U0/tmp_69_reg_3616_reg[1]' (FDE) to 'Filter2D_U0/x_reg_3611_reg[1]'
+INFO: [Synth 8-3886] merging instance 'Filter2D_U0/tmp_69_reg_3616_reg[2]' (FDE) to 'Filter2D_U0/x_reg_3611_reg[2]'
+INFO: [Synth 8-3886] merging instance 'Filter2D_U0/ap_reg_pp0_iter6_src_kernel_win_0_va_20_reg_3739_reg[6]' (FDE) to 'Filter2D_U0/A[6]__17'
+INFO: [Synth 8-3886] merging instance 'Filter2D_U0/ap_reg_pp0_iter6_src_kernel_win_0_va_20_reg_3739_reg[7]' (FDE) to 'Filter2D_U0/A[7]__17'
+INFO: [Synth 8-3886] merging instance 'Filter2D_U0/ap_reg_pp0_iter6_src_kernel_win_0_va_20_reg_3739_reg[0]' (FDE) to 'Filter2D_U0/A[0]__17'
+INFO: [Synth 8-3886] merging instance 'Filter2D_U0/ap_reg_pp0_iter6_src_kernel_win_0_va_20_reg_3739_reg[1]' (FDE) to 'Filter2D_U0/A[1]__17'
+INFO: [Synth 8-3886] merging instance 'Filter2D_U0/ap_reg_pp0_iter6_src_kernel_win_0_va_20_reg_3739_reg[2]' (FDE) to 'Filter2D_U0/A[2]__17'
+INFO: [Synth 8-3886] merging instance 'Filter2D_U0/ap_reg_pp0_iter6_src_kernel_win_0_va_20_reg_3739_reg[3]' (FDE) to 'Filter2D_U0/A[3]__17'
+INFO: [Synth 8-3886] merging instance 'Filter2D_U0/ap_reg_pp0_iter6_src_kernel_win_0_va_20_reg_3739_reg[5]' (FDE) to 'Filter2D_U0/A[5]__17'
+INFO: [Synth 8-3886] merging instance 'Filter2D_U0/ap_reg_pp0_iter6_src_kernel_win_0_va_20_reg_3739_reg[4]' (FDE) to 'Filter2D_U0/A[4]__17'
+INFO: [Synth 8-3886] merging instance 'Filter2D_U0/ap_reg_pp0_iter7_src_kernel_win_0_va_20_reg_3739_reg[6]' (FDE) to 'Filter2D_U0/A[6]__11'
+INFO: [Synth 8-3886] merging instance 'Filter2D_U0/ap_reg_pp0_iter7_src_kernel_win_0_va_20_reg_3739_reg[7]' (FDE) to 'Filter2D_U0/A[7]__11'
+INFO: [Synth 8-3886] merging instance 'Filter2D_U0/ap_reg_pp0_iter7_src_kernel_win_0_va_20_reg_3739_reg[0]' (FDE) to 'Filter2D_U0/A[0]__11'
+INFO: [Synth 8-3886] merging instance 'Filter2D_U0/ap_reg_pp0_iter7_src_kernel_win_0_va_20_reg_3739_reg[1]' (FDE) to 'Filter2D_U0/A[1]__11'
+INFO: [Synth 8-3886] merging instance 'Filter2D_U0/ap_reg_pp0_iter7_src_kernel_win_0_va_20_reg_3739_reg[2]' (FDE) to 'Filter2D_U0/A[2]__11'
+INFO: [Synth 8-3886] merging instance 'Filter2D_U0/ap_reg_pp0_iter7_src_kernel_win_0_va_20_reg_3739_reg[3]' (FDE) to 'Filter2D_U0/A[3]__11'
+INFO: [Synth 8-3886] merging instance 'Filter2D_U0/ap_reg_pp0_iter7_src_kernel_win_0_va_20_reg_3739_reg[5]' (FDE) to 'Filter2D_U0/A[5]__11'
+INFO: [Synth 8-3886] merging instance 'Filter2D_U0/ap_reg_pp0_iter7_src_kernel_win_0_va_20_reg_3739_reg[4]' (FDE) to 'Filter2D_U0/A[4]__11'
+INFO: [Synth 8-3886] merging instance 'Filter2D_U0/src_kernel_win_0_va_fu_534_reg[6]' (FDE) to 'Filter2D_U0/A[6]__12'
+INFO: [Synth 8-3886] merging instance 'Filter2D_U0/src_kernel_win_0_va_fu_534_reg[7]' (FDE) to 'Filter2D_U0/A[7]__12'
+INFO: [Synth 8-3886] merging instance 'Filter2D_U0/src_kernel_win_0_va_fu_534_reg[0]' (FDE) to 'Filter2D_U0/A[0]__12'
+INFO: [Synth 8-3886] merging instance 'Filter2D_U0/src_kernel_win_0_va_fu_534_reg[1]' (FDE) to 'Filter2D_U0/A[1]__12'
+INFO: [Synth 8-3886] merging instance 'Filter2D_U0/src_kernel_win_0_va_fu_534_reg[2]' (FDE) to 'Filter2D_U0/A[2]__12'
+INFO: [Synth 8-3886] merging instance 'Filter2D_U0/src_kernel_win_0_va_fu_534_reg[3]' (FDE) to 'Filter2D_U0/A[3]__12'
+INFO: [Synth 8-3886] merging instance 'Filter2D_U0/src_kernel_win_0_va_fu_534_reg[5]' (FDE) to 'Filter2D_U0/A[5]__12'
+INFO: [Synth 8-3886] merging instance 'Filter2D_U0/src_kernel_win_0_va_fu_534_reg[4]' (FDE) to 'Filter2D_U0/A[4]__12'
+INFO: [Synth 8-3886] merging instance 'Filter2D_U0/A[6]__11' (FDE) to 'Filter2D_U0/A[6]__18'
+INFO: [Synth 8-3886] merging instance 'Filter2D_U0/A[7]__11' (FDE) to 'Filter2D_U0/A[7]__18'
+INFO: [Synth 8-3886] merging instance 'Filter2D_U0/A[0]__11' (FDE) to 'Filter2D_U0/A[0]__18'
+INFO: [Synth 8-3886] merging instance 'Filter2D_U0/A[1]__11' (FDE) to 'Filter2D_U0/A[1]__18'
+INFO: [Synth 8-3886] merging instance 'Filter2D_U0/A[2]__11' (FDE) to 'Filter2D_U0/A[2]__18'
+INFO: [Synth 8-3886] merging instance 'Filter2D_U0/A[3]__11' (FDE) to 'Filter2D_U0/A[3]__18'
+INFO: [Synth 8-3886] merging instance 'Filter2D_U0/A[5]__11' (FDE) to 'Filter2D_U0/A[5]__18'
+INFO: [Synth 8-3886] merging instance 'Filter2D_U0/A[4]__11' (FDE) to 'Filter2D_U0/A[4]__18'
+INFO: [Synth 8-3886] merging instance 'Filter2D_U0/A[6]' (FDE) to 'Filter2D_U0/A[6]__12'
+INFO: [Synth 8-3886] merging instance 'Filter2D_U0/A[7]' (FDE) to 'Filter2D_U0/A[7]__12'
+INFO: [Synth 8-3886] merging instance 'Filter2D_U0/A[0]' (FDE) to 'Filter2D_U0/A[0]__12'
+INFO: [Synth 8-3886] merging instance 'Filter2D_U0/A[1]' (FDE) to 'Filter2D_U0/A[1]__12'
+INFO: [Synth 8-3886] merging instance 'Filter2D_U0/A[2]' (FDE) to 'Filter2D_U0/A[2]__12'
+INFO: [Synth 8-3886] merging instance 'Filter2D_U0/A[3]' (FDE) to 'Filter2D_U0/A[3]__12'
+INFO: [Synth 8-3886] merging instance 'Filter2D_U0/A[5]' (FDE) to 'Filter2D_U0/A[5]__12'
+INFO: [Synth 8-3886] merging instance 'Filter2D_U0/A[4]' (FDE) to 'Filter2D_U0/A[4]__12'
+INFO: [Synth 8-3886] merging instance 'Filter2D_U0/src_kernel_win_0_va_46_reg_4023_reg[6]' (FDE) to 'Filter2D_U0/A[6]__9'
+INFO: [Synth 8-3886] merging instance 'Filter2D_U0/src_kernel_win_0_va_46_reg_4023_reg[7]' (FDE) to 'Filter2D_U0/A[7]__9'
+INFO: [Synth 8-3886] merging instance 'Filter2D_U0/src_kernel_win_0_va_46_reg_4023_reg[0]' (FDE) to 'Filter2D_U0/A[0]__9'
+INFO: [Synth 8-3886] merging instance 'Filter2D_U0/src_kernel_win_0_va_46_reg_4023_reg[1]' (FDE) to 'Filter2D_U0/A[1]__9'
+INFO: [Synth 8-3886] merging instance 'Filter2D_U0/src_kernel_win_0_va_46_reg_4023_reg[2]' (FDE) to 'Filter2D_U0/A[2]__9'
+INFO: [Synth 8-3886] merging instance 'Filter2D_U0/src_kernel_win_0_va_46_reg_4023_reg[3]' (FDE) to 'Filter2D_U0/A[3]__9'
+INFO: [Synth 8-3886] merging instance 'Filter2D_U0/src_kernel_win_0_va_46_reg_4023_reg[5]' (FDE) to 'Filter2D_U0/A[5]__9'
+INFO: [Synth 8-3886] merging instance 'Filter2D_U0/src_kernel_win_0_va_46_reg_4023_reg[4]' (FDE) to 'Filter2D_U0/A[4]__9'
+INFO: [Synth 8-3886] merging instance 'Filter2D_U0/src_kernel_win_0_va_1_fu_538_reg[6]' (FDE) to 'Filter2D_U0/A[6]__0'
+INFO: [Synth 8-3886] merging instance 'Filter2D_U0/src_kernel_win_0_va_1_fu_538_reg[7]' (FDE) to 'Filter2D_U0/A[7]__0'
+INFO: [Synth 8-3886] merging instance 'Filter2D_U0/src_kernel_win_0_va_1_fu_538_reg[0]' (FDE) to 'Filter2D_U0/A[0]__0'
+INFO: [Synth 8-3886] merging instance 'Filter2D_U0/src_kernel_win_0_va_1_fu_538_reg[1]' (FDE) to 'Filter2D_U0/A[1]__0'
+INFO: [Synth 8-3886] merging instance 'Filter2D_U0/src_kernel_win_0_va_1_fu_538_reg[2]' (FDE) to 'Filter2D_U0/A[2]__0'
+INFO: [Synth 8-3886] merging instance 'Filter2D_U0/src_kernel_win_0_va_1_fu_538_reg[3]' (FDE) to 'Filter2D_U0/A[3]__0'
+INFO: [Synth 8-3886] merging instance 'Filter2D_U0/src_kernel_win_0_va_1_fu_538_reg[5]' (FDE) to 'Filter2D_U0/A[5]__0'
+INFO: [Synth 8-3886] merging instance 'Filter2D_U0/src_kernel_win_0_va_1_fu_538_reg[4]' (FDE) to 'Filter2D_U0/A[4]__0'
+INFO: [Synth 8-3886] merging instance 'Filter2D_U0/OP2_V_2_3_i_reg_3310_reg[15]' (FDE) to 'Filter2D_U0/OP2_V_2_3_i_reg_3310_reg[7]'
+INFO: [Synth 8-3886] merging instance 'Filter2D_U0/OP2_V_2_3_i_reg_3310_reg[14]' (FDE) to 'Filter2D_U0/OP2_V_2_3_i_reg_3310_reg[7]'
+INFO: [Synth 8-3886] merging instance 'Filter2D_U0/OP2_V_2_3_i_reg_3310_reg[13]' (FDE) to 'Filter2D_U0/OP2_V_2_3_i_reg_3310_reg[7]'
+INFO: [Synth 8-3886] merging instance 'Filter2D_U0/OP2_V_2_3_i_reg_3310_reg[12]' (FDE) to 'Filter2D_U0/OP2_V_2_3_i_reg_3310_reg[7]'
+INFO: [Synth 8-3886] merging instance 'Filter2D_U0/OP2_V_2_3_i_reg_3310_reg[11]' (FDE) to 'Filter2D_U0/OP2_V_2_3_i_reg_3310_reg[7]'
+INFO: [Synth 8-3886] merging instance 'Filter2D_U0/OP2_V_2_3_i_reg_3310_reg[10]' (FDE) to 'Filter2D_U0/OP2_V_2_3_i_reg_3310_reg[7]'
+INFO: [Synth 8-3886] merging instance 'Filter2D_U0/OP2_V_2_3_i_reg_3310_reg[9]' (FDE) to 'Filter2D_U0/OP2_V_2_3_i_reg_3310_reg[7]'
+INFO: [Synth 8-3886] merging instance 'Filter2D_U0/OP2_V_2_3_i_reg_3310_reg[8]' (FDE) to 'Filter2D_U0/OP2_V_2_3_i_reg_3310_reg[7]'
+INFO: [Synth 8-3886] merging instance 'Filter2D_U0/OP2_V_2_4_i_reg_3315_reg[15]' (FDE) to 'Filter2D_U0/OP2_V_2_4_i_reg_3315_reg[7]'
+INFO: [Synth 8-3886] merging instance 'Filter2D_U0/OP2_V_2_4_i_reg_3315_reg[14]' (FDE) to 'Filter2D_U0/OP2_V_2_4_i_reg_3315_reg[7]'
+INFO: [Synth 8-3886] merging instance 'Filter2D_U0/OP2_V_2_4_i_reg_3315_reg[13]' (FDE) to 'Filter2D_U0/OP2_V_2_4_i_reg_3315_reg[7]'
+INFO: [Synth 8-3886] merging instance 'Filter2D_U0/OP2_V_2_4_i_reg_3315_reg[12]' (FDE) to 'Filter2D_U0/OP2_V_2_4_i_reg_3315_reg[7]'
+INFO: [Synth 8-3886] merging instance 'Filter2D_U0/OP2_V_2_4_i_reg_3315_reg[11]' (FDE) to 'Filter2D_U0/OP2_V_2_4_i_reg_3315_reg[7]'
+INFO: [Synth 8-3886] merging instance 'Filter2D_U0/OP2_V_2_4_i_reg_3315_reg[10]' (FDE) to 'Filter2D_U0/OP2_V_2_4_i_reg_3315_reg[7]'
+INFO: [Synth 8-3886] merging instance 'Filter2D_U0/OP2_V_2_4_i_reg_3315_reg[9]' (FDE) to 'Filter2D_U0/OP2_V_2_4_i_reg_3315_reg[7]'
+INFO: [Synth 8-3886] merging instance 'Filter2D_U0/OP2_V_2_4_i_reg_3315_reg[8]' (FDE) to 'Filter2D_U0/OP2_V_2_4_i_reg_3315_reg[7]'
+INFO: [Synth 8-3886] merging instance 'Filter2D_U0/OP2_V_2_2_i_reg_3305_reg[8]' (FDE) to 'Filter2D_U0/OP2_V_2_2_i_reg_3305_reg[7]'
+INFO: [Synth 8-3886] merging instance 'Filter2D_U0/OP2_V_2_2_i_reg_3305_reg[9]' (FDE) to 'Filter2D_U0/OP2_V_2_2_i_reg_3305_reg[7]'
+INFO: [Synth 8-3886] merging instance 'Filter2D_U0/OP2_V_2_2_i_reg_3305_reg[10]' (FDE) to 'Filter2D_U0/OP2_V_2_2_i_reg_3305_reg[7]'
+INFO: [Synth 8-3886] merging instance 'Filter2D_U0/OP2_V_2_2_i_reg_3305_reg[11]' (FDE) to 'Filter2D_U0/OP2_V_2_2_i_reg_3305_reg[7]'
+INFO: [Synth 8-3886] merging instance 'Filter2D_U0/OP2_V_2_2_i_reg_3305_reg[12]' (FDE) to 'Filter2D_U0/OP2_V_2_2_i_reg_3305_reg[7]'
+INFO: [Synth 8-3886] merging instance 'Filter2D_U0/OP2_V_2_2_i_reg_3305_reg[13]' (FDE) to 'Filter2D_U0/OP2_V_2_2_i_reg_3305_reg[7]'
+INFO: [Synth 8-3886] merging instance 'Filter2D_U0/OP2_V_2_2_i_reg_3305_reg[14]' (FDE) to 'Filter2D_U0/OP2_V_2_2_i_reg_3305_reg[7]'
+INFO: [Synth 8-3886] merging instance 'Filter2D_U0/OP2_V_2_2_i_reg_3305_reg[15]' (FDE) to 'Filter2D_U0/OP2_V_2_2_i_reg_3305_reg[7]'
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Loop_1_proc_U0/ap_done_reg_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (Filter2D_U0/ap_done_reg_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Block_proc_U0/ap_done_reg_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Loop_2_proc_U0/ap_done_reg_reg )
+WARNING: [Synth 8-3332] Sequential element (Loop_1_proc_U0/ap_done_reg_reg) is unused and will be removed from module filter2D_hls_5.
+WARNING: [Synth 8-3332] Sequential element (Block_proc_U0/ap_done_reg_reg) is unused and will be removed from module filter2D_hls_5.
+WARNING: [Synth 8-3332] Sequential element (ap_done_reg_reg) is unused and will be removed from module Filter2D.
+WARNING: [Synth 8-3332] Sequential element (Loop_2_proc_U0/ap_done_reg_reg) is unused and will be removed from module filter2D_hls_5.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (Filter2D_U0/\p_p2_i_i_i_reg_3597_reg[11] )
+WARNING: [Synth 8-3332] Sequential element (p_p2_i_i_i_reg_3597_reg[11]) is unused and will be removed from module Filter2D.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:36 ; elapsed = 00:00:37 . Memory (MB): peak = 848.555 ; gain = 547.582
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Preliminary Mapping  Report (see note below)
++--------------------------------------+----------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name                           | RTL Object           | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++--------------------------------------+----------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|filter2D_hls_5_CONTROL_BUS_s_axi_ram: | gen_write[1].mem_reg | 8 x 32(READ_FIRST)     | W | R | 8 x 32(READ_FIRST)     | W | R | Port A and B     | 0      | 1      | 
+|Filter2D_k_buf_0_cud_ram:             | ram_reg              | 2 K x 8(READ_FIRST)    | W |   | 2 K x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|Filter2D_k_buf_0_cud_ram:             | ram_reg              | 2 K x 8(READ_FIRST)    | W |   | 2 K x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|Filter2D_k_buf_0_cud_ram:             | ram_reg              | 2 K x 8(READ_FIRST)    | W |   | 2 K x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|Filter2D_k_buf_0_cud_ram:             | ram_reg              | 2 K x 8(READ_FIRST)    | W |   | 2 K x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|Filter2D_k_buf_0_cud_ram:             | ram_reg              | 2 K x 8(READ_FIRST)    | W |   | 2 K x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
++--------------------------------------+----------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+Note: The tale above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
+
+DSP: Preliminary Mapping  Report (see note below)
++-----------------------------+-----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name                  | DSP Mapping     | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++-----------------------------+-----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Block_Mat_exit212359         | (A2*B2)'        | 20     | 10     | -      | -      | 30     | 1    | 1    | -    | -    | -     | 1    | 0    | 
+|Filter2D                     | (A''*B2)'       | 9      | 8      | -      | -      | 17     | 2    | 1    | -    | -    | -     | 1    | 0    | 
+|Filter2D                     | (C+(A''*B'')')' | 17     | 17     | 16     | -      | 17     | 2    | 2    | 0    | -    | -     | 1    | 1    | 
+|Filter2D                     | (A''*B2)'       | 9      | 8      | -      | -      | 17     | 2    | 1    | -    | -    | -     | 1    | 0    | 
+|Filter2D                     | (C+(A''*B'')')' | 17     | 17     | 16     | -      | 17     | 2    | 2    | 0    | -    | -     | 1    | 1    | 
+|Filter2D                     | (C+(A''*B'')')' | 19     | 18     | 18     | -      | 19     | 2    | 2    | 0    | -    | -     | 1    | 1    | 
+|Filter2D                     | (A''*B2)'       | 9      | 8      | -      | -      | 17     | 2    | 1    | -    | -    | -     | 1    | 0    | 
+|Filter2D                     | (C+(A''*B'')')' | 17     | 17     | 16     | -      | 17     | 2    | 2    | 0    | -    | -     | 1    | 1    | 
+|Filter2D                     | (C+(A''*B'')')' | 18     | 18     | 17     | -      | 18     | 2    | 2    | 0    | -    | -     | 1    | 1    | 
+|Filter2D                     | (A''*B2)'       | 9      | 8      | -      | -      | 17     | 2    | 1    | -    | -    | -     | 1    | 0    | 
+|Filter2D                     | (C+(A''*B'')')' | 17     | 17     | 16     | -      | 17     | 2    | 2    | 0    | -    | -     | 1    | 1    | 
+|Filter2D                     | (A2*B2)'        | 9      | 8      | -      | -      | 17     | 1    | 1    | -    | -    | -     | 1    | 0    | 
+|Filter2D                     | (C+(A''*B'')')' | 17     | 17     | 16     | -      | 17     | 2    | 2    | 0    | -    | -     | 1    | 1    | 
+|Filter2D                     | (C+(A''*B'')')' | 18     | 18     | 17     | -      | 18     | 2    | 2    | 0    | -    | -     | 1    | 1    | 
+|filter2D_hls_5_mulbW_DSP48_4 | (A2*B2)'        | 11     | 9      | -      | -      | 20     | 1    | 1    | -    | -    | -     | 1    | 0    | 
++-----------------------------+-----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:50 ; elapsed = 00:00:52 . Memory (MB): peak = 912.504 ; gain = 611.531
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:51 ; elapsed = 00:00:53 . Memory (MB): peak = 925.168 ; gain = 624.195
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Final Mapping  Report
++--------------------------------------+----------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name                           | RTL Object           | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++--------------------------------------+----------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|filter2D_hls_5_CONTROL_BUS_s_axi_ram: | gen_write[1].mem_reg | 8 x 32(READ_FIRST)     | W | R | 8 x 32(READ_FIRST)     | W | R | Port A and B     | 0      | 1      | 
+|Filter2D_k_buf_0_cud_ram:             | ram_reg              | 2 K x 8(READ_FIRST)    | W |   | 2 K x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|Filter2D_k_buf_0_cud_ram:             | ram_reg              | 2 K x 8(READ_FIRST)    | W |   | 2 K x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|Filter2D_k_buf_0_cud_ram:             | ram_reg              | 2 K x 8(READ_FIRST)    | W |   | 2 K x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|Filter2D_k_buf_0_cud_ram:             | ram_reg              | 2 K x 8(READ_FIRST)    | W |   | 2 K x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|Filter2D_k_buf_0_cud_ram:             | ram_reg              | 2 K x 8(READ_FIRST)    | W |   | 2 K x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
++--------------------------------------+----------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4480] The timing for the instance filter2D_hls_5_CONTROL_BUS_s_axi_U/int_par_V/gen_write[1].mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance filter2D_hls_5_CONTROL_BUS_s_axi_U/int_par_V/gen_write[1].mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance Filter2D_U0/k_buf_0_val_5_U/Filter2D_k_buf_0_cud_ram_U/ram_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance Filter2D_U0/k_buf_0_val_6_U/Filter2D_k_buf_0_cud_ram_U/ram_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance Filter2D_U0/k_buf_0_val_7_U/Filter2D_k_buf_0_cud_ram_U/ram_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance Filter2D_U0/k_buf_0_val_8_U/Filter2D_k_buf_0_cud_ram_U/ram_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance Filter2D_U0/k_buf_0_val_9_U/Filter2D_k_buf_0_cud_ram_U/ram_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:54 ; elapsed = 00:00:56 . Memory (MB): peak = 978.688 ; gain = 677.715
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5365] Flop Loop_2_proc_U0/tmp_27_i_i_reg_371_reg[9] is being inverted and renamed to Loop_2_proc_U0/tmp_27_i_i_reg_371_reg[9]_inv.
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:55 ; elapsed = 00:00:57 . Memory (MB): peak = 978.688 ; gain = 677.715
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:55 ; elapsed = 00:00:57 . Memory (MB): peak = 978.688 ; gain = 677.715
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:56 ; elapsed = 00:00:57 . Memory (MB): peak = 978.688 ; gain = 677.715
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:56 ; elapsed = 00:00:57 . Memory (MB): peak = 978.688 ; gain = 677.715
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:56 ; elapsed = 00:00:58 . Memory (MB): peak = 978.688 ; gain = 677.715
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:56 ; elapsed = 00:00:58 . Memory (MB): peak = 978.688 ; gain = 677.715
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++---------------+--------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name    | RTL Name                                                     | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++---------------+--------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|filter2D_hls_5 | Filter2D_U0/ap_reg_pp0_iter7_exitcond388_i_i_reg_3576_reg[0] | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|filter2D_hls_5 | Filter2D_U0/A[7]__14                                         | 4      | 24    | NO           | NO                 | YES               | 24     | 0       | 
+|filter2D_hls_5 | Filter2D_U0/A[7]__20                                         | 3      | 16    | NO           | NO                 | YES               | 16     | 0       | 
++---------------+--------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+
+Dynamic Shift Register Report:
++------------+----------------+--------+------------+--------+---------+--------+--------+--------+
+|Module Name | RTL Name       | Length | Data Width | SRL16E | SRLC32E | Mux F7 | Mux F8 | Mux F9 | 
++------------+----------------+--------+------------+--------+---------+--------+--------+--------+
+|dsrl        | SRL_SIG_reg[3] | 4      | 9          | 9      | 0       | 0      | 0      | 0      | 
+|dsrl__1     | SRL_SIG_reg[2] | 4      | 20         | 20     | 0       | 0      | 0      | 0      | 
+|dsrl__2     | SRL_SIG_reg[2] | 4      | 8          | 8      | 0       | 0      | 0      | 0      | 
++------------+----------------+--------+------------+--------+---------+--------+--------+--------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+----------+------+
+|      |Cell      |Count |
++------+----------+------+
+|1     |CARRY4    |   294|
+|2     |DSP48E1   |     4|
+|3     |DSP48E1_2 |     3|
+|4     |DSP48E1_3 |     8|
+|5     |LUT1      |    22|
+|6     |LUT2      |   634|
+|7     |LUT3      |   393|
+|8     |LUT4      |   645|
+|9     |LUT5      |   536|
+|10    |LUT6      |   861|
+|11    |MUXF7     |     8|
+|12    |RAMB18E1  |     5|
+|13    |RAMB36E1  |     1|
+|14    |SRL16E    |   279|
+|15    |FDRE      |  2339|
+|16    |FDSE      |    96|
++------+----------+------+
+
+Report Instance Areas: 
++------+-------------------------------------+-------------------------------------+------+
+|      |Instance                             |Module                               |Cells |
++------+-------------------------------------+-------------------------------------+------+
+|1     |top                                  |                                     |  6128|
+|2     |  Block_Mat_exit212359_U0            |Block_Mat_exit212359                 |    52|
+|3     |    filter2D_hls_5_mubkb_U1          |filter2D_hls_5_mubkb                 |    22|
+|4     |      filter2D_hls_5_mubkb_DSP48_0_U |filter2D_hls_5_mubkb_DSP48_0         |    22|
+|5     |  Block_proc_U0                      |Block_proc                           |   248|
+|6     |  Filter2D_U0                        |Filter2D                             |  3773|
+|7     |    filter2D_hls_5_muhbi_U41         |filter2D_hls_5_muhbi                 |     8|
+|8     |    filter2D_hls_5_muhbi_U42         |filter2D_hls_5_muhbi_52              |     8|
+|9     |    filter2D_hls_5_muhbi_U43         |filter2D_hls_5_muhbi_53              |     8|
+|10    |    filter2D_hls_5_muhbi_U44         |filter2D_hls_5_muhbi_54              |     8|
+|11    |    k_buf_0_val_5_U                  |Filter2D_k_buf_0_cud                 |    11|
+|12    |      Filter2D_k_buf_0_cud_ram_U     |Filter2D_k_buf_0_cud_ram_62          |    11|
+|13    |    k_buf_0_val_6_U                  |Filter2D_k_buf_0_cud_55              |    17|
+|14    |      Filter2D_k_buf_0_cud_ram_U     |Filter2D_k_buf_0_cud_ram_61          |    17|
+|15    |    k_buf_0_val_7_U                  |Filter2D_k_buf_0_cud_56              |    18|
+|16    |      Filter2D_k_buf_0_cud_ram_U     |Filter2D_k_buf_0_cud_ram_60          |    18|
+|17    |    k_buf_0_val_8_U                  |Filter2D_k_buf_0_cud_57              |    18|
+|18    |      Filter2D_k_buf_0_cud_ram_U     |Filter2D_k_buf_0_cud_ram_59          |    18|
+|19    |    k_buf_0_val_9_U                  |Filter2D_k_buf_0_cud_58              |    21|
+|20    |      Filter2D_k_buf_0_cud_ram_U     |Filter2D_k_buf_0_cud_ram             |    21|
+|21    |  Loop_1_proc_U0                     |Loop_1_proc                          |   282|
+|22    |  Loop_2_proc_U0                     |Loop_2_proc                          |   493|
+|23    |    filter2D_hls_5_mulbW_U88         |filter2D_hls_5_mulbW                 |     1|
+|24    |      filter2D_hls_5_mulbW_DSP48_4_U |filter2D_hls_5_mulbW_DSP48_4         |     1|
+|25    |  col_packets_cast_loc_U             |fifo_w9_d3_A                         |    22|
+|26    |    U_fifo_w9_d3_A_ram               |fifo_w9_d3_A_shiftReg_51             |    11|
+|27    |  filter2D_hls_5_CONTROL_BUS_s_axi_U |filter2D_hls_5_CONTROL_BUS_s_axi     |   439|
+|28    |    int_par_V                        |filter2D_hls_5_CONTROL_BUS_s_axi_ram |    70|
+|29    |  g_img_0_data_stream_s_U            |fifo_w8_d1_A                         |    33|
+|30    |    U_fifo_w8_d1_A_ram               |fifo_w8_d1_A_shiftReg_50             |    24|
+|31    |  g_img_1_data_stream_s_U            |fifo_w8_d1_A_0                       |    31|
+|32    |    U_fifo_w8_d1_A_ram               |fifo_w8_d1_A_shiftReg                |    24|
+|33    |  kernel_val_0_V_0_c_U               |fifo_w8_d2_A                         |    22|
+|34    |    U_fifo_w8_d2_A_ram               |fifo_w8_d2_A_shiftReg_49             |    10|
+|35    |  kernel_val_0_V_1_c_U               |fifo_w8_d2_A_1                       |    22|
+|36    |    U_fifo_w8_d2_A_ram               |fifo_w8_d2_A_shiftReg_48             |    10|
+|37    |  kernel_val_0_V_2_c_U               |fifo_w8_d2_A_2                       |    22|
+|38    |    U_fifo_w8_d2_A_ram               |fifo_w8_d2_A_shiftReg_47             |    10|
+|39    |  kernel_val_0_V_3_c_U               |fifo_w8_d2_A_3                       |    21|
+|40    |    U_fifo_w8_d2_A_ram               |fifo_w8_d2_A_shiftReg_46             |    10|
+|41    |  kernel_val_0_V_4_c_U               |fifo_w8_d2_A_4                       |    22|
+|42    |    U_fifo_w8_d2_A_ram               |fifo_w8_d2_A_shiftReg_45             |    10|
+|43    |  kernel_val_1_V_0_c_U               |fifo_w8_d2_A_5                       |    21|
+|44    |    U_fifo_w8_d2_A_ram               |fifo_w8_d2_A_shiftReg_44             |    10|
+|45    |  kernel_val_1_V_1_c_U               |fifo_w8_d2_A_6                       |    26|
+|46    |    U_fifo_w8_d2_A_ram               |fifo_w8_d2_A_shiftReg_43             |    12|
+|47    |  kernel_val_1_V_2_c_U               |fifo_w8_d2_A_7                       |    21|
+|48    |    U_fifo_w8_d2_A_ram               |fifo_w8_d2_A_shiftReg_42             |    10|
+|49    |  kernel_val_1_V_3_c_U               |fifo_w8_d2_A_8                       |    21|
+|50    |    U_fifo_w8_d2_A_ram               |fifo_w8_d2_A_shiftReg_41             |    10|
+|51    |  kernel_val_1_V_4_c_U               |fifo_w8_d2_A_9                       |    21|
+|52    |    U_fifo_w8_d2_A_ram               |fifo_w8_d2_A_shiftReg_40             |    10|
+|53    |  kernel_val_2_V_0_c_U               |fifo_w8_d2_A_10                      |    21|
+|54    |    U_fifo_w8_d2_A_ram               |fifo_w8_d2_A_shiftReg_39             |    10|
+|55    |  kernel_val_2_V_1_c_U               |fifo_w8_d2_A_11                      |    50|
+|56    |    U_fifo_w8_d2_A_ram               |fifo_w8_d2_A_shiftReg_38             |    12|
+|57    |  kernel_val_2_V_2_c_U               |fifo_w8_d2_A_12                      |    21|
+|58    |    U_fifo_w8_d2_A_ram               |fifo_w8_d2_A_shiftReg_37             |    10|
+|59    |  kernel_val_2_V_3_c_U               |fifo_w8_d2_A_13                      |    21|
+|60    |    U_fifo_w8_d2_A_ram               |fifo_w8_d2_A_shiftReg_36             |    10|
+|61    |  kernel_val_2_V_4_c_U               |fifo_w8_d2_A_14                      |    21|
+|62    |    U_fifo_w8_d2_A_ram               |fifo_w8_d2_A_shiftReg_35             |    10|
+|63    |  kernel_val_3_V_0_c_U               |fifo_w8_d2_A_15                      |    21|
+|64    |    U_fifo_w8_d2_A_ram               |fifo_w8_d2_A_shiftReg_34             |    10|
+|65    |  kernel_val_3_V_1_c_U               |fifo_w8_d2_A_16                      |    22|
+|66    |    U_fifo_w8_d2_A_ram               |fifo_w8_d2_A_shiftReg_33             |    11|
+|67    |  kernel_val_3_V_2_c_U               |fifo_w8_d2_A_17                      |    21|
+|68    |    U_fifo_w8_d2_A_ram               |fifo_w8_d2_A_shiftReg_32             |    10|
+|69    |  kernel_val_3_V_3_c_U               |fifo_w8_d2_A_18                      |    21|
+|70    |    U_fifo_w8_d2_A_ram               |fifo_w8_d2_A_shiftReg_31             |    10|
+|71    |  kernel_val_3_V_4_c_U               |fifo_w8_d2_A_19                      |    22|
+|72    |    U_fifo_w8_d2_A_ram               |fifo_w8_d2_A_shiftReg_30             |    11|
+|73    |  kernel_val_4_V_0_c_U               |fifo_w8_d2_A_20                      |    21|
+|74    |    U_fifo_w8_d2_A_ram               |fifo_w8_d2_A_shiftReg_29             |    10|
+|75    |  kernel_val_4_V_1_c_U               |fifo_w8_d2_A_21                      |    22|
+|76    |    U_fifo_w8_d2_A_ram               |fifo_w8_d2_A_shiftReg_28             |    10|
+|77    |  kernel_val_4_V_2_c_U               |fifo_w8_d2_A_22                      |    22|
+|78    |    U_fifo_w8_d2_A_ram               |fifo_w8_d2_A_shiftReg_27             |    10|
+|79    |  kernel_val_4_V_3_c_U               |fifo_w8_d2_A_23                      |    21|
+|80    |    U_fifo_w8_d2_A_ram               |fifo_w8_d2_A_shiftReg_26             |    10|
+|81    |  kernel_val_4_V_4_c_U               |fifo_w8_d2_A_24                      |    21|
+|82    |    U_fifo_w8_d2_A_ram               |fifo_w8_d2_A_shiftReg                |    10|
+|83    |  p_lshr_f_cast_loc_c_U              |fifo_w9_d3_A_25                      |    22|
+|84    |    U_fifo_w9_d3_A_ram               |fifo_w9_d3_A_shiftReg                |    11|
+|85    |  packets_cast_loc_cha_U             |fifo_w20_d2_A                        |    33|
+|86    |    U_fifo_w20_d2_A_ram              |fifo_w20_d2_A_shiftReg               |    22|
++------+-------------------------------------+-------------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:56 ; elapsed = 00:00:58 . Memory (MB): peak = 978.688 ; gain = 677.715
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 365 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:39 ; elapsed = 00:00:49 . Memory (MB): peak = 978.688 ; gain = 302.492
+Synthesis Optimization Complete : Time (s): cpu = 00:00:56 ; elapsed = 00:00:58 . Memory (MB): peak = 978.688 ; gain = 677.715
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 323 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+248 Infos, 248 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:59 ; elapsed = 00:01:03 . Memory (MB): peak = 978.688 ; gain = 689.859
+INFO: [Common 17-1381] The checkpoint 'C:/Users/sdi_admin/CloudStation/HLS/filter2D_5/solution1/impl/verilog/project.runs/synth_1/filter2D_hls_5.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file filter2D_hls_5_utilization_synth.rpt -pb filter2D_hls_5_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.073 . Memory (MB): peak = 978.688 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Tue Jun 26 16:53:13 2018...

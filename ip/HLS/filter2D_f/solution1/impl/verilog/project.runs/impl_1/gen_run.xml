@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7z020clg400-1" LaunchTime="1529944751">
+  <File Type="OPT-HWDEF" Name="filter2D_f.hwdef"/>
+  <File Type="PA-DCP" Name="filter2D_f.dcp"/>
+  <File Type="OPT-DCP" Name="filter2D_f_opt.dcp"/>
+  <File Type="ROUTE-PWR" Name="filter2D_f_power_routed.rpt"/>
+  <File Type="PA-TCL" Name="filter2D_f.tcl"/>
+  <File Type="ROUTE-PWR-SUM" Name="filter2D_f_power_summary_routed.pb"/>
+  <File Type="REPORTS-TCL" Name="filter2D_f_reports.tcl"/>
+  <File Type="BG-DRC" Name="filter2D_f.drc"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="filter2D_f_methodology_drc_opted.rpt"/>
+  <File Type="INIT-TIMING" Name="filter2D_f_timing_summary_init.rpt"/>
+  <File Type="OPT-DRC" Name="filter2D_f_drc_opted.rpt"/>
+  <File Type="OPT-TIMING" Name="filter2D_f_timing_summary_opted.rpt"/>
+  <File Type="PWROPT-DCP" Name="filter2D_f_pwropt.dcp"/>
+  <File Type="PWROPT-DRC" Name="filter2D_f_drc_pwropted.rpt"/>
+  <File Type="PWROPT-TIMING" Name="filter2D_f_timing_summary_pwropted.rpt"/>
+  <File Type="PLACE-DCP" Name="filter2D_f_placed.dcp"/>
+  <File Type="PLACE-IO" Name="filter2D_f_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="filter2D_f_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="filter2D_f_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="filter2D_f_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="filter2D_f_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="filter2D_f_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="filter2D_f_incremental_reuse_pre_placed.rpt"/>
+  <File Type="PLACE-TIMING" Name="filter2D_f_timing_summary_placed.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="filter2D_f_postplace_pwropt.dcp"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="filter2D_f_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="filter2D_f_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="filter2D_f_drc_physopted.rpt"/>
+  <File Type="BG-BIT" Name="filter2D_f.bit"/>
+  <File Type="PHYSOPT-TIMING" Name="filter2D_f_timing_summary_physopted.rpt"/>
+  <File Type="ROUTE-ERROR-DCP" Name="filter2D_f_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="filter2D_f_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="filter2D_f_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="filter2D_f_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="filter2D_f_drc_routed.pb"/>
+  <File Type="BITSTR-MSK" Name="filter2D_f.msk"/>
+  <File Type="ROUTE-DRC-RPX" Name="filter2D_f_drc_routed.rpx"/>
+  <File Type="BG-BGN" Name="filter2D_f.bgn"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="filter2D_f_methodology_drc_routed.rpt"/>
+  <File Type="BITSTR-RBT" Name="filter2D_f.rbt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="filter2D_f_methodology_drc_routed.rpx"/>
+  <File Type="BG-BIN" Name="filter2D_f.bin"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="filter2D_f_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-PWR-RPX" Name="filter2D_f_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="filter2D_f_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="filter2D_f_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="filter2D_f_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="filter2D_f_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="filter2D_f_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="filter2D_f_incremental_reuse_routed.rpt"/>
+  <File Type="RDI-RDI" Name="filter2D_f.vdi"/>
+  <File Type="ROUTE-CLK" Name="filter2D_f_clock_utilization_routed.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="filter2D_f_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="filter2D_f_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="filter2D_f_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="filter2D_f_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="filter2D_f_timing_summary_postroute_physopted.rpx"/>
+  <File Type="BITSTR-NKY" Name="filter2D_f.nky"/>
+  <File Type="BITSTR-BMM" Name="filter2D_f_bd.bmm"/>
+  <File Type="BITSTR-MMI" Name="filter2D_f.mmi"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="filter2D_f.ltx"/>
+  <File Type="BITSTR-SYSDEF" Name="filter2D_f.sysdef"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PPRDIR/Block_Mat_exit65294_s.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/Block_proc_filter2D_f.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/Filter2D_filter2D_f.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/Filter2D_k_buf_0_dEe.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/Loop_1_proc_filter2D_f.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/Loop_2_proc_filter2D_f.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/fifo_w25_d2_A.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/fifo_w32_d2_A.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/fifo_w32_d3_A.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/fifo_w8_d1_A.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/filter2D_f.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/filter2D_f_CONTROL_BUS_s_axi.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/filter2D_f_mac_muibs.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/filter2D_f_mac_mujbC.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/filter2D_f_mac_mukbM.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/filter2D_f_mac_mulbW.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/filter2D_f_mul_32bkb.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/filter2D_f_mul_32cud.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/filter2D_f_mul_32mb6.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/filter2D_f_mul_muhbi.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/filter2D_f_mux_32g8j.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="filter2D_f"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PPRDIR/filter2D_f.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2017">
+      <Desc>Default settings for Implementation.</Desc>
+    </StratHandle>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design" EnableStepBool="1"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+</GenRun>

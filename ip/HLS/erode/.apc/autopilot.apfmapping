@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="erode_hls.h" path="C:\Users\sdi_admin\CloudStation\HLS\erode\erode_hls.h"/>
+    <originFiles name="erode_hls.cpp" path="C:\Users\sdi_admin\CloudStation\HLS\erode\erode_hls.cpp"/>
+  </source>
+  <testbench>
+    <originFiles name="erode_hls_test.cpp" path="C:\Users\sdi_admin\CloudStation\HLS\erode\erode_hls_test.cpp"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

@@ -1,0 +1,52 @@
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
+| Date         : Mon Jun 25 14:53:45 2018
+| Host         : DESKTOP-H32TPSL running 64-bit major release  (build 9200)
+| Command      : report_drc -file dilate_hls_drc_opted.rpt -pb dilate_hls_drc_opted.pb -rpx dilate_hls_drc_opted.rpx
+| Design       : dilate_hls
+| Device       : xc7z020clg400-1
+| Speed File   : -1
+| Design State : Synthesized
+---------------------------------------------------------------------------------------------------------------------
+
+Report DRC
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: checkpoint_dilate_hls
+      Design limits: <entire design considered>
+           Ruledeck: default
+             Max violations: <unlimited>
+             Violations found: 3
++--------+----------+------------------------+------------+
+| Rule   | Severity | Description            | Violations |
++--------+----------+------------------------+------------+
+| DPOP-1 | Warning  | PREG Output pipelining | 2          |
+| ZPS7-1 | Warning  | PS7 block required     | 1          |
++--------+----------+------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+DPOP-1#1 Warning
+PREG Output pipelining  
+DSP Block_Mat_exit406734_U0/dilate_hls_mul_32bkb_U1/dilate_hls_mul_32bkb_MulnS_0_U/buff0_reg output Block_Mat_exit406734_U0/dilate_hls_mul_32bkb_U1/dilate_hls_mul_32bkb_MulnS_0_U/buff0_reg/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#2 Warning
+PREG Output pipelining  
+DSP Block_Mat_exit406734_U0/dilate_hls_mul_32cud_U2/dilate_hls_mul_32cud_MulnS_1_U/buff0_reg output Block_Mat_exit406734_U0/dilate_hls_mul_32cud_U2/dilate_hls_mul_32cud_MulnS_1_U/buff0_reg/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+ZPS7-1#1 Warning
+PS7 block required  
+The PS7 cell must be used in this Zynq design in order to enable correct default configuration.
+Related violations: <none>
+
+

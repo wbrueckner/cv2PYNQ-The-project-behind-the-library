@@ -1,0 +1,31 @@
+https://forums.xilinx.com/t5/Design-Entry/How-to-reuse-the-subsystem-implemented-in-Block-Designer-in/td-p/766086
+
+05-17-2017 10:03 AM
+
+Even though I prefer to use the HDL description of my designs, when I develop the firmware for SoCs, I often use the Block Designer. Sometimes the design becomes a combination of quite complex specialized subsystems created by connection of multiple blocks.
+To keep my design legible, I usually create a hierarchy - I move each subsystem into a separate sub-block.
+It is natural that I'd like to reuse such subsystems in other designs. However, unfortunately, the Vivado Block Designer does not allow me to create a module based on a block diagram stored in another file.
+It is also not possible to copy your sub-block in one Vivado instance with one project open and paste it in another Vivado with another project open.
+The suggested way is to prepare a user IP from the Block Design https://www.xilinx.com/support/answers/59355.html
+I've tried that. However, the problem begins if you want to modify such subsystem.
+The user IP stored in the repository does not contain the original block diagram! If you have not preserved your original BD file, your design is lost.
+
+After a few attempts, I have found a method to move such BD-implemented subsystems between the projects.
+
+ 
+
+In the design, where I have created my subsystem, I click "Create Block Design" in the IP Integrator - so I get a new BD in another file.
+I select the desired sub-block in its BD, and copy it.
+I paste the copied sub-block to the newly created BD, and save the file.
+I remove the file from the project, but do not delete it from the disk. I can create a copy somewhere building a library of BD-implemented subsystems.
+I open another project.
+I temporarly add the file created in point 3 (the "library" file) to the project.
+I copy the subsystem from that file.
+I paste the subsystemm to the destination BD
+I remove the "library" file from the project.
+DONE!
+I hope, that the above method may be useful for others.
+
+With best regards,
+
+Wojtek

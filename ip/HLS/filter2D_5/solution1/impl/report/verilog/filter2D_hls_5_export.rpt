@@ -1,0 +1,20 @@
+
+
+Implementation tool: Xilinx Vivado v.2017.4
+Project:             filter2D_5
+Solution:            solution1
+Device target:       xc7z020clg400-1
+Report date:         Tue Jun 26 16:55:50 +0200 2018
+
+#=== Post-Implementation Resource usage ===
+SLICE:          990
+LUT:           2610
+FF:            2435
+DSP:             15
+BRAM:             7
+SRL:            163
+#=== Final timing ===
+CP required:    6.000
+CP achieved post-synthesis:    6.473
+CP achieved post-implementation:    5.868
+Timing met

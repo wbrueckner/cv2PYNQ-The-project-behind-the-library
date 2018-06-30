@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Mon Jun 25 14:51:33 2018
+# Process ID: 4276
+# Current directory: C:/Users/sdi_admin/CloudStation/HLS/dilate/solution1/impl/verilog/project.runs/synth_1
+# Command line: vivado.exe -log dilate_hls.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source dilate_hls.tcl
+# Log file: C:/Users/sdi_admin/CloudStation/HLS/dilate/solution1/impl/verilog/project.runs/synth_1/dilate_hls.vds
+# Journal file: C:/Users/sdi_admin/CloudStation/HLS/dilate/solution1/impl/verilog/project.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source dilate_hls.tcl -notrace

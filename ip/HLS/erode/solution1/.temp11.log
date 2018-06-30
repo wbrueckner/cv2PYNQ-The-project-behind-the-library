@@ -1,0 +1,12 @@
+r 512, c 512, d 2
+Evaluate results
+1,1,1
+1,1,1
+1,1,1
+imgHWcalc and imgcalc are equal
+r 150, c 112, d 2
+Evaluate results
+1,1,1
+1,1,1
+1,1,1
+imgHWcalc and imgcalc are equal

@@ -1,0 +1,124 @@
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
+| Date         : Mon Jun 25 14:54:01 2018
+| Host         : DESKTOP-H32TPSL running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file dilate_hls_control_sets_placed.rpt
+| Design       : dilate_hls
+| Device       : xc7z020
+---------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    57 |
+| Unused register locations in slices containing registers |   112 |
++----------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             128 |           53 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |              88 |           43 |
+| Yes          | No                    | No                     |             886 |          248 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |             354 |           97 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++---------------+---------------------------------------------------------------------------------------------+----------------------------------------------------------+------------------+----------------+
+|  Clock Signal |                                        Enable Signal                                        |                     Set/Reset Signal                     | Slice Load Count | Bel Load Count |
++---------------+---------------------------------------------------------------------------------------------+----------------------------------------------------------+------------------+----------------+
+|  AXI_LITE_clk | dilate_hls_CONTROL_BUS_s_axi_U/ar_hs                                                        |                                                          |                2 |              5 |
+|  AXI_LITE_clk |                                                                                             | Block_Mat_exit406734_U0/ap_rst_n_inv                     |                3 |              5 |
+|  AXI_LITE_clk | dilate_hls_CONTROL_BUS_s_axi_U/waddr                                                        |                                                          |                1 |              6 |
+|  ap_clk       | Loop_loop_height_pro_U0/row_assign_7_1_t_i_i_reg_13340                                      |                                                          |                2 |              6 |
+|  ap_clk       | Loop_loop_height_pro_U0/k_buf_0_val_5_U/Loop_loop_height_dEe_ram_U/ram_reg_0                | Block_Mat_exit406734_U0/ap_rst_n_inv                     |                3 |              7 |
+|  ap_clk       |                                                                                             | switch_loc_c_U/internal_full_n_reg_0                     |                3 |              8 |
+|  ap_clk       | Loop_loop_height_pro_U0/tmp_7_reg_14910                                                     |                                                          |                3 |              8 |
+|  ap_clk       | Loop_loop_height_pro_U0/Loop_loop_height_pro_U0_g_img_0_data_stream_0_V_read                |                                                          |                2 |              8 |
+|  ap_clk       | Loop_loop_height_pro_U0/temp_0_i_i_059_i_1_s_reg_14410                                      |                                                          |                2 |              8 |
+|  ap_clk       | Loop_3_proc_U0/tmp_32_reg_4030                                                              |                                                          |                4 |              8 |
+|  ap_clk       | Loop_3_proc_U0/tmp_33_reg_4180                                                              |                                                          |                2 |              8 |
+|  ap_clk       | Loop_loop_height_pro_U0/temp_0_i_i_059_i_1_4_reg_14690                                      |                                                          |                2 |              8 |
+|  ap_clk       | Loop_loop_height_pro_U0/p_059_i_2_0_2_i_i_reg_14480                                         |                                                          |                2 |              8 |
+|  ap_clk       | Loop_loop_height_pro_U0/p_assign_4_1_i_i_reg_12890                                          |                                                          |                6 |              8 |
+|  ap_clk       |                                                                                             | dilate_hls_CONTROL_BUS_s_axi_U/ap_rst_n_AXI_LITE_clk_inv |                7 |              9 |
+|  ap_clk       | Loop_3_proc_U0/r1_i_i_mid2_reg_3920                                                         |                                                          |                6 |             11 |
+|  ap_clk       | Loop_loop_height_pro_U0/ap_CS_fsm_state2                                                    |                                                          |                6 |             11 |
+|  ap_clk       | Loop_loop_height_pro_U0/t_V_1_reg_4330                                                      | Loop_loop_height_pro_U0/t_V_1_reg_433                    |                3 |             11 |
+|  ap_clk       | Loop_loop_height_pro_U0/Q[1]                                                                | switch_loc_c_U/SR[0]                                     |                4 |             11 |
+|  ap_clk       | Loop_loop_height_pro_U0/ImagLoc_x_cast_reg_13580                                            |                                                          |                7 |             15 |
+|  ap_clk       | Loop_loop_height_pro_U0/src_kernel_win_0_va_2_fu_2580                                       |                                                          |                5 |             16 |
+|  ap_clk       | Loop_loop_height_pro_U0/src_kernel_win_0_va_4_fu_2660                                       |                                                          |                4 |             16 |
+|  ap_clk       | Loop_loop_height_pro_U0/shiftReg_ce                                                         |                                                          |                6 |             16 |
+|  ap_clk       | Loop_1_proc_U0/shiftReg_ce                                                                  |                                                          |                4 |             16 |
+|  ap_clk       | Loop_loop_height_pro_U0/src_kernel_win_0_va_1_fu_2540                                       |                                                          |                4 |             16 |
+|  ap_clk       | Loop_loop_height_pro_U0/src_kernel_win_0_va_14_reg_14540                                    |                                                          |                5 |             17 |
+|  ap_clk       | Loop_loop_height_pro_U0/p_059_i_2_2_i_i_reg_14810                                           |                                                          |                6 |             17 |
+|  ap_clk       | Loop_loop_height_pro_U0/p_12_in                                                             |                                                          |                4 |             18 |
+|  ap_clk       | Loop_1_proc_U0/tmp_11_reg_1680                                                              |                                                          |                5 |             24 |
+|  ap_clk       | Loop_loop_height_pro_U0/ce11                                                                |                                                          |                8 |             24 |
+|  ap_clk       | rows_cast727_loc_c_U/E[0]                                                                   | Block_Mat_exit406734_U0/ap_rst_n_inv                     |                6 |             24 |
+|  AXI_LITE_clk | dilate_hls_CONTROL_BUS_s_axi_U/ar_hs                                                        | dilate_hls_CONTROL_BUS_s_axi_U/rdata[31]_i_1_n_0         |                8 |             27 |
+|  ap_clk       | Loop_3_proc_U0/out_stream_last_V_tm_reg_4130                                                |                                                          |                8 |             31 |
+|  ap_clk       | Block_Mat_exit406734_U0/sel                                                                 |                                                          |                4 |             31 |
+|  ap_clk       | Loop_1_proc_U0/p_024_rec_i_reg_93[30]_i_2_n_0                                               | Loop_1_proc_U0/p_024_rec_i_reg_93                        |               11 |             31 |
+|  ap_clk       | Loop_1_proc_U0/r_reg_163[0]_i_1_n_0                                                         |                                                          |                8 |             31 |
+|  ap_clk       | Block_Mat_exit406734_U0/ap_return_preg_reg[31]_0[2]                                         | Block_Mat_exit406734_U0/ap_rst_n_inv                     |                8 |             32 |
+|  ap_clk       | Loop_1_proc_U0/in_stream_data_V_0_load_B                                                    |                                                          |                7 |             32 |
+|  ap_clk       | Loop_1_proc_U0/in_stream_data_V_0_load_A                                                    |                                                          |                8 |             32 |
+|  ap_clk       | Loop_3_proc_U0/out_stream_data_V_1_load_A                                                   |                                                          |                9 |             32 |
+|  ap_clk       | dilate_hls_CONTROL_BUS_s_axi_U/int_cols[31]_i_1_n_0                                         | dilate_hls_CONTROL_BUS_s_axi_U/ap_rst_n_AXI_LITE_clk_inv |                6 |             32 |
+|  ap_clk       | dilate_hls_CONTROL_BUS_s_axi_U/int_mode[31]_i_1_n_0                                         | dilate_hls_CONTROL_BUS_s_axi_U/ap_rst_n_AXI_LITE_clk_inv |                8 |             32 |
+|  ap_clk       | dilate_hls_CONTROL_BUS_s_axi_U/int_rows[31]_i_1_n_0                                         | dilate_hls_CONTROL_BUS_s_axi_U/ap_rst_n_AXI_LITE_clk_inv |                5 |             32 |
+|  ap_clk       | dilate_hls_CONTROL_BUS_s_axi_U/int_channels[31]_i_1_n_0                                     | dilate_hls_CONTROL_BUS_s_axi_U/ap_rst_n_AXI_LITE_clk_inv |                6 |             32 |
+|  ap_clk       | Loop_3_proc_U0/out_stream_data_V_1_load_B                                                   |                                                          |                7 |             32 |
+|  ap_clk       | Block_Mat_exit406734_U0/shiftReg_ce                                                         |                                                          |                4 |             32 |
+|  ap_clk       | Loop_3_proc_U0/c_reg_4280                                                                   |                                                          |               11 |             38 |
+|  ap_clk       | Loop_3_proc_U0/indvar_flatten_next_reg_3770                                                 |                                                          |               11 |             42 |
+|  ap_clk       | p_neg393_i_loc_c757_U/p_neg393_i_loc_read_reg_341_reg[0][0]                                 |                                                          |                7 |             42 |
+|  ap_clk       | Block_Mat_exit406734_U0/dilate_hls_mul_32bkb_U1/dilate_hls_mul_32bkb_MulnS_0_U/grp_fu_90_ce |                                                          |               19 |             49 |
+|  ap_clk       | rows_cast727_loc_c_U/U_fifo_w11_d2_A_ram/sel                                                |                                                          |               13 |             60 |
+|  ap_clk       |                                                                                             | Block_Mat_exit406734_U0/ap_rst_n_inv                     |               30 |             66 |
+|  ap_clk       | switch_loc_c_U/shiftReg_ce                                                                  |                                                          |               17 |             71 |
+|  ap_clk       | Loop_3_proc_U0/ap_CS_fsm_state6                                                             |                                                          |               14 |             73 |
+|  ap_clk       | Loop_3_proc_U0/out_stream_last_V_1_sel_wr014_out                                            | Loop_3_proc_U0/indvar_flatten_reg_159                    |               29 |             83 |
+|  ap_clk       | Loop_loop_height_pro_U0/k_buf_0_val_5_U/Loop_loop_height_dEe_ram_U/ram_reg_0                |                                                          |               25 |             91 |
+|  ap_clk       |                                                                                             |                                                          |               54 |            129 |
++---------------+---------------------------------------------------------------------------------------------+----------------------------------------------------------+------------------+----------------+
+
+
++--------+-----------------------+
+| Fanout | Number of ControlSets |
++--------+-----------------------+
+| 5      |                     2 |
+| 6      |                     2 |
+| 7      |                     1 |
+| 8      |                     9 |
+| 9      |                     1 |
+| 11     |                     4 |
+| 15     |                     1 |
+| 16+    |                    37 |
++--------+-----------------------+
+
+

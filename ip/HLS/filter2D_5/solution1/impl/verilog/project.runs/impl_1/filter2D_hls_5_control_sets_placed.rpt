@@ -1,0 +1,158 @@
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+-------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
+| Date         : Tue Jun 26 16:55:02 2018
+| Host         : DESKTOP-H32TPSL running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file filter2D_hls_5_control_sets_placed.rpt
+| Design       : filter2D_hls_5
+| Device       : xc7z020
+-------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    89 |
+| Unused register locations in slices containing registers |   125 |
++----------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              93 |           51 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |             165 |           69 |
+| Yes          | No                    | No                     |            1988 |          656 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |             189 |           61 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++---------------+------------------------------------------------------------------+--------------------------------------------------------------+------------------+----------------+
+|  Clock Signal |                           Enable Signal                          |                       Set/Reset Signal                       | Slice Load Count | Bel Load Count |
++---------------+------------------------------------------------------------------+--------------------------------------------------------------+------------------+----------------+
+|  AXI_LITE_clk |                                                                  |                                                              |                1 |              1 |
+|  AXI_LITE_clk |                                                                  | Block_proc_U0/ap_rst_n_inv                                   |                3 |              6 |
+|  ap_clk       | Filter2D_U0/ImagLoc_x_reg_3585[10]_i_1_n_0                       | Filter2D_U0/p_p2_i_i_i_reg_3597[7]_i_1_n_0                   |                2 |              6 |
+|  ap_clk       | filter2D_hls_5_CONTROL_BUS_s_axi_U/E[0]                          | Block_proc_U0/ap_rst_n_inv                                   |                2 |              6 |
+|  AXI_LITE_clk | filter2D_hls_5_CONTROL_BUS_s_axi_U/aw_hs                         |                                                              |                3 |              7 |
+|  ap_clk       | Loop_2_proc_U0/tmp_3_reg_4350                                    |                                                              |                1 |              8 |
+|  ap_clk       | Loop_2_proc_U0/tmp_2_reg_4250                                    |                                                              |                3 |              8 |
+|  ap_clk       | Block_proc_U0/ap_CS_fsm_state25                                  |                                                              |                3 |              8 |
+|  ap_clk       | Filter2D_U0/r_V_2_1_1_i_reg_3851_reg_i_1_n_0                     |                                                              |                2 |              8 |
+|  ap_clk       | Filter2D_U0/p_Val2_s_reg_41240                                   |                                                              |                2 |              8 |
+|  ap_clk       | Filter2D_U0/Filter2D_U0_p_src_data_stream_V_read                 |                                                              |                2 |              8 |
+|  ap_clk       | Block_proc_U0/ap_CS_fsm_state16                                  |                                                              |                4 |              8 |
+|  ap_clk       | Block_proc_U0/ap_CS_fsm_state21                                  |                                                              |                6 |              8 |
+|  ap_clk       | Block_proc_U0/ap_CS_fsm_state22                                  |                                                              |                4 |              8 |
+|  ap_clk       | Block_proc_U0/ap_CS_fsm_state10                                  |                                                              |                3 |              8 |
+|  ap_clk       | Block_proc_U0/ap_CS_fsm_state14                                  |                                                              |                5 |              8 |
+|  ap_clk       | Block_proc_U0/ap_CS_fsm_state15                                  |                                                              |                4 |              8 |
+|  ap_clk       | Block_proc_U0/ap_CS_fsm_state17                                  |                                                              |                7 |              8 |
+|  ap_clk       | Block_proc_U0/ap_CS_fsm_state9                                   |                                                              |                7 |              8 |
+|  ap_clk       | Block_proc_U0/ap_CS_fsm_state19                                  |                                                              |                6 |              8 |
+|  ap_clk       | Block_proc_U0/ap_CS_fsm_state7                                   |                                                              |                2 |              8 |
+|  ap_clk       | Block_proc_U0/ap_CS_fsm_state12                                  |                                                              |                3 |              8 |
+|  ap_clk       | Block_proc_U0/ap_CS_fsm_state2                                   |                                                              |                6 |              8 |
+|  ap_clk       | Filter2D_U0/src_kernel_win_0_va_46_reg_40230                     |                                                              |                1 |              8 |
+|  ap_clk       | Block_proc_U0/ap_CS_fsm_state5                                   |                                                              |                6 |              8 |
+|  ap_clk       | Block_proc_U0/ap_CS_fsm_state18                                  |                                                              |                3 |              8 |
+|  ap_clk       | Block_proc_U0/ap_CS_fsm_state20                                  |                                                              |                5 |              8 |
+|  ap_clk       | Block_proc_U0/ap_CS_fsm_state8                                   |                                                              |                4 |              8 |
+|  ap_clk       | Block_proc_U0/ap_CS_fsm_state11                                  |                                                              |                6 |              8 |
+|  ap_clk       | Block_proc_U0/ap_CS_fsm_state13                                  |                                                              |                2 |              8 |
+|  ap_clk       | Block_proc_U0/ap_CS_fsm_state23                                  |                                                              |                3 |              8 |
+|  ap_clk       | Block_proc_U0/ap_CS_fsm_state6                                   |                                                              |                6 |              8 |
+|  ap_clk       | Block_proc_U0/ap_CS_fsm_state24                                  |                                                              |                2 |              8 |
+|  ap_clk       | Block_proc_U0/ap_CS_fsm_state3                                   |                                                              |                4 |              8 |
+|  ap_clk       | Block_proc_U0/ap_CS_fsm_state4                                   |                                                              |                7 |              8 |
+|  ap_clk       |                                                                  | filter2D_hls_5_CONTROL_BUS_s_axi_U/ap_rst_n_AXI_LITE_clk_inv |                4 |              9 |
+|  ap_clk       | Filter2D_U0/t_V_reg_939_reg[10]_0[1]                             | kernel_val_2_V_1_c_U/SR[0]                                   |                2 |             11 |
+|  ap_clk       | Filter2D_U0/t_V_1_reg_9500                                       | Filter2D_U0/t_V_1_reg_950                                    |                3 |             11 |
+|  ap_clk       | Filter2D_U0/ap_CS_fsm_state2                                     |                                                              |                2 |             11 |
+|  ap_clk       | Loop_2_proc_U0/tmp_79_mid2_v_reg_4100                            |                                                              |                6 |             11 |
+|  ap_clk       | Filter2D_U0/tmp_13_reg_35310                                     |                                                              |                4 |             12 |
+|  ap_clk       | Filter2D_U0/row_assign_8_1_t_i_reg_35560                         |                                                              |                4 |             12 |
+|  ap_clk       | Filter2D_U0/k_buf_0_val_9_U/Filter2D_k_buf_0_cud_ram_U/ram_reg_0 | Block_proc_U0/ap_rst_n_inv                                   |                6 |             12 |
+|  ap_clk       | Loop_2_proc_U0/exitcond1_i_i8_reg_3900                           |                                                              |                7 |             13 |
+|  ap_clk       | Filter2D_U0/brmerge_i_reg_36210                                  |                                                              |                6 |             13 |
+|  ap_clk       | Filter2D_U0/col_assign_1_t_i_reg_36360                           |                                                              |                3 |             14 |
+|  ap_clk       | Filter2D_U0/src_kernel_win_0_va_1_fu_5380                        |                                                              |                9 |             16 |
+|  ap_clk       | Filter2D_U0/src_kernel_win_0_va_2_fu_5420                        |                                                              |                9 |             16 |
+|  ap_clk       | Loop_1_proc_U0/shiftReg_ce                                       |                                                              |                6 |             16 |
+|  ap_clk       | Filter2D_U0/shiftReg_ce                                          |                                                              |                4 |             16 |
+|  ap_clk       | Filter2D_U0/r_V_2_0_1_i_reg_38310                                |                                                              |                3 |             16 |
+|  ap_clk       | Filter2D_U0/ImagLoc_x_reg_3585[10]_i_1_n_0                       |                                                              |                6 |             17 |
+|  ap_clk       | Loop_2_proc_U0/c_reg_4450                                        |                                                              |                6 |             17 |
+|  ap_clk       | Loop_2_proc_U0/ap_CS_fsm_reg[1]_0[0]                             |                                                              |                3 |             18 |
+|  ap_clk       | Block_Mat_exit212359_U0/shiftReg_ce                              |                                                              |                3 |             18 |
+|  ap_clk       | Loop_1_proc_U0/r_reg_171[0]_i_1_n_0                              |                                                              |                5 |             19 |
+|  ap_clk       | Loop_1_proc_U0/p_024_rec_i_reg_101[18]_i_2_n_0                   | Loop_1_proc_U0/p_024_rec_i_reg_101                           |                7 |             19 |
+|  ap_clk       | Loop_2_proc_U0/indvar_flatten_next_reg_3850                      |                                                              |                5 |             20 |
+|  ap_clk       | Block_Mat_exit212359_U0/ap_return_preg_reg[19]_0[1]              | Block_proc_U0/ap_rst_n_inv                                   |                9 |             20 |
+|  ap_clk       | Block_Mat_exit212359_U0/shiftReg_ce_0                            |                                                              |                3 |             20 |
+|  ap_clk       | Filter2D_U0/isneg_reg_41080                                      |                                                              |                6 |             21 |
+|  ap_clk       | Loop_1_proc_U0/tmp_4_reg_1760                                    |                                                              |                6 |             24 |
+|  ap_clk       | Filter2D_U0/src_kernel_win_0_va_29_reg_37660                     |                                                              |               10 |             24 |
+|  ap_clk       | Loop_2_proc_U0/ap_CS_fsm_state4                                  |                                                              |                8 |             30 |
+|  ap_clk       | filter2D_hls_5_CONTROL_BUS_s_axi_U/int_cols[31]_i_1_n_0          | filter2D_hls_5_CONTROL_BUS_s_axi_U/ap_rst_n_AXI_LITE_clk_inv |                6 |             32 |
+|  ap_clk       | filter2D_hls_5_CONTROL_BUS_s_axi_U/int_rows[31]_i_1_n_0          | filter2D_hls_5_CONTROL_BUS_s_axi_U/ap_rst_n_AXI_LITE_clk_inv |                9 |             32 |
+|  ap_clk       | Filter2D_U0/k_buf_0_val_5_U/Filter2D_k_buf_0_cud_ram_U/E[0]      |                                                              |                9 |             32 |
+|  ap_clk       | Filter2D_U0/src_kernel_win_0_va_10_fu_5740                       |                                                              |                9 |             32 |
+|  ap_clk       | Loop_1_proc_U0/in_stream_data_V_0_load_A                         |                                                              |                7 |             32 |
+|  ap_clk       | Loop_1_proc_U0/in_stream_data_V_0_load_B                         |                                                              |                7 |             32 |
+|  ap_clk       | kernel_val_0_V_0_reg_832_reg[7]_i_5_n_0                          |                                                              |                8 |             32 |
+|  ap_clk       | Loop_2_proc_U0/out_stream_data_V_1_load_B                        |                                                              |                9 |             32 |
+|  ap_clk       | Loop_2_proc_U0/out_stream_data_V_1_load_A                        |                                                              |                8 |             32 |
+|  AXI_LITE_clk | rdata_reg[1]_i_3_n_0                                             |                                                              |               10 |             32 |
+|  AXI_LITE_clk | filter2D_hls_5_CONTROL_BUS_s_axi_U/rdata[31]_i_1_n_0             |                                                              |               16 |             32 |
+|  ap_clk       | Loop_2_proc_U0/out_stream_last_V_1_sel_wr014_out                 | Loop_2_proc_U0/indvar_flatten_reg_159                        |               15 |             40 |
+|  ap_clk       | Filter2D_U0/col_buf_0_val_0_0_reg_3674[7]_i_1_n_0                |                                                              |               18 |             40 |
+|  ap_clk       | Filter2D_U0/r_V_2_2_2_i_reg_39060                                |                                                              |               15 |             48 |
+|  ap_clk       | Filter2D_U0/src_kernel_win_0_va_16_fu_598[7]_i_1_n_0             |                                                              |               18 |             64 |
+|  ap_clk       | Filter2D_U0/tmp51_reg_40830                                      |                                                              |               20 |             74 |
+|  ap_clk       |                                                                  |                                                              |               50 |             92 |
+|  ap_clk       | Filter2D_U0/ap_NS_fsm[2]                                         |                                                              |               38 |            106 |
+|  ap_clk       | Filter2D_U0/p_Val2_4_3_i_reg_40330                               |                                                              |               31 |            110 |
+|  ap_clk       | Filter2D_U0/right_border_buf_0_s_fu_614[7]_i_1_n_0               |                                                              |               32 |            120 |
+|  ap_clk       |                                                                  | Block_proc_U0/ap_rst_n_inv                                   |               62 |            150 |
+|  ap_clk       | kernel_val_2_V_1_c_U/Filter2D_U0_p_kernel_val_2_V_2_read         |                                                              |               32 |            160 |
+|  ap_clk       | Filter2D_U0/r_V_2_3_2_i_reg_39630                                |                                                              |               50 |            168 |
+|  ap_clk       | kernel_val_1_V_1_c_U/U_fifo_w8_d2_A_ram/sel                      |                                                              |               25 |            200 |
+|  ap_clk       | Filter2D_U0/k_buf_0_val_9_U/Filter2D_k_buf_0_cud_ram_U/ram_reg_0 |                                                              |               90 |            248 |
++---------------+------------------------------------------------------------------+--------------------------------------------------------------+------------------+----------------+
+
+
++--------+-----------------------+
+| Fanout | Number of ControlSets |
++--------+-----------------------+
+| 1      |                     1 |
+| 6      |                     3 |
+| 7      |                     1 |
+| 8      |                    30 |
+| 9      |                     1 |
+| 11     |                     4 |
+| 12     |                     3 |
+| 13     |                     2 |
+| 14     |                     1 |
+| 16+    |                    43 |
++--------+-----------------------+
+
+

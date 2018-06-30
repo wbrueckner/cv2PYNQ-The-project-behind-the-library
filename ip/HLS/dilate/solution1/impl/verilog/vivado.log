@@ -1,0 +1,2069 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Mon Jun 25 14:51:22 2018
+# Process ID: 15908
+# Current directory: C:/Users/sdi_admin/CloudStation/HLS/dilate/solution1/impl/verilog
+# Command line: vivado.exe -notrace -mode batch -source run_vivado.tcl
+# Log file: C:/Users/sdi_admin/CloudStation/HLS/dilate/solution1/impl/verilog/vivado.log
+# Journal file: C:/Users/sdi_admin/CloudStation/HLS/dilate/solution1/impl/verilog\vivado.jou
+#-----------------------------------------------------------
+source run_vivado.tcl -notrace
+[Mon Jun 25 14:51:30 2018] Launched synth_1...
+Run output will be captured here: C:/Users/sdi_admin/CloudStation/HLS/dilate/solution1/impl/verilog/project.runs/synth_1/runme.log
+[Mon Jun 25 14:51:30 2018] Waiting for synth_1 to finish...
+
+*** Running vivado
+    with args -log dilate_hls.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source dilate_hls.tcl
+
+
+****** Vivado v2017.4 (64-bit)
+  **** SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+  **** IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source dilate_hls.tcl -notrace
+Command: synth_design -top dilate_hls -part xc7z020clg400-1 -no_iobuf -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 6260 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 403.922 ; gain = 102.574
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'dilate_hls' [C:/Users/sdi_admin/CloudStation/HLS/dilate/solution1/impl/verilog/dilate_hls.v:12]
+	Parameter C_S_AXI_CONTROL_BUS_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_CONTROL_BUS_ADDR_WIDTH bound to: 6 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_CONTROL_BUS_WSTRB_WIDTH bound to: 4 - type: integer 
+	Parameter C_S_AXI_WSTRB_WIDTH bound to: 4 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'dilate_hls_CONTROL_BUS_s_axi' [C:/Users/sdi_admin/CloudStation/HLS/dilate/solution1/impl/verilog/dilate_hls_CONTROL_BUS_s_axi.v:9]
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 6 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter ADDR_AP_CTRL bound to: 6'b000000 
+	Parameter ADDR_GIE bound to: 6'b000100 
+	Parameter ADDR_IER bound to: 6'b001000 
+	Parameter ADDR_ISR bound to: 6'b001100 
+	Parameter ADDR_ROWS_DATA_0 bound to: 6'b010100 
+	Parameter ADDR_ROWS_CTRL bound to: 6'b011000 
+	Parameter ADDR_COLS_DATA_0 bound to: 6'b011100 
+	Parameter ADDR_COLS_CTRL bound to: 6'b100000 
+	Parameter ADDR_CHANNELS_DATA_0 bound to: 6'b100100 
+	Parameter ADDR_CHANNELS_CTRL bound to: 6'b101000 
+	Parameter ADDR_MODE_DATA_0 bound to: 6'b101100 
+	Parameter ADDR_MODE_CTRL bound to: 6'b110000 
+	Parameter WRIDLE bound to: 2'b00 
+	Parameter WRDATA bound to: 2'b01 
+	Parameter WRRESP bound to: 2'b10 
+	Parameter WRRESET bound to: 2'b11 
+	Parameter RDIDLE bound to: 2'b00 
+	Parameter RDDATA bound to: 2'b01 
+	Parameter RDRESET bound to: 2'b10 
+	Parameter ADDR_BITS bound to: 6 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/sdi_admin/CloudStation/HLS/dilate/solution1/impl/verilog/dilate_hls_CONTROL_BUS_s_axi.v:228]
+INFO: [Synth 8-256] done synthesizing module 'dilate_hls_CONTROL_BUS_s_axi' (1#1) [C:/Users/sdi_admin/CloudStation/HLS/dilate/solution1/impl/verilog/dilate_hls_CONTROL_BUS_s_axi.v:9]
+INFO: [Synth 8-638] synthesizing module 'Block_Mat_exit406734' [C:/Users/sdi_admin/CloudStation/HLS/dilate/solution1/impl/verilog/Block_Mat_exit406734_dilate.v:10]
+	Parameter ap_ST_fsm_state1 bound to: 12'b000000000001 
+	Parameter ap_ST_fsm_state2 bound to: 12'b000000000010 
+	Parameter ap_ST_fsm_state3 bound to: 12'b000000000100 
+	Parameter ap_ST_fsm_state4 bound to: 12'b000000001000 
+	Parameter ap_ST_fsm_state5 bound to: 12'b000000010000 
+	Parameter ap_ST_fsm_state6 bound to: 12'b000000100000 
+	Parameter ap_ST_fsm_state7 bound to: 12'b000001000000 
+	Parameter ap_ST_fsm_state8 bound to: 12'b000010000000 
+	Parameter ap_ST_fsm_state9 bound to: 12'b000100000000 
+	Parameter ap_ST_fsm_state10 bound to: 12'b001000000000 
+	Parameter ap_ST_fsm_state11 bound to: 12'b010000000000 
+	Parameter ap_ST_fsm_state12 bound to: 12'b100000000000 
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [C:/Users/sdi_admin/CloudStation/HLS/dilate/solution1/impl/verilog/Block_Mat_exit406734_dilate.v:69]
+INFO: [Synth 8-638] synthesizing module 'dilate_hls_mul_32bkb' [C:/Users/sdi_admin/CloudStation/HLS/dilate/solution1/impl/verilog/dilate_hls_mul_32bkb.v:39]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 5 - type: integer 
+	Parameter din0_WIDTH bound to: 32 - type: integer 
+	Parameter din1_WIDTH bound to: 32 - type: integer 
+	Parameter dout_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'dilate_hls_mul_32bkb_MulnS_0' [C:/Users/sdi_admin/CloudStation/HLS/dilate/solution1/impl/verilog/dilate_hls_mul_32bkb.v:11]
+INFO: [Synth 8-256] done synthesizing module 'dilate_hls_mul_32bkb_MulnS_0' (2#1) [C:/Users/sdi_admin/CloudStation/HLS/dilate/solution1/impl/verilog/dilate_hls_mul_32bkb.v:11]
+INFO: [Synth 8-256] done synthesizing module 'dilate_hls_mul_32bkb' (3#1) [C:/Users/sdi_admin/CloudStation/HLS/dilate/solution1/impl/verilog/dilate_hls_mul_32bkb.v:39]
+INFO: [Synth 8-638] synthesizing module 'dilate_hls_mul_32cud' [C:/Users/sdi_admin/CloudStation/HLS/dilate/solution1/impl/verilog/dilate_hls_mul_32cud.v:39]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 5 - type: integer 
+	Parameter din0_WIDTH bound to: 32 - type: integer 
+	Parameter din1_WIDTH bound to: 31 - type: integer 
+	Parameter dout_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'dilate_hls_mul_32cud_MulnS_1' [C:/Users/sdi_admin/CloudStation/HLS/dilate/solution1/impl/verilog/dilate_hls_mul_32cud.v:11]
+INFO: [Synth 8-256] done synthesizing module 'dilate_hls_mul_32cud_MulnS_1' (4#1) [C:/Users/sdi_admin/CloudStation/HLS/dilate/solution1/impl/verilog/dilate_hls_mul_32cud.v:11]
+INFO: [Synth 8-256] done synthesizing module 'dilate_hls_mul_32cud' (5#1) [C:/Users/sdi_admin/CloudStation/HLS/dilate/solution1/impl/verilog/dilate_hls_mul_32cud.v:39]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/sdi_admin/CloudStation/HLS/dilate/solution1/impl/verilog/Block_Mat_exit406734_dilate.v:313]
+INFO: [Synth 8-256] done synthesizing module 'Block_Mat_exit406734' (6#1) [C:/Users/sdi_admin/CloudStation/HLS/dilate/solution1/impl/verilog/Block_Mat_exit406734_dilate.v:10]
+INFO: [Synth 8-638] synthesizing module 'Loop_1_proc' [C:/Users/sdi_admin/CloudStation/HLS/dilate/solution1/impl/verilog/Loop_1_proc_dilate.v:10]
+	Parameter ap_ST_fsm_state1 bound to: 6'b000001 
+	Parameter ap_ST_fsm_pp0_stage0 bound to: 6'b000010 
+	Parameter ap_ST_fsm_pp0_stage1 bound to: 6'b000100 
+	Parameter ap_ST_fsm_pp0_stage2 bound to: 6'b001000 
+	Parameter ap_ST_fsm_pp0_stage3 bound to: 6'b010000 
+	Parameter ap_ST_fsm_state8 bound to: 6'b100000 
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [C:/Users/sdi_admin/CloudStation/HLS/dilate/solution1/impl/verilog/Loop_1_proc_dilate.v:56]
+INFO: [Synth 8-256] done synthesizing module 'Loop_1_proc' (7#1) [C:/Users/sdi_admin/CloudStation/HLS/dilate/solution1/impl/verilog/Loop_1_proc_dilate.v:10]
+INFO: [Synth 8-638] synthesizing module 'Block_arrayctor_loop' [C:/Users/sdi_admin/CloudStation/HLS/dilate/solution1/impl/verilog/Block_arrayctor_loop.v:10]
+	Parameter ap_ST_fsm_state1 bound to: 2'b01 
+	Parameter ap_ST_fsm_state2 bound to: 2'b10 
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [C:/Users/sdi_admin/CloudStation/HLS/dilate/solution1/impl/verilog/Block_arrayctor_loop.v:98]
+INFO: [Synth 8-256] done synthesizing module 'Block_arrayctor_loop' (8#1) [C:/Users/sdi_admin/CloudStation/HLS/dilate/solution1/impl/verilog/Block_arrayctor_loop.v:10]
+INFO: [Synth 8-638] synthesizing module 'Loop_loop_height_pro' [C:/Users/sdi_admin/CloudStation/HLS/dilate/solution1/impl/verilog/Loop_loop_height_pro_dilate.v:10]
+	Parameter ap_ST_fsm_state1 bound to: 5'b00001 
+	Parameter ap_ST_fsm_state2 bound to: 5'b00010 
+	Parameter ap_ST_fsm_state3 bound to: 5'b00100 
+	Parameter ap_ST_fsm_pp0_stage0 bound to: 5'b01000 
+	Parameter ap_ST_fsm_state14 bound to: 5'b10000 
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [C:/Users/sdi_admin/CloudStation/HLS/dilate/solution1/impl/verilog/Loop_loop_height_pro_dilate.v:120]
+INFO: [Synth 8-638] synthesizing module 'Loop_loop_height_dEe' [C:/Users/sdi_admin/CloudStation/HLS/dilate/solution1/impl/verilog/Loop_loop_height_dEe.v:54]
+	Parameter DataWidth bound to: 8 - type: integer 
+	Parameter AddressRange bound to: 1920 - type: integer 
+	Parameter AddressWidth bound to: 11 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'Loop_loop_height_dEe_ram' [C:/Users/sdi_admin/CloudStation/HLS/dilate/solution1/impl/verilog/Loop_loop_height_dEe.v:9]
+	Parameter DWIDTH bound to: 8 - type: integer 
+	Parameter AWIDTH bound to: 11 - type: integer 
+	Parameter MEM_SIZE bound to: 1920 - type: integer 
+INFO: [Synth 8-5534] Detected attribute (* ram_style = "block" *) [C:/Users/sdi_admin/CloudStation/HLS/dilate/solution1/impl/verilog/Loop_loop_height_dEe.v:24]
+INFO: [Synth 8-256] done synthesizing module 'Loop_loop_height_dEe_ram' (9#1) [C:/Users/sdi_admin/CloudStation/HLS/dilate/solution1/impl/verilog/Loop_loop_height_dEe.v:9]
+INFO: [Synth 8-256] done synthesizing module 'Loop_loop_height_dEe' (10#1) [C:/Users/sdi_admin/CloudStation/HLS/dilate/solution1/impl/verilog/Loop_loop_height_dEe.v:54]
+INFO: [Synth 8-638] synthesizing module 'dilate_hls_mux_32g8j' [C:/Users/sdi_admin/CloudStation/HLS/dilate/solution1/impl/verilog/dilate_hls_mux_32g8j.v:11]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter din0_WIDTH bound to: 8 - type: integer 
+	Parameter din1_WIDTH bound to: 8 - type: integer 
+	Parameter din2_WIDTH bound to: 8 - type: integer 
+	Parameter din3_WIDTH bound to: 2 - type: integer 
+	Parameter dout_WIDTH bound to: 8 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'dilate_hls_mux_32g8j' (11#1) [C:/Users/sdi_admin/CloudStation/HLS/dilate/solution1/impl/verilog/dilate_hls_mux_32g8j.v:11]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/sdi_admin/CloudStation/HLS/dilate/solution1/impl/verilog/Loop_loop_height_pro_dilate.v:1300]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/sdi_admin/CloudStation/HLS/dilate/solution1/impl/verilog/Loop_loop_height_pro_dilate.v:1302]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/sdi_admin/CloudStation/HLS/dilate/solution1/impl/verilog/Loop_loop_height_pro_dilate.v:1304]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/sdi_admin/CloudStation/HLS/dilate/solution1/impl/verilog/Loop_loop_height_pro_dilate.v:1336]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/sdi_admin/CloudStation/HLS/dilate/solution1/impl/verilog/Loop_loop_height_pro_dilate.v:1338]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/sdi_admin/CloudStation/HLS/dilate/solution1/impl/verilog/Loop_loop_height_pro_dilate.v:1340]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/sdi_admin/CloudStation/HLS/dilate/solution1/impl/verilog/Loop_loop_height_pro_dilate.v:1342]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/sdi_admin/CloudStation/HLS/dilate/solution1/impl/verilog/Loop_loop_height_pro_dilate.v:1348]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/sdi_admin/CloudStation/HLS/dilate/solution1/impl/verilog/Loop_loop_height_pro_dilate.v:1366]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/sdi_admin/CloudStation/HLS/dilate/solution1/impl/verilog/Loop_loop_height_pro_dilate.v:1368]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/sdi_admin/CloudStation/HLS/dilate/solution1/impl/verilog/Loop_loop_height_pro_dilate.v:1370]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/sdi_admin/CloudStation/HLS/dilate/solution1/impl/verilog/Loop_loop_height_pro_dilate.v:1376]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/sdi_admin/CloudStation/HLS/dilate/solution1/impl/verilog/Loop_loop_height_pro_dilate.v:1378]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/sdi_admin/CloudStation/HLS/dilate/solution1/impl/verilog/Loop_loop_height_pro_dilate.v:1380]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/sdi_admin/CloudStation/HLS/dilate/solution1/impl/verilog/Loop_loop_height_pro_dilate.v:1382]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/sdi_admin/CloudStation/HLS/dilate/solution1/impl/verilog/Loop_loop_height_pro_dilate.v:1384]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/sdi_admin/CloudStation/HLS/dilate/solution1/impl/verilog/Loop_loop_height_pro_dilate.v:1386]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/sdi_admin/CloudStation/HLS/dilate/solution1/impl/verilog/Loop_loop_height_pro_dilate.v:1388]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/sdi_admin/CloudStation/HLS/dilate/solution1/impl/verilog/Loop_loop_height_pro_dilate.v:1390]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/sdi_admin/CloudStation/HLS/dilate/solution1/impl/verilog/Loop_loop_height_pro_dilate.v:1402]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/sdi_admin/CloudStation/HLS/dilate/solution1/impl/verilog/Loop_loop_height_pro_dilate.v:1404]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/sdi_admin/CloudStation/HLS/dilate/solution1/impl/verilog/Loop_loop_height_pro_dilate.v:1424]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/sdi_admin/CloudStation/HLS/dilate/solution1/impl/verilog/Loop_loop_height_pro_dilate.v:1426]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/sdi_admin/CloudStation/HLS/dilate/solution1/impl/verilog/Loop_loop_height_pro_dilate.v:1472]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/sdi_admin/CloudStation/HLS/dilate/solution1/impl/verilog/Loop_loop_height_pro_dilate.v:1480]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/sdi_admin/CloudStation/HLS/dilate/solution1/impl/verilog/Loop_loop_height_pro_dilate.v:1482]
+INFO: [Synth 8-256] done synthesizing module 'Loop_loop_height_pro' (12#1) [C:/Users/sdi_admin/CloudStation/HLS/dilate/solution1/impl/verilog/Loop_loop_height_pro_dilate.v:10]
+INFO: [Synth 8-638] synthesizing module 'Loop_3_proc' [C:/Users/sdi_admin/CloudStation/HLS/dilate/solution1/impl/verilog/Loop_3_proc_dilate.v:10]
+	Parameter ap_ST_fsm_state1 bound to: 11'b00000000001 
+	Parameter ap_ST_fsm_state2 bound to: 11'b00000000010 
+	Parameter ap_ST_fsm_state3 bound to: 11'b00000000100 
+	Parameter ap_ST_fsm_state4 bound to: 11'b00000001000 
+	Parameter ap_ST_fsm_state5 bound to: 11'b00000010000 
+	Parameter ap_ST_fsm_state6 bound to: 11'b00000100000 
+	Parameter ap_ST_fsm_pp0_stage0 bound to: 11'b00001000000 
+	Parameter ap_ST_fsm_pp0_stage1 bound to: 11'b00010000000 
+	Parameter ap_ST_fsm_pp0_stage2 bound to: 11'b00100000000 
+	Parameter ap_ST_fsm_pp0_stage3 bound to: 11'b01000000000 
+	Parameter ap_ST_fsm_state13 bound to: 11'b10000000000 
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [C:/Users/sdi_admin/CloudStation/HLS/dilate/solution1/impl/verilog/Loop_3_proc_dilate.v:78]
+INFO: [Synth 8-638] synthesizing module 'dilate_hls_mul_31hbi' [C:/Users/sdi_admin/CloudStation/HLS/dilate/solution1/impl/verilog/dilate_hls_mul_31hbi.v:39]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 5 - type: integer 
+	Parameter din0_WIDTH bound to: 31 - type: integer 
+	Parameter din1_WIDTH bound to: 11 - type: integer 
+	Parameter dout_WIDTH bound to: 42 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'dilate_hls_mul_31hbi_MulnS_2' [C:/Users/sdi_admin/CloudStation/HLS/dilate/solution1/impl/verilog/dilate_hls_mul_31hbi.v:11]
+INFO: [Synth 8-256] done synthesizing module 'dilate_hls_mul_31hbi_MulnS_2' (13#1) [C:/Users/sdi_admin/CloudStation/HLS/dilate/solution1/impl/verilog/dilate_hls_mul_31hbi.v:11]
+INFO: [Synth 8-256] done synthesizing module 'dilate_hls_mul_31hbi' (14#1) [C:/Users/sdi_admin/CloudStation/HLS/dilate/solution1/impl/verilog/dilate_hls_mul_31hbi.v:39]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/sdi_admin/CloudStation/HLS/dilate/solution1/impl/verilog/Loop_3_proc_dilate.v:940]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/sdi_admin/CloudStation/HLS/dilate/solution1/impl/verilog/Loop_3_proc_dilate.v:944]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/sdi_admin/CloudStation/HLS/dilate/solution1/impl/verilog/Loop_3_proc_dilate.v:956]
+INFO: [Synth 8-256] done synthesizing module 'Loop_3_proc' (15#1) [C:/Users/sdi_admin/CloudStation/HLS/dilate/solution1/impl/verilog/Loop_3_proc_dilate.v:10]
+INFO: [Synth 8-638] synthesizing module 'fifo_w31_d3_A' [C:/Users/sdi_admin/CloudStation/HLS/dilate/solution1/impl/verilog/fifo_w31_d3_A.v:45]
+	Parameter MEM_STYLE bound to: shiftreg - type: string 
+	Parameter DATA_WIDTH bound to: 31 - type: integer 
+	Parameter ADDR_WIDTH bound to: 2 - type: integer 
+	Parameter DEPTH bound to: 4 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'fifo_w31_d3_A_shiftReg' [C:/Users/sdi_admin/CloudStation/HLS/dilate/solution1/impl/verilog/fifo_w31_d3_A.v:11]
+	Parameter DATA_WIDTH bound to: 31 - type: integer 
+	Parameter ADDR_WIDTH bound to: 2 - type: integer 
+	Parameter DEPTH bound to: 4 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'fifo_w31_d3_A_shiftReg' (16#1) [C:/Users/sdi_admin/CloudStation/HLS/dilate/solution1/impl/verilog/fifo_w31_d3_A.v:11]
+INFO: [Synth 8-256] done synthesizing module 'fifo_w31_d3_A' (17#1) [C:/Users/sdi_admin/CloudStation/HLS/dilate/solution1/impl/verilog/fifo_w31_d3_A.v:45]
+INFO: [Synth 8-638] synthesizing module 'fifo_w32_d2_A' [C:/Users/sdi_admin/CloudStation/HLS/dilate/solution1/impl/verilog/fifo_w32_d2_A.v:45]
+	Parameter MEM_STYLE bound to: shiftreg - type: string 
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+	Parameter ADDR_WIDTH bound to: 2 - type: integer 
+	Parameter DEPTH bound to: 3 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'fifo_w32_d2_A_shiftReg' [C:/Users/sdi_admin/CloudStation/HLS/dilate/solution1/impl/verilog/fifo_w32_d2_A.v:11]
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+	Parameter ADDR_WIDTH bound to: 2 - type: integer 
+	Parameter DEPTH bound to: 3 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'fifo_w32_d2_A_shiftReg' (18#1) [C:/Users/sdi_admin/CloudStation/HLS/dilate/solution1/impl/verilog/fifo_w32_d2_A.v:11]
+INFO: [Synth 8-256] done synthesizing module 'fifo_w32_d2_A' (19#1) [C:/Users/sdi_admin/CloudStation/HLS/dilate/solution1/impl/verilog/fifo_w32_d2_A.v:45]
+INFO: [Synth 8-638] synthesizing module 'fifo_w8_d1_A' [C:/Users/sdi_admin/CloudStation/HLS/dilate/solution1/impl/verilog/fifo_w8_d1_A.v:45]
+	Parameter MEM_STYLE bound to: auto - type: string 
+	Parameter DATA_WIDTH bound to: 8 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'fifo_w8_d1_A_shiftReg' [C:/Users/sdi_admin/CloudStation/HLS/dilate/solution1/impl/verilog/fifo_w8_d1_A.v:11]
+	Parameter DATA_WIDTH bound to: 8 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'fifo_w8_d1_A_shiftReg' (20#1) [C:/Users/sdi_admin/CloudStation/HLS/dilate/solution1/impl/verilog/fifo_w8_d1_A.v:11]
+INFO: [Synth 8-256] done synthesizing module 'fifo_w8_d1_A' (21#1) [C:/Users/sdi_admin/CloudStation/HLS/dilate/solution1/impl/verilog/fifo_w8_d1_A.v:45]
+INFO: [Synth 8-638] synthesizing module 'fifo_w1_d2_A' [C:/Users/sdi_admin/CloudStation/HLS/dilate/solution1/impl/verilog/fifo_w1_d2_A.v:45]
+	Parameter MEM_STYLE bound to: shiftreg - type: string 
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH bound to: 2 - type: integer 
+	Parameter DEPTH bound to: 3 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'fifo_w1_d2_A_shiftReg' [C:/Users/sdi_admin/CloudStation/HLS/dilate/solution1/impl/verilog/fifo_w1_d2_A.v:11]
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH bound to: 2 - type: integer 
+	Parameter DEPTH bound to: 3 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'fifo_w1_d2_A_shiftReg' (22#1) [C:/Users/sdi_admin/CloudStation/HLS/dilate/solution1/impl/verilog/fifo_w1_d2_A.v:11]
+INFO: [Synth 8-256] done synthesizing module 'fifo_w1_d2_A' (23#1) [C:/Users/sdi_admin/CloudStation/HLS/dilate/solution1/impl/verilog/fifo_w1_d2_A.v:45]
+INFO: [Synth 8-638] synthesizing module 'fifo_w11_d2_A' [C:/Users/sdi_admin/CloudStation/HLS/dilate/solution1/impl/verilog/fifo_w11_d2_A.v:45]
+	Parameter MEM_STYLE bound to: shiftreg - type: string 
+	Parameter DATA_WIDTH bound to: 11 - type: integer 
+	Parameter ADDR_WIDTH bound to: 2 - type: integer 
+	Parameter DEPTH bound to: 3 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'fifo_w11_d2_A_shiftReg' [C:/Users/sdi_admin/CloudStation/HLS/dilate/solution1/impl/verilog/fifo_w11_d2_A.v:11]
+	Parameter DATA_WIDTH bound to: 11 - type: integer 
+	Parameter ADDR_WIDTH bound to: 2 - type: integer 
+	Parameter DEPTH bound to: 3 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'fifo_w11_d2_A_shiftReg' (24#1) [C:/Users/sdi_admin/CloudStation/HLS/dilate/solution1/impl/verilog/fifo_w11_d2_A.v:11]
+INFO: [Synth 8-256] done synthesizing module 'fifo_w11_d2_A' (25#1) [C:/Users/sdi_admin/CloudStation/HLS/dilate/solution1/impl/verilog/fifo_w11_d2_A.v:45]
+INFO: [Synth 8-638] synthesizing module 'fifo_w11_d1_A' [C:/Users/sdi_admin/CloudStation/HLS/dilate/solution1/impl/verilog/fifo_w11_d1_A.v:45]
+	Parameter MEM_STYLE bound to: auto - type: string 
+	Parameter DATA_WIDTH bound to: 11 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'fifo_w11_d1_A_shiftReg' [C:/Users/sdi_admin/CloudStation/HLS/dilate/solution1/impl/verilog/fifo_w11_d1_A.v:11]
+	Parameter DATA_WIDTH bound to: 11 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'fifo_w11_d1_A_shiftReg' (26#1) [C:/Users/sdi_admin/CloudStation/HLS/dilate/solution1/impl/verilog/fifo_w11_d1_A.v:11]
+INFO: [Synth 8-256] done synthesizing module 'fifo_w11_d1_A' (27#1) [C:/Users/sdi_admin/CloudStation/HLS/dilate/solution1/impl/verilog/fifo_w11_d1_A.v:45]
+WARNING: [Synth 8-6014] Unused sequential element Block_Mat_exit406734_U0_ap_ready_count_reg was removed.  [C:/Users/sdi_admin/CloudStation/HLS/dilate/solution1/impl/verilog/dilate_hls.v:628]
+WARNING: [Synth 8-6014] Unused sequential element Block_arrayctor_loop_U0_ap_ready_count_reg was removed.  [C:/Users/sdi_admin/CloudStation/HLS/dilate/solution1/impl/verilog/dilate_hls.v:636]
+WARNING: [Synth 8-6014] Unused sequential element Loop_1_proc_U0_ap_ready_count_reg was removed.  [C:/Users/sdi_admin/CloudStation/HLS/dilate/solution1/impl/verilog/dilate_hls.v:644]
+INFO: [Synth 8-256] done synthesizing module 'dilate_hls' (28#1) [C:/Users/sdi_admin/CloudStation/HLS/dilate/solution1/impl/verilog/dilate_hls.v:12]
+WARNING: [Synth 8-3331] design dilate_hls_mul_31hbi has unconnected port reset
+WARNING: [Synth 8-3331] design Loop_3_proc has unconnected port rows[31]
+WARNING: [Synth 8-3331] design Loop_3_proc has unconnected port rows[30]
+WARNING: [Synth 8-3331] design Loop_3_proc has unconnected port rows[29]
+WARNING: [Synth 8-3331] design Loop_3_proc has unconnected port rows[28]
+WARNING: [Synth 8-3331] design Loop_3_proc has unconnected port rows[27]
+WARNING: [Synth 8-3331] design Loop_3_proc has unconnected port rows[26]
+WARNING: [Synth 8-3331] design Loop_3_proc has unconnected port rows[25]
+WARNING: [Synth 8-3331] design Loop_3_proc has unconnected port rows[24]
+WARNING: [Synth 8-3331] design Loop_3_proc has unconnected port rows[23]
+WARNING: [Synth 8-3331] design Loop_3_proc has unconnected port rows[22]
+WARNING: [Synth 8-3331] design Loop_3_proc has unconnected port rows[21]
+WARNING: [Synth 8-3331] design Loop_3_proc has unconnected port rows[20]
+WARNING: [Synth 8-3331] design Loop_3_proc has unconnected port rows[19]
+WARNING: [Synth 8-3331] design Loop_3_proc has unconnected port rows[18]
+WARNING: [Synth 8-3331] design Loop_3_proc has unconnected port rows[17]
+WARNING: [Synth 8-3331] design Loop_3_proc has unconnected port rows[16]
+WARNING: [Synth 8-3331] design Loop_3_proc has unconnected port rows[15]
+WARNING: [Synth 8-3331] design Loop_3_proc has unconnected port rows[14]
+WARNING: [Synth 8-3331] design Loop_3_proc has unconnected port rows[13]
+WARNING: [Synth 8-3331] design Loop_3_proc has unconnected port rows[12]
+WARNING: [Synth 8-3331] design Loop_3_proc has unconnected port rows[11]
+WARNING: [Synth 8-3331] design Loop_loop_height_dEe has unconnected port reset
+WARNING: [Synth 8-3331] design Loop_loop_height_pro has unconnected port rows[31]
+WARNING: [Synth 8-3331] design Loop_loop_height_pro has unconnected port rows[30]
+WARNING: [Synth 8-3331] design Loop_loop_height_pro has unconnected port rows[29]
+WARNING: [Synth 8-3331] design Loop_loop_height_pro has unconnected port rows[28]
+WARNING: [Synth 8-3331] design Loop_loop_height_pro has unconnected port rows[27]
+WARNING: [Synth 8-3331] design Loop_loop_height_pro has unconnected port rows[26]
+WARNING: [Synth 8-3331] design Loop_loop_height_pro has unconnected port rows[25]
+WARNING: [Synth 8-3331] design Loop_loop_height_pro has unconnected port rows[24]
+WARNING: [Synth 8-3331] design Loop_loop_height_pro has unconnected port rows[23]
+WARNING: [Synth 8-3331] design Loop_loop_height_pro has unconnected port rows[22]
+WARNING: [Synth 8-3331] design Loop_loop_height_pro has unconnected port rows[21]
+WARNING: [Synth 8-3331] design Loop_loop_height_pro has unconnected port rows[20]
+WARNING: [Synth 8-3331] design Loop_loop_height_pro has unconnected port rows[19]
+WARNING: [Synth 8-3331] design Loop_loop_height_pro has unconnected port rows[18]
+WARNING: [Synth 8-3331] design Loop_loop_height_pro has unconnected port rows[17]
+WARNING: [Synth 8-3331] design Loop_loop_height_pro has unconnected port rows[16]
+WARNING: [Synth 8-3331] design Loop_loop_height_pro has unconnected port rows[15]
+WARNING: [Synth 8-3331] design Loop_loop_height_pro has unconnected port rows[14]
+WARNING: [Synth 8-3331] design Loop_loop_height_pro has unconnected port rows[13]
+WARNING: [Synth 8-3331] design Loop_loop_height_pro has unconnected port rows[12]
+WARNING: [Synth 8-3331] design Loop_loop_height_pro has unconnected port tmp_16_cast_loc_dout[10]
+WARNING: [Synth 8-3331] design Loop_loop_height_pro has unconnected port tmp_16_cast_loc_dout[9]
+WARNING: [Synth 8-3331] design Loop_loop_height_pro has unconnected port tmp_16_cast_loc_dout[8]
+WARNING: [Synth 8-3331] design Loop_loop_height_pro has unconnected port tmp_16_cast_loc_dout[7]
+WARNING: [Synth 8-3331] design Loop_loop_height_pro has unconnected port tmp_16_cast_loc_dout[6]
+WARNING: [Synth 8-3331] design Loop_loop_height_pro has unconnected port tmp_16_cast_loc_dout[5]
+WARNING: [Synth 8-3331] design Loop_loop_height_pro has unconnected port tmp_16_cast_loc_dout[4]
+WARNING: [Synth 8-3331] design Loop_loop_height_pro has unconnected port tmp_16_cast_loc_dout[3]
+WARNING: [Synth 8-3331] design Loop_loop_height_pro has unconnected port tmp_16_cast_loc_dout[2]
+WARNING: [Synth 8-3331] design Loop_loop_height_pro has unconnected port cols[31]
+WARNING: [Synth 8-3331] design Loop_loop_height_pro has unconnected port cols[30]
+WARNING: [Synth 8-3331] design Loop_loop_height_pro has unconnected port cols[29]
+WARNING: [Synth 8-3331] design Loop_loop_height_pro has unconnected port cols[28]
+WARNING: [Synth 8-3331] design Loop_loop_height_pro has unconnected port cols[27]
+WARNING: [Synth 8-3331] design Loop_loop_height_pro has unconnected port cols[26]
+WARNING: [Synth 8-3331] design Loop_loop_height_pro has unconnected port cols[25]
+WARNING: [Synth 8-3331] design Loop_loop_height_pro has unconnected port cols[24]
+WARNING: [Synth 8-3331] design Loop_loop_height_pro has unconnected port cols[23]
+WARNING: [Synth 8-3331] design Loop_loop_height_pro has unconnected port cols[22]
+WARNING: [Synth 8-3331] design Loop_loop_height_pro has unconnected port cols[21]
+WARNING: [Synth 8-3331] design Loop_loop_height_pro has unconnected port cols[20]
+WARNING: [Synth 8-3331] design Loop_loop_height_pro has unconnected port cols[19]
+WARNING: [Synth 8-3331] design Loop_loop_height_pro has unconnected port cols[18]
+WARNING: [Synth 8-3331] design Loop_loop_height_pro has unconnected port cols[17]
+WARNING: [Synth 8-3331] design Loop_loop_height_pro has unconnected port cols[16]
+WARNING: [Synth 8-3331] design Loop_loop_height_pro has unconnected port cols[15]
+WARNING: [Synth 8-3331] design Loop_loop_height_pro has unconnected port cols[14]
+WARNING: [Synth 8-3331] design Loop_loop_height_pro has unconnected port cols[13]
+WARNING: [Synth 8-3331] design Loop_loop_height_pro has unconnected port cols[12]
+WARNING: [Synth 8-3331] design Block_arrayctor_loop has unconnected port cols[31]
+WARNING: [Synth 8-3331] design Block_arrayctor_loop has unconnected port cols[30]
+WARNING: [Synth 8-3331] design Block_arrayctor_loop has unconnected port cols[29]
+WARNING: [Synth 8-3331] design Block_arrayctor_loop has unconnected port cols[28]
+WARNING: [Synth 8-3331] design Block_arrayctor_loop has unconnected port cols[27]
+WARNING: [Synth 8-3331] design Block_arrayctor_loop has unconnected port cols[26]
+WARNING: [Synth 8-3331] design Block_arrayctor_loop has unconnected port cols[25]
+WARNING: [Synth 8-3331] design Block_arrayctor_loop has unconnected port cols[24]
+WARNING: [Synth 8-3331] design Block_arrayctor_loop has unconnected port cols[23]
+WARNING: [Synth 8-3331] design Block_arrayctor_loop has unconnected port cols[22]
+WARNING: [Synth 8-3331] design Block_arrayctor_loop has unconnected port cols[21]
+WARNING: [Synth 8-3331] design Block_arrayctor_loop has unconnected port cols[20]
+WARNING: [Synth 8-3331] design Block_arrayctor_loop has unconnected port cols[19]
+WARNING: [Synth 8-3331] design Block_arrayctor_loop has unconnected port cols[18]
+WARNING: [Synth 8-3331] design Block_arrayctor_loop has unconnected port cols[17]
+WARNING: [Synth 8-3331] design Block_arrayctor_loop has unconnected port cols[16]
+WARNING: [Synth 8-3331] design Block_arrayctor_loop has unconnected port cols[15]
+WARNING: [Synth 8-3331] design Block_arrayctor_loop has unconnected port cols[14]
+WARNING: [Synth 8-3331] design Block_arrayctor_loop has unconnected port cols[13]
+WARNING: [Synth 8-3331] design Block_arrayctor_loop has unconnected port cols[12]
+WARNING: [Synth 8-3331] design Block_arrayctor_loop has unconnected port cols[11]
+WARNING: [Synth 8-3331] design Block_arrayctor_loop has unconnected port rows[31]
+WARNING: [Synth 8-3331] design Block_arrayctor_loop has unconnected port rows[30]
+WARNING: [Synth 8-3331] design Block_arrayctor_loop has unconnected port rows[29]
+WARNING: [Synth 8-3331] design Block_arrayctor_loop has unconnected port rows[28]
+WARNING: [Synth 8-3331] design Block_arrayctor_loop has unconnected port rows[27]
+WARNING: [Synth 8-3331] design Block_arrayctor_loop has unconnected port rows[26]
+WARNING: [Synth 8-3331] design Block_arrayctor_loop has unconnected port rows[25]
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 464.527 ; gain = 163.180
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 464.527 ; gain = 163.180
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/sdi_admin/CloudStation/HLS/dilate/solution1/impl/verilog/dilate_hls.xdc]
+Finished Parsing XDC File [C:/Users/sdi_admin/CloudStation/HLS/dilate/solution1/impl/verilog/dilate_hls.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.055 . Memory (MB): peak = 836.934 ; gain = 0.875
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 836.934 ; gain = 535.586
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 836.934 ; gain = 535.586
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 836.934 ; gain = 535.586
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'wstate_reg' in module 'dilate_hls_CONTROL_BUS_s_axi'
+INFO: [Synth 8-5544] ROM "wnext" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "wnext" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+WARNING: [Synth 8-6014] Unused sequential element r_reg_163_reg was removed.  [C:/Users/sdi_admin/CloudStation/HLS/dilate/solution1/impl/verilog/Loop_1_proc_dilate.v:243]
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-5545] ROM "switch_out_out_din" won't be mapped to RAM because address size (31) is larger than maximum supported(25)
+INFO: [Synth 8-4471] merging register 'k_buf_0_val_4_addr_reg_1392_reg[10:0]' into 'k_buf_0_val_3_addr_reg_1386_reg[10:0]' [C:/Users/sdi_admin/CloudStation/HLS/dilate/solution1/impl/verilog/Loop_loop_height_pro_dilate.v:698]
+INFO: [Synth 8-4471] merging register 'k_buf_0_val_5_addr_reg_1398_reg[10:0]' into 'k_buf_0_val_3_addr_reg_1386_reg[10:0]' [C:/Users/sdi_admin/CloudStation/HLS/dilate/solution1/impl/verilog/Loop_loop_height_pro_dilate.v:699]
+INFO: [Synth 8-4471] merging register 'ap_reg_pp0_iter2_k_buf_0_val_5_addr_reg_1398_reg[10:0]' into 'ap_reg_pp0_iter2_k_buf_0_val_4_addr_reg_1392_reg[10:0]' [C:/Users/sdi_admin/CloudStation/HLS/dilate/solution1/impl/verilog/Loop_loop_height_pro_dilate.v:433]
+WARNING: [Synth 8-6014] Unused sequential element k_buf_0_val_4_addr_reg_1392_reg was removed.  [C:/Users/sdi_admin/CloudStation/HLS/dilate/solution1/impl/verilog/Loop_loop_height_pro_dilate.v:698]
+WARNING: [Synth 8-6014] Unused sequential element k_buf_0_val_5_addr_reg_1398_reg was removed.  [C:/Users/sdi_admin/CloudStation/HLS/dilate/solution1/impl/verilog/Loop_loop_height_pro_dilate.v:699]
+WARNING: [Synth 8-6014] Unused sequential element ap_reg_pp0_iter2_k_buf_0_val_5_addr_reg_1398_reg was removed.  [C:/Users/sdi_admin/CloudStation/HLS/dilate/solution1/impl/verilog/Loop_loop_height_pro_dilate.v:433]
+WARNING: [Synth 8-3936] Found unconnected internal register 'p_neg393_i_cast_loc_r_reg_1215_reg' and it is trimmed from '11' to '2' bits. [C:/Users/sdi_admin/CloudStation/HLS/dilate/solution1/impl/verilog/Loop_loop_height_pro_dilate.v:792]
+WARNING: [Synth 8-3936] Found unconnected internal register 'p_neg393_i_loc_read_reg_1194_reg' and it is trimmed from '11' to '2' bits. [C:/Users/sdi_admin/CloudStation/HLS/dilate/solution1/impl/verilog/Loop_loop_height_pro_dilate.v:793]
+INFO: [Synth 8-4471] merging register 'p_neg393_i_loc_read_reg_1194_reg[1:0]' into 'tmp_3_reg_1250_reg[1:0]' [C:/Users/sdi_admin/CloudStation/HLS/dilate/solution1/impl/verilog/Loop_loop_height_pro_dilate.v:793]
+WARNING: [Synth 8-6014] Unused sequential element p_neg393_i_loc_read_reg_1194_reg was removed.  [C:/Users/sdi_admin/CloudStation/HLS/dilate/solution1/impl/verilog/Loop_loop_height_pro_dilate.v:793]
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-5546] ROM "tmp_76_2_i_i_fu_552_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tmp_76_i_i_fu_546_p2" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-6014] Unused sequential element t_V_1_reg_433_reg was removed.  [C:/Users/sdi_admin/CloudStation/HLS/dilate/solution1/impl/verilog/Loop_loop_height_pro_dilate.v:665]
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-5545] ROM "out_stream_user_V_tm_fu_302_p2" won't be mapped to RAM because address size (30) is larger than maximum supported(25)
+WARNING: [Synth 8-6014] Unused sequential element indvar_flatten_next_reg_377_reg was removed.  [C:/Users/sdi_admin/CloudStation/HLS/dilate/solution1/impl/verilog/Loop_3_proc_dilate.v:456]
+WARNING: [Synth 8-6014] Unused sequential element SRL_SIG_reg[0] was removed.  [C:/Users/sdi_admin/CloudStation/HLS/dilate/solution1/impl/verilog/fifo_w31_d3_A.v:36]
+WARNING: [Synth 8-6014] Unused sequential element SRL_SIG_reg[1] was removed.  [C:/Users/sdi_admin/CloudStation/HLS/dilate/solution1/impl/verilog/fifo_w31_d3_A.v:36]
+WARNING: [Synth 8-6014] Unused sequential element SRL_SIG_reg[2] was removed.  [C:/Users/sdi_admin/CloudStation/HLS/dilate/solution1/impl/verilog/fifo_w31_d3_A.v:36]
+WARNING: [Synth 8-6014] Unused sequential element SRL_SIG_reg[3] was removed.  [C:/Users/sdi_admin/CloudStation/HLS/dilate/solution1/impl/verilog/fifo_w31_d3_A.v:36]
+INFO: [Synth 8-5544] ROM "internal_empty_n" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "internal_full_n" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+WARNING: [Synth 8-6014] Unused sequential element SRL_SIG_reg[0] was removed.  [C:/Users/sdi_admin/CloudStation/HLS/dilate/solution1/impl/verilog/fifo_w32_d2_A.v:36]
+WARNING: [Synth 8-6014] Unused sequential element SRL_SIG_reg[1] was removed.  [C:/Users/sdi_admin/CloudStation/HLS/dilate/solution1/impl/verilog/fifo_w32_d2_A.v:36]
+WARNING: [Synth 8-6014] Unused sequential element SRL_SIG_reg[2] was removed.  [C:/Users/sdi_admin/CloudStation/HLS/dilate/solution1/impl/verilog/fifo_w32_d2_A.v:36]
+INFO: [Synth 8-5544] ROM "internal_empty_n" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "internal_full_n" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "internal_empty_n" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+WARNING: [Synth 8-6014] Unused sequential element SRL_SIG_reg[0] was removed.  [C:/Users/sdi_admin/CloudStation/HLS/dilate/solution1/impl/verilog/fifo_w1_d2_A.v:36]
+WARNING: [Synth 8-6014] Unused sequential element SRL_SIG_reg[1] was removed.  [C:/Users/sdi_admin/CloudStation/HLS/dilate/solution1/impl/verilog/fifo_w1_d2_A.v:36]
+WARNING: [Synth 8-6014] Unused sequential element SRL_SIG_reg[2] was removed.  [C:/Users/sdi_admin/CloudStation/HLS/dilate/solution1/impl/verilog/fifo_w1_d2_A.v:36]
+INFO: [Synth 8-5544] ROM "internal_empty_n" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "internal_full_n" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+WARNING: [Synth 8-6014] Unused sequential element SRL_SIG_reg[0] was removed.  [C:/Users/sdi_admin/CloudStation/HLS/dilate/solution1/impl/verilog/fifo_w11_d2_A.v:36]
+WARNING: [Synth 8-6014] Unused sequential element SRL_SIG_reg[1] was removed.  [C:/Users/sdi_admin/CloudStation/HLS/dilate/solution1/impl/verilog/fifo_w11_d2_A.v:36]
+WARNING: [Synth 8-6014] Unused sequential element SRL_SIG_reg[2] was removed.  [C:/Users/sdi_admin/CloudStation/HLS/dilate/solution1/impl/verilog/fifo_w11_d2_A.v:36]
+INFO: [Synth 8-5544] ROM "internal_empty_n" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "internal_full_n" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "internal_empty_n" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                             0001 |                               11
+*
+                  WRIDLE |                             0010 |                               00
+                  WRDATA |                             0100 |                               01
+                  WRRESP |                             1000 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'wstate_reg' using encoding 'one-hot' in module 'dilate_hls_CONTROL_BUS_s_axi'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 836.934 ; gain = 535.586
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   2 Input     31 Bit       Adders := 2     
+	   2 Input     30 Bit       Adders := 1     
+	   2 Input     12 Bit       Adders := 4     
+	   2 Input     11 Bit       Adders := 8     
+	   2 Input      3 Bit       Adders := 10    
+	   3 Input      2 Bit       Adders := 4     
+	   2 Input      2 Bit       Adders := 5     
++---XORs : 
+	   2 Input      2 Bit         XORs := 1     
+	   2 Input      1 Bit         XORs := 13    
++---Registers : 
+	               42 Bit    Registers := 5     
+	               32 Bit    Registers := 19    
+	               31 Bit    Registers := 5     
+	               30 Bit    Registers := 3     
+	               12 Bit    Registers := 5     
+	               11 Bit    Registers := 17    
+	                8 Bit    Registers := 44    
+	                6 Bit    Registers := 2     
+	                5 Bit    Registers := 1     
+	                3 Bit    Registers := 10    
+	                2 Bit    Registers := 18    
+	                1 Bit    Registers := 114   
++---Multipliers : 
+	                11x31  Multipliers := 1     
+	                32x32  Multipliers := 1     
+	                31x32  Multipliers := 1     
++---RAMs : 
+	              15K Bit         RAMs := 3     
++---Muxes : 
+	   2 Input     42 Bit        Muxes := 1     
+	   9 Input     32 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 4     
+	   2 Input     31 Bit        Muxes := 2     
+	   2 Input     30 Bit        Muxes := 1     
+	  13 Input     12 Bit        Muxes := 1     
+	   2 Input     11 Bit        Muxes := 8     
+	   3 Input     11 Bit        Muxes := 2     
+	   2 Input     10 Bit        Muxes := 2     
+	   2 Input      8 Bit        Muxes := 37    
+	   3 Input      6 Bit        Muxes := 2     
+	   2 Input      5 Bit        Muxes := 2     
+	   3 Input      5 Bit        Muxes := 1     
+	   7 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 31    
+	   4 Input      2 Bit        Muxes := 3     
+	   5 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 96    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module dilate_hls 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 4     
++---Registers : 
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module dilate_hls_CONTROL_BUS_s_axi 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	               32 Bit    Registers := 5     
+	                6 Bit    Registers := 1     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 11    
++---Muxes : 
+	   9 Input     32 Bit        Muxes := 1     
+	   7 Input      4 Bit        Muxes := 1     
+	   5 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module dilate_hls_mul_32bkb_MulnS_0 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 5     
++---Multipliers : 
+	                32x32  Multipliers := 1     
+Module dilate_hls_mul_32cud_MulnS_1 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 4     
+	               31 Bit    Registers := 1     
++---Multipliers : 
+	                31x32  Multipliers := 1     
+Module Block_Mat_exit406734 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     31 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	               12 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   2 Input     31 Bit        Muxes := 1     
+	  13 Input     12 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+Module Loop_1_proc 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	               32 Bit    Registers := 2     
+	               31 Bit    Registers := 1     
+	                8 Bit    Registers := 3     
+	                6 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 7     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input     31 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 3     
+	   3 Input      6 Bit        Muxes := 2     
+	   2 Input      5 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 2     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 7     
+Module Block_arrayctor_loop 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   2 Input     11 Bit       Adders := 4     
++---Registers : 
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 3     
+Module Loop_loop_height_dEe_ram 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
++---RAMs : 
+	              15K Bit         RAMs := 1     
+Module dilate_hls_mux_32g8j 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 2     
+Module Loop_loop_height_pro 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     12 Bit       Adders := 4     
+	   2 Input     11 Bit       Adders := 3     
+	   3 Input      2 Bit       Adders := 4     
+	   2 Input      2 Bit       Adders := 2     
++---XORs : 
+	   2 Input      2 Bit         XORs := 1     
+	   2 Input      1 Bit         XORs := 5     
++---Registers : 
+	               12 Bit    Registers := 4     
+	               11 Bit    Registers := 10    
+	                8 Bit    Registers := 31    
+	                5 Bit    Registers := 1     
+	                2 Bit    Registers := 8     
+	                1 Bit    Registers := 45    
++---Muxes : 
+	   2 Input     11 Bit        Muxes := 2     
+	   2 Input      8 Bit        Muxes := 19    
+	   3 Input      5 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 7     
+	   2 Input      1 Bit        Muxes := 7     
+Module dilate_hls_mul_31hbi_MulnS_2 
+Detailed RTL Component Info : 
++---Registers : 
+	               42 Bit    Registers := 3     
+	               31 Bit    Registers := 1     
+	               11 Bit    Registers := 1     
++---Multipliers : 
+	                11x31  Multipliers := 1     
+Module Loop_3_proc 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     31 Bit       Adders := 1     
+	   2 Input     30 Bit       Adders := 1     
+	   2 Input     11 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	               42 Bit    Registers := 2     
+	               32 Bit    Registers := 2     
+	               31 Bit    Registers := 2     
+	               30 Bit    Registers := 3     
+	               11 Bit    Registers := 4     
+	                8 Bit    Registers := 3     
+	                2 Bit    Registers := 3     
+	                1 Bit    Registers := 20    
++---Muxes : 
+	   2 Input     42 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input     30 Bit        Muxes := 1     
+	   3 Input     11 Bit        Muxes := 2     
+	   2 Input     11 Bit        Muxes := 5     
+	   2 Input     10 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 10    
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 13    
+Module fifo_w31_d3_A 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 5     
+Module fifo_w32_d2_A 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 5     
+Module fifo_w8_d1_A_shiftReg 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module fifo_w8_d1_A 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 4     
+Module fifo_w1_d2_A 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 5     
+Module fifo_w11_d2_A 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 5     
+Module fifo_w11_d1_A_shiftReg 
+Detailed RTL Component Info : 
++---Registers : 
+	               11 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     11 Bit        Muxes := 1     
+Module fifo_w11_d1_A 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 4     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [C:/Users/sdi_admin/CloudStation/HLS/dilate/solution1/impl/verilog/dilate_hls_mul_32bkb.v:26]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [C:/Users/sdi_admin/CloudStation/HLS/dilate/solution1/impl/verilog/dilate_hls_mul_32cud.v:26]
+WARNING: [Synth 8-6014] Unused sequential element dilate_hls_mul_32bkb_U1/dilate_hls_mul_32bkb_MulnS_0_U/buff0_reg was removed.  [C:/Users/sdi_admin/CloudStation/HLS/dilate/solution1/impl/verilog/dilate_hls_mul_32bkb.v:31]
+WARNING: [Synth 8-6014] Unused sequential element dilate_hls_mul_32bkb_U1/dilate_hls_mul_32bkb_MulnS_0_U/buff1_reg was removed.  [C:/Users/sdi_admin/CloudStation/HLS/dilate/solution1/impl/verilog/dilate_hls_mul_32bkb.v:32]
+WARNING: [Synth 8-6014] Unused sequential element dilate_hls_mul_32bkb_U1/dilate_hls_mul_32bkb_MulnS_0_U/buff2_reg was removed.  [C:/Users/sdi_admin/CloudStation/HLS/dilate/solution1/impl/verilog/dilate_hls_mul_32bkb.v:25]
+WARNING: [Synth 8-6014] Unused sequential element dilate_hls_mul_32cud_U2/dilate_hls_mul_32cud_MulnS_1_U/buff0_reg was removed.  [C:/Users/sdi_admin/CloudStation/HLS/dilate/solution1/impl/verilog/dilate_hls_mul_32cud.v:31]
+WARNING: [Synth 8-6014] Unused sequential element dilate_hls_mul_32cud_U2/dilate_hls_mul_32cud_MulnS_1_U/buff1_reg was removed.  [C:/Users/sdi_admin/CloudStation/HLS/dilate/solution1/impl/verilog/dilate_hls_mul_32cud.v:32]
+WARNING: [Synth 8-6014] Unused sequential element dilate_hls_mul_32cud_U2/dilate_hls_mul_32cud_MulnS_1_U/buff2_reg was removed.  [C:/Users/sdi_admin/CloudStation/HLS/dilate/solution1/impl/verilog/dilate_hls_mul_32cud.v:25]
+WARNING: [Synth 8-6014] Unused sequential element dilate_hls_mul_32bkb_U1/dilate_hls_mul_32bkb_MulnS_0_U/buff0_reg was removed.  [C:/Users/sdi_admin/CloudStation/HLS/dilate/solution1/impl/verilog/dilate_hls_mul_32bkb.v:31]
+WARNING: [Synth 8-6014] Unused sequential element dilate_hls_mul_32bkb_U1/dilate_hls_mul_32bkb_MulnS_0_U/buff0_reg was removed.  [C:/Users/sdi_admin/CloudStation/HLS/dilate/solution1/impl/verilog/dilate_hls_mul_32bkb.v:31]
+WARNING: [Synth 8-6014] Unused sequential element dilate_hls_mul_32bkb_U1/dilate_hls_mul_32bkb_MulnS_0_U/buff1_reg was removed.  [C:/Users/sdi_admin/CloudStation/HLS/dilate/solution1/impl/verilog/dilate_hls_mul_32bkb.v:32]
+WARNING: [Synth 8-6014] Unused sequential element dilate_hls_mul_32bkb_U1/dilate_hls_mul_32bkb_MulnS_0_U/buff2_reg was removed.  [C:/Users/sdi_admin/CloudStation/HLS/dilate/solution1/impl/verilog/dilate_hls_mul_32bkb.v:25]
+WARNING: [Synth 8-6014] Unused sequential element dilate_hls_mul_32cud_U2/dilate_hls_mul_32cud_MulnS_1_U/buff0_reg was removed.  [C:/Users/sdi_admin/CloudStation/HLS/dilate/solution1/impl/verilog/dilate_hls_mul_32cud.v:31]
+WARNING: [Synth 8-6014] Unused sequential element dilate_hls_mul_32cud_U2/dilate_hls_mul_32cud_MulnS_1_U/buff0_reg was removed.  [C:/Users/sdi_admin/CloudStation/HLS/dilate/solution1/impl/verilog/dilate_hls_mul_32cud.v:31]
+WARNING: [Synth 8-6014] Unused sequential element dilate_hls_mul_32cud_U2/dilate_hls_mul_32cud_MulnS_1_U/buff1_reg was removed.  [C:/Users/sdi_admin/CloudStation/HLS/dilate/solution1/impl/verilog/dilate_hls_mul_32cud.v:32]
+WARNING: [Synth 8-6014] Unused sequential element dilate_hls_mul_32cud_U2/dilate_hls_mul_32cud_MulnS_1_U/buff2_reg was removed.  [C:/Users/sdi_admin/CloudStation/HLS/dilate/solution1/impl/verilog/dilate_hls_mul_32cud.v:25]
+WARNING: [Synth 8-6014] Unused sequential element dilate_hls_mul_32bkb_U1/dilate_hls_mul_32bkb_MulnS_0_U/buff0_reg was removed.  [C:/Users/sdi_admin/CloudStation/HLS/dilate/solution1/impl/verilog/dilate_hls_mul_32bkb.v:31]
+WARNING: [Synth 8-6014] Unused sequential element dilate_hls_mul_32bkb_U1/dilate_hls_mul_32bkb_MulnS_0_U/buff1_reg was removed.  [C:/Users/sdi_admin/CloudStation/HLS/dilate/solution1/impl/verilog/dilate_hls_mul_32bkb.v:32]
+WARNING: [Synth 8-6014] Unused sequential element dilate_hls_mul_32cud_U2/dilate_hls_mul_32cud_MulnS_1_U/buff0_reg was removed.  [C:/Users/sdi_admin/CloudStation/HLS/dilate/solution1/impl/verilog/dilate_hls_mul_32cud.v:31]
+WARNING: [Synth 8-6014] Unused sequential element dilate_hls_mul_32cud_U2/dilate_hls_mul_32cud_MulnS_1_U/buff1_reg was removed.  [C:/Users/sdi_admin/CloudStation/HLS/dilate/solution1/impl/verilog/dilate_hls_mul_32cud.v:32]
+WARNING: [Synth 8-6014] Unused sequential element dilate_hls_mul_32bkb_U1/dilate_hls_mul_32bkb_MulnS_0_U/buff0_reg was removed.  [C:/Users/sdi_admin/CloudStation/HLS/dilate/solution1/impl/verilog/dilate_hls_mul_32bkb.v:31]
+WARNING: [Synth 8-6014] Unused sequential element dilate_hls_mul_32bkb_U1/dilate_hls_mul_32bkb_MulnS_0_U/buff1_reg was removed.  [C:/Users/sdi_admin/CloudStation/HLS/dilate/solution1/impl/verilog/dilate_hls_mul_32bkb.v:32]
+WARNING: [Synth 8-6014] Unused sequential element dilate_hls_mul_32cud_U2/dilate_hls_mul_32cud_MulnS_1_U/buff0_reg was removed.  [C:/Users/sdi_admin/CloudStation/HLS/dilate/solution1/impl/verilog/dilate_hls_mul_32cud.v:31]
+WARNING: [Synth 8-6014] Unused sequential element dilate_hls_mul_32cud_U2/dilate_hls_mul_32cud_MulnS_1_U/buff1_reg was removed.  [C:/Users/sdi_admin/CloudStation/HLS/dilate/solution1/impl/verilog/dilate_hls_mul_32cud.v:32]
+WARNING: [Synth 8-6014] Unused sequential element dilate_hls_mul_32bkb_U1/dilate_hls_mul_32bkb_MulnS_0_U/buff0_reg was removed.  [C:/Users/sdi_admin/CloudStation/HLS/dilate/solution1/impl/verilog/dilate_hls_mul_32bkb.v:31]
+WARNING: [Synth 8-6014] Unused sequential element dilate_hls_mul_32cud_U2/dilate_hls_mul_32cud_MulnS_1_U/buff0_reg was removed.  [C:/Users/sdi_admin/CloudStation/HLS/dilate/solution1/impl/verilog/dilate_hls_mul_32cud.v:31]
+WARNING: [Synth 8-6014] Unused sequential element dilate_hls_mul_32bkb_U1/dilate_hls_mul_32bkb_MulnS_0_U/buff1_reg was removed.  [C:/Users/sdi_admin/CloudStation/HLS/dilate/solution1/impl/verilog/dilate_hls_mul_32bkb.v:32]
+WARNING: [Synth 8-6014] Unused sequential element dilate_hls_mul_32bkb_U1/dilate_hls_mul_32bkb_MulnS_0_U/buff0_reg was removed.  [C:/Users/sdi_admin/CloudStation/HLS/dilate/solution1/impl/verilog/dilate_hls_mul_32bkb.v:31]
+WARNING: [Synth 8-6014] Unused sequential element dilate_hls_mul_32cud_U2/dilate_hls_mul_32cud_MulnS_1_U/buff1_reg was removed.  [C:/Users/sdi_admin/CloudStation/HLS/dilate/solution1/impl/verilog/dilate_hls_mul_32cud.v:32]
+WARNING: [Synth 8-6014] Unused sequential element dilate_hls_mul_32cud_U2/dilate_hls_mul_32cud_MulnS_1_U/buff0_reg was removed.  [C:/Users/sdi_admin/CloudStation/HLS/dilate/solution1/impl/verilog/dilate_hls_mul_32cud.v:31]
+WARNING: [Synth 8-6014] Unused sequential element dilate_hls_mul_32bkb_U1/dilate_hls_mul_32bkb_MulnS_0_U/buff0_reg was removed.  [C:/Users/sdi_admin/CloudStation/HLS/dilate/solution1/impl/verilog/dilate_hls_mul_32bkb.v:31]
+WARNING: [Synth 8-6014] Unused sequential element dilate_hls_mul_32bkb_U1/dilate_hls_mul_32bkb_MulnS_0_U/buff0_reg was removed.  [C:/Users/sdi_admin/CloudStation/HLS/dilate/solution1/impl/verilog/dilate_hls_mul_32bkb.v:31]
+WARNING: [Synth 8-6014] Unused sequential element dilate_hls_mul_32cud_U2/dilate_hls_mul_32cud_MulnS_1_U/buff0_reg was removed.  [C:/Users/sdi_admin/CloudStation/HLS/dilate/solution1/impl/verilog/dilate_hls_mul_32cud.v:31]
+WARNING: [Synth 8-6014] Unused sequential element dilate_hls_mul_32cud_U2/dilate_hls_mul_32cud_MulnS_1_U/buff0_reg was removed.  [C:/Users/sdi_admin/CloudStation/HLS/dilate/solution1/impl/verilog/dilate_hls_mul_32cud.v:31]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [C:/Users/sdi_admin/CloudStation/HLS/dilate/solution1/impl/verilog/dilate_hls_mul_32bkb.v:26]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [C:/Users/sdi_admin/CloudStation/HLS/dilate/solution1/impl/verilog/dilate_hls_mul_32bkb.v:26]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [C:/Users/sdi_admin/CloudStation/HLS/dilate/solution1/impl/verilog/dilate_hls_mul_32bkb.v:26]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [C:/Users/sdi_admin/CloudStation/HLS/dilate/solution1/impl/verilog/dilate_hls_mul_32bkb.v:25]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [C:/Users/sdi_admin/CloudStation/HLS/dilate/solution1/impl/verilog/dilate_hls_mul_32cud.v:26]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [C:/Users/sdi_admin/CloudStation/HLS/dilate/solution1/impl/verilog/dilate_hls_mul_32cud.v:26]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [C:/Users/sdi_admin/CloudStation/HLS/dilate/solution1/impl/verilog/dilate_hls_mul_32cud.v:26]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [C:/Users/sdi_admin/CloudStation/HLS/dilate/solution1/impl/verilog/dilate_hls_mul_32cud.v:25]
+DSP Report: Generating DSP dilate_hls_mul_32bkb_U1/dilate_hls_mul_32bkb_MulnS_0_U/buff0_reg, operation Mode is: (A2*B2)'.
+DSP Report: register B is absorbed into DSP dilate_hls_mul_32bkb_U1/dilate_hls_mul_32bkb_MulnS_0_U/buff0_reg.
+DSP Report: register A is absorbed into DSP dilate_hls_mul_32bkb_U1/dilate_hls_mul_32bkb_MulnS_0_U/buff0_reg.
+DSP Report: register dilate_hls_mul_32bkb_U1/dilate_hls_mul_32bkb_MulnS_0_U/buff0_reg is absorbed into DSP dilate_hls_mul_32bkb_U1/dilate_hls_mul_32bkb_MulnS_0_U/buff0_reg.
+DSP Report: operator dilate_hls_mul_32bkb_U1/dilate_hls_mul_32bkb_MulnS_0_U/tmp_product is absorbed into DSP dilate_hls_mul_32bkb_U1/dilate_hls_mul_32bkb_MulnS_0_U/buff0_reg.
+DSP Report: operator dilate_hls_mul_32bkb_U1/dilate_hls_mul_32bkb_MulnS_0_U/tmp_product is absorbed into DSP dilate_hls_mul_32bkb_U1/dilate_hls_mul_32bkb_MulnS_0_U/buff0_reg.
+DSP Report: Generating DSP dilate_hls_mul_32bkb_U1/dilate_hls_mul_32bkb_MulnS_0_U/buff1_reg, operation Mode is: (PCIN>>17)+(A2*B)'.
+DSP Report: register A is absorbed into DSP dilate_hls_mul_32bkb_U1/dilate_hls_mul_32bkb_MulnS_0_U/buff1_reg.
+DSP Report: register dilate_hls_mul_32bkb_U1/dilate_hls_mul_32bkb_MulnS_0_U/buff1_reg is absorbed into DSP dilate_hls_mul_32bkb_U1/dilate_hls_mul_32bkb_MulnS_0_U/buff1_reg.
+DSP Report: register dilate_hls_mul_32bkb_U1/dilate_hls_mul_32bkb_MulnS_0_U/buff0_reg is absorbed into DSP dilate_hls_mul_32bkb_U1/dilate_hls_mul_32bkb_MulnS_0_U/buff1_reg.
+DSP Report: operator dilate_hls_mul_32bkb_U1/dilate_hls_mul_32bkb_MulnS_0_U/tmp_product is absorbed into DSP dilate_hls_mul_32bkb_U1/dilate_hls_mul_32bkb_MulnS_0_U/buff1_reg.
+DSP Report: operator dilate_hls_mul_32bkb_U1/dilate_hls_mul_32bkb_MulnS_0_U/tmp_product is absorbed into DSP dilate_hls_mul_32bkb_U1/dilate_hls_mul_32bkb_MulnS_0_U/buff1_reg.
+DSP Report: Generating DSP dilate_hls_mul_32bkb_U1/dilate_hls_mul_32bkb_MulnS_0_U/buff2_reg, operation Mode is: (PCIN+(A''*B2)')'.
+DSP Report: register dilate_hls_mul_32bkb_U1/dilate_hls_mul_32bkb_MulnS_0_U/buff0_reg is absorbed into DSP dilate_hls_mul_32bkb_U1/dilate_hls_mul_32bkb_MulnS_0_U/buff2_reg.
+DSP Report: register A is absorbed into DSP dilate_hls_mul_32bkb_U1/dilate_hls_mul_32bkb_MulnS_0_U/buff2_reg.
+DSP Report: register dilate_hls_mul_32bkb_U1/dilate_hls_mul_32bkb_MulnS_0_U/buff0_reg is absorbed into DSP dilate_hls_mul_32bkb_U1/dilate_hls_mul_32bkb_MulnS_0_U/buff2_reg.
+DSP Report: register dilate_hls_mul_32bkb_U1/dilate_hls_mul_32bkb_MulnS_0_U/buff2_reg is absorbed into DSP dilate_hls_mul_32bkb_U1/dilate_hls_mul_32bkb_MulnS_0_U/buff2_reg.
+DSP Report: register dilate_hls_mul_32bkb_U1/dilate_hls_mul_32bkb_MulnS_0_U/buff1_reg is absorbed into DSP dilate_hls_mul_32bkb_U1/dilate_hls_mul_32bkb_MulnS_0_U/buff2_reg.
+DSP Report: operator dilate_hls_mul_32bkb_U1/dilate_hls_mul_32bkb_MulnS_0_U/tmp_product is absorbed into DSP dilate_hls_mul_32bkb_U1/dilate_hls_mul_32bkb_MulnS_0_U/buff2_reg.
+DSP Report: operator dilate_hls_mul_32bkb_U1/dilate_hls_mul_32bkb_MulnS_0_U/tmp_product is absorbed into DSP dilate_hls_mul_32bkb_U1/dilate_hls_mul_32bkb_MulnS_0_U/buff2_reg.
+DSP Report: Generating DSP dilate_hls_mul_32cud_U2/dilate_hls_mul_32cud_MulnS_1_U/buff0_reg, operation Mode is: (A2*B2)'.
+DSP Report: register B is absorbed into DSP dilate_hls_mul_32cud_U2/dilate_hls_mul_32cud_MulnS_1_U/buff0_reg.
+DSP Report: register A is absorbed into DSP dilate_hls_mul_32cud_U2/dilate_hls_mul_32cud_MulnS_1_U/buff0_reg.
+DSP Report: register dilate_hls_mul_32cud_U2/dilate_hls_mul_32cud_MulnS_1_U/buff0_reg is absorbed into DSP dilate_hls_mul_32cud_U2/dilate_hls_mul_32cud_MulnS_1_U/buff0_reg.
+DSP Report: operator dilate_hls_mul_32cud_U2/dilate_hls_mul_32cud_MulnS_1_U/tmp_product is absorbed into DSP dilate_hls_mul_32cud_U2/dilate_hls_mul_32cud_MulnS_1_U/buff0_reg.
+DSP Report: operator dilate_hls_mul_32cud_U2/dilate_hls_mul_32cud_MulnS_1_U/tmp_product is absorbed into DSP dilate_hls_mul_32cud_U2/dilate_hls_mul_32cud_MulnS_1_U/buff0_reg.
+DSP Report: Generating DSP dilate_hls_mul_32cud_U2/dilate_hls_mul_32cud_MulnS_1_U/buff1_reg, operation Mode is: (PCIN>>17)+(A2*B)'.
+DSP Report: register A is absorbed into DSP dilate_hls_mul_32cud_U2/dilate_hls_mul_32cud_MulnS_1_U/buff1_reg.
+DSP Report: register dilate_hls_mul_32cud_U2/dilate_hls_mul_32cud_MulnS_1_U/buff1_reg is absorbed into DSP dilate_hls_mul_32cud_U2/dilate_hls_mul_32cud_MulnS_1_U/buff1_reg.
+DSP Report: register dilate_hls_mul_32cud_U2/dilate_hls_mul_32cud_MulnS_1_U/buff0_reg is absorbed into DSP dilate_hls_mul_32cud_U2/dilate_hls_mul_32cud_MulnS_1_U/buff1_reg.
+DSP Report: operator dilate_hls_mul_32cud_U2/dilate_hls_mul_32cud_MulnS_1_U/tmp_product is absorbed into DSP dilate_hls_mul_32cud_U2/dilate_hls_mul_32cud_MulnS_1_U/buff1_reg.
+DSP Report: operator dilate_hls_mul_32cud_U2/dilate_hls_mul_32cud_MulnS_1_U/tmp_product is absorbed into DSP dilate_hls_mul_32cud_U2/dilate_hls_mul_32cud_MulnS_1_U/buff1_reg.
+DSP Report: Generating DSP dilate_hls_mul_32cud_U2/dilate_hls_mul_32cud_MulnS_1_U/buff2_reg, operation Mode is: (PCIN+(A''*B2)')'.
+DSP Report: register dilate_hls_mul_32cud_U2/dilate_hls_mul_32cud_MulnS_1_U/buff0_reg is absorbed into DSP dilate_hls_mul_32cud_U2/dilate_hls_mul_32cud_MulnS_1_U/buff2_reg.
+DSP Report: register A is absorbed into DSP dilate_hls_mul_32cud_U2/dilate_hls_mul_32cud_MulnS_1_U/buff2_reg.
+DSP Report: register dilate_hls_mul_32cud_U2/dilate_hls_mul_32cud_MulnS_1_U/buff0_reg is absorbed into DSP dilate_hls_mul_32cud_U2/dilate_hls_mul_32cud_MulnS_1_U/buff2_reg.
+DSP Report: register dilate_hls_mul_32cud_U2/dilate_hls_mul_32cud_MulnS_1_U/buff2_reg is absorbed into DSP dilate_hls_mul_32cud_U2/dilate_hls_mul_32cud_MulnS_1_U/buff2_reg.
+DSP Report: register dilate_hls_mul_32cud_U2/dilate_hls_mul_32cud_MulnS_1_U/buff1_reg is absorbed into DSP dilate_hls_mul_32cud_U2/dilate_hls_mul_32cud_MulnS_1_U/buff2_reg.
+DSP Report: operator dilate_hls_mul_32cud_U2/dilate_hls_mul_32cud_MulnS_1_U/tmp_product is absorbed into DSP dilate_hls_mul_32cud_U2/dilate_hls_mul_32cud_MulnS_1_U/buff2_reg.
+DSP Report: operator dilate_hls_mul_32cud_U2/dilate_hls_mul_32cud_MulnS_1_U/tmp_product is absorbed into DSP dilate_hls_mul_32cud_U2/dilate_hls_mul_32cud_MulnS_1_U/buff2_reg.
+WARNING: [Synth 8-6014] Unused sequential element r_reg_163_reg was removed.  [C:/Users/sdi_admin/CloudStation/HLS/dilate/solution1/impl/verilog/Loop_1_proc_dilate.v:243]
+INFO: [Synth 8-5545] ROM "switch_out_out_din" won't be mapped to RAM because address size (31) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "tmp_76_i_i_fu_546_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tmp_76_2_i_i_fu_552_p2" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-6014] Unused sequential element t_V_1_reg_433_reg was removed.  [C:/Users/sdi_admin/CloudStation/HLS/dilate/solution1/impl/verilog/Loop_loop_height_pro_dilate.v:665]
+INFO: [Synth 8-5545] ROM "out_stream_user_V_tm_fu_302_p2" won't be mapped to RAM because address size (30) is larger than maximum supported(25)
+WARNING: [Synth 8-6014] Unused sequential element dilate_hls_mul_31hbi_U45/dilate_hls_mul_31hbi_MulnS_2_U/buff0_reg was removed.  [C:/Users/sdi_admin/CloudStation/HLS/dilate/solution1/impl/verilog/dilate_hls_mul_31hbi.v:31]
+WARNING: [Synth 8-6014] Unused sequential element dilate_hls_mul_31hbi_U45/dilate_hls_mul_31hbi_MulnS_2_U/buff1_reg was removed.  [C:/Users/sdi_admin/CloudStation/HLS/dilate/solution1/impl/verilog/dilate_hls_mul_31hbi.v:32]
+WARNING: [Synth 8-6014] Unused sequential element dilate_hls_mul_31hbi_U45/dilate_hls_mul_31hbi_MulnS_2_U/buff2_reg was removed.  [C:/Users/sdi_admin/CloudStation/HLS/dilate/solution1/impl/verilog/dilate_hls_mul_31hbi.v:25]
+WARNING: [Synth 8-6014] Unused sequential element dilate_hls_mul_31hbi_U45/dilate_hls_mul_31hbi_MulnS_2_U/buff0_reg was removed.  [C:/Users/sdi_admin/CloudStation/HLS/dilate/solution1/impl/verilog/dilate_hls_mul_31hbi.v:31]
+WARNING: [Synth 8-6014] Unused sequential element dilate_hls_mul_31hbi_U45/dilate_hls_mul_31hbi_MulnS_2_U/buff1_reg was removed.  [C:/Users/sdi_admin/CloudStation/HLS/dilate/solution1/impl/verilog/dilate_hls_mul_31hbi.v:32]
+WARNING: [Synth 8-6014] Unused sequential element dilate_hls_mul_31hbi_U45/dilate_hls_mul_31hbi_MulnS_2_U/buff0_reg was removed.  [C:/Users/sdi_admin/CloudStation/HLS/dilate/solution1/impl/verilog/dilate_hls_mul_31hbi.v:31]
+WARNING: [Synth 8-6014] Unused sequential element dilate_hls_mul_31hbi_U45/dilate_hls_mul_31hbi_MulnS_2_U/buff1_reg was removed.  [C:/Users/sdi_admin/CloudStation/HLS/dilate/solution1/impl/verilog/dilate_hls_mul_31hbi.v:32]
+WARNING: [Synth 8-6014] Unused sequential element dilate_hls_mul_31hbi_U45/dilate_hls_mul_31hbi_MulnS_2_U/buff1_reg was removed.  [C:/Users/sdi_admin/CloudStation/HLS/dilate/solution1/impl/verilog/dilate_hls_mul_31hbi.v:32]
+WARNING: [Synth 8-6014] Unused sequential element dilate_hls_mul_31hbi_U45/dilate_hls_mul_31hbi_MulnS_2_U/buff0_reg was removed.  [C:/Users/sdi_admin/CloudStation/HLS/dilate/solution1/impl/verilog/dilate_hls_mul_31hbi.v:31]
+WARNING: [Synth 8-6014] Unused sequential element dilate_hls_mul_31hbi_U45/dilate_hls_mul_31hbi_MulnS_2_U/b_reg0_reg was removed.  [C:/Users/sdi_admin/CloudStation/HLS/dilate/solution1/impl/verilog/dilate_hls_mul_31hbi.v:26]
+WARNING: [Synth 8-6014] Unused sequential element dilate_hls_mul_31hbi_U45/dilate_hls_mul_31hbi_MulnS_2_U/buff0_reg was removed.  [C:/Users/sdi_admin/CloudStation/HLS/dilate/solution1/impl/verilog/dilate_hls_mul_31hbi.v:31]
+WARNING: [Synth 8-6014] Unused sequential element dilate_hls_mul_31hbi_U45/dilate_hls_mul_31hbi_MulnS_2_U/buff0_reg was removed.  [C:/Users/sdi_admin/CloudStation/HLS/dilate/solution1/impl/verilog/dilate_hls_mul_31hbi.v:31]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [C:/Users/sdi_admin/CloudStation/HLS/dilate/solution1/impl/verilog/dilate_hls_mul_31hbi.v:26]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [C:/Users/sdi_admin/CloudStation/HLS/dilate/solution1/impl/verilog/dilate_hls_mul_31hbi.v:26]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [C:/Users/sdi_admin/CloudStation/HLS/dilate/solution1/impl/verilog/dilate_hls_mul_31hbi.v:25]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [C:/Users/sdi_admin/CloudStation/HLS/dilate/solution1/impl/verilog/dilate_hls_mul_31hbi.v:25]
+WARNING: [Synth 8-6014] Unused sequential element indvar_flatten_next_reg_377_reg was removed.  [C:/Users/sdi_admin/CloudStation/HLS/dilate/solution1/impl/verilog/Loop_3_proc_dilate.v:456]
+DSP Report: Generating DSP dilate_hls_mul_31hbi_U45/dilate_hls_mul_31hbi_MulnS_2_U/buff1_reg, operation Mode is: (A2*B2)'.
+DSP Report: register B is absorbed into DSP dilate_hls_mul_31hbi_U45/dilate_hls_mul_31hbi_MulnS_2_U/buff1_reg.
+DSP Report: register A is absorbed into DSP dilate_hls_mul_31hbi_U45/dilate_hls_mul_31hbi_MulnS_2_U/buff1_reg.
+DSP Report: register dilate_hls_mul_31hbi_U45/dilate_hls_mul_31hbi_MulnS_2_U/buff1_reg is absorbed into DSP dilate_hls_mul_31hbi_U45/dilate_hls_mul_31hbi_MulnS_2_U/buff1_reg.
+DSP Report: register dilate_hls_mul_31hbi_U45/dilate_hls_mul_31hbi_MulnS_2_U/buff0_reg is absorbed into DSP dilate_hls_mul_31hbi_U45/dilate_hls_mul_31hbi_MulnS_2_U/buff1_reg.
+DSP Report: operator dilate_hls_mul_31hbi_U45/dilate_hls_mul_31hbi_MulnS_2_U/tmp_product is absorbed into DSP dilate_hls_mul_31hbi_U45/dilate_hls_mul_31hbi_MulnS_2_U/buff1_reg.
+DSP Report: operator dilate_hls_mul_31hbi_U45/dilate_hls_mul_31hbi_MulnS_2_U/tmp_product is absorbed into DSP dilate_hls_mul_31hbi_U45/dilate_hls_mul_31hbi_MulnS_2_U/buff1_reg.
+DSP Report: Generating DSP dilate_hls_mul_31hbi_U45/dilate_hls_mul_31hbi_MulnS_2_U/buff2_reg, operation Mode is: (PCIN>>17)+(A2*B'')'.
+DSP Report: register B is absorbed into DSP dilate_hls_mul_31hbi_U45/dilate_hls_mul_31hbi_MulnS_2_U/buff2_reg.
+DSP Report: register B is absorbed into DSP dilate_hls_mul_31hbi_U45/dilate_hls_mul_31hbi_MulnS_2_U/buff2_reg.
+DSP Report: register dilate_hls_mul_31hbi_U45/dilate_hls_mul_31hbi_MulnS_2_U/buff0_reg is absorbed into DSP dilate_hls_mul_31hbi_U45/dilate_hls_mul_31hbi_MulnS_2_U/buff2_reg.
+DSP Report: register dilate_hls_mul_31hbi_U45/dilate_hls_mul_31hbi_MulnS_2_U/buff2_reg is absorbed into DSP dilate_hls_mul_31hbi_U45/dilate_hls_mul_31hbi_MulnS_2_U/buff2_reg.
+DSP Report: register dilate_hls_mul_31hbi_U45/dilate_hls_mul_31hbi_MulnS_2_U/buff1_reg is absorbed into DSP dilate_hls_mul_31hbi_U45/dilate_hls_mul_31hbi_MulnS_2_U/buff2_reg.
+DSP Report: operator dilate_hls_mul_31hbi_U45/dilate_hls_mul_31hbi_MulnS_2_U/tmp_product is absorbed into DSP dilate_hls_mul_31hbi_U45/dilate_hls_mul_31hbi_MulnS_2_U/buff2_reg.
+DSP Report: operator dilate_hls_mul_31hbi_U45/dilate_hls_mul_31hbi_MulnS_2_U/tmp_product is absorbed into DSP dilate_hls_mul_31hbi_U45/dilate_hls_mul_31hbi_MulnS_2_U/buff2_reg.
+INFO: [Synth 8-3886] merging instance 'Loop_loop_height_pro_U0/ImagLoc_x_reg_1353_reg[0]' (FDE) to 'Loop_loop_height_pro_U0/ImagLoc_x_cast_reg_1358_reg[0]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Loop_1_proc_U0/ap_done_reg_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Block_arrayctor_loop_U0/ap_done_reg_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Loop_loop_height_pro_U0/ap_done_reg_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Loop_3_proc_U0/ap_done_reg_reg )
+WARNING: [Synth 8-3332] Sequential element (Block_Mat_exit406734_U0/dilate_hls_mul_32bkb_U1/dilate_hls_mul_32bkb_MulnS_0_U/buff1_reg[47]) is unused and will be removed from module dilate_hls.
+WARNING: [Synth 8-3332] Sequential element (Block_Mat_exit406734_U0/dilate_hls_mul_32bkb_U1/dilate_hls_mul_32bkb_MulnS_0_U/buff1_reg[46]) is unused and will be removed from module dilate_hls.
+WARNING: [Synth 8-3332] Sequential element (Block_Mat_exit406734_U0/dilate_hls_mul_32bkb_U1/dilate_hls_mul_32bkb_MulnS_0_U/buff1_reg[45]) is unused and will be removed from module dilate_hls.
+WARNING: [Synth 8-3332] Sequential element (Block_Mat_exit406734_U0/dilate_hls_mul_32bkb_U1/dilate_hls_mul_32bkb_MulnS_0_U/buff1_reg[44]) is unused and will be removed from module dilate_hls.
+WARNING: [Synth 8-3332] Sequential element (Block_Mat_exit406734_U0/dilate_hls_mul_32bkb_U1/dilate_hls_mul_32bkb_MulnS_0_U/buff1_reg[43]) is unused and will be removed from module dilate_hls.
+WARNING: [Synth 8-3332] Sequential element (Block_Mat_exit406734_U0/dilate_hls_mul_32bkb_U1/dilate_hls_mul_32bkb_MulnS_0_U/buff1_reg[42]) is unused and will be removed from module dilate_hls.
+WARNING: [Synth 8-3332] Sequential element (Block_Mat_exit406734_U0/dilate_hls_mul_32bkb_U1/dilate_hls_mul_32bkb_MulnS_0_U/buff1_reg[41]) is unused and will be removed from module dilate_hls.
+WARNING: [Synth 8-3332] Sequential element (Block_Mat_exit406734_U0/dilate_hls_mul_32bkb_U1/dilate_hls_mul_32bkb_MulnS_0_U/buff1_reg[40]) is unused and will be removed from module dilate_hls.
+WARNING: [Synth 8-3332] Sequential element (Block_Mat_exit406734_U0/dilate_hls_mul_32bkb_U1/dilate_hls_mul_32bkb_MulnS_0_U/buff1_reg[39]) is unused and will be removed from module dilate_hls.
+WARNING: [Synth 8-3332] Sequential element (Block_Mat_exit406734_U0/dilate_hls_mul_32bkb_U1/dilate_hls_mul_32bkb_MulnS_0_U/buff1_reg[38]) is unused and will be removed from module dilate_hls.
+WARNING: [Synth 8-3332] Sequential element (Block_Mat_exit406734_U0/dilate_hls_mul_32bkb_U1/dilate_hls_mul_32bkb_MulnS_0_U/buff1_reg[37]) is unused and will be removed from module dilate_hls.
+WARNING: [Synth 8-3332] Sequential element (Block_Mat_exit406734_U0/dilate_hls_mul_32bkb_U1/dilate_hls_mul_32bkb_MulnS_0_U/buff1_reg[36]) is unused and will be removed from module dilate_hls.
+WARNING: [Synth 8-3332] Sequential element (Block_Mat_exit406734_U0/dilate_hls_mul_32bkb_U1/dilate_hls_mul_32bkb_MulnS_0_U/buff1_reg[35]) is unused and will be removed from module dilate_hls.
+WARNING: [Synth 8-3332] Sequential element (Block_Mat_exit406734_U0/dilate_hls_mul_32bkb_U1/dilate_hls_mul_32bkb_MulnS_0_U/buff1_reg[34]) is unused and will be removed from module dilate_hls.
+WARNING: [Synth 8-3332] Sequential element (Block_Mat_exit406734_U0/dilate_hls_mul_32bkb_U1/dilate_hls_mul_32bkb_MulnS_0_U/buff1_reg[33]) is unused and will be removed from module dilate_hls.
+WARNING: [Synth 8-3332] Sequential element (Block_Mat_exit406734_U0/dilate_hls_mul_32bkb_U1/dilate_hls_mul_32bkb_MulnS_0_U/buff1_reg[32]) is unused and will be removed from module dilate_hls.
+WARNING: [Synth 8-3332] Sequential element (Block_Mat_exit406734_U0/dilate_hls_mul_32bkb_U1/dilate_hls_mul_32bkb_MulnS_0_U/buff1_reg[31]) is unused and will be removed from module dilate_hls.
+WARNING: [Synth 8-3332] Sequential element (Block_Mat_exit406734_U0/dilate_hls_mul_32bkb_U1/dilate_hls_mul_32bkb_MulnS_0_U/buff1_reg[30]) is unused and will be removed from module dilate_hls.
+WARNING: [Synth 8-3332] Sequential element (Block_Mat_exit406734_U0/dilate_hls_mul_32bkb_U1/dilate_hls_mul_32bkb_MulnS_0_U/buff1_reg[29]) is unused and will be removed from module dilate_hls.
+WARNING: [Synth 8-3332] Sequential element (Block_Mat_exit406734_U0/dilate_hls_mul_32bkb_U1/dilate_hls_mul_32bkb_MulnS_0_U/buff1_reg[28]) is unused and will be removed from module dilate_hls.
+WARNING: [Synth 8-3332] Sequential element (Block_Mat_exit406734_U0/dilate_hls_mul_32bkb_U1/dilate_hls_mul_32bkb_MulnS_0_U/buff1_reg[27]) is unused and will be removed from module dilate_hls.
+WARNING: [Synth 8-3332] Sequential element (Block_Mat_exit406734_U0/dilate_hls_mul_32bkb_U1/dilate_hls_mul_32bkb_MulnS_0_U/buff1_reg[26]) is unused and will be removed from module dilate_hls.
+WARNING: [Synth 8-3332] Sequential element (Block_Mat_exit406734_U0/dilate_hls_mul_32bkb_U1/dilate_hls_mul_32bkb_MulnS_0_U/buff1_reg[25]) is unused and will be removed from module dilate_hls.
+WARNING: [Synth 8-3332] Sequential element (Block_Mat_exit406734_U0/dilate_hls_mul_32bkb_U1/dilate_hls_mul_32bkb_MulnS_0_U/buff1_reg[24]) is unused and will be removed from module dilate_hls.
+WARNING: [Synth 8-3332] Sequential element (Block_Mat_exit406734_U0/dilate_hls_mul_32bkb_U1/dilate_hls_mul_32bkb_MulnS_0_U/buff1_reg[23]) is unused and will be removed from module dilate_hls.
+WARNING: [Synth 8-3332] Sequential element (Block_Mat_exit406734_U0/dilate_hls_mul_32bkb_U1/dilate_hls_mul_32bkb_MulnS_0_U/buff1_reg[22]) is unused and will be removed from module dilate_hls.
+WARNING: [Synth 8-3332] Sequential element (Block_Mat_exit406734_U0/dilate_hls_mul_32bkb_U1/dilate_hls_mul_32bkb_MulnS_0_U/buff1_reg[21]) is unused and will be removed from module dilate_hls.
+WARNING: [Synth 8-3332] Sequential element (Block_Mat_exit406734_U0/dilate_hls_mul_32bkb_U1/dilate_hls_mul_32bkb_MulnS_0_U/buff1_reg[20]) is unused and will be removed from module dilate_hls.
+WARNING: [Synth 8-3332] Sequential element (Block_Mat_exit406734_U0/dilate_hls_mul_32bkb_U1/dilate_hls_mul_32bkb_MulnS_0_U/buff1_reg[19]) is unused and will be removed from module dilate_hls.
+WARNING: [Synth 8-3332] Sequential element (Block_Mat_exit406734_U0/dilate_hls_mul_32bkb_U1/dilate_hls_mul_32bkb_MulnS_0_U/buff1_reg[18]) is unused and will be removed from module dilate_hls.
+WARNING: [Synth 8-3332] Sequential element (Block_Mat_exit406734_U0/dilate_hls_mul_32bkb_U1/dilate_hls_mul_32bkb_MulnS_0_U/buff1_reg[17]) is unused and will be removed from module dilate_hls.
+WARNING: [Synth 8-3332] Sequential element (Block_Mat_exit406734_U0/dilate_hls_mul_32bkb_U1/dilate_hls_mul_32bkb_MulnS_0_U/buff2_reg[47]) is unused and will be removed from module dilate_hls.
+WARNING: [Synth 8-3332] Sequential element (Block_Mat_exit406734_U0/dilate_hls_mul_32bkb_U1/dilate_hls_mul_32bkb_MulnS_0_U/buff2_reg[46]) is unused and will be removed from module dilate_hls.
+WARNING: [Synth 8-3332] Sequential element (Block_Mat_exit406734_U0/dilate_hls_mul_32bkb_U1/dilate_hls_mul_32bkb_MulnS_0_U/buff2_reg[45]) is unused and will be removed from module dilate_hls.
+WARNING: [Synth 8-3332] Sequential element (Block_Mat_exit406734_U0/dilate_hls_mul_32bkb_U1/dilate_hls_mul_32bkb_MulnS_0_U/buff2_reg[44]) is unused and will be removed from module dilate_hls.
+WARNING: [Synth 8-3332] Sequential element (Block_Mat_exit406734_U0/dilate_hls_mul_32bkb_U1/dilate_hls_mul_32bkb_MulnS_0_U/buff2_reg[43]) is unused and will be removed from module dilate_hls.
+WARNING: [Synth 8-3332] Sequential element (Block_Mat_exit406734_U0/dilate_hls_mul_32bkb_U1/dilate_hls_mul_32bkb_MulnS_0_U/buff2_reg[42]) is unused and will be removed from module dilate_hls.
+WARNING: [Synth 8-3332] Sequential element (Block_Mat_exit406734_U0/dilate_hls_mul_32bkb_U1/dilate_hls_mul_32bkb_MulnS_0_U/buff2_reg[41]) is unused and will be removed from module dilate_hls.
+WARNING: [Synth 8-3332] Sequential element (Block_Mat_exit406734_U0/dilate_hls_mul_32bkb_U1/dilate_hls_mul_32bkb_MulnS_0_U/buff2_reg[40]) is unused and will be removed from module dilate_hls.
+WARNING: [Synth 8-3332] Sequential element (Block_Mat_exit406734_U0/dilate_hls_mul_32bkb_U1/dilate_hls_mul_32bkb_MulnS_0_U/buff2_reg[39]) is unused and will be removed from module dilate_hls.
+WARNING: [Synth 8-3332] Sequential element (Block_Mat_exit406734_U0/dilate_hls_mul_32bkb_U1/dilate_hls_mul_32bkb_MulnS_0_U/buff2_reg[38]) is unused and will be removed from module dilate_hls.
+WARNING: [Synth 8-3332] Sequential element (Block_Mat_exit406734_U0/dilate_hls_mul_32bkb_U1/dilate_hls_mul_32bkb_MulnS_0_U/buff2_reg[37]) is unused and will be removed from module dilate_hls.
+WARNING: [Synth 8-3332] Sequential element (Block_Mat_exit406734_U0/dilate_hls_mul_32bkb_U1/dilate_hls_mul_32bkb_MulnS_0_U/buff2_reg[36]) is unused and will be removed from module dilate_hls.
+WARNING: [Synth 8-3332] Sequential element (Block_Mat_exit406734_U0/dilate_hls_mul_32bkb_U1/dilate_hls_mul_32bkb_MulnS_0_U/buff2_reg[35]) is unused and will be removed from module dilate_hls.
+WARNING: [Synth 8-3332] Sequential element (Block_Mat_exit406734_U0/dilate_hls_mul_32bkb_U1/dilate_hls_mul_32bkb_MulnS_0_U/buff2_reg[34]) is unused and will be removed from module dilate_hls.
+WARNING: [Synth 8-3332] Sequential element (Block_Mat_exit406734_U0/dilate_hls_mul_32bkb_U1/dilate_hls_mul_32bkb_MulnS_0_U/buff2_reg[33]) is unused and will be removed from module dilate_hls.
+WARNING: [Synth 8-3332] Sequential element (Block_Mat_exit406734_U0/dilate_hls_mul_32bkb_U1/dilate_hls_mul_32bkb_MulnS_0_U/buff2_reg[32]) is unused and will be removed from module dilate_hls.
+WARNING: [Synth 8-3332] Sequential element (Block_Mat_exit406734_U0/dilate_hls_mul_32bkb_U1/dilate_hls_mul_32bkb_MulnS_0_U/buff2_reg[31]) is unused and will be removed from module dilate_hls.
+WARNING: [Synth 8-3332] Sequential element (Block_Mat_exit406734_U0/dilate_hls_mul_32bkb_U1/dilate_hls_mul_32bkb_MulnS_0_U/buff2_reg[30]) is unused and will be removed from module dilate_hls.
+WARNING: [Synth 8-3332] Sequential element (Block_Mat_exit406734_U0/dilate_hls_mul_32bkb_U1/dilate_hls_mul_32bkb_MulnS_0_U/buff2_reg[29]) is unused and will be removed from module dilate_hls.
+WARNING: [Synth 8-3332] Sequential element (Block_Mat_exit406734_U0/dilate_hls_mul_32bkb_U1/dilate_hls_mul_32bkb_MulnS_0_U/buff2_reg[28]) is unused and will be removed from module dilate_hls.
+WARNING: [Synth 8-3332] Sequential element (Block_Mat_exit406734_U0/dilate_hls_mul_32bkb_U1/dilate_hls_mul_32bkb_MulnS_0_U/buff2_reg[27]) is unused and will be removed from module dilate_hls.
+WARNING: [Synth 8-3332] Sequential element (Block_Mat_exit406734_U0/dilate_hls_mul_32bkb_U1/dilate_hls_mul_32bkb_MulnS_0_U/buff2_reg[26]) is unused and will be removed from module dilate_hls.
+WARNING: [Synth 8-3332] Sequential element (Block_Mat_exit406734_U0/dilate_hls_mul_32bkb_U1/dilate_hls_mul_32bkb_MulnS_0_U/buff2_reg[25]) is unused and will be removed from module dilate_hls.
+WARNING: [Synth 8-3332] Sequential element (Block_Mat_exit406734_U0/dilate_hls_mul_32bkb_U1/dilate_hls_mul_32bkb_MulnS_0_U/buff2_reg[24]) is unused and will be removed from module dilate_hls.
+WARNING: [Synth 8-3332] Sequential element (Block_Mat_exit406734_U0/dilate_hls_mul_32bkb_U1/dilate_hls_mul_32bkb_MulnS_0_U/buff2_reg[23]) is unused and will be removed from module dilate_hls.
+WARNING: [Synth 8-3332] Sequential element (Block_Mat_exit406734_U0/dilate_hls_mul_32bkb_U1/dilate_hls_mul_32bkb_MulnS_0_U/buff2_reg[22]) is unused and will be removed from module dilate_hls.
+WARNING: [Synth 8-3332] Sequential element (Block_Mat_exit406734_U0/dilate_hls_mul_32bkb_U1/dilate_hls_mul_32bkb_MulnS_0_U/buff2_reg[21]) is unused and will be removed from module dilate_hls.
+WARNING: [Synth 8-3332] Sequential element (Block_Mat_exit406734_U0/dilate_hls_mul_32bkb_U1/dilate_hls_mul_32bkb_MulnS_0_U/buff2_reg[20]) is unused and will be removed from module dilate_hls.
+WARNING: [Synth 8-3332] Sequential element (Block_Mat_exit406734_U0/dilate_hls_mul_32bkb_U1/dilate_hls_mul_32bkb_MulnS_0_U/buff2_reg[19]) is unused and will be removed from module dilate_hls.
+WARNING: [Synth 8-3332] Sequential element (Block_Mat_exit406734_U0/dilate_hls_mul_32bkb_U1/dilate_hls_mul_32bkb_MulnS_0_U/buff2_reg[18]) is unused and will be removed from module dilate_hls.
+WARNING: [Synth 8-3332] Sequential element (Block_Mat_exit406734_U0/dilate_hls_mul_32bkb_U1/dilate_hls_mul_32bkb_MulnS_0_U/buff2_reg[17]) is unused and will be removed from module dilate_hls.
+WARNING: [Synth 8-3332] Sequential element (Block_Mat_exit406734_U0/dilate_hls_mul_32bkb_U1/dilate_hls_mul_32bkb_MulnS_0_U/b_reg0_reg[16]) is unused and will be removed from module dilate_hls.
+WARNING: [Synth 8-3332] Sequential element (Block_Mat_exit406734_U0/dilate_hls_mul_32bkb_U1/dilate_hls_mul_32bkb_MulnS_0_U/b_reg0_reg[15]) is unused and will be removed from module dilate_hls.
+WARNING: [Synth 8-3332] Sequential element (Block_Mat_exit406734_U0/dilate_hls_mul_32bkb_U1/dilate_hls_mul_32bkb_MulnS_0_U/b_reg0_reg[14]) is unused and will be removed from module dilate_hls.
+WARNING: [Synth 8-3332] Sequential element (Block_Mat_exit406734_U0/dilate_hls_mul_32bkb_U1/dilate_hls_mul_32bkb_MulnS_0_U/b_reg0_reg[13]) is unused and will be removed from module dilate_hls.
+WARNING: [Synth 8-3332] Sequential element (Block_Mat_exit406734_U0/dilate_hls_mul_32bkb_U1/dilate_hls_mul_32bkb_MulnS_0_U/b_reg0_reg[12]) is unused and will be removed from module dilate_hls.
+WARNING: [Synth 8-3332] Sequential element (Block_Mat_exit406734_U0/dilate_hls_mul_32bkb_U1/dilate_hls_mul_32bkb_MulnS_0_U/b_reg0_reg[11]) is unused and will be removed from module dilate_hls.
+WARNING: [Synth 8-3332] Sequential element (Block_Mat_exit406734_U0/dilate_hls_mul_32bkb_U1/dilate_hls_mul_32bkb_MulnS_0_U/b_reg0_reg[10]) is unused and will be removed from module dilate_hls.
+WARNING: [Synth 8-3332] Sequential element (Block_Mat_exit406734_U0/dilate_hls_mul_32bkb_U1/dilate_hls_mul_32bkb_MulnS_0_U/b_reg0_reg[9]) is unused and will be removed from module dilate_hls.
+WARNING: [Synth 8-3332] Sequential element (Block_Mat_exit406734_U0/dilate_hls_mul_32bkb_U1/dilate_hls_mul_32bkb_MulnS_0_U/b_reg0_reg[8]) is unused and will be removed from module dilate_hls.
+WARNING: [Synth 8-3332] Sequential element (Block_Mat_exit406734_U0/dilate_hls_mul_32bkb_U1/dilate_hls_mul_32bkb_MulnS_0_U/b_reg0_reg[7]) is unused and will be removed from module dilate_hls.
+WARNING: [Synth 8-3332] Sequential element (Block_Mat_exit406734_U0/dilate_hls_mul_32bkb_U1/dilate_hls_mul_32bkb_MulnS_0_U/b_reg0_reg[6]) is unused and will be removed from module dilate_hls.
+WARNING: [Synth 8-3332] Sequential element (Block_Mat_exit406734_U0/dilate_hls_mul_32bkb_U1/dilate_hls_mul_32bkb_MulnS_0_U/b_reg0_reg[5]) is unused and will be removed from module dilate_hls.
+WARNING: [Synth 8-3332] Sequential element (Block_Mat_exit406734_U0/dilate_hls_mul_32bkb_U1/dilate_hls_mul_32bkb_MulnS_0_U/b_reg0_reg[4]) is unused and will be removed from module dilate_hls.
+WARNING: [Synth 8-3332] Sequential element (Block_Mat_exit406734_U0/dilate_hls_mul_32bkb_U1/dilate_hls_mul_32bkb_MulnS_0_U/b_reg0_reg[3]) is unused and will be removed from module dilate_hls.
+WARNING: [Synth 8-3332] Sequential element (Block_Mat_exit406734_U0/dilate_hls_mul_32bkb_U1/dilate_hls_mul_32bkb_MulnS_0_U/b_reg0_reg[2]) is unused and will be removed from module dilate_hls.
+WARNING: [Synth 8-3332] Sequential element (Block_Mat_exit406734_U0/dilate_hls_mul_32bkb_U1/dilate_hls_mul_32bkb_MulnS_0_U/b_reg0_reg[1]) is unused and will be removed from module dilate_hls.
+WARNING: [Synth 8-3332] Sequential element (Block_Mat_exit406734_U0/dilate_hls_mul_32bkb_U1/dilate_hls_mul_32bkb_MulnS_0_U/b_reg0_reg[0]) is unused and will be removed from module dilate_hls.
+WARNING: [Synth 8-3332] Sequential element (Block_Mat_exit406734_U0/dilate_hls_mul_32bkb_U1/dilate_hls_mul_32bkb_MulnS_0_U/a_reg0_reg[16]) is unused and will be removed from module dilate_hls.
+WARNING: [Synth 8-3332] Sequential element (Block_Mat_exit406734_U0/dilate_hls_mul_32bkb_U1/dilate_hls_mul_32bkb_MulnS_0_U/a_reg0_reg[15]) is unused and will be removed from module dilate_hls.
+WARNING: [Synth 8-3332] Sequential element (Block_Mat_exit406734_U0/dilate_hls_mul_32bkb_U1/dilate_hls_mul_32bkb_MulnS_0_U/a_reg0_reg[14]) is unused and will be removed from module dilate_hls.
+WARNING: [Synth 8-3332] Sequential element (Block_Mat_exit406734_U0/dilate_hls_mul_32bkb_U1/dilate_hls_mul_32bkb_MulnS_0_U/a_reg0_reg[13]) is unused and will be removed from module dilate_hls.
+WARNING: [Synth 8-3332] Sequential element (Block_Mat_exit406734_U0/dilate_hls_mul_32bkb_U1/dilate_hls_mul_32bkb_MulnS_0_U/a_reg0_reg[12]) is unused and will be removed from module dilate_hls.
+WARNING: [Synth 8-3332] Sequential element (Block_Mat_exit406734_U0/dilate_hls_mul_32bkb_U1/dilate_hls_mul_32bkb_MulnS_0_U/a_reg0_reg[11]) is unused and will be removed from module dilate_hls.
+WARNING: [Synth 8-3332] Sequential element (Block_Mat_exit406734_U0/dilate_hls_mul_32bkb_U1/dilate_hls_mul_32bkb_MulnS_0_U/a_reg0_reg[10]) is unused and will be removed from module dilate_hls.
+WARNING: [Synth 8-3332] Sequential element (Block_Mat_exit406734_U0/dilate_hls_mul_32bkb_U1/dilate_hls_mul_32bkb_MulnS_0_U/a_reg0_reg[9]) is unused and will be removed from module dilate_hls.
+WARNING: [Synth 8-3332] Sequential element (Block_Mat_exit406734_U0/dilate_hls_mul_32bkb_U1/dilate_hls_mul_32bkb_MulnS_0_U/a_reg0_reg[8]) is unused and will be removed from module dilate_hls.
+WARNING: [Synth 8-3332] Sequential element (Block_Mat_exit406734_U0/dilate_hls_mul_32bkb_U1/dilate_hls_mul_32bkb_MulnS_0_U/a_reg0_reg[7]) is unused and will be removed from module dilate_hls.
+WARNING: [Synth 8-3332] Sequential element (Block_Mat_exit406734_U0/dilate_hls_mul_32bkb_U1/dilate_hls_mul_32bkb_MulnS_0_U/a_reg0_reg[6]) is unused and will be removed from module dilate_hls.
+WARNING: [Synth 8-3332] Sequential element (Block_Mat_exit406734_U0/dilate_hls_mul_32bkb_U1/dilate_hls_mul_32bkb_MulnS_0_U/a_reg0_reg[5]) is unused and will be removed from module dilate_hls.
+WARNING: [Synth 8-3332] Sequential element (Block_Mat_exit406734_U0/dilate_hls_mul_32bkb_U1/dilate_hls_mul_32bkb_MulnS_0_U/a_reg0_reg[4]) is unused and will be removed from module dilate_hls.
+WARNING: [Synth 8-3332] Sequential element (Block_Mat_exit406734_U0/dilate_hls_mul_32bkb_U1/dilate_hls_mul_32bkb_MulnS_0_U/a_reg0_reg[3]) is unused and will be removed from module dilate_hls.
+WARNING: [Synth 8-3332] Sequential element (Block_Mat_exit406734_U0/dilate_hls_mul_32bkb_U1/dilate_hls_mul_32bkb_MulnS_0_U/a_reg0_reg[2]) is unused and will be removed from module dilate_hls.
+WARNING: [Synth 8-3332] Sequential element (Block_Mat_exit406734_U0/dilate_hls_mul_32bkb_U1/dilate_hls_mul_32bkb_MulnS_0_U/a_reg0_reg[1]) is unused and will be removed from module dilate_hls.
+WARNING: [Synth 8-3332] Sequential element (Block_Mat_exit406734_U0/dilate_hls_mul_32bkb_U1/dilate_hls_mul_32bkb_MulnS_0_U/a_reg0_reg[0]) is unused and will be removed from module dilate_hls.
+WARNING: [Synth 8-3332] Sequential element (Block_Mat_exit406734_U0/dilate_hls_mul_32cud_U2/dilate_hls_mul_32cud_MulnS_1_U/buff1_reg[47]) is unused and will be removed from module dilate_hls.
+WARNING: [Synth 8-3332] Sequential element (Block_Mat_exit406734_U0/dilate_hls_mul_32cud_U2/dilate_hls_mul_32cud_MulnS_1_U/buff1_reg[46]) is unused and will be removed from module dilate_hls.
+WARNING: [Synth 8-3332] Sequential element (Block_Mat_exit406734_U0/dilate_hls_mul_32cud_U2/dilate_hls_mul_32cud_MulnS_1_U/buff1_reg[45]) is unused and will be removed from module dilate_hls.
+WARNING: [Synth 8-3332] Sequential element (Block_Mat_exit406734_U0/dilate_hls_mul_32cud_U2/dilate_hls_mul_32cud_MulnS_1_U/buff1_reg[44]) is unused and will be removed from module dilate_hls.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:30 ; elapsed = 00:00:30 . Memory (MB): peak = 836.934 ; gain = 535.586
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Preliminary Mapping  Report (see note below)
++--------------------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name               | RTL Object | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++--------------------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Loop_loop_height_dEe_ram: | ram_reg    | 2 K x 8(READ_FIRST)    | W |   | 2 K x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|Loop_loop_height_dEe_ram: | ram_reg    | 2 K x 8(READ_FIRST)    | W |   | 2 K x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|Loop_loop_height_dEe_ram: | ram_reg    | 2 K x 8(READ_FIRST)    | W |   | 2 K x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
++--------------------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+Note: The tale above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
+
+DSP: Preliminary Mapping  Report (see note below)
++---------------------+----------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name          | DSP Mapping          | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++---------------------+----------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Block_Mat_exit406734 | (A2*B2)'             | 18     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 0    | 
+|Block_Mat_exit406734 | (PCIN>>17)+(A2*B)'   | 18     | 15     | -      | -      | 48     | 1    | 0    | -    | -    | -     | 1    | 1    | 
+|Block_Mat_exit406734 | (PCIN+(A''*B2)')'    | 18     | 15     | -      | -      | 48     | 2    | 1    | -    | -    | -     | 1    | 1    | 
+|Block_Mat_exit406734 | (A2*B2)'             | 18     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 0    | 
+|Block_Mat_exit406734 | (PCIN>>17)+(A2*B)'   | 18     | 14     | -      | -      | 48     | 1    | 0    | -    | -    | -     | 1    | 1    | 
+|Block_Mat_exit406734 | (PCIN+(A''*B2)')'    | 18     | 15     | -      | -      | 48     | 2    | 1    | -    | -    | -     | 1    | 1    | 
+|Loop_3_proc          | (A2*B2)'             | 18     | 12     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|Loop_3_proc          | (PCIN>>17)+(A2*B'')' | 15     | 12     | -      | -      | 48     | 1    | 2    | -    | -    | -     | 1    | 1    | 
++---------------------+----------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:45 ; elapsed = 00:00:46 . Memory (MB): peak = 904.406 ; gain = 603.059
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:50 ; elapsed = 00:00:51 . Memory (MB): peak = 1011.590 ; gain = 710.242
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Final Mapping  Report
++--------------------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name               | RTL Object | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++--------------------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Loop_loop_height_dEe_ram: | ram_reg    | 2 K x 8(READ_FIRST)    | W |   | 2 K x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|Loop_loop_height_dEe_ram: | ram_reg    | 2 K x 8(READ_FIRST)    | W |   | 2 K x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|Loop_loop_height_dEe_ram: | ram_reg    | 2 K x 8(READ_FIRST)    | W |   | 2 K x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
++--------------------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3886] merging instance 'Loop_loop_height_pro_U0/tmp_3_reg_1250_reg[0]' (FDE) to 'p_neg393_i_loc_c757_U/U_fifo_w11_d1_A_ram/SRL_SIG_reg[0][0]'
+INFO: [Synth 8-3886] merging instance 'Loop_loop_height_pro_U0/tmp_3_reg_1250_reg[1]' (FDE) to 'p_neg393_i_loc_c757_U/U_fifo_w11_d1_A_ram/SRL_SIG_reg[0][1]'
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:51 ; elapsed = 00:00:52 . Memory (MB): peak = 1015.023 ; gain = 713.676
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:52 ; elapsed = 00:00:53 . Memory (MB): peak = 1015.023 ; gain = 713.676
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:52 ; elapsed = 00:00:53 . Memory (MB): peak = 1015.023 ; gain = 713.676
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:53 ; elapsed = 00:00:54 . Memory (MB): peak = 1015.023 ; gain = 713.676
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:53 ; elapsed = 00:00:54 . Memory (MB): peak = 1015.023 ; gain = 713.676
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:53 ; elapsed = 00:00:54 . Memory (MB): peak = 1015.023 ; gain = 713.676
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:53 ; elapsed = 00:00:54 . Memory (MB): peak = 1015.023 ; gain = 713.676
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++------------+--------------------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name | RTL Name                                                                       | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++------------+--------------------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|dilate_hls  | Loop_loop_height_pro_U0/ap_reg_pp0_iter6_src_kernel_win_0_va_9_reg_1421_reg[7] | 4      | 8     | NO           | NO                 | YES               | 8      | 0       | 
+|dilate_hls  | Loop_3_proc_U0/ap_CS_fsm_reg[5]                                                | 5      | 1     | YES          | NO                 | YES               | 1      | 0       | 
++------------+--------------------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+
+Dynamic Shift Register Report:
++------------+----------------+--------+------------+--------+---------+--------+--------+--------+
+|Module Name | RTL Name       | Length | Data Width | SRL16E | SRLC32E | Mux F7 | Mux F8 | Mux F9 | 
++------------+----------------+--------+------------+--------+---------+--------+--------+--------+
+|dsrl        | SRL_SIG_reg[3] | 4      | 31         | 31     | 0       | 0      | 0      | 0      | 
+|dsrl__1     | SRL_SIG_reg[2] | 4      | 32         | 32     | 0       | 0      | 0      | 0      | 
+|dsrl__2     | SRL_SIG_reg[2] | 4      | 1          | 1      | 0       | 0      | 0      | 0      | 
+|dsrl__3     | SRL_SIG_reg[2] | 4      | 11         | 11     | 0       | 0      | 0      | 0      | 
+|dsrl__10    | SRL_SIG_reg[2] | 4      | 32         | 32     | 0       | 0      | 0      | 0      | 
++------------+----------------+--------+------------+--------+---------+--------+--------+--------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----------+------+
+|      |Cell       |Count |
++------+-----------+------+
+|1     |CARRY4     |    98|
+|2     |DSP48E1    |     2|
+|3     |DSP48E1_2  |     2|
+|4     |DSP48E1_3  |     1|
+|5     |DSP48E1_4  |     1|
+|6     |DSP48E1_5  |     2|
+|7     |LUT1       |   143|
+|8     |LUT2       |    99|
+|9     |LUT3       |   326|
+|10    |LUT4       |   227|
+|11    |LUT5       |   385|
+|12    |LUT6       |   323|
+|13    |RAMB18E1_1 |     3|
+|14    |SRL16E     |   132|
+|15    |FDRE       |  1406|
+|16    |FDSE       |    51|
++------+-----------+------+
+
+Report Instance Areas: 
++------+-------------------------------------+-----------------------------+------+
+|      |Instance                             |Module                       |Cells |
++------+-------------------------------------+-----------------------------+------+
+|1     |top                                  |                             |  3201|
+|2     |  Block_Mat_exit406734_U0            |Block_Mat_exit406734         |   301|
+|3     |    dilate_hls_mul_32bkb_U1          |dilate_hls_mul_32bkb         |   116|
+|4     |      dilate_hls_mul_32bkb_MulnS_0_U |dilate_hls_mul_32bkb_MulnS_0 |   116|
+|5     |    dilate_hls_mul_32cud_U2          |dilate_hls_mul_32cud         |    84|
+|6     |      dilate_hls_mul_32cud_MulnS_1_U |dilate_hls_mul_32cud_MulnS_1 |    84|
+|7     |  Block_arrayctor_loop_U0            |Block_arrayctor_loop         |    20|
+|8     |  Loop_1_proc_U0                     |Loop_1_proc                  |   346|
+|9     |  Loop_3_proc_U0                     |Loop_3_proc                  |   879|
+|10    |    dilate_hls_mul_31hbi_U45         |dilate_hls_mul_31hbi         |    33|
+|11    |      dilate_hls_mul_31hbi_MulnS_2_U |dilate_hls_mul_31hbi_MulnS_2 |    33|
+|12    |  Loop_loop_height_pro_U0            |Loop_loop_height_pro         |   810|
+|13    |    k_buf_0_val_3_U                  |Loop_loop_height_dEe         |    31|
+|14    |      Loop_loop_height_dEe_ram_U     |Loop_loop_height_dEe_ram_17  |    31|
+|15    |    k_buf_0_val_4_U                  |Loop_loop_height_dEe_14      |    28|
+|16    |      Loop_loop_height_dEe_ram_U     |Loop_loop_height_dEe_ram_16  |    28|
+|17    |    k_buf_0_val_5_U                  |Loop_loop_height_dEe_15      |    46|
+|18    |      Loop_loop_height_dEe_ram_U     |Loop_loop_height_dEe_ram     |    46|
+|19    |  col_packets_loc_c_U                |fifo_w31_d3_A                |    44|
+|20    |    U_fifo_w31_d3_A_ram              |fifo_w31_d3_A_shiftReg       |    33|
+|21    |  dilate_hls_CONTROL_BUS_s_axi_U     |dilate_hls_CONTROL_BUS_s_axi |   475|
+|22    |  g_img_0_data_stream_s_U            |fifo_w8_d1_A                 |    31|
+|23    |    U_fifo_w8_d1_A_ram               |fifo_w8_d1_A_shiftReg_13     |    24|
+|24    |  g_img_1_data_stream_s_U            |fifo_w8_d1_A_0               |    31|
+|25    |    U_fifo_w8_d1_A_ram               |fifo_w8_d1_A_shiftReg        |    24|
+|26    |  p_neg393_i_cast_loc_c_U            |fifo_w11_d2_A                |    14|
+|27    |    U_fifo_w11_d2_A_ram              |fifo_w11_d2_A_shiftReg_12    |     4|
+|28    |  p_neg393_i_loc_c757_U              |fifo_w11_d1_A                |    42|
+|29    |    U_fifo_w11_d1_A_ram              |fifo_w11_d1_A_shiftReg       |    33|
+|30    |  p_neg393_i_loc_c_U                 |fifo_w11_d2_A_1              |    23|
+|31    |    U_fifo_w11_d2_A_ram              |fifo_w11_d2_A_shiftReg_11    |    13|
+|32    |  packets_loc_channel_U              |fifo_w32_d2_A                |    45|
+|33    |    U_fifo_w32_d2_A_ram              |fifo_w32_d2_A_shiftReg       |    34|
+|34    |  rows_cast727_loc_c_U               |fifo_w11_d2_A_2              |    29|
+|35    |    U_fifo_w11_d2_A_ram              |fifo_w11_d2_A_shiftReg_10    |    14|
+|36    |  switch_loc_c_U                     |fifo_w1_d2_A                 |    23|
+|37    |    U_fifo_w1_d2_A_ram               |fifo_w1_d2_A_shiftReg        |     3|
+|38    |  tmp_15_loc_c_U                     |fifo_w11_d2_A_3              |    23|
+|39    |    U_fifo_w11_d2_A_ram              |fifo_w11_d2_A_shiftReg_9     |    13|
+|40    |  tmp_16_cast_loc_c_U                |fifo_w11_d2_A_4              |    14|
+|41    |    U_fifo_w11_d2_A_ram              |fifo_w11_d2_A_shiftReg_8     |     4|
+|42    |  tmp_16_loc_c_U                     |fifo_w11_d2_A_5              |    23|
+|43    |    U_fifo_w11_d2_A_ram              |fifo_w11_d2_A_shiftReg_7     |    13|
+|44    |  tmp_loc_c_U                        |fifo_w11_d2_A_6              |    25|
+|45    |    U_fifo_w11_d2_A_ram              |fifo_w11_d2_A_shiftReg       |    14|
++------+-------------------------------------+-----------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:53 ; elapsed = 00:00:54 . Memory (MB): peak = 1015.023 ; gain = 713.676
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 491 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:38 ; elapsed = 00:00:46 . Memory (MB): peak = 1015.023 ; gain = 341.270
+Synthesis Optimization Complete : Time (s): cpu = 00:00:53 ; elapsed = 00:00:54 . Memory (MB): peak = 1015.023 ; gain = 713.676
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 109 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+118 Infos, 314 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:56 ; elapsed = 00:00:58 . Memory (MB): peak = 1015.023 ; gain = 726.172
+INFO: [Common 17-1381] The checkpoint 'C:/Users/sdi_admin/CloudStation/HLS/dilate/solution1/impl/verilog/project.runs/synth_1/dilate_hls.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file dilate_hls_utilization_synth.rpt -pb dilate_hls_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.049 . Memory (MB): peak = 1015.023 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Mon Jun 25 14:52:38 2018...
+[Mon Jun 25 14:52:41 2018] synth_1 finished
+wait_on_run: Time (s): cpu = 00:00:01 ; elapsed = 00:01:11 . Memory (MB): peak = 302.277 ; gain = 0.070
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7z020clg400-1
+INFO: [Netlist 29-17] Analyzing 109 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2017.4
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [C:/Users/sdi_admin/CloudStation/HLS/dilate/solution1/impl/verilog/dilate_hls.xdc]
+Finished Parsing XDC File [C:/Users/sdi_admin/CloudStation/HLS/dilate/solution1/impl/verilog/dilate_hls.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 650.293 ; gain = 348.016
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.063 . Memory (MB): peak = 650.293 ; gain = 0.000
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+WARNING: [Timing 38-242] The property HD.CLK_SRC of clock port "AXI_LITE_clk" is not set. In out-of-context mode, this prevents timing estimation for clock delay/skew
+Resolution: Set the HD.CLK_SRC property of the out-of-context port to the location of the clock buffer instance in the top-level design
+WARNING: [Timing 38-242] The property HD.CLK_SRC of clock port "ap_clk" is not set. In out-of-context mode, this prevents timing estimation for clock delay/skew
+Resolution: Set the HD.CLK_SRC property of the out-of-context port to the location of the clock buffer instance in the top-level design
+INFO: [Timing 38-78] ReportTimingParams: -max_paths 1 -nworst 1 -delay_type max -sort_by slack.
+report_timing: Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1179.570 ; gain = 529.277
+[Mon Jun 25 14:53:03 2018] Launched impl_1...
+Run output will be captured here: C:/Users/sdi_admin/CloudStation/HLS/dilate/solution1/impl/verilog/project.runs/impl_1/runme.log
+[Mon Jun 25 14:53:03 2018] Waiting for impl_1 to finish...
+
+*** Running vivado
+    with args -log dilate_hls.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source dilate_hls.tcl -notrace
+
+
+****** Vivado v2017.4 (64-bit)
+  **** SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+  **** IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source dilate_hls.tcl -notrace
+Command: open_checkpoint C:/Users/sdi_admin/CloudStation/HLS/dilate/solution1/impl/verilog/project.runs/impl_1/dilate_hls.dcp
+
+Starting open_checkpoint Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.027 . Memory (MB): peak = 239.398 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 109 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2017.4
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [C:/Users/sdi_admin/CloudStation/HLS/dilate/solution1/impl/verilog/project.runs/impl_1/.Xil/Vivado-3492-DESKTOP-H32TPSL/dcp1/dilate_hls.xdc]
+Finished Parsing XDC File [C:/Users/sdi_admin/CloudStation/HLS/dilate/solution1/impl/verilog/project.runs/impl_1/.Xil/Vivado-3492-DESKTOP-H32TPSL/dcp1/dilate_hls.xdc]
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Project 1-604] Checkpoint was created with Vivado v2017.4 (64-bit) build 2086221
+open_checkpoint: Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 647.277 ; gain = 416.621
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.627 . Memory (MB): peak = 658.523 ; gain = 9.871
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Starting Logic Optimization Task
+
+Phase 1 Retarget
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 1 Retarget | Checksum: 1a0991b39
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.212 . Memory (MB): peak = 1178.883 ; gain = 0.000
+INFO: [Opt 31-389] Phase Retarget created 0 cells and removed 1 cells
+
+Phase 2 Constant propagation
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Phase 2 Constant propagation | Checksum: 1a0991b39
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.281 . Memory (MB): peak = 1178.883 ; gain = 0.000
+INFO: [Opt 31-389] Phase Constant propagation created 0 cells and removed 0 cells
+
+Phase 3 Sweep
+Phase 3 Sweep | Checksum: 12c11de43
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.356 . Memory (MB): peak = 1178.883 ; gain = 0.000
+INFO: [Opt 31-389] Phase Sweep created 0 cells and removed 1 cells
+
+Phase 4 BUFG optimization
+Phase 4 BUFG optimization | Checksum: 12c11de43
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.376 . Memory (MB): peak = 1178.883 ; gain = 0.000
+INFO: [Opt 31-389] Phase BUFG optimization created 0 cells and removed 0 cells
+
+Phase 5 Shift Register Optimization
+Phase 5 Shift Register Optimization | Checksum: 12c11de43
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.449 . Memory (MB): peak = 1178.883 ; gain = 0.000
+INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1178.883 ; gain = 0.000
+Ending Logic Optimization Task | Checksum: 12c11de43
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.506 . Memory (MB): peak = 1178.883 ; gain = 0.000
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+INFO: [Pwropt 34-9] Applying IDT optimizations ...
+INFO: [Pwropt 34-10] Applying ODC optimizations ...
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+WARNING: [Timing 38-242] The property HD.CLK_SRC of clock port "AXI_LITE_clk" is not set. In out-of-context mode, this prevents timing estimation for clock delay/skew
+Resolution: Set the HD.CLK_SRC property of the out-of-context port to the location of the clock buffer instance in the top-level design
+WARNING: [Timing 38-242] The property HD.CLK_SRC of clock port "ap_clk" is not set. In out-of-context mode, this prevents timing estimation for clock delay/skew
+Resolution: Set the HD.CLK_SRC property of the out-of-context port to the location of the clock buffer instance in the top-level design
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.899 | TNS=-16.333 |
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+
+
+Starting PowerOpt Patch Enables Task
+INFO: [Pwropt 34-162] WRITE_MODE attribute of 0 BRAM(s) out of a total of 3 has been updated to save power. Run report_power_opt to get a complete listing of the BRAMs updated.
+INFO: [Pwropt 34-201] Structural ODC has moved 0 WE to EN ports
+Number of BRAM Ports augmented: 0 newly gated: 0 Total Ports: 6
+Ending PowerOpt Patch Enables Task | Checksum: 17bc35cd1
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.025 . Memory (MB): peak = 1317.832 ; gain = 0.000
+Ending Power Optimization Task | Checksum: 17bc35cd1
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 1317.832 ; gain = 138.949
+INFO: [Common 17-83] Releasing license: Implementation
+28 Infos, 2 Warnings, 0 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:00:17 ; elapsed = 00:00:16 . Memory (MB): peak = 1317.832 ; gain = 670.555
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/sdi_admin/CloudStation/HLS/dilate/solution1/impl/verilog/project.runs/impl_1/dilate_hls_opt.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_drc -file dilate_hls_drc_opted.rpt -pb dilate_hls_drc_opted.pb -rpx dilate_hls_drc_opted.rpx
+Command: report_drc -file dilate_hls_drc_opted.rpt -pb dilate_hls_drc_opted.pb -rpx dilate_hls_drc_opted.rpx
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.4/data/ip'.
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Coretcl 2-168] The results of DRC are in file C:/Users/sdi_admin/CloudStation/HLS/dilate/solution1/impl/verilog/project.runs/impl_1/dilate_hls_drc_opted.rpt.
+report_drc completed successfully
+INFO: [Chipscope 16-241] No debug cores found in the current design.
+Before running the implement_debug_core command, either use the Set Up Debug wizard (GUI mode)
+or use the create_debug_core and connect_debug_core Tcl commands to insert debug cores into the design.
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+Starting Placer Task
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 2 CPUs
+
+Phase 1 Placer Initialization
+
+Phase 1.1 Placer Initialization Netlist Sorting
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1317.832 ; gain = 0.000
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: cbf3f786
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 1317.832 ; gain = 0.000
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1317.832 ; gain = 0.000
+
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: d4a80b9c
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 1317.832 ; gain = 0.000
+
+Phase 1.3 Build Placer Netlist Model
+Phase 1.3 Build Placer Netlist Model | Checksum: 17100f77d
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 1317.832 ; gain = 0.000
+
+Phase 1.4 Constrain Clocks/Macros
+Phase 1.4 Constrain Clocks/Macros | Checksum: 17100f77d
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 1317.832 ; gain = 0.000
+Phase 1 Placer Initialization | Checksum: 17100f77d
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 1317.832 ; gain = 0.000
+
+Phase 2 Global Placement
+Phase 2 Global Placement | Checksum: 179d9b813
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:04 . Memory (MB): peak = 1317.832 ; gain = 0.000
+
+Phase 3 Detail Placement
+
+Phase 3.1 Commit Multi Column Macros
+Phase 3.1 Commit Multi Column Macros | Checksum: 179d9b813
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:04 . Memory (MB): peak = 1317.832 ; gain = 0.000
+
+Phase 3.2 Commit Most Macros & LUTRAMs
+Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 24775d560
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:05 . Memory (MB): peak = 1317.832 ; gain = 0.000
+
+Phase 3.3 Area Swap Optimization
+Phase 3.3 Area Swap Optimization | Checksum: 24104d484
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:05 . Memory (MB): peak = 1317.832 ; gain = 0.000
+
+Phase 3.4 Pipeline Register Optimization
+Phase 3.4 Pipeline Register Optimization | Checksum: 1cd2427a1
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:05 . Memory (MB): peak = 1317.832 ; gain = 0.000
+
+Phase 3.5 Timing Path Optimizer
+Phase 3.5 Timing Path Optimizer | Checksum: 1cd2427a1
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:05 . Memory (MB): peak = 1317.832 ; gain = 0.000
+
+Phase 3.6 Fast Optimization
+Phase 3.6 Fast Optimization | Checksum: 25a9a3d91
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:05 . Memory (MB): peak = 1317.832 ; gain = 0.000
+
+Phase 3.7 Small Shape Detail Placement
+Phase 3.7 Small Shape Detail Placement | Checksum: 12828d13c
+
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:06 . Memory (MB): peak = 1317.832 ; gain = 0.000
+
+Phase 3.8 Re-assign LUT pins
+Phase 3.8 Re-assign LUT pins | Checksum: 185eb99fd
+
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:06 . Memory (MB): peak = 1317.832 ; gain = 0.000
+
+Phase 3.9 Pipeline Register Optimization
+Phase 3.9 Pipeline Register Optimization | Checksum: 185eb99fd
+
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:06 . Memory (MB): peak = 1317.832 ; gain = 0.000
+
+Phase 3.10 Fast Optimization
+Phase 3.10 Fast Optimization | Checksum: 1af36dbab
+
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:07 . Memory (MB): peak = 1317.832 ; gain = 0.000
+Phase 3 Detail Placement | Checksum: 1af36dbab
+
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:07 . Memory (MB): peak = 1317.832 ; gain = 0.000
+
+Phase 4 Post Placement Optimization and Clean-Up
+
+Phase 4.1 Post Commit Optimization
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Phase 4.1.1 Post Placement Optimization
+Post Placement Optimization Initialization | Checksum: 11c4e0462
+
+Phase 4.1.1.1 BUFG Insertion
+INFO: [Physopt 32-721] Multithreading enabled for phys_opt_design using a maximum of 2 CPUs
+INFO: [Place 46-31] BUFG insertion identified 0 candidate nets, 0 success, 0 skipped for placement/routing, 0 skipped for timing, 0 skipped for netlist change reason.
+Phase 4.1.1.1 BUFG Insertion | Checksum: 11c4e0462
+
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:08 . Memory (MB): peak = 1317.832 ; gain = 0.000
+INFO: [Place 30-746] Post Placement Timing Summary WNS=0.114. For the most accurate timing information please run report_timing.
+Phase 4.1.1 Post Placement Optimization | Checksum: 237ecbcd3
+
+Time (s): cpu = 00:00:18 ; elapsed = 00:00:14 . Memory (MB): peak = 1317.832 ; gain = 0.000
+Phase 4.1 Post Commit Optimization | Checksum: 237ecbcd3
+
+Time (s): cpu = 00:00:18 ; elapsed = 00:00:14 . Memory (MB): peak = 1317.832 ; gain = 0.000
+
+Phase 4.2 Post Placement Cleanup
+Phase 4.2 Post Placement Cleanup | Checksum: 237ecbcd3
+
+Time (s): cpu = 00:00:18 ; elapsed = 00:00:14 . Memory (MB): peak = 1317.832 ; gain = 0.000
+
+Phase 4.3 Placer Reporting
+Phase 4.3 Placer Reporting | Checksum: 237ecbcd3
+
+Time (s): cpu = 00:00:18 ; elapsed = 00:00:14 . Memory (MB): peak = 1317.832 ; gain = 0.000
+
+Phase 4.4 Final Placement Cleanup
+Phase 4.4 Final Placement Cleanup | Checksum: 1a0d8fb23
+
+Time (s): cpu = 00:00:18 ; elapsed = 00:00:14 . Memory (MB): peak = 1317.832 ; gain = 0.000
+Phase 4 Post Placement Optimization and Clean-Up | Checksum: 1a0d8fb23
+
+Time (s): cpu = 00:00:18 ; elapsed = 00:00:14 . Memory (MB): peak = 1317.832 ; gain = 0.000
+Ending Placer Task | Checksum: c8d5b1f9
+
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:14 . Memory (MB): peak = 1317.832 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+52 Infos, 2 Warnings, 0 Critical Warnings and 0 Errors encountered.
+place_design completed successfully
+place_design: Time (s): cpu = 00:00:20 ; elapsed = 00:00:15 . Memory (MB): peak = 1317.832 ; gain = 0.000
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.286 . Memory (MB): peak = 1317.832 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/sdi_admin/CloudStation/HLS/dilate/solution1/impl/verilog/project.runs/impl_1/dilate_hls_placed.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_io -file dilate_hls_io_placed.rpt
+report_io: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.041 . Memory (MB): peak = 1317.832 ; gain = 0.000
+INFO: [runtcl-4] Executing : report_utilization -file dilate_hls_utilization_placed.rpt -pb dilate_hls_utilization_placed.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.060 . Memory (MB): peak = 1317.832 ; gain = 0.000
+INFO: [runtcl-4] Executing : report_control_sets -verbose -file dilate_hls_control_sets_placed.rpt
+report_control_sets: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 1317.832 ; gain = 0.000
+Command: phys_opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1317.832 ; gain = 0.000
+
+Starting Physical Synthesis Task
+
+Phase 1 Physical Synthesis Initialization
+INFO: [Physopt 32-721] Multithreading enabled for phys_opt_design using a maximum of 2 CPUs
+WARNING: [Timing 38-242] The property HD.CLK_SRC of clock port "AXI_LITE_clk" is not set. In out-of-context mode, this prevents timing estimation for clock delay/skew
+Resolution: Set the HD.CLK_SRC property of the out-of-context port to the location of the clock buffer instance in the top-level design
+WARNING: [Timing 38-242] The property HD.CLK_SRC of clock port "ap_clk" is not set. In out-of-context mode, this prevents timing estimation for clock delay/skew
+Resolution: Set the HD.CLK_SRC property of the out-of-context port to the location of the clock buffer instance in the top-level design
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=0.114 | TNS=0.000 |
+Phase 1 Physical Synthesis Initialization | Checksum: 1834cca54
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.924 . Memory (MB): peak = 1317.832 ; gain = 0.000
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=0.114 | TNS=0.000 |
+
+Phase 2 Fanout Optimization
+INFO: [Physopt 32-670] No setup violation found.  Fanout Optimization was not performed.
+Phase 2 Fanout Optimization | Checksum: 1834cca54
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.936 . Memory (MB): peak = 1317.832 ; gain = 0.000
+
+Phase 3 Placement Based Optimization
+INFO: [Physopt 32-670] No setup violation found.  Placement Based Optimization was not performed.
+Phase 3 Placement Based Optimization | Checksum: 1834cca54
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.942 . Memory (MB): peak = 1317.832 ; gain = 0.000
+
+Phase 4 Rewire
+INFO: [Physopt 32-670] No setup violation found.  Rewire was not performed.
+Phase 4 Rewire | Checksum: 1834cca54
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.949 . Memory (MB): peak = 1317.832 ; gain = 0.000
+
+Phase 5 Critical Cell Optimization
+INFO: [Physopt 32-670] No setup violation found.  Critical Cell Optimization was not performed.
+Phase 5 Critical Cell Optimization | Checksum: 1834cca54
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.955 . Memory (MB): peak = 1317.832 ; gain = 0.000
+
+Phase 6 DSP Register Optimization
+INFO: [Physopt 32-670] No setup violation found.  DSP Register Optimization was not performed.
+Phase 6 DSP Register Optimization | Checksum: 1834cca54
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.961 . Memory (MB): peak = 1317.832 ; gain = 0.000
+
+Phase 7 BRAM Register Optimization
+INFO: [Physopt 32-670] No setup violation found.  BRAM Register Optimization was not performed.
+Phase 7 BRAM Register Optimization | Checksum: 1834cca54
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.969 . Memory (MB): peak = 1317.832 ; gain = 0.000
+
+Phase 8 URAM Register Optimization
+INFO: [Physopt 32-670] No setup violation found.  URAM Register Optimization was not performed.
+Phase 8 URAM Register Optimization | Checksum: 1834cca54
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.978 . Memory (MB): peak = 1317.832 ; gain = 0.000
+
+Phase 9 Shift Register Optimization
+INFO: [Physopt 32-670] No setup violation found.  Shift Register Optimization was not performed.
+Phase 9 Shift Register Optimization | Checksum: 1834cca54
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.987 . Memory (MB): peak = 1317.832 ; gain = 0.000
+
+Phase 10 Critical Pin Optimization
+INFO: [Physopt 32-670] No setup violation found.  Critical Pin Optimization was not performed.
+Phase 10 Critical Pin Optimization | Checksum: 1834cca54
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.996 . Memory (MB): peak = 1317.832 ; gain = 0.000
+
+Phase 11 Very High Fanout Optimization
+INFO: [Physopt 32-65] No nets found for high-fanout optimization.
+INFO: [Physopt 32-232] Optimized 0 net. Created 0 new instance.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+Phase 11 Very High Fanout Optimization | Checksum: 1834cca54
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 1317.832 ; gain = 0.000
+
+Phase 12 BRAM Enable Optimization
+Phase 12 BRAM Enable Optimization | Checksum: 1834cca54
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 1317.832 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1317.832 ; gain = 0.000
+INFO: [Physopt 32-603] Post Physical Optimization Timing Summary | WNS=0.114 | TNS=0.000 |
+
+Summary of Physical Synthesis Optimizations
+============================================
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+|  Optimization       |  WNS Gain (ns)  |  TNS Gain (ns)  |  Added Cells  |  Removed Cells  |  Optimized Cells/Nets  |  Dont Touch  |  Iterations  |  Elapsed   |
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+|  Fanout             |          0.000  |          0.000  |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
+|  Placement Based    |          0.000  |          0.000  |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
+|  Rewire             |          0.000  |          0.000  |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
+|  Critical Cell      |          0.000  |          0.000  |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
+|  DSP Register       |          0.000  |          0.000  |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
+|  BRAM Register      |          0.000  |          0.000  |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
+|  URAM Register      |          0.000  |          0.000  |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
+|  Shift Register     |          0.000  |          0.000  |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
+|  Critical Pin       |          0.000  |          0.000  |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
+|  Very High Fanout   |          0.000  |          0.000  |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  BRAM Enable        |          0.000  |          0.000  |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Total              |          0.000  |          0.000  |            0  |              0  |                     0  |           0  |           2  |  00:00:00  |
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Ending Physical Synthesis Task | Checksum: 1f5b23179
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 1317.832 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+74 Infos, 4 Warnings, 0 Critical Warnings and 0 Errors encountered.
+phys_opt_design completed successfully
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.283 . Memory (MB): peak = 1317.832 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/sdi_admin/CloudStation/HLS/dilate/solution1/impl/verilog/project.runs/impl_1/dilate_hls_physopt.dcp' has been generated.
+Command: route_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+Running DRC as a precondition to command route_design
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+
+Starting Routing Task
+INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 2 CPUs
+Checksum: PlaceDB: 7e4e5321 ConstDB: 0 ShapeSum: c794790d RouteDB: 0
+
+Phase 1 Build RT Design
+WARNING: [Route 35-197] Clock port "ap_clk" does not have an associated HD.CLK_SRC. Without this constraint, timing analysis may not be accurate and upstream checks cannot be done to ensure correct clock placement.
+WARNING: [Route 35-198] Port "in_stream_TVALID" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "in_stream_TVALID". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "in_stream_TDATA[18]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "in_stream_TDATA[18]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "in_stream_TDATA[19]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "in_stream_TDATA[19]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "in_stream_TDATA[12]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "in_stream_TDATA[12]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "in_stream_TDATA[13]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "in_stream_TDATA[13]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "in_stream_TDATA[7]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "in_stream_TDATA[7]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "in_stream_TDATA[20]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "in_stream_TDATA[20]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "in_stream_TDATA[21]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "in_stream_TDATA[21]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "in_stream_TDATA[26]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "in_stream_TDATA[26]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "in_stream_TDATA[27]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "in_stream_TDATA[27]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "in_stream_TDATA[28]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "in_stream_TDATA[28]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "in_stream_TDATA[29]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "in_stream_TDATA[29]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "in_stream_TDATA[14]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "in_stream_TDATA[14]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "in_stream_TDATA[15]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "in_stream_TDATA[15]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "in_stream_TDATA[6]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "in_stream_TDATA[6]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "in_stream_TDATA[0]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "in_stream_TDATA[0]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "in_stream_TDATA[10]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "in_stream_TDATA[10]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "in_stream_TDATA[11]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "in_stream_TDATA[11]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "in_stream_TDATA[4]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "in_stream_TDATA[4]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "in_stream_TDATA[1]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "in_stream_TDATA[1]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "in_stream_TDATA[3]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "in_stream_TDATA[3]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "in_stream_TDATA[5]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "in_stream_TDATA[5]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "in_stream_TDATA[2]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "in_stream_TDATA[2]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "ap_rst_n" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "ap_rst_n". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "in_stream_TDATA[16]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "in_stream_TDATA[16]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "in_stream_TDATA[17]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "in_stream_TDATA[17]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "in_stream_TDATA[22]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "in_stream_TDATA[22]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "in_stream_TDATA[23]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "in_stream_TDATA[23]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "in_stream_TDATA[24]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "in_stream_TDATA[24]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "in_stream_TDATA[25]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "in_stream_TDATA[25]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "in_stream_TDATA[8]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "in_stream_TDATA[8]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "in_stream_TDATA[9]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "in_stream_TDATA[9]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "in_stream_TDATA[30]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "in_stream_TDATA[30]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "in_stream_TDATA[31]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "in_stream_TDATA[31]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "s_axi_CONTROL_BUS_WDATA[6]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "s_axi_CONTROL_BUS_WDATA[6]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "s_axi_CONTROL_BUS_WSTRB[0]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "s_axi_CONTROL_BUS_WSTRB[0]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "s_axi_CONTROL_BUS_WDATA[7]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "s_axi_CONTROL_BUS_WDATA[7]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "s_axi_CONTROL_BUS_WDATA[8]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "s_axi_CONTROL_BUS_WDATA[8]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "s_axi_CONTROL_BUS_WSTRB[1]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "s_axi_CONTROL_BUS_WSTRB[1]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "s_axi_CONTROL_BUS_WDATA[9]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "s_axi_CONTROL_BUS_WDATA[9]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "s_axi_CONTROL_BUS_WDATA[10]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "s_axi_CONTROL_BUS_WDATA[10]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "s_axi_CONTROL_BUS_WDATA[11]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "s_axi_CONTROL_BUS_WDATA[11]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "s_axi_CONTROL_BUS_WDATA[12]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "s_axi_CONTROL_BUS_WDATA[12]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "s_axi_CONTROL_BUS_WDATA[13]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "s_axi_CONTROL_BUS_WDATA[13]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "s_axi_CONTROL_BUS_WDATA[14]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "s_axi_CONTROL_BUS_WDATA[14]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "s_axi_CONTROL_BUS_WDATA[15]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "s_axi_CONTROL_BUS_WDATA[15]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "s_axi_CONTROL_BUS_WDATA[2]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "s_axi_CONTROL_BUS_WDATA[2]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "s_axi_CONTROL_BUS_WDATA[3]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "s_axi_CONTROL_BUS_WDATA[3]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "s_axi_CONTROL_BUS_WDATA[4]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "s_axi_CONTROL_BUS_WDATA[4]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "s_axi_CONTROL_BUS_WDATA[5]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "s_axi_CONTROL_BUS_WDATA[5]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "s_axi_CONTROL_BUS_ARADDR[3]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "s_axi_CONTROL_BUS_ARADDR[3]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "s_axi_CONTROL_BUS_ARADDR[4]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "s_axi_CONTROL_BUS_ARADDR[4]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-197] Clock port "AXI_LITE_clk" does not have an associated HD.CLK_SRC. Without this constraint, timing analysis may not be accurate and upstream checks cannot be done to ensure correct clock placement.
+WARNING: [Route 35-198] Port "s_axi_CONTROL_BUS_WDATA[17]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "s_axi_CONTROL_BUS_WDATA[17]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "s_axi_CONTROL_BUS_WSTRB[2]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "s_axi_CONTROL_BUS_WSTRB[2]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "s_axi_CONTROL_BUS_WDATA[19]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "s_axi_CONTROL_BUS_WDATA[19]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "s_axi_CONTROL_BUS_WDATA[20]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "s_axi_CONTROL_BUS_WDATA[20]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "s_axi_CONTROL_BUS_WDATA[22]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "s_axi_CONTROL_BUS_WDATA[22]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "s_axi_CONTROL_BUS_WDATA[16]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "s_axi_CONTROL_BUS_WDATA[16]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "s_axi_CONTROL_BUS_WDATA[23]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "s_axi_CONTROL_BUS_WDATA[23]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "s_axi_CONTROL_BUS_WDATA[0]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "s_axi_CONTROL_BUS_WDATA[0]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "s_axi_CONTROL_BUS_WDATA[1]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "s_axi_CONTROL_BUS_WDATA[1]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "s_axi_CONTROL_BUS_WDATA[24]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "s_axi_CONTROL_BUS_WDATA[24]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "s_axi_CONTROL_BUS_WSTRB[3]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "s_axi_CONTROL_BUS_WSTRB[3]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "s_axi_CONTROL_BUS_WDATA[27]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "s_axi_CONTROL_BUS_WDATA[27]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "s_axi_CONTROL_BUS_WDATA[28]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "s_axi_CONTROL_BUS_WDATA[28]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "s_axi_CONTROL_BUS_WDATA[29]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "s_axi_CONTROL_BUS_WDATA[29]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "s_axi_CONTROL_BUS_WDATA[30]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "s_axi_CONTROL_BUS_WDATA[30]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "s_axi_CONTROL_BUS_WDATA[31]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "s_axi_CONTROL_BUS_WDATA[31]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "s_axi_CONTROL_BUS_ARADDR[5]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "s_axi_CONTROL_BUS_ARADDR[5]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "s_axi_CONTROL_BUS_WDATA[26]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "s_axi_CONTROL_BUS_WDATA[26]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "out_stream_TREADY" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "out_stream_TREADY". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "s_axi_CONTROL_BUS_WDATA[18]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "s_axi_CONTROL_BUS_WDATA[18]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "s_axi_CONTROL_BUS_WDATA[21]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "s_axi_CONTROL_BUS_WDATA[21]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "s_axi_CONTROL_BUS_WDATA[25]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "s_axi_CONTROL_BUS_WDATA[25]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "s_axi_CONTROL_BUS_ARADDR[2]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "s_axi_CONTROL_BUS_ARADDR[2]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "s_axi_CONTROL_BUS_ARADDR[1]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "s_axi_CONTROL_BUS_ARADDR[1]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "s_axi_CONTROL_BUS_ARADDR[0]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "s_axi_CONTROL_BUS_ARADDR[0]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "ap_rst_n_AXI_LITE_clk" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "ap_rst_n_AXI_LITE_clk". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "s_axi_CONTROL_BUS_WVALID" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "s_axi_CONTROL_BUS_WVALID". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "s_axi_CONTROL_BUS_AWADDR[0]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "s_axi_CONTROL_BUS_AWADDR[0]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "s_axi_CONTROL_BUS_AWADDR[1]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "s_axi_CONTROL_BUS_AWADDR[1]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "s_axi_CONTROL_BUS_AWADDR[2]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "s_axi_CONTROL_BUS_AWADDR[2]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "s_axi_CONTROL_BUS_AWADDR[3]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "s_axi_CONTROL_BUS_AWADDR[3]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "s_axi_CONTROL_BUS_AWADDR[4]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "s_axi_CONTROL_BUS_AWADDR[4]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "s_axi_CONTROL_BUS_AWADDR[5]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "s_axi_CONTROL_BUS_AWADDR[5]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "s_axi_CONTROL_BUS_ARVALID" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "s_axi_CONTROL_BUS_ARVALID". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "s_axi_CONTROL_BUS_BREADY" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "s_axi_CONTROL_BUS_BREADY". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "s_axi_CONTROL_BUS_AWVALID" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "s_axi_CONTROL_BUS_AWVALID". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "s_axi_CONTROL_BUS_RREADY" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "s_axi_CONTROL_BUS_RREADY". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+Phase 1 Build RT Design | Checksum: b4d2b8fd
+
+Time (s): cpu = 00:00:31 ; elapsed = 00:00:27 . Memory (MB): peak = 1353.527 ; gain = 35.695
+Post Restoration Checksum: NetGraph: 377c22f7 NumContArr: 7d569606 Constraints: 0 Timing: 0
+
+Phase 2 Router Initialization
+
+Phase 2.1 Create Timer
+Phase 2.1 Create Timer | Checksum: b4d2b8fd
+
+Time (s): cpu = 00:00:31 ; elapsed = 00:00:27 . Memory (MB): peak = 1353.527 ; gain = 35.695
+
+Phase 2.2 Fix Topology Constraints
+Phase 2.2 Fix Topology Constraints | Checksum: b4d2b8fd
+
+Time (s): cpu = 00:00:31 ; elapsed = 00:00:27 . Memory (MB): peak = 1360.750 ; gain = 42.918
+
+Phase 2.3 Pre Route Cleanup
+Phase 2.3 Pre Route Cleanup | Checksum: b4d2b8fd
+
+Time (s): cpu = 00:00:31 ; elapsed = 00:00:27 . Memory (MB): peak = 1360.750 ; gain = 42.918
+ Number of Nodes with overlaps = 0
+
+Phase 2.4 Update Timing
+Phase 2.4 Update Timing | Checksum: 1bb3a5194
+
+Time (s): cpu = 00:00:31 ; elapsed = 00:00:27 . Memory (MB): peak = 1364.602 ; gain = 46.770
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.146  | TNS=0.000  | WHS=0.100  | THS=0.000  |
+
+Phase 2 Router Initialization | Checksum: 1a83199da
+
+Time (s): cpu = 00:00:32 ; elapsed = 00:00:27 . Memory (MB): peak = 1383.551 ; gain = 65.719
+
+Phase 3 Initial Routing
+Phase 3 Initial Routing | Checksum: 1ee9e0fe0
+
+Time (s): cpu = 00:00:33 ; elapsed = 00:00:28 . Memory (MB): peak = 1383.551 ; gain = 65.719
+
+Phase 4 Rip-up And Reroute
+
+Phase 4.1 Global Iteration 0
+ Number of Nodes with overlaps = 429
+ Number of Nodes with overlaps = 83
+ Number of Nodes with overlaps = 19
+ Number of Nodes with overlaps = 2
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-0.016 | TNS=-0.016 | WHS=N/A    | THS=N/A    |
+
+Phase 4.1 Global Iteration 0 | Checksum: 1db6a1a1b
+
+Time (s): cpu = 00:00:35 ; elapsed = 00:00:29 . Memory (MB): peak = 1383.551 ; gain = 65.719
+
+Phase 4.2 Global Iteration 1
+ Number of Nodes with overlaps = 12
+ Number of Nodes with overlaps = 15
+ Number of Nodes with overlaps = 2
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-0.080 | TNS=-0.242 | WHS=N/A    | THS=N/A    |
+
+Phase 4.2 Global Iteration 1 | Checksum: 47a0e0c6
+
+Time (s): cpu = 00:00:36 ; elapsed = 00:00:30 . Memory (MB): peak = 1383.551 ; gain = 65.719
+Phase 4 Rip-up And Reroute | Checksum: 47a0e0c6
+
+Time (s): cpu = 00:00:36 ; elapsed = 00:00:30 . Memory (MB): peak = 1383.551 ; gain = 65.719
+
+Phase 5 Delay and Skew Optimization
+
+Phase 5.1 Delay CleanUp
+
+Phase 5.1.1 Update Timing
+Phase 5.1.1 Update Timing | Checksum: 47a0e0c6
+
+Time (s): cpu = 00:00:36 ; elapsed = 00:00:30 . Memory (MB): peak = 1383.551 ; gain = 65.719
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-0.016 | TNS=-0.016 | WHS=N/A    | THS=N/A    |
+
+ Number of Nodes with overlaps = 0
+Phase 5.1 Delay CleanUp | Checksum: 1a4c5eb94
+
+Time (s): cpu = 00:00:36 ; elapsed = 00:00:30 . Memory (MB): peak = 1383.551 ; gain = 65.719
+
+Phase 5.2 Clock Skew Optimization
+Phase 5.2 Clock Skew Optimization | Checksum: 1a4c5eb94
+
+Time (s): cpu = 00:00:36 ; elapsed = 00:00:30 . Memory (MB): peak = 1383.551 ; gain = 65.719
+Phase 5 Delay and Skew Optimization | Checksum: 1a4c5eb94
+
+Time (s): cpu = 00:00:36 ; elapsed = 00:00:30 . Memory (MB): peak = 1383.551 ; gain = 65.719
+
+Phase 6 Post Hold Fix
+
+Phase 6.1 Hold Fix Iter
+
+Phase 6.1.1 Update Timing
+Phase 6.1.1 Update Timing | Checksum: 1d05a0a63
+
+Time (s): cpu = 00:00:36 ; elapsed = 00:00:30 . Memory (MB): peak = 1383.551 ; gain = 65.719
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-0.016 | TNS=-0.016 | WHS=0.099  | THS=0.000  |
+
+Phase 6.1 Hold Fix Iter | Checksum: 1d05a0a63
+
+Time (s): cpu = 00:00:36 ; elapsed = 00:00:30 . Memory (MB): peak = 1383.551 ; gain = 65.719
+Phase 6 Post Hold Fix | Checksum: 1d05a0a63
+
+Time (s): cpu = 00:00:36 ; elapsed = 00:00:30 . Memory (MB): peak = 1383.551 ; gain = 65.719
+
+Phase 7 Route finalize
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 0.408512 %
+  Global Horizontal Routing Utilization  = 0.472279 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 0
+  Number of Unrouted Nets             = 0
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+Utilization threshold used for congestion level computation: 0.85
+Congestion Report
+North Dir 1x1 Area, Max Cong = 36.036%, No Congested Regions.
+South Dir 1x1 Area, Max Cong = 50.4505%, No Congested Regions.
+East Dir 1x1 Area, Max Cong = 42.6471%, No Congested Regions.
+West Dir 1x1 Area, Max Cong = 45.5882%, No Congested Regions.
+Phase 7 Route finalize | Checksum: 172a0ed24
+
+Time (s): cpu = 00:00:36 ; elapsed = 00:00:30 . Memory (MB): peak = 1383.551 ; gain = 65.719
+
+Phase 8 Verifying routed nets
+
+ Verification completed successfully
+Phase 8 Verifying routed nets | Checksum: 172a0ed24
+
+Time (s): cpu = 00:00:36 ; elapsed = 00:00:30 . Memory (MB): peak = 1383.551 ; gain = 65.719
+
+Phase 9 Depositing Routes
+Phase 9 Depositing Routes | Checksum: 9a96a4a0
+
+Time (s): cpu = 00:00:36 ; elapsed = 00:00:30 . Memory (MB): peak = 1383.551 ; gain = 65.719
+
+Phase 10 Post Router Timing
+INFO: [Route 35-57] Estimated Timing Summary | WNS=-0.016 | TNS=-0.016 | WHS=0.099  | THS=0.000  |
+
+WARNING: [Route 35-328] Router estimated timing not met.
+Resolution: For a complete and accurate timing signoff, report_timing_summary must be run after route_design. Alternatively, route_design can be run with the -timing_summary option to enable a complete timing signoff at the end of route_design.
+Phase 10 Post Router Timing | Checksum: 9a96a4a0
+
+Time (s): cpu = 00:00:37 ; elapsed = 00:00:30 . Memory (MB): peak = 1383.551 ; gain = 65.719
+INFO: [Route 35-16] Router Completed Successfully
+
+Time (s): cpu = 00:00:37 ; elapsed = 00:00:30 . Memory (MB): peak = 1383.551 ; gain = 65.719
+
+Routing Is Done.
+INFO: [Common 17-83] Releasing license: Implementation
+88 Infos, 96 Warnings, 0 Critical Warnings and 0 Errors encountered.
+route_design completed successfully
+route_design: Time (s): cpu = 00:00:38 ; elapsed = 00:00:31 . Memory (MB): peak = 1383.551 ; gain = 65.719
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.376 . Memory (MB): peak = 1383.551 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/sdi_admin/CloudStation/HLS/dilate/solution1/impl/verilog/project.runs/impl_1/dilate_hls_routed.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_drc -file dilate_hls_drc_routed.rpt -pb dilate_hls_drc_routed.pb -rpx dilate_hls_drc_routed.rpx
+Command: report_drc -file dilate_hls_drc_routed.rpt -pb dilate_hls_drc_routed.pb -rpx dilate_hls_drc_routed.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Coretcl 2-168] The results of DRC are in file C:/Users/sdi_admin/CloudStation/HLS/dilate/solution1/impl/verilog/project.runs/impl_1/dilate_hls_drc_routed.rpt.
+report_drc completed successfully
+INFO: [runtcl-4] Executing : report_methodology -file dilate_hls_methodology_drc_routed.rpt -pb dilate_hls_methodology_drc_routed.pb -rpx dilate_hls_methodology_drc_routed.rpx
+Command: report_methodology -file dilate_hls_methodology_drc_routed.rpt -pb dilate_hls_methodology_drc_routed.pb -rpx dilate_hls_methodology_drc_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+WARNING: [Timing 38-242] The property HD.CLK_SRC of clock port "AXI_LITE_clk" is not set. In out-of-context mode, this prevents timing estimation for clock delay/skew
+Resolution: Set the HD.CLK_SRC property of the out-of-context port to the location of the clock buffer instance in the top-level design
+WARNING: [Timing 38-242] The property HD.CLK_SRC of clock port "ap_clk" is not set. In out-of-context mode, this prevents timing estimation for clock delay/skew
+Resolution: Set the HD.CLK_SRC property of the out-of-context port to the location of the clock buffer instance in the top-level design
+INFO: [DRC 23-133] Running Methodology with 2 threads
+INFO: [Coretcl 2-1520] The results of Report Methodology are in file C:/Users/sdi_admin/CloudStation/HLS/dilate/solution1/impl/verilog/project.runs/impl_1/dilate_hls_methodology_drc_routed.rpt.
+report_methodology completed successfully
+INFO: [runtcl-4] Executing : report_power -file dilate_hls_power_routed.rpt -pb dilate_hls_power_summary_routed.pb -rpx dilate_hls_power_routed.rpx
+Command: report_power -file dilate_hls_power_routed.rpt -pb dilate_hls_power_summary_routed.pb -rpx dilate_hls_power_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+100 Infos, 98 Warnings, 0 Critical Warnings and 0 Errors encountered.
+report_power completed successfully
+INFO: [runtcl-4] Executing : report_route_status -file dilate_hls_route_status.rpt -pb dilate_hls_route_status.pb
+INFO: [runtcl-4] Executing : report_timing_summary -max_paths 10 -file dilate_hls_timing_summary_routed.rpt -rpx dilate_hls_timing_summary_routed.rpx -warn_on_violation 
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+CRITICAL WARNING: [Timing 38-282] The design failed to meet the timing requirements. Please see the timing summary report for details on the timing violations.
+INFO: [runtcl-4] Executing : report_incremental_reuse -file dilate_hls_incremental_reuse_routed.rpt
+INFO: [Vivado_Tcl 4-545] No incremental reuse to report, no incremental placement and routing data was found.
+INFO: [runtcl-4] Executing : report_clock_utilization -file dilate_hls_clock_utilization_routed.rpt
+INFO: [Common 17-206] Exiting Vivado at Mon Jun 25 14:54:40 2018...
+[Mon Jun 25 14:54:44 2018] impl_1 finished
+wait_on_run: Time (s): cpu = 00:00:00 ; elapsed = 00:01:41 . Memory (MB): peak = 1187.598 ; gain = 4.012
+INFO: [Netlist 29-17] Analyzing 109 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2017.4
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [C:/Users/sdi_admin/CloudStation/HLS/dilate/solution1/impl/verilog/.Xil/Vivado-15908-DESKTOP-H32TPSL/dcp2/dilate_hls.xdc]
+Finished Parsing XDC File [C:/Users/sdi_admin/CloudStation/HLS/dilate/solution1/impl/verilog/.Xil/Vivado-15908-DESKTOP-H32TPSL/dcp2/dilate_hls.xdc]
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.288 . Memory (MB): peak = 1314.172 ; gain = 2.188
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.289 . Memory (MB): peak = 1314.172 ; gain = 2.188
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+WARNING: [Timing 38-242] The property HD.CLK_SRC of clock port "AXI_LITE_clk" is not set. In out-of-context mode, this prevents timing estimation for clock delay/skew
+Resolution: Set the HD.CLK_SRC property of the out-of-context port to the location of the clock buffer instance in the top-level design
+WARNING: [Timing 38-242] The property HD.CLK_SRC of clock port "ap_clk" is not set. In out-of-context mode, this prevents timing estimation for clock delay/skew
+Resolution: Set the HD.CLK_SRC property of the out-of-context port to the location of the clock buffer instance in the top-level design
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.277 . Memory (MB): peak = 1391.926 ; gain = 3.984
+
+
+Implementation tool: Xilinx Vivado v.2017.4
+Project:             dilate
+Solution:            solution1
+Device target:       xc7z020clg400-1
+Report date:         Mon Jun 25 14:54:47 +0200 2018
+
+#=== Post-Implementation Resource usage ===
+SLICE:          493
+LUT:           1290
+FF:            1456
+DSP:              8
+BRAM:             3
+SRL:             77
+#=== Final timing ===
+CP required:    6.000
+CP achieved post-synthesis:    6.899
+CP achieved post-implementation:    6.014
+Timing not met
+INFO: [Common 17-206] Exiting Vivado at Mon Jun 25 14:54:47 2018...
