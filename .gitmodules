@@ -1,0 +1,3 @@
+[submodule "cv2pynq"]
+	path = cv2pynq
+	url = https://github.com/wbrueckner/cv2pynq
