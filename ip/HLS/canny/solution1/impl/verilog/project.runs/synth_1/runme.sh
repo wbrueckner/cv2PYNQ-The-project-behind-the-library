@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/sdi_admin/CloudStation/HLS/canny/solution1/impl/verilog/project.runs/synth_1'
+HD_PWD='E:/pynq_xohw18-155_vaas_20180629_1/ip/HLS/canny/solution1/impl/verilog/project.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

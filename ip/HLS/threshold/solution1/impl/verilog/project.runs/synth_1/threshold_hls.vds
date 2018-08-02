@@ -1,0 +1,802 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Thu Aug  2 16:04:36 2018
+# Process ID: 132
+# Current directory: E:/pynq_xohw18-155_vaas_20180629_1/ip/HLS/threshold/solution1/impl/verilog/project.runs/synth_1
+# Command line: vivado.exe -log threshold_hls.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source threshold_hls.tcl
+# Log file: E:/pynq_xohw18-155_vaas_20180629_1/ip/HLS/threshold/solution1/impl/verilog/project.runs/synth_1/threshold_hls.vds
+# Journal file: E:/pynq_xohw18-155_vaas_20180629_1/ip/HLS/threshold/solution1/impl/verilog/project.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source threshold_hls.tcl -notrace
+Command: synth_design -top threshold_hls -part xc7z020clg400-1 -no_iobuf -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 10424 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 402.805 ; gain = 101.535
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'threshold_hls' [E:/pynq_xohw18-155_vaas_20180629_1/ip/HLS/threshold/solution1/impl/verilog/threshold_hls.v:12]
+	Parameter C_S_AXI_CONTROL_BUS_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_CONTROL_BUS_ADDR_WIDTH bound to: 6 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_CONTROL_BUS_WSTRB_WIDTH bound to: 4 - type: integer 
+	Parameter C_S_AXI_WSTRB_WIDTH bound to: 4 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'threshold_hls_CONTROL_BUS_s_axi' [E:/pynq_xohw18-155_vaas_20180629_1/ip/HLS/threshold/solution1/impl/verilog/threshold_hls_CONTROL_BUS_s_axi.v:9]
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 6 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter ADDR_AP_CTRL bound to: 6'b000000 
+	Parameter ADDR_GIE bound to: 6'b000100 
+	Parameter ADDR_IER bound to: 6'b001000 
+	Parameter ADDR_ISR bound to: 6'b001100 
+	Parameter ADDR_ROWS_DATA_0 bound to: 6'b010100 
+	Parameter ADDR_ROWS_CTRL bound to: 6'b011000 
+	Parameter ADDR_COLS_DATA_0 bound to: 6'b011100 
+	Parameter ADDR_COLS_CTRL bound to: 6'b100000 
+	Parameter ADDR_THRESH_DATA_0 bound to: 6'b100100 
+	Parameter ADDR_THRESH_CTRL bound to: 6'b101000 
+	Parameter ADDR_MAXVAL_DATA_0 bound to: 6'b101100 
+	Parameter ADDR_MAXVAL_CTRL bound to: 6'b110000 
+	Parameter ADDR_THRESH_TYPE_DATA_0 bound to: 6'b110100 
+	Parameter ADDR_THRESH_TYPE_CTRL bound to: 6'b111000 
+	Parameter WRIDLE bound to: 2'b00 
+	Parameter WRDATA bound to: 2'b01 
+	Parameter WRRESP bound to: 2'b10 
+	Parameter WRRESET bound to: 2'b11 
+	Parameter RDIDLE bound to: 2'b00 
+	Parameter RDDATA bound to: 2'b01 
+	Parameter RDRESET bound to: 2'b10 
+	Parameter ADDR_BITS bound to: 6 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [E:/pynq_xohw18-155_vaas_20180629_1/ip/HLS/threshold/solution1/impl/verilog/threshold_hls_CONTROL_BUS_s_axi.v:235]
+INFO: [Synth 8-256] done synthesizing module 'threshold_hls_CONTROL_BUS_s_axi' (1#1) [E:/pynq_xohw18-155_vaas_20180629_1/ip/HLS/threshold/solution1/impl/verilog/threshold_hls_CONTROL_BUS_s_axi.v:9]
+INFO: [Synth 8-638] synthesizing module 'Block_Mat_exit16134_s' [E:/pynq_xohw18-155_vaas_20180629_1/ip/HLS/threshold/solution1/impl/verilog/Block_Mat_exit16134_s.v:10]
+	Parameter ap_ST_fsm_state1 bound to: 3'b001 
+	Parameter ap_ST_fsm_state2 bound to: 3'b010 
+	Parameter ap_ST_fsm_state3 bound to: 3'b100 
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [E:/pynq_xohw18-155_vaas_20180629_1/ip/HLS/threshold/solution1/impl/verilog/Block_Mat_exit16134_s.v:58]
+INFO: [Synth 8-638] synthesizing module 'threshold_hls_mulbkb' [E:/pynq_xohw18-155_vaas_20180629_1/ip/HLS/threshold/solution1/impl/verilog/threshold_hls_mulbkb.v:30]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 3 - type: integer 
+	Parameter din0_WIDTH bound to: 20 - type: integer 
+	Parameter din1_WIDTH bound to: 9 - type: integer 
+	Parameter dout_WIDTH bound to: 20 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'threshold_hls_mulbkb_DSP48_0' [E:/pynq_xohw18-155_vaas_20180629_1/ip/HLS/threshold/solution1/impl/verilog/threshold_hls_mulbkb.v:4]
+INFO: [Synth 8-256] done synthesizing module 'threshold_hls_mulbkb_DSP48_0' (2#1) [E:/pynq_xohw18-155_vaas_20180629_1/ip/HLS/threshold/solution1/impl/verilog/threshold_hls_mulbkb.v:4]
+INFO: [Synth 8-256] done synthesizing module 'threshold_hls_mulbkb' (3#1) [E:/pynq_xohw18-155_vaas_20180629_1/ip/HLS/threshold/solution1/impl/verilog/threshold_hls_mulbkb.v:30]
+INFO: [Synth 8-256] done synthesizing module 'Block_Mat_exit16134_s' (4#1) [E:/pynq_xohw18-155_vaas_20180629_1/ip/HLS/threshold/solution1/impl/verilog/Block_Mat_exit16134_s.v:10]
+INFO: [Synth 8-638] synthesizing module 'Loop_1_proc' [E:/pynq_xohw18-155_vaas_20180629_1/ip/HLS/threshold/solution1/impl/verilog/Loop_1_proc_threshold.v:10]
+	Parameter ap_ST_fsm_state1 bound to: 6'b000001 
+	Parameter ap_ST_fsm_pp0_stage0 bound to: 6'b000010 
+	Parameter ap_ST_fsm_pp0_stage1 bound to: 6'b000100 
+	Parameter ap_ST_fsm_pp0_stage2 bound to: 6'b001000 
+	Parameter ap_ST_fsm_pp0_stage3 bound to: 6'b010000 
+	Parameter ap_ST_fsm_state8 bound to: 6'b100000 
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [E:/pynq_xohw18-155_vaas_20180629_1/ip/HLS/threshold/solution1/impl/verilog/Loop_1_proc_threshold.v:56]
+INFO: [Synth 8-256] done synthesizing module 'Loop_1_proc' (5#1) [E:/pynq_xohw18-155_vaas_20180629_1/ip/HLS/threshold/solution1/impl/verilog/Loop_1_proc_threshold.v:10]
+INFO: [Synth 8-638] synthesizing module 'Threshold' [E:/pynq_xohw18-155_vaas_20180629_1/ip/HLS/threshold/solution1/impl/verilog/Threshold.v:10]
+	Parameter ap_ST_fsm_state1 bound to: 4'b0001 
+	Parameter ap_ST_fsm_state2 bound to: 4'b0010 
+	Parameter ap_ST_fsm_pp0_stage0 bound to: 4'b0100 
+	Parameter ap_ST_fsm_state8 bound to: 4'b1000 
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [E:/pynq_xohw18-155_vaas_20180629_1/ip/HLS/threshold/solution1/impl/verilog/Threshold.v:62]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [E:/pynq_xohw18-155_vaas_20180629_1/ip/HLS/threshold/solution1/impl/verilog/Threshold.v:420]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [E:/pynq_xohw18-155_vaas_20180629_1/ip/HLS/threshold/solution1/impl/verilog/Threshold.v:422]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [E:/pynq_xohw18-155_vaas_20180629_1/ip/HLS/threshold/solution1/impl/verilog/Threshold.v:424]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [E:/pynq_xohw18-155_vaas_20180629_1/ip/HLS/threshold/solution1/impl/verilog/Threshold.v:426]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [E:/pynq_xohw18-155_vaas_20180629_1/ip/HLS/threshold/solution1/impl/verilog/Threshold.v:428]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [E:/pynq_xohw18-155_vaas_20180629_1/ip/HLS/threshold/solution1/impl/verilog/Threshold.v:430]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [E:/pynq_xohw18-155_vaas_20180629_1/ip/HLS/threshold/solution1/impl/verilog/Threshold.v:432]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [E:/pynq_xohw18-155_vaas_20180629_1/ip/HLS/threshold/solution1/impl/verilog/Threshold.v:434]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [E:/pynq_xohw18-155_vaas_20180629_1/ip/HLS/threshold/solution1/impl/verilog/Threshold.v:436]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [E:/pynq_xohw18-155_vaas_20180629_1/ip/HLS/threshold/solution1/impl/verilog/Threshold.v:438]
+INFO: [Synth 8-256] done synthesizing module 'Threshold' (6#1) [E:/pynq_xohw18-155_vaas_20180629_1/ip/HLS/threshold/solution1/impl/verilog/Threshold.v:10]
+INFO: [Synth 8-638] synthesizing module 'Loop_2_proc' [E:/pynq_xohw18-155_vaas_20180629_1/ip/HLS/threshold/solution1/impl/verilog/Loop_2_proc_threshold.v:10]
+	Parameter ap_ST_fsm_state1 bound to: 9'b000000001 
+	Parameter ap_ST_fsm_state2 bound to: 9'b000000010 
+	Parameter ap_ST_fsm_state3 bound to: 9'b000000100 
+	Parameter ap_ST_fsm_state4 bound to: 9'b000001000 
+	Parameter ap_ST_fsm_pp0_stage0 bound to: 9'b000010000 
+	Parameter ap_ST_fsm_pp0_stage1 bound to: 9'b000100000 
+	Parameter ap_ST_fsm_pp0_stage2 bound to: 9'b001000000 
+	Parameter ap_ST_fsm_pp0_stage3 bound to: 9'b010000000 
+	Parameter ap_ST_fsm_state11 bound to: 9'b100000000 
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [E:/pynq_xohw18-155_vaas_20180629_1/ip/HLS/threshold/solution1/impl/verilog/Loop_2_proc_threshold.v:76]
+INFO: [Synth 8-638] synthesizing module 'threshold_hls_mulcud' [E:/pynq_xohw18-155_vaas_20180629_1/ip/HLS/threshold/solution1/impl/verilog/threshold_hls_mulcud.v:30]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 3 - type: integer 
+	Parameter din0_WIDTH bound to: 9 - type: integer 
+	Parameter din1_WIDTH bound to: 11 - type: integer 
+	Parameter dout_WIDTH bound to: 20 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'threshold_hls_mulcud_DSP48_1' [E:/pynq_xohw18-155_vaas_20180629_1/ip/HLS/threshold/solution1/impl/verilog/threshold_hls_mulcud.v:4]
+INFO: [Synth 8-256] done synthesizing module 'threshold_hls_mulcud_DSP48_1' (7#1) [E:/pynq_xohw18-155_vaas_20180629_1/ip/HLS/threshold/solution1/impl/verilog/threshold_hls_mulcud.v:4]
+INFO: [Synth 8-256] done synthesizing module 'threshold_hls_mulcud' (8#1) [E:/pynq_xohw18-155_vaas_20180629_1/ip/HLS/threshold/solution1/impl/verilog/threshold_hls_mulcud.v:30]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [E:/pynq_xohw18-155_vaas_20180629_1/ip/HLS/threshold/solution1/impl/verilog/Loop_2_proc_threshold.v:937]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [E:/pynq_xohw18-155_vaas_20180629_1/ip/HLS/threshold/solution1/impl/verilog/Loop_2_proc_threshold.v:951]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [E:/pynq_xohw18-155_vaas_20180629_1/ip/HLS/threshold/solution1/impl/verilog/Loop_2_proc_threshold.v:959]
+INFO: [Synth 8-256] done synthesizing module 'Loop_2_proc' (9#1) [E:/pynq_xohw18-155_vaas_20180629_1/ip/HLS/threshold/solution1/impl/verilog/Loop_2_proc_threshold.v:10]
+INFO: [Synth 8-638] synthesizing module 'fifo_w9_d3_A' [E:/pynq_xohw18-155_vaas_20180629_1/ip/HLS/threshold/solution1/impl/verilog/fifo_w9_d3_A.v:45]
+	Parameter MEM_STYLE bound to: shiftreg - type: string 
+	Parameter DATA_WIDTH bound to: 9 - type: integer 
+	Parameter ADDR_WIDTH bound to: 2 - type: integer 
+	Parameter DEPTH bound to: 4 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'fifo_w9_d3_A_shiftReg' [E:/pynq_xohw18-155_vaas_20180629_1/ip/HLS/threshold/solution1/impl/verilog/fifo_w9_d3_A.v:11]
+	Parameter DATA_WIDTH bound to: 9 - type: integer 
+	Parameter ADDR_WIDTH bound to: 2 - type: integer 
+	Parameter DEPTH bound to: 4 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'fifo_w9_d3_A_shiftReg' (10#1) [E:/pynq_xohw18-155_vaas_20180629_1/ip/HLS/threshold/solution1/impl/verilog/fifo_w9_d3_A.v:11]
+INFO: [Synth 8-256] done synthesizing module 'fifo_w9_d3_A' (11#1) [E:/pynq_xohw18-155_vaas_20180629_1/ip/HLS/threshold/solution1/impl/verilog/fifo_w9_d3_A.v:45]
+INFO: [Synth 8-638] synthesizing module 'fifo_w20_d2_A' [E:/pynq_xohw18-155_vaas_20180629_1/ip/HLS/threshold/solution1/impl/verilog/fifo_w20_d2_A.v:45]
+	Parameter MEM_STYLE bound to: shiftreg - type: string 
+	Parameter DATA_WIDTH bound to: 20 - type: integer 
+	Parameter ADDR_WIDTH bound to: 2 - type: integer 
+	Parameter DEPTH bound to: 3 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'fifo_w20_d2_A_shiftReg' [E:/pynq_xohw18-155_vaas_20180629_1/ip/HLS/threshold/solution1/impl/verilog/fifo_w20_d2_A.v:11]
+	Parameter DATA_WIDTH bound to: 20 - type: integer 
+	Parameter ADDR_WIDTH bound to: 2 - type: integer 
+	Parameter DEPTH bound to: 3 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'fifo_w20_d2_A_shiftReg' (12#1) [E:/pynq_xohw18-155_vaas_20180629_1/ip/HLS/threshold/solution1/impl/verilog/fifo_w20_d2_A.v:11]
+INFO: [Synth 8-256] done synthesizing module 'fifo_w20_d2_A' (13#1) [E:/pynq_xohw18-155_vaas_20180629_1/ip/HLS/threshold/solution1/impl/verilog/fifo_w20_d2_A.v:45]
+INFO: [Synth 8-638] synthesizing module 'fifo_w8_d1_A' [E:/pynq_xohw18-155_vaas_20180629_1/ip/HLS/threshold/solution1/impl/verilog/fifo_w8_d1_A.v:45]
+	Parameter MEM_STYLE bound to: auto - type: string 
+	Parameter DATA_WIDTH bound to: 8 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'fifo_w8_d1_A_shiftReg' [E:/pynq_xohw18-155_vaas_20180629_1/ip/HLS/threshold/solution1/impl/verilog/fifo_w8_d1_A.v:11]
+	Parameter DATA_WIDTH bound to: 8 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'fifo_w8_d1_A_shiftReg' (14#1) [E:/pynq_xohw18-155_vaas_20180629_1/ip/HLS/threshold/solution1/impl/verilog/fifo_w8_d1_A.v:11]
+INFO: [Synth 8-256] done synthesizing module 'fifo_w8_d1_A' (15#1) [E:/pynq_xohw18-155_vaas_20180629_1/ip/HLS/threshold/solution1/impl/verilog/fifo_w8_d1_A.v:45]
+WARNING: [Synth 8-6014] Unused sequential element Block_Mat_exit16134_U0_ap_ready_count_reg was removed.  [E:/pynq_xohw18-155_vaas_20180629_1/ip/HLS/threshold/solution1/impl/verilog/threshold_hls.v:390]
+WARNING: [Synth 8-6014] Unused sequential element Loop_1_proc_U0_ap_ready_count_reg was removed.  [E:/pynq_xohw18-155_vaas_20180629_1/ip/HLS/threshold/solution1/impl/verilog/threshold_hls.v:398]
+INFO: [Synth 8-256] done synthesizing module 'threshold_hls' (16#1) [E:/pynq_xohw18-155_vaas_20180629_1/ip/HLS/threshold/solution1/impl/verilog/threshold_hls.v:12]
+WARNING: [Synth 8-3331] design threshold_hls_mulcud_DSP48_1 has unconnected port rst
+WARNING: [Synth 8-3331] design Loop_2_proc has unconnected port rows[31]
+WARNING: [Synth 8-3331] design Loop_2_proc has unconnected port rows[30]
+WARNING: [Synth 8-3331] design Loop_2_proc has unconnected port rows[29]
+WARNING: [Synth 8-3331] design Loop_2_proc has unconnected port rows[28]
+WARNING: [Synth 8-3331] design Loop_2_proc has unconnected port rows[27]
+WARNING: [Synth 8-3331] design Loop_2_proc has unconnected port rows[26]
+WARNING: [Synth 8-3331] design Loop_2_proc has unconnected port rows[25]
+WARNING: [Synth 8-3331] design Loop_2_proc has unconnected port rows[24]
+WARNING: [Synth 8-3331] design Loop_2_proc has unconnected port rows[23]
+WARNING: [Synth 8-3331] design Loop_2_proc has unconnected port rows[22]
+WARNING: [Synth 8-3331] design Loop_2_proc has unconnected port rows[21]
+WARNING: [Synth 8-3331] design Loop_2_proc has unconnected port rows[20]
+WARNING: [Synth 8-3331] design Loop_2_proc has unconnected port rows[19]
+WARNING: [Synth 8-3331] design Loop_2_proc has unconnected port rows[18]
+WARNING: [Synth 8-3331] design Loop_2_proc has unconnected port rows[17]
+WARNING: [Synth 8-3331] design Loop_2_proc has unconnected port rows[16]
+WARNING: [Synth 8-3331] design Loop_2_proc has unconnected port rows[15]
+WARNING: [Synth 8-3331] design Loop_2_proc has unconnected port rows[14]
+WARNING: [Synth 8-3331] design Loop_2_proc has unconnected port rows[13]
+WARNING: [Synth 8-3331] design Loop_2_proc has unconnected port rows[12]
+WARNING: [Synth 8-3331] design Loop_2_proc has unconnected port rows[11]
+WARNING: [Synth 8-3331] design Threshold has unconnected port src_rows_V[31]
+WARNING: [Synth 8-3331] design Threshold has unconnected port src_rows_V[30]
+WARNING: [Synth 8-3331] design Threshold has unconnected port src_rows_V[29]
+WARNING: [Synth 8-3331] design Threshold has unconnected port src_rows_V[28]
+WARNING: [Synth 8-3331] design Threshold has unconnected port src_rows_V[27]
+WARNING: [Synth 8-3331] design Threshold has unconnected port src_rows_V[26]
+WARNING: [Synth 8-3331] design Threshold has unconnected port src_rows_V[25]
+WARNING: [Synth 8-3331] design Threshold has unconnected port src_rows_V[24]
+WARNING: [Synth 8-3331] design Threshold has unconnected port src_rows_V[23]
+WARNING: [Synth 8-3331] design Threshold has unconnected port src_rows_V[22]
+WARNING: [Synth 8-3331] design Threshold has unconnected port src_rows_V[21]
+WARNING: [Synth 8-3331] design Threshold has unconnected port src_rows_V[20]
+WARNING: [Synth 8-3331] design Threshold has unconnected port src_rows_V[19]
+WARNING: [Synth 8-3331] design Threshold has unconnected port src_rows_V[18]
+WARNING: [Synth 8-3331] design Threshold has unconnected port src_rows_V[17]
+WARNING: [Synth 8-3331] design Threshold has unconnected port src_rows_V[16]
+WARNING: [Synth 8-3331] design Threshold has unconnected port src_rows_V[15]
+WARNING: [Synth 8-3331] design Threshold has unconnected port src_rows_V[14]
+WARNING: [Synth 8-3331] design Threshold has unconnected port src_rows_V[13]
+WARNING: [Synth 8-3331] design Threshold has unconnected port src_rows_V[12]
+WARNING: [Synth 8-3331] design Threshold has unconnected port src_cols_V[31]
+WARNING: [Synth 8-3331] design Threshold has unconnected port src_cols_V[30]
+WARNING: [Synth 8-3331] design Threshold has unconnected port src_cols_V[29]
+WARNING: [Synth 8-3331] design Threshold has unconnected port src_cols_V[28]
+WARNING: [Synth 8-3331] design Threshold has unconnected port src_cols_V[27]
+WARNING: [Synth 8-3331] design Threshold has unconnected port src_cols_V[26]
+WARNING: [Synth 8-3331] design Threshold has unconnected port src_cols_V[25]
+WARNING: [Synth 8-3331] design Threshold has unconnected port src_cols_V[24]
+WARNING: [Synth 8-3331] design Threshold has unconnected port src_cols_V[23]
+WARNING: [Synth 8-3331] design Threshold has unconnected port src_cols_V[22]
+WARNING: [Synth 8-3331] design Threshold has unconnected port src_cols_V[21]
+WARNING: [Synth 8-3331] design Threshold has unconnected port src_cols_V[20]
+WARNING: [Synth 8-3331] design Threshold has unconnected port src_cols_V[19]
+WARNING: [Synth 8-3331] design Threshold has unconnected port src_cols_V[18]
+WARNING: [Synth 8-3331] design Threshold has unconnected port src_cols_V[17]
+WARNING: [Synth 8-3331] design Threshold has unconnected port src_cols_V[16]
+WARNING: [Synth 8-3331] design Threshold has unconnected port src_cols_V[15]
+WARNING: [Synth 8-3331] design Threshold has unconnected port src_cols_V[14]
+WARNING: [Synth 8-3331] design Threshold has unconnected port src_cols_V[13]
+WARNING: [Synth 8-3331] design Threshold has unconnected port src_cols_V[12]
+WARNING: [Synth 8-3331] design Threshold has unconnected port thresh[31]
+WARNING: [Synth 8-3331] design Threshold has unconnected port thresh[30]
+WARNING: [Synth 8-3331] design Threshold has unconnected port thresh[29]
+WARNING: [Synth 8-3331] design Threshold has unconnected port thresh[28]
+WARNING: [Synth 8-3331] design Threshold has unconnected port thresh[27]
+WARNING: [Synth 8-3331] design Threshold has unconnected port thresh[26]
+WARNING: [Synth 8-3331] design Threshold has unconnected port thresh[25]
+WARNING: [Synth 8-3331] design Threshold has unconnected port thresh[24]
+WARNING: [Synth 8-3331] design Threshold has unconnected port thresh[23]
+WARNING: [Synth 8-3331] design Threshold has unconnected port thresh[22]
+WARNING: [Synth 8-3331] design Threshold has unconnected port thresh[21]
+WARNING: [Synth 8-3331] design Threshold has unconnected port thresh[20]
+WARNING: [Synth 8-3331] design Threshold has unconnected port thresh[19]
+WARNING: [Synth 8-3331] design Threshold has unconnected port thresh[18]
+WARNING: [Synth 8-3331] design Threshold has unconnected port thresh[17]
+WARNING: [Synth 8-3331] design Threshold has unconnected port thresh[16]
+WARNING: [Synth 8-3331] design Threshold has unconnected port thresh[15]
+WARNING: [Synth 8-3331] design Threshold has unconnected port thresh[14]
+WARNING: [Synth 8-3331] design Threshold has unconnected port thresh[13]
+WARNING: [Synth 8-3331] design Threshold has unconnected port thresh[12]
+WARNING: [Synth 8-3331] design Threshold has unconnected port thresh[11]
+WARNING: [Synth 8-3331] design Threshold has unconnected port thresh[10]
+WARNING: [Synth 8-3331] design Threshold has unconnected port thresh[9]
+WARNING: [Synth 8-3331] design Threshold has unconnected port thresh[8]
+WARNING: [Synth 8-3331] design Threshold has unconnected port maxval[31]
+WARNING: [Synth 8-3331] design Threshold has unconnected port maxval[30]
+WARNING: [Synth 8-3331] design Threshold has unconnected port maxval[29]
+WARNING: [Synth 8-3331] design Threshold has unconnected port maxval[28]
+WARNING: [Synth 8-3331] design Threshold has unconnected port maxval[27]
+WARNING: [Synth 8-3331] design Threshold has unconnected port maxval[26]
+WARNING: [Synth 8-3331] design Threshold has unconnected port maxval[25]
+WARNING: [Synth 8-3331] design Threshold has unconnected port maxval[24]
+WARNING: [Synth 8-3331] design Threshold has unconnected port maxval[23]
+WARNING: [Synth 8-3331] design Threshold has unconnected port maxval[22]
+WARNING: [Synth 8-3331] design Threshold has unconnected port maxval[21]
+WARNING: [Synth 8-3331] design Threshold has unconnected port maxval[20]
+WARNING: [Synth 8-3331] design Threshold has unconnected port maxval[19]
+WARNING: [Synth 8-3331] design Threshold has unconnected port maxval[18]
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 456.848 ; gain = 155.578
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 456.848 ; gain = 155.578
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [E:/pynq_xohw18-155_vaas_20180629_1/ip/HLS/threshold/solution1/impl/verilog/threshold_hls.xdc]
+Finished Parsing XDC File [E:/pynq_xohw18-155_vaas_20180629_1/ip/HLS/threshold/solution1/impl/verilog/threshold_hls.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.051 . Memory (MB): peak = 827.129 ; gain = 0.152
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 827.129 ; gain = 525.859
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 827.129 ; gain = 525.859
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 827.129 ; gain = 525.859
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'wstate_reg' in module 'threshold_hls_CONTROL_BUS_s_axi'
+INFO: [Synth 8-5544] ROM "wnext" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "wnext" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+WARNING: [Synth 8-6014] Unused sequential element a_reg_reg was removed.  [E:/pynq_xohw18-155_vaas_20180629_1/ip/HLS/threshold/solution1/impl/verilog/threshold_hls_mulbkb.v:19]
+WARNING: [Synth 8-6014] Unused sequential element b_reg_reg was removed.  [E:/pynq_xohw18-155_vaas_20180629_1/ip/HLS/threshold/solution1/impl/verilog/threshold_hls_mulbkb.v:20]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [E:/pynq_xohw18-155_vaas_20180629_1/ip/HLS/threshold/solution1/impl/verilog/threshold_hls_mulbkb.v:19]
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+WARNING: [Synth 8-6014] Unused sequential element r_reg_169_reg was removed.  [E:/pynq_xohw18-155_vaas_20180629_1/ip/HLS/threshold/solution1/impl/verilog/Loop_1_proc_threshold.v:243]
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-5545] ROM "sel_tmp4_fu_215_p2" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "sel_tmp2_fu_209_p2" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "sel_tmp_fu_203_p2" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "sel_tmp8_fu_227_p2" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "sel_tmp6_fu_221_p2" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+WARNING: [Synth 8-6014] Unused sequential element t_V_1_reg_176_reg was removed.  [E:/pynq_xohw18-155_vaas_20180629_1/ip/HLS/threshold/solution1/impl/verilog/Threshold.v:218]
+WARNING: [Synth 8-6014] Unused sequential element a_reg_reg was removed.  [E:/pynq_xohw18-155_vaas_20180629_1/ip/HLS/threshold/solution1/impl/verilog/threshold_hls_mulcud.v:19]
+WARNING: [Synth 8-6014] Unused sequential element b_reg_reg was removed.  [E:/pynq_xohw18-155_vaas_20180629_1/ip/HLS/threshold/solution1/impl/verilog/threshold_hls_mulcud.v:20]
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-5546] ROM "out_stream_user_V_tm_fu_297_p2" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-6014] Unused sequential element indvar_flatten_next_reg_385_reg was removed.  [E:/pynq_xohw18-155_vaas_20180629_1/ip/HLS/threshold/solution1/impl/verilog/Loop_2_proc_threshold.v:466]
+WARNING: [Synth 8-6014] Unused sequential element SRL_SIG_reg[0] was removed.  [E:/pynq_xohw18-155_vaas_20180629_1/ip/HLS/threshold/solution1/impl/verilog/fifo_w9_d3_A.v:36]
+WARNING: [Synth 8-6014] Unused sequential element SRL_SIG_reg[1] was removed.  [E:/pynq_xohw18-155_vaas_20180629_1/ip/HLS/threshold/solution1/impl/verilog/fifo_w9_d3_A.v:36]
+WARNING: [Synth 8-6014] Unused sequential element SRL_SIG_reg[2] was removed.  [E:/pynq_xohw18-155_vaas_20180629_1/ip/HLS/threshold/solution1/impl/verilog/fifo_w9_d3_A.v:36]
+WARNING: [Synth 8-6014] Unused sequential element SRL_SIG_reg[3] was removed.  [E:/pynq_xohw18-155_vaas_20180629_1/ip/HLS/threshold/solution1/impl/verilog/fifo_w9_d3_A.v:36]
+INFO: [Synth 8-5544] ROM "internal_empty_n" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "internal_full_n" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+WARNING: [Synth 8-6014] Unused sequential element SRL_SIG_reg[0] was removed.  [E:/pynq_xohw18-155_vaas_20180629_1/ip/HLS/threshold/solution1/impl/verilog/fifo_w20_d2_A.v:36]
+WARNING: [Synth 8-6014] Unused sequential element SRL_SIG_reg[1] was removed.  [E:/pynq_xohw18-155_vaas_20180629_1/ip/HLS/threshold/solution1/impl/verilog/fifo_w20_d2_A.v:36]
+WARNING: [Synth 8-6014] Unused sequential element SRL_SIG_reg[2] was removed.  [E:/pynq_xohw18-155_vaas_20180629_1/ip/HLS/threshold/solution1/impl/verilog/fifo_w20_d2_A.v:36]
+INFO: [Synth 8-5544] ROM "internal_empty_n" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "internal_full_n" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "internal_empty_n" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                             0001 |                               11
+*
+                  WRIDLE |                             0010 |                               00
+                  WRDATA |                             0100 |                               01
+                  WRRESP |                             1000 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'wstate_reg' using encoding 'one-hot' in module 'threshold_hls_CONTROL_BUS_s_axi'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 827.129 ; gain = 525.859
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 4     
+	   2 Input     10 Bit       Adders := 1     
+	   2 Input      9 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 3     
+	   2 Input      2 Bit       Adders := 2     
++---XORs : 
+	   2 Input      1 Bit         XORs := 7     
++---Registers : 
+	               32 Bit    Registers := 10    
+	               20 Bit    Registers := 3     
+	               19 Bit    Registers := 1     
+	               11 Bit    Registers := 5     
+	               10 Bit    Registers := 2     
+	                9 Bit    Registers := 7     
+	                8 Bit    Registers := 13    
+	                6 Bit    Registers := 2     
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 4     
+	                2 Bit    Registers := 8     
+	                1 Bit    Registers := 64    
++---Muxes : 
+	  10 Input     32 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 2     
+	   2 Input     20 Bit        Muxes := 3     
+	   2 Input     19 Bit        Muxes := 1     
+	   2 Input     11 Bit        Muxes := 3     
+	   3 Input      9 Bit        Muxes := 2     
+	   2 Input      9 Bit        Muxes := 2     
+	   2 Input      8 Bit        Muxes := 17    
+	   3 Input      6 Bit        Muxes := 2     
+	   2 Input      5 Bit        Muxes := 2     
+	   7 Input      4 Bit        Muxes := 1     
+	   3 Input      4 Bit        Muxes := 1     
+	   4 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 17    
+	   4 Input      2 Bit        Muxes := 2     
+	   5 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 57    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module threshold_hls 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 3     
++---Registers : 
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module threshold_hls_CONTROL_BUS_s_axi 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	               32 Bit    Registers := 6     
+	                6 Bit    Registers := 1     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 11    
++---Muxes : 
+	  10 Input     32 Bit        Muxes := 1     
+	   7 Input      4 Bit        Muxes := 1     
+	   5 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module threshold_hls_mulbkb_DSP48_0 
+Detailed RTL Component Info : 
++---Registers : 
+	               10 Bit    Registers := 1     
+Module Block_Mat_exit16134_s 
+Detailed RTL Component Info : 
++---Registers : 
+	               20 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     20 Bit        Muxes := 2     
+	   4 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+Module Loop_1_proc 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	               32 Bit    Registers := 2     
+	               19 Bit    Registers := 1     
+	                8 Bit    Registers := 3     
+	                6 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 7     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input     19 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 3     
+	   3 Input      6 Bit        Muxes := 2     
+	   2 Input      5 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 2     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 7     
+Module Threshold 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 2     
++---Registers : 
+	               11 Bit    Registers := 3     
+	                8 Bit    Registers := 3     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 12    
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 10    
+	   3 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 10    
+Module threshold_hls_mulcud_DSP48_1 
+Detailed RTL Component Info : 
++---Registers : 
+	                9 Bit    Registers := 1     
+Module Loop_2_proc 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 2     
+	   2 Input     10 Bit       Adders := 1     
+	   2 Input      9 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	               32 Bit    Registers := 2     
+	               20 Bit    Registers := 2     
+	               11 Bit    Registers := 2     
+	               10 Bit    Registers := 1     
+	                9 Bit    Registers := 6     
+	                8 Bit    Registers := 3     
+	                2 Bit    Registers := 3     
+	                1 Bit    Registers := 21    
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input     20 Bit        Muxes := 1     
+	   2 Input     11 Bit        Muxes := 3     
+	   3 Input      9 Bit        Muxes := 2     
+	   2 Input      9 Bit        Muxes := 2     
+	   2 Input      8 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 10    
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 13    
+Module fifo_w9_d3_A 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 5     
+Module fifo_w20_d2_A 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 5     
+Module fifo_w8_d1_A_shiftReg 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module fifo_w8_d1_A 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 4     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5544] ROM "p_lshr_f_cast_loc_c_U/internal_full_n" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "p_lshr_f_cast_loc_c_U/internal_empty_n" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "col_packets_cast_loc_U/internal_full_n" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "col_packets_cast_loc_U/internal_empty_n" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5545] ROM "Threshold_U0/sel_tmp4_fu_215_p2" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Threshold_U0/sel_tmp2_fu_209_p2" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Threshold_U0/sel_tmp_fu_203_p2" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Threshold_U0/sel_tmp6_fu_221_p2" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Threshold_U0/sel_tmp8_fu_227_p2" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "Loop_2_proc_U0/out_stream_user_V_tm_fu_297_p2" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-6014] Unused sequential element B was removed.  [E:/pynq_xohw18-155_vaas_20180629_1/ip/HLS/threshold/solution1/impl/verilog/threshold_hls_mulbkb.v:19]
+WARNING: [Synth 8-6014] Unused sequential element Loop_2_proc_U0/threshold_hls_mulcud_U17/threshold_hls_mulcud_DSP48_1_U/a_reg_reg was removed.  [E:/pynq_xohw18-155_vaas_20180629_1/ip/HLS/threshold/solution1/impl/verilog/threshold_hls_mulcud.v:19]
+WARNING: [Synth 8-6014] Unused sequential element Block_Mat_exit16134_U0/threshold_hls_mulbkb_U1/threshold_hls_mulbkb_DSP48_0_U/a_reg_reg was removed.  [E:/pynq_xohw18-155_vaas_20180629_1/ip/HLS/threshold/solution1/impl/verilog/threshold_hls_mulbkb.v:19]
+WARNING: [Synth 8-6014] Unused sequential element Loop_2_proc_U0/threshold_hls_mulcud_U17/threshold_hls_mulcud_DSP48_1_U/b_reg_reg was removed.  [E:/pynq_xohw18-155_vaas_20180629_1/ip/HLS/threshold/solution1/impl/verilog/threshold_hls_mulcud.v:20]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [E:/pynq_xohw18-155_vaas_20180629_1/ip/HLS/threshold/solution1/impl/verilog/threshold_hls_mulbkb.v:19]
+WARNING: [Synth 8-6014] Unused sequential element Loop_1_proc_U0/r_reg_169_reg was removed.  [E:/pynq_xohw18-155_vaas_20180629_1/ip/HLS/threshold/solution1/impl/verilog/Loop_1_proc_threshold.v:243]
+WARNING: [Synth 8-6014] Unused sequential element Threshold_U0/t_V_1_reg_176_reg was removed.  [E:/pynq_xohw18-155_vaas_20180629_1/ip/HLS/threshold/solution1/impl/verilog/Threshold.v:218]
+WARNING: [Synth 8-6014] Unused sequential element Loop_2_proc_U0/indvar_flatten_next_reg_385_reg was removed.  [E:/pynq_xohw18-155_vaas_20180629_1/ip/HLS/threshold/solution1/impl/verilog/Loop_2_proc_threshold.v:466]
+DSP Report: Generating DSP Block_Mat_exit16134_U0/threshold_hls_mulbkb_U1/threshold_hls_mulbkb_DSP48_0_U/p_reg_reg, operation Mode is: (A2*B2)'.
+DSP Report: register B is absorbed into DSP Block_Mat_exit16134_U0/threshold_hls_mulbkb_U1/threshold_hls_mulbkb_DSP48_0_U/p_reg_reg.
+DSP Report: register Block_Mat_exit16134_U0/threshold_hls_mulbkb_U1/threshold_hls_mulbkb_DSP48_0_U/a_reg_reg is absorbed into DSP Block_Mat_exit16134_U0/threshold_hls_mulbkb_U1/threshold_hls_mulbkb_DSP48_0_U/p_reg_reg.
+DSP Report: register Block_Mat_exit16134_U0/threshold_hls_mulbkb_U1/threshold_hls_mulbkb_DSP48_0_U/p_reg_reg is absorbed into DSP Block_Mat_exit16134_U0/threshold_hls_mulbkb_U1/threshold_hls_mulbkb_DSP48_0_U/p_reg_reg.
+DSP Report: operator Block_Mat_exit16134_U0/threshold_hls_mulbkb_U1/threshold_hls_mulbkb_DSP48_0_U/p_reg_reg0 is absorbed into DSP Block_Mat_exit16134_U0/threshold_hls_mulbkb_U1/threshold_hls_mulbkb_DSP48_0_U/p_reg_reg.
+DSP Report: Generating DSP Loop_2_proc_U0/threshold_hls_mulcud_U17/threshold_hls_mulcud_DSP48_1_U/p_reg_reg, operation Mode is: (A2*B2)'.
+DSP Report: register Loop_2_proc_U0/threshold_hls_mulcud_U17/threshold_hls_mulcud_DSP48_1_U/a_reg_reg is absorbed into DSP Loop_2_proc_U0/threshold_hls_mulcud_U17/threshold_hls_mulcud_DSP48_1_U/p_reg_reg.
+DSP Report: register Loop_2_proc_U0/threshold_hls_mulcud_U17/threshold_hls_mulcud_DSP48_1_U/b_reg_reg is absorbed into DSP Loop_2_proc_U0/threshold_hls_mulcud_U17/threshold_hls_mulcud_DSP48_1_U/p_reg_reg.
+DSP Report: register Loop_2_proc_U0/threshold_hls_mulcud_U17/threshold_hls_mulcud_DSP48_1_U/p_reg_reg is absorbed into DSP Loop_2_proc_U0/threshold_hls_mulcud_U17/threshold_hls_mulcud_DSP48_1_U/p_reg_reg.
+DSP Report: operator Loop_2_proc_U0/threshold_hls_mulcud_U17/threshold_hls_mulcud_DSP48_1_U/p_reg_reg0 is absorbed into DSP Loop_2_proc_U0/threshold_hls_mulcud_U17/threshold_hls_mulcud_DSP48_1_U/p_reg_reg.
+WARNING: [Synth 8-3917] design threshold_hls has port s_axi_CONTROL_BUS_RRESP[1] driven by constant 0
+WARNING: [Synth 8-3917] design threshold_hls has port s_axi_CONTROL_BUS_RRESP[0] driven by constant 0
+WARNING: [Synth 8-3917] design threshold_hls has port s_axi_CONTROL_BUS_BRESP[1] driven by constant 0
+WARNING: [Synth 8-3917] design threshold_hls has port s_axi_CONTROL_BUS_BRESP[0] driven by constant 0
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Threshold_U0/ap_done_reg_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Loop_1_proc_U0/ap_done_reg_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Loop_2_proc_U0/ap_done_reg_reg )
+WARNING: [Synth 8-3332] Sequential element (Loop_1_proc_U0/ap_done_reg_reg) is unused and will be removed from module threshold_hls.
+WARNING: [Synth 8-3332] Sequential element (Threshold_U0/ap_done_reg_reg) is unused and will be removed from module threshold_hls.
+WARNING: [Synth 8-3332] Sequential element (Loop_2_proc_U0/ap_done_reg_reg) is unused and will be removed from module threshold_hls.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 827.129 ; gain = 525.859
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+DSP: Preliminary Mapping  Report (see note below)
++-----------------------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name                  | DSP Mapping | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++-----------------------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|threshold_hls                | (A2*B2)'    | 20     | 10     | -      | -      | 30     | 1    | 1    | -    | -    | -     | 1    | 0    | 
+|threshold_hls_mulcud_DSP48_1 | (A2*B2)'    | 11     | 9      | -      | -      | 20     | 1    | 1    | -    | -    | -     | 1    | 0    | 
++-----------------------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:40 ; elapsed = 00:00:41 . Memory (MB): peak = 867.586 ; gain = 566.316
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:43 ; elapsed = 00:00:44 . Memory (MB): peak = 950.258 ; gain = 648.988
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:43 ; elapsed = 00:00:45 . Memory (MB): peak = 951.266 ; gain = 649.996
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5365] Flop Loop_2_proc_U0/tmp_15_i_i_reg_371_reg[9] is being inverted and renamed to Loop_2_proc_U0/tmp_15_i_i_reg_371_reg[9]_inv.
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:44 ; elapsed = 00:00:46 . Memory (MB): peak = 951.266 ; gain = 649.996
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:44 ; elapsed = 00:00:46 . Memory (MB): peak = 951.266 ; gain = 649.996
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:45 ; elapsed = 00:00:46 . Memory (MB): peak = 951.266 ; gain = 649.996
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:45 ; elapsed = 00:00:46 . Memory (MB): peak = 951.266 ; gain = 649.996
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:45 ; elapsed = 00:00:46 . Memory (MB): peak = 951.266 ; gain = 649.996
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:45 ; elapsed = 00:00:46 . Memory (MB): peak = 951.266 ; gain = 649.996
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Dynamic Shift Register Report:
++------------+----------------+--------+------------+--------+---------+--------+--------+--------+
+|Module Name | RTL Name       | Length | Data Width | SRL16E | SRLC32E | Mux F7 | Mux F8 | Mux F9 | 
++------------+----------------+--------+------------+--------+---------+--------+--------+--------+
+|dsrl        | SRL_SIG_reg[3] | 4      | 9          | 9      | 0       | 0      | 0      | 0      | 
+|dsrl__1     | SRL_SIG_reg[2] | 4      | 20         | 20     | 0       | 0      | 0      | 0      | 
+|dsrl__3     | SRL_SIG_reg[2] | 4      | 20         | 20     | 0       | 0      | 0      | 0      | 
++------------+----------------+--------+------------+--------+---------+--------+--------+--------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+--------+------+
+|      |Cell    |Count |
++------+--------+------+
+|1     |CARRY4  |    22|
+|2     |DSP48E1 |     2|
+|3     |LUT1    |     7|
+|4     |LUT2    |    33|
+|5     |LUT3    |   276|
+|6     |LUT4    |    74|
+|7     |LUT5    |   216|
+|8     |LUT6    |   226|
+|9     |SRL16E  |    38|
+|10    |FDRE    |   751|
+|11    |FDSE    |    19|
++------+--------+------+
+
+Report Instance Areas: 
++------+-------------------------------------+--------------------------------+------+
+|      |Instance                             |Module                          |Cells |
++------+-------------------------------------+--------------------------------+------+
+|1     |top                                  |                                |  1664|
+|2     |  Block_Mat_exit16134_U0             |Block_Mat_exit16134_s           |    59|
+|3     |    threshold_hls_mulbkb_U1          |threshold_hls_mulbkb            |    22|
+|4     |      threshold_hls_mulbkb_DSP48_0_U |threshold_hls_mulbkb_DSP48_0    |    22|
+|5     |  Loop_1_proc_U0                     |Loop_1_proc                     |   273|
+|6     |  Loop_2_proc_U0                     |Loop_2_proc                     |   497|
+|7     |    threshold_hls_mulcud_U17         |threshold_hls_mulcud            |     1|
+|8     |      threshold_hls_mulcud_DSP48_1_U |threshold_hls_mulcud_DSP48_1    |     1|
+|9     |  Threshold_U0                       |Threshold                       |   129|
+|10    |  col_packets_cast_loc_U             |fifo_w9_d3_A                    |    22|
+|11    |    U_fifo_w9_d3_A_ram               |fifo_w9_d3_A_shiftReg_3         |    11|
+|12    |  g_img_0_data_stream_s_U            |fifo_w8_d1_A                    |    47|
+|13    |    U_fifo_w8_d1_A_ram               |fifo_w8_d1_A_shiftReg_2         |    36|
+|14    |  g_img_1_data_stream_s_U            |fifo_w8_d1_A_0                  |    32|
+|15    |    U_fifo_w8_d1_A_ram               |fifo_w8_d1_A_shiftReg           |    24|
+|16    |  p_lshr_f_cast_loc_c_U              |fifo_w9_d3_A_1                  |    23|
+|17    |    U_fifo_w9_d3_A_ram               |fifo_w9_d3_A_shiftReg           |    11|
+|18    |  packets_cast_loc_cha_U             |fifo_w20_d2_A                   |    36|
+|19    |    U_fifo_w20_d2_A_ram              |fifo_w20_d2_A_shiftReg          |    22|
+|20    |  threshold_hls_CONTROL_BUS_s_axi_U  |threshold_hls_CONTROL_BUS_s_axi |   544|
++------+-------------------------------------+--------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:45 ; elapsed = 00:00:46 . Memory (MB): peak = 951.266 ; gain = 649.996
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 32 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:30 ; elapsed = 00:00:39 . Memory (MB): peak = 951.266 ; gain = 279.715
+Synthesis Optimization Complete : Time (s): cpu = 00:00:45 ; elapsed = 00:00:47 . Memory (MB): peak = 951.266 ; gain = 649.996
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 24 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+84 Infos, 145 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:47 ; elapsed = 00:00:51 . Memory (MB): peak = 951.266 ; gain = 662.809
+INFO: [Common 17-1381] The checkpoint 'E:/pynq_xohw18-155_vaas_20180629_1/ip/HLS/threshold/solution1/impl/verilog/project.runs/synth_1/threshold_hls.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file threshold_hls_utilization_synth.rpt -pb threshold_hls_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.043 . Memory (MB): peak = 951.266 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Thu Aug  2 16:05:34 2018...

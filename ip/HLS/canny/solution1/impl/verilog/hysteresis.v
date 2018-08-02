@@ -218,7 +218,7 @@ initial begin
 #0 ap_enable_reg_pp0_iter2 = 1'b0;
 end
 
-nonmax_suppressioFfa #(
+nonmax_suppressiomb6 #(
     .DataWidth( 16 ),
     .AddressRange( 1920 ),
     .AddressWidth( 11 ))
@@ -234,7 +234,7 @@ linebuff_val_0_U(
     .d1(element_gd_s_fu_134)
 );
 
-nonmax_suppressioFfa #(
+nonmax_suppressiomb6 #(
     .DataWidth( 16 ),
     .AddressRange( 1920 ),
     .AddressWidth( 11 ))

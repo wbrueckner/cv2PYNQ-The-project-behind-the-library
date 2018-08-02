@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xd:acceleratorMap xmlns:xd="http://www.xilinx.com/xidane" xd:functionName="threshold_hls" xd:componentRef="threshold_hls" xd:initiationInterval="2080083" xd:clockPeriod="6.000" xd:sequential="true" xd:hostMachine="64" xd:reset="control">
+  <xd:controlReg xd:name="control" xd:interfaceRef="s_axi_CONTROL_BUS" xd:busTypeRef="axilite" xd:type="generic_axi_lite" xd:offset="0x0"/>
+  <xd:arg xd:name="in_stream-&gt;data" xd:originalName="in_stream" xd:direction="in" xd:interfaceRef="in_stream" xd:busTypeRef="axis" xd:dataWidth="32"/>
+  <xd:arg xd:name="in_stream-&gt;user" xd:originalName="in_stream" xd:direction="in" xd:interfaceRef="in_stream" xd:busTypeRef="axis" xd:dataWidth="1"/>
+  <xd:arg xd:name="in_stream-&gt;last" xd:originalName="in_stream" xd:direction="in" xd:interfaceRef="in_stream" xd:busTypeRef="axis" xd:dataWidth="1"/>
+  <xd:arg xd:name="out_stream-&gt;data" xd:originalName="out_stream" xd:direction="out" xd:interfaceRef="out_stream" xd:busTypeRef="axis" xd:dataWidth="32"/>
+  <xd:arg xd:name="out_stream-&gt;user" xd:originalName="out_stream" xd:direction="out" xd:interfaceRef="out_stream" xd:busTypeRef="axis" xd:dataWidth="1"/>
+  <xd:arg xd:name="out_stream-&gt;last" xd:originalName="out_stream" xd:direction="out" xd:interfaceRef="out_stream" xd:busTypeRef="axis" xd:dataWidth="1"/>
+  <xd:latencyEstimates xd:best-case="8" xd:worst-case="2080082" xd:average-case="undef"/>
+  <xd:resourceEstimates xd:LUT="1939" xd:FF="812" xd:BRAM="0" xd:DSP="2"/>
+</xd:acceleratorMap>

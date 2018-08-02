@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Thu Aug  2 15:42:46 2018
+# Process ID: 9992
+# Current directory: E:/pynq_xohw18-155_vaas_20180629_1/ip/HLS/move/solution1/impl/verilog/project.runs/synth_1
+# Command line: vivado.exe -log move_hls.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source move_hls.tcl
+# Log file: E:/pynq_xohw18-155_vaas_20180629_1/ip/HLS/move/solution1/impl/verilog/project.runs/synth_1/move_hls.vds
+# Journal file: E:/pynq_xohw18-155_vaas_20180629_1/ip/HLS/move/solution1/impl/verilog/project.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source move_hls.tcl -notrace

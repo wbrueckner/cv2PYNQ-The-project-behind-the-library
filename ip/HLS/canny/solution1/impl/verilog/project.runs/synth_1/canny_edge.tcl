@@ -21,56 +21,40 @@ create_project -in_memory -part xc7z020clg400-1
 set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
-set_property webtalk.parent_dir C:/Users/sdi_admin/CloudStation/HLS/canny/solution1/impl/verilog/project.cache/wt [current_project]
-set_property parent.project_path C:/Users/sdi_admin/CloudStation/HLS/canny/solution1/impl/verilog/project.xpr [current_project]
+set_property webtalk.parent_dir E:/pynq_xohw18-155_vaas_20180629_1/ip/HLS/canny/solution1/impl/verilog/project.cache/wt [current_project]
+set_property parent.project_path E:/pynq_xohw18-155_vaas_20180629_1/ip/HLS/canny/solution1/impl/verilog/project.xpr [current_project]
 set_property XPM_LIBRARIES XPM_MEMORY [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 read_verilog -library xil_defaultlib {
-  C:/Users/sdi_admin/CloudStation/HLS/canny/solution1/impl/verilog/Block_Mat_exit29637_s.v
-  C:/Users/sdi_admin/CloudStation/HLS/canny/solution1/impl/verilog/Duplicate_canny.v
-  C:/Users/sdi_admin/CloudStation/HLS/canny/solution1/impl/verilog/Filter2D_canny.v
-  C:/Users/sdi_admin/CloudStation/HLS/canny/solution1/impl/verilog/Filter2D_1.v
-  C:/Users/sdi_admin/CloudStation/HLS/canny/solution1/impl/verilog/Filter2D_1_k_buf_cud.v
-  C:/Users/sdi_admin/CloudStation/HLS/canny/solution1/impl/verilog/GaussianBlur.v
-  C:/Users/sdi_admin/CloudStation/HLS/canny/solution1/impl/verilog/Loop_1_proc_canny.v
-  C:/Users/sdi_admin/CloudStation/HLS/canny/solution1/impl/verilog/Loop_2_proc_canny.v
-  C:/Users/sdi_admin/CloudStation/HLS/canny/solution1/impl/verilog/Sobel_canny.v
-  C:/Users/sdi_admin/CloudStation/HLS/canny/solution1/impl/verilog/Sobel_1_canny.v
-  C:/Users/sdi_admin/CloudStation/HLS/canny/solution1/impl/verilog/canny_edge.v
-  C:/Users/sdi_admin/CloudStation/HLS/canny/solution1/impl/verilog/canny_edge_CONTROL_BUS_s_axi.v
-  C:/Users/sdi_admin/CloudStation/HLS/canny/solution1/impl/verilog/canny_edge_am_addtde.v
-  C:/Users/sdi_admin/CloudStation/HLS/canny/solution1/impl/verilog/canny_edge_ama_adocq.v
-  C:/Users/sdi_admin/CloudStation/HLS/canny/solution1/impl/verilog/canny_edge_ama_adsc4.v
-  C:/Users/sdi_admin/CloudStation/HLS/canny/solution1/impl/verilog/canny_edge_ama_adudo.v
-  C:/Users/sdi_admin/CloudStation/HLS/canny/solution1/impl/verilog/canny_edge_mac_muAem.v
-  C:/Users/sdi_admin/CloudStation/HLS/canny/solution1/impl/verilog/canny_edge_mac_muBew.v
-  C:/Users/sdi_admin/CloudStation/HLS/canny/solution1/impl/verilog/canny_edge_mac_muCeG.v
-  C:/Users/sdi_admin/CloudStation/HLS/canny/solution1/impl/verilog/canny_edge_mac_muDeQ.v
-  C:/Users/sdi_admin/CloudStation/HLS/canny/solution1/impl/verilog/canny_edge_mac_muEe0.v
-  C:/Users/sdi_admin/CloudStation/HLS/canny/solution1/impl/verilog/canny_edge_mac_muibs.v
-  C:/Users/sdi_admin/CloudStation/HLS/canny/solution1/impl/verilog/canny_edge_mac_mujbC.v
-  C:/Users/sdi_admin/CloudStation/HLS/canny/solution1/impl/verilog/canny_edge_mac_mulbW.v
-  C:/Users/sdi_admin/CloudStation/HLS/canny/solution1/impl/verilog/canny_edge_mac_mumb6.v
-  C:/Users/sdi_admin/CloudStation/HLS/canny/solution1/impl/verilog/canny_edge_mac_mupcA.v
-  C:/Users/sdi_admin/CloudStation/HLS/canny/solution1/impl/verilog/canny_edge_mac_muqcK.v
-  C:/Users/sdi_admin/CloudStation/HLS/canny/solution1/impl/verilog/canny_edge_mac_murcU.v
-  C:/Users/sdi_admin/CloudStation/HLS/canny/solution1/impl/verilog/canny_edge_mac_muzec.v
-  C:/Users/sdi_admin/CloudStation/HLS/canny/solution1/impl/verilog/canny_edge_mul_muJfO.v
-  C:/Users/sdi_admin/CloudStation/HLS/canny/solution1/impl/verilog/canny_edge_mul_mubkb.v
-  C:/Users/sdi_admin/CloudStation/HLS/canny/solution1/impl/verilog/canny_edge_mul_mukbM.v
-  C:/Users/sdi_admin/CloudStation/HLS/canny/solution1/impl/verilog/canny_edge_mul_muncg.v
-  C:/Users/sdi_admin/CloudStation/HLS/canny/solution1/impl/verilog/canny_edge_mux_32yd2.v
-  C:/Users/sdi_admin/CloudStation/HLS/canny/solution1/impl/verilog/canny_edge_mux_53hbi.v
-  C:/Users/sdi_admin/CloudStation/HLS/canny/solution1/impl/verilog/fifo_w16_d1_A.v
-  C:/Users/sdi_admin/CloudStation/HLS/canny/solution1/impl/verilog/fifo_w20_d2_A.v
-  C:/Users/sdi_admin/CloudStation/HLS/canny/solution1/impl/verilog/fifo_w8_d1_A.v
-  C:/Users/sdi_admin/CloudStation/HLS/canny/solution1/impl/verilog/fifo_w9_d8_A.v
-  C:/Users/sdi_admin/CloudStation/HLS/canny/solution1/impl/verilog/gradient_decompositi.v
-  C:/Users/sdi_admin/CloudStation/HLS/canny/solution1/impl/verilog/hysteresis.v
-  C:/Users/sdi_admin/CloudStation/HLS/canny/solution1/impl/verilog/nonmax_suppressioFfa.v
-  C:/Users/sdi_admin/CloudStation/HLS/canny/solution1/impl/verilog/nonmax_suppression.v
+  E:/pynq_xohw18-155_vaas_20180629_1/ip/HLS/canny/solution1/impl/verilog/Block_Mat_exit29635_s.v
+  E:/pynq_xohw18-155_vaas_20180629_1/ip/HLS/canny/solution1/impl/verilog/Duplicate_canny.v
+  E:/pynq_xohw18-155_vaas_20180629_1/ip/HLS/canny/solution1/impl/verilog/Filter2D_canny.v
+  E:/pynq_xohw18-155_vaas_20180629_1/ip/HLS/canny/solution1/impl/verilog/Filter2D_k_buf_0_cud.v
+  E:/pynq_xohw18-155_vaas_20180629_1/ip/HLS/canny/solution1/impl/verilog/Loop_1_proc_canny.v
+  E:/pynq_xohw18-155_vaas_20180629_1/ip/HLS/canny/solution1/impl/verilog/Loop_2_proc_canny.v
+  E:/pynq_xohw18-155_vaas_20180629_1/ip/HLS/canny/solution1/impl/verilog/Sobel_canny.v
+  E:/pynq_xohw18-155_vaas_20180629_1/ip/HLS/canny/solution1/impl/verilog/Sobel_1_canny.v
+  E:/pynq_xohw18-155_vaas_20180629_1/ip/HLS/canny/solution1/impl/verilog/canny_edge.v
+  E:/pynq_xohw18-155_vaas_20180629_1/ip/HLS/canny/solution1/impl/verilog/canny_edge_CONTROL_BUS_s_axi.v
+  E:/pynq_xohw18-155_vaas_20180629_1/ip/HLS/canny/solution1/impl/verilog/canny_edge_mac_mug8j.v
+  E:/pynq_xohw18-155_vaas_20180629_1/ip/HLS/canny/solution1/impl/verilog/canny_edge_mac_muhbi.v
+  E:/pynq_xohw18-155_vaas_20180629_1/ip/HLS/canny/solution1/impl/verilog/canny_edge_mac_muibs.v
+  E:/pynq_xohw18-155_vaas_20180629_1/ip/HLS/canny/solution1/impl/verilog/canny_edge_mac_mujbC.v
+  E:/pynq_xohw18-155_vaas_20180629_1/ip/HLS/canny/solution1/impl/verilog/canny_edge_mac_mukbM.v
+  E:/pynq_xohw18-155_vaas_20180629_1/ip/HLS/canny/solution1/impl/verilog/canny_edge_mac_mulbW.v
+  E:/pynq_xohw18-155_vaas_20180629_1/ip/HLS/canny/solution1/impl/verilog/canny_edge_mul_mubkb.v
+  E:/pynq_xohw18-155_vaas_20180629_1/ip/HLS/canny/solution1/impl/verilog/canny_edge_mul_muqcK.v
+  E:/pynq_xohw18-155_vaas_20180629_1/ip/HLS/canny/solution1/impl/verilog/canny_edge_mux_32fYi.v
+  E:/pynq_xohw18-155_vaas_20180629_1/ip/HLS/canny/solution1/impl/verilog/fifo_w16_d1_A.v
+  E:/pynq_xohw18-155_vaas_20180629_1/ip/HLS/canny/solution1/impl/verilog/fifo_w20_d2_A.v
+  E:/pynq_xohw18-155_vaas_20180629_1/ip/HLS/canny/solution1/impl/verilog/fifo_w8_d1_A.v
+  E:/pynq_xohw18-155_vaas_20180629_1/ip/HLS/canny/solution1/impl/verilog/fifo_w9_d7_A.v
+  E:/pynq_xohw18-155_vaas_20180629_1/ip/HLS/canny/solution1/impl/verilog/gradient_decompositi.v
+  E:/pynq_xohw18-155_vaas_20180629_1/ip/HLS/canny/solution1/impl/verilog/hysteresis.v
+  E:/pynq_xohw18-155_vaas_20180629_1/ip/HLS/canny/solution1/impl/verilog/nonmax_suppressiomb6.v
+  E:/pynq_xohw18-155_vaas_20180629_1/ip/HLS/canny/solution1/impl/verilog/nonmax_suppression.v
 }
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the
@@ -80,8 +64,8 @@ read_verilog -library xil_defaultlib {
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc C:/Users/sdi_admin/CloudStation/HLS/canny/solution1/impl/verilog/canny_edge.xdc
-set_property used_in_implementation false [get_files C:/Users/sdi_admin/CloudStation/HLS/canny/solution1/impl/verilog/canny_edge.xdc]
+read_xdc E:/pynq_xohw18-155_vaas_20180629_1/ip/HLS/canny/solution1/impl/verilog/canny_edge.xdc
+set_property used_in_implementation false [get_files E:/pynq_xohw18-155_vaas_20180629_1/ip/HLS/canny/solution1/impl/verilog/canny_edge.xdc]
 
 
 synth_design -top canny_edge -part xc7z020clg400-1 -no_iobuf -mode out_of_context

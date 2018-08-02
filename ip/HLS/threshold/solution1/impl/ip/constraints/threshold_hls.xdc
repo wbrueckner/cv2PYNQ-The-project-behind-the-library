@@ -1,0 +1,5 @@
+set_false_path -from [get_cells threshold_hls_CONTROL_BUS_s_axi_U/int_rows_reg[*]]
+set_false_path -from [get_cells threshold_hls_CONTROL_BUS_s_axi_U/int_cols_reg[*]]
+set_false_path -from [get_cells threshold_hls_CONTROL_BUS_s_axi_U/int_thresh_reg[*]]
+set_false_path -from [get_cells threshold_hls_CONTROL_BUS_s_axi_U/int_maxval_reg[*]]
+set_false_path -from [get_cells threshold_hls_CONTROL_BUS_s_axi_U/int_thresh_type_reg[*]]

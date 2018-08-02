@@ -211,7 +211,7 @@ architecture behav of hysteresis is
     signal ap_idle_pp0 : STD_LOGIC;
     signal ap_enable_pp0 : STD_LOGIC;
 
-    component nonmax_suppressioFfa IS
+    component nonmax_suppressiomb6 IS
     generic (
         DataWidth : INTEGER;
         AddressRange : INTEGER;
@@ -231,7 +231,7 @@ architecture behav of hysteresis is
 
 
 begin
-    linebuff_val_0_U : component nonmax_suppressioFfa
+    linebuff_val_0_U : component nonmax_suppressiomb6
     generic map (
         DataWidth => 16,
         AddressRange => 1920,
@@ -247,7 +247,7 @@ begin
         we1 => linebuff_val_0_we1,
         d1 => element_gd_s_fu_134);
 
-    linebuff_val_1_U : component nonmax_suppressioFfa
+    linebuff_val_1_U : component nonmax_suppressiomb6
     generic map (
         DataWidth => 16,
         AddressRange => 1920,

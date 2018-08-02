@@ -200,7 +200,7 @@ initial begin
 #0 ap_enable_reg_pp0_iter3 = 1'b0;
 end
 
-nonmax_suppressioFfa #(
+nonmax_suppressiomb6 #(
     .DataWidth( 16 ),
     .AddressRange( 1920 ),
     .AddressWidth( 11 ))
@@ -216,7 +216,7 @@ linebuff_val_0_U(
     .d1(element_gd_s_fu_136)
 );
 
-nonmax_suppressioFfa #(
+nonmax_suppressiomb6 #(
     .DataWidth( 16 ),
     .AddressRange( 1920 ),
     .AddressWidth( 11 ))
@@ -673,7 +673,7 @@ assign tmp_12_fu_467_p4 = {{ap_reg_pp0_iter1_t_V_1_reg_243[31:1]}};
 
 assign tmp_13_fu_483_p2 = ((current_dir_fu_453_p1 == 2'd0) ? 1'b1 : 1'b0);
 
-assign tmp_14_fu_489_p2 = ((current_dir_fu_453_p1 == 2'd1) ? 1'b1 : 1'b0);
+assign tmp_14_fu_489_p2 = ((current_dir_fu_453_p1 == 2'd3) ? 1'b1 : 1'b0);
 
 assign tmp_15_fu_495_p2 = ((current_dir_fu_453_p1 == 2'd2) ? 1'b1 : 1'b0);
 

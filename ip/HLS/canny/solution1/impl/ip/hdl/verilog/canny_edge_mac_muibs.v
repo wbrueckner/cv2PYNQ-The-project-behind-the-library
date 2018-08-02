@@ -7,14 +7,14 @@
 
 `timescale 1 ns / 1 ps
 
-(* use_dsp48 = "yes" *) module canny_edge_mac_muibs_DSP48_1(
+(* use_dsp48 = "yes" *) module canny_edge_mac_muibs_DSP48_3(
     input clk,
     input rst,
     input ce,
     input  [8 - 1:0] in0,
-    input  [9 - 1:0] in1,
-    input  [18 - 1:0] in2,
-    output [18 - 1:0]  dout);
+    input  [3 - 1:0] in1,
+    input  [11 - 1:0] in2,
+    output [12 - 1:0]  dout);
 
 wire signed [25 - 1:0]     a;
 wire signed [18 - 1:0]     b;
@@ -26,8 +26,8 @@ reg  signed [25 - 1:0]     a_reg;
 reg  signed [18 - 1:0]     b_reg;
 
 assign a  = $unsigned(in0);
-assign b  = $unsigned(in1);
-assign c  = $unsigned(in2);
+assign b  = $signed(in1);
+assign c  = $signed(in2);
 
 assign m  = a_reg * b_reg;
 assign p  = m_reg + c;
@@ -70,7 +70,7 @@ output[dout_WIDTH - 1:0] dout;
 
 
 
-canny_edge_mac_muibs_DSP48_1 canny_edge_mac_muibs_DSP48_1_U(
+canny_edge_mac_muibs_DSP48_3 canny_edge_mac_muibs_DSP48_3_U(
     .clk( clk ),
     .rst( reset ),
     .ce( ce ),

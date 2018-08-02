@@ -134,22 +134,22 @@ void nonmax_suppression(GRAY_IMAGE_16& gd, GRAY_IMAGE_16& dst) {
 		  }
 		  else {
 			// Checking in the east-west axis
-			if ( current_dir == 0/*2*/ ) {
+			if ( current_dir == 0/*0*/ ) {
 			  ga = win.getval( 1, 0 )>>2;
 			  gb = win.getval( 1, 2 )>>2;
 			}
 			// Checking in the northEast-southWest axis
-			else if ( current_dir == 1/*3*/ ){
+			else if ( current_dir == 3/*1*/ ){
 			  ga = win.getval( 2, 0 )>>2;
 			  gb = win.getval( 0, 2 )>>2;
 			}
 			// Checking in the north-south axis
-			else if ( current_dir == 2/*0*/ ){
+			else if ( current_dir == 2/*2*/ ){
 			  ga = win.getval( 0, 1 )>>2;
 			  gb = win.getval( 2, 1 )>>2;
 			}
 			// Checking in the northWest-southEast axis
-			else { // ( current_dir == 1 )
+			else { // ( current_dir == 1/*3*/ )
 			  ga = win.getval( 2, 2 )>>2;
 			  gb = win.getval( 0, 0 )>>2;
 			}
@@ -303,9 +303,9 @@ void canny_edge(wide_stream* in_stream, wide_stream* out_stream, ap_uint<32> row
 	}
 
 	// Gaussian Blur Noise Reduction
-	hls::GaussianBlur<5,5>( src_bw, src_blur, 1.4, 1.4 );
+	//hls::GaussianBlur<5,5>( src_bw, src_blur, 1.4, 1.4 );
 	// Duplicate the streams
-	hls::Duplicate( src_blur, src1, src2 );
+	hls::Duplicate( src_bw, src1, src2 );
 	// Calculate gradients in x and y direction using Sobel filter
     hls::Sobel<1,0,3>( src1, sobel_gx );
     hls::Sobel<0,1,3>( src2, sobel_gy );

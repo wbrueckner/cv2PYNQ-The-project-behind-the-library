@@ -4,17 +4,16 @@ Implementation tool: Xilinx Vivado v.2017.4
 Project:             canny
 Solution:            solution1
 Device target:       xc7z020clg400-1
-Report date:         Mon Jun 25 14:42:54 +0200 2018
+Report date:         Thu Jul 26 12:38:19 +0200 2018
 
-#=== Post-Implementation Resource usage ===
-SLICE:         1331
-LUT:           3538
-FF:            3249
-DSP:             32
-BRAM:            19
-SRL:             19
+#=== Post-Synthesis Resource usage ===
+SLICE:            0
+LUT:           2737
+FF:            2398
+DSP:             14
+BRAM:            14
+SRL:             31
 #=== Final timing ===
 CP required:    6.000
 CP achieved post-synthesis:    6.454
-CP achieved post-implementation:    5.924
-Timing met
+Timing not met

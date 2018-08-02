@@ -9,22 +9,22 @@ library IEEE;
 use IEEE.std_logic_1164.all;
 use IEEE.numeric_std.all;
 
-entity canny_edge_mac_mulbW_DSP48_4 is
+entity canny_edge_mac_mulbW_DSP48_6 is
 port (
     clk: in  std_logic;
     rst: in  std_logic;
     ce:  in  std_logic;
     in0:  in  std_logic_vector(8 - 1 downto 0);
-    in1:  in  std_logic_vector(10 - 1 downto 0);
-    in2:  in  std_logic_vector(19 - 1 downto 0);
-    dout: out std_logic_vector(19 - 1 downto 0));
+    in1:  in  std_logic_vector(3 - 1 downto 0);
+    in2:  in  std_logic_vector(10 - 1 downto 0);
+    dout: out std_logic_vector(11 - 1 downto 0));
 
     attribute use_dsp48 : string;
-    attribute use_dsp48 of canny_edge_mac_mulbW_DSP48_4 : entity is "yes";
+    attribute use_dsp48 of canny_edge_mac_mulbW_DSP48_6 : entity is "yes";
 
 end entity;
 
-architecture behav of canny_edge_mac_mulbW_DSP48_4 is
+architecture behav of canny_edge_mac_mulbW_DSP48_6 is
     signal a       : signed(25-1 downto 0);
     signal b       : signed(18-1 downto 0);
     signal c       : signed(48-1 downto 0);
@@ -36,7 +36,7 @@ architecture behav of canny_edge_mac_mulbW_DSP48_4 is
 begin
 a  <= signed(resize(unsigned(in0), 25));
 b  <= signed(resize(unsigned(in1), 18));
-c  <= signed(resize(unsigned(in2), 48));
+c  <= signed(resize(signed(in2), 48));
 
 m  <= a_reg * b_reg;
 p  <= m_reg + c;
@@ -51,7 +51,7 @@ process (clk) begin
     end if;
 end process;
 
-dout <= std_logic_vector(resize(unsigned(p), 19));
+dout <= std_logic_vector(resize(unsigned(p), 11));
 
 end architecture;
 
@@ -77,7 +77,7 @@ entity canny_edge_mac_mulbW is
 end entity;
 
 architecture arch of canny_edge_mac_mulbW is
-    component canny_edge_mac_mulbW_DSP48_4 is
+    component canny_edge_mac_mulbW_DSP48_6 is
         port (
             clk : IN STD_LOGIC;
             rst : IN STD_LOGIC;
@@ -91,7 +91,7 @@ architecture arch of canny_edge_mac_mulbW is
 
 
 begin
-    canny_edge_mac_mulbW_DSP48_4_U :  component canny_edge_mac_mulbW_DSP48_4
+    canny_edge_mac_mulbW_DSP48_6_U :  component canny_edge_mac_mulbW_DSP48_6
     port map (
         clk => clk,
         rst => reset,

@@ -28,6 +28,8 @@
     <Option Name="IPRepoPath" Val="$PPRDIR/../ip/HLS/filter2D/solution1/impl/ip"/>
     <Option Name="IPRepoPath" Val="$PPRDIR/../ip/HLS/filter2D_5/solution1/impl/ip"/>
     <Option Name="IPRepoPath" Val="$PPRDIR/../ip/HLS/filter2D_f/solution1/impl/ip"/>
+    <Option Name="IPRepoPath" Val="$PPRDIR/../ip/HLS/move/solution1/impl/ip"/>
+    <Option Name="IPRepoPath" Val="$PPRDIR/../ip/HLS/threshold/solution1/impl/ip"/>
     <Option Name="IPOutputRepo" Val="$PCACHEDIR/ip"/>
     <Option Name="IPCachePermission" Val="read"/>
     <Option Name="IPCachePermission" Val="write"/>

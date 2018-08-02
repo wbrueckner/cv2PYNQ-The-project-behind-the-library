@@ -1,0 +1,897 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Thu Aug  2 15:42:46 2018
+# Process ID: 9992
+# Current directory: E:/pynq_xohw18-155_vaas_20180629_1/ip/HLS/move/solution1/impl/verilog/project.runs/synth_1
+# Command line: vivado.exe -log move_hls.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source move_hls.tcl
+# Log file: E:/pynq_xohw18-155_vaas_20180629_1/ip/HLS/move/solution1/impl/verilog/project.runs/synth_1/move_hls.vds
+# Journal file: E:/pynq_xohw18-155_vaas_20180629_1/ip/HLS/move/solution1/impl/verilog/project.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source move_hls.tcl -notrace
+Command: synth_design -top move_hls -part xc7z020clg400-1 -no_iobuf -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 17952 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 403.441 ; gain = 102.578
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'move_hls' [E:/pynq_xohw18-155_vaas_20180629_1/ip/HLS/move/solution1/impl/verilog/move_hls.v:12]
+	Parameter C_S_AXI_CONTROL_BUS_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_CONTROL_BUS_ADDR_WIDTH bound to: 6 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_CONTROL_BUS_WSTRB_WIDTH bound to: 4 - type: integer 
+	Parameter C_S_AXI_WSTRB_WIDTH bound to: 4 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'move_hls_CONTROL_BUS_s_axi' [E:/pynq_xohw18-155_vaas_20180629_1/ip/HLS/move/solution1/impl/verilog/move_hls_CONTROL_BUS_s_axi.v:9]
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 6 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter ADDR_AP_CTRL bound to: 6'b000000 
+	Parameter ADDR_GIE bound to: 6'b000100 
+	Parameter ADDR_IER bound to: 6'b001000 
+	Parameter ADDR_ISR bound to: 6'b001100 
+	Parameter ADDR_ROWS_DATA_0 bound to: 6'b010100 
+	Parameter ADDR_ROWS_CTRL bound to: 6'b011000 
+	Parameter ADDR_COLS_DATA_0 bound to: 6'b011100 
+	Parameter ADDR_COLS_CTRL bound to: 6'b100000 
+	Parameter WRIDLE bound to: 2'b00 
+	Parameter WRDATA bound to: 2'b01 
+	Parameter WRRESP bound to: 2'b10 
+	Parameter WRRESET bound to: 2'b11 
+	Parameter RDIDLE bound to: 2'b00 
+	Parameter RDDATA bound to: 2'b01 
+	Parameter RDRESET bound to: 2'b10 
+	Parameter ADDR_BITS bound to: 6 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [E:/pynq_xohw18-155_vaas_20180629_1/ip/HLS/move/solution1/impl/verilog/move_hls_CONTROL_BUS_s_axi.v:214]
+INFO: [Synth 8-256] done synthesizing module 'move_hls_CONTROL_BUS_s_axi' (1#1) [E:/pynq_xohw18-155_vaas_20180629_1/ip/HLS/move/solution1/impl/verilog/move_hls_CONTROL_BUS_s_axi.v:9]
+INFO: [Synth 8-638] synthesizing module 'Block_Mat_exit16542_s' [E:/pynq_xohw18-155_vaas_20180629_1/ip/HLS/move/solution1/impl/verilog/Block_Mat_exit16542_s.v:10]
+	Parameter ap_ST_fsm_state1 bound to: 3'b001 
+	Parameter ap_ST_fsm_state2 bound to: 3'b010 
+	Parameter ap_ST_fsm_state3 bound to: 3'b100 
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [E:/pynq_xohw18-155_vaas_20180629_1/ip/HLS/move/solution1/impl/verilog/Block_Mat_exit16542_s.v:58]
+INFO: [Synth 8-638] synthesizing module 'move_hls_mul_mul_bkb' [E:/pynq_xohw18-155_vaas_20180629_1/ip/HLS/move/solution1/impl/verilog/move_hls_mul_mul_bkb.v:30]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 3 - type: integer 
+	Parameter din0_WIDTH bound to: 20 - type: integer 
+	Parameter din1_WIDTH bound to: 9 - type: integer 
+	Parameter dout_WIDTH bound to: 20 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'move_hls_mul_mul_bkb_DSP48_0' [E:/pynq_xohw18-155_vaas_20180629_1/ip/HLS/move/solution1/impl/verilog/move_hls_mul_mul_bkb.v:4]
+INFO: [Synth 8-256] done synthesizing module 'move_hls_mul_mul_bkb_DSP48_0' (2#1) [E:/pynq_xohw18-155_vaas_20180629_1/ip/HLS/move/solution1/impl/verilog/move_hls_mul_mul_bkb.v:4]
+INFO: [Synth 8-256] done synthesizing module 'move_hls_mul_mul_bkb' (3#1) [E:/pynq_xohw18-155_vaas_20180629_1/ip/HLS/move/solution1/impl/verilog/move_hls_mul_mul_bkb.v:30]
+INFO: [Synth 8-256] done synthesizing module 'Block_Mat_exit16542_s' (4#1) [E:/pynq_xohw18-155_vaas_20180629_1/ip/HLS/move/solution1/impl/verilog/Block_Mat_exit16542_s.v:10]
+INFO: [Synth 8-638] synthesizing module 'Loop_1_proc' [E:/pynq_xohw18-155_vaas_20180629_1/ip/HLS/move/solution1/impl/verilog/Loop_1_proc_move.v:10]
+	Parameter ap_ST_fsm_state1 bound to: 6'b000001 
+	Parameter ap_ST_fsm_pp0_stage0 bound to: 6'b000010 
+	Parameter ap_ST_fsm_pp0_stage1 bound to: 6'b000100 
+	Parameter ap_ST_fsm_pp0_stage2 bound to: 6'b001000 
+	Parameter ap_ST_fsm_pp0_stage3 bound to: 6'b010000 
+	Parameter ap_ST_fsm_state8 bound to: 6'b100000 
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [E:/pynq_xohw18-155_vaas_20180629_1/ip/HLS/move/solution1/impl/verilog/Loop_1_proc_move.v:56]
+INFO: [Synth 8-256] done synthesizing module 'Loop_1_proc' (5#1) [E:/pynq_xohw18-155_vaas_20180629_1/ip/HLS/move/solution1/impl/verilog/Loop_1_proc_move.v:10]
+INFO: [Synth 8-638] synthesizing module 'Loop_2_proc18' [E:/pynq_xohw18-155_vaas_20180629_1/ip/HLS/move/solution1/impl/verilog/Loop_2_proc18.v:10]
+	Parameter ap_ST_fsm_state1 bound to: 7'b0000001 
+	Parameter ap_ST_fsm_state2 bound to: 7'b0000010 
+	Parameter ap_ST_fsm_state3 bound to: 7'b0000100 
+	Parameter ap_ST_fsm_state4 bound to: 7'b0001000 
+	Parameter ap_ST_fsm_state5 bound to: 7'b0010000 
+	Parameter ap_ST_fsm_pp0_stage0 bound to: 7'b0100000 
+	Parameter ap_ST_fsm_state8 bound to: 7'b1000000 
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [E:/pynq_xohw18-155_vaas_20180629_1/ip/HLS/move/solution1/impl/verilog/Loop_2_proc18.v:59]
+INFO: [Synth 8-638] synthesizing module 'move_hls_mul_32s_cud' [E:/pynq_xohw18-155_vaas_20180629_1/ip/HLS/move/solution1/impl/verilog/move_hls_mul_32s_cud.v:39]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 5 - type: integer 
+	Parameter din0_WIDTH bound to: 32 - type: integer 
+	Parameter din1_WIDTH bound to: 32 - type: integer 
+	Parameter dout_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'move_hls_mul_32s_cud_MulnS_0' [E:/pynq_xohw18-155_vaas_20180629_1/ip/HLS/move/solution1/impl/verilog/move_hls_mul_32s_cud.v:11]
+INFO: [Synth 8-256] done synthesizing module 'move_hls_mul_32s_cud_MulnS_0' (6#1) [E:/pynq_xohw18-155_vaas_20180629_1/ip/HLS/move/solution1/impl/verilog/move_hls_mul_32s_cud.v:11]
+INFO: [Synth 8-256] done synthesizing module 'move_hls_mul_32s_cud' (7#1) [E:/pynq_xohw18-155_vaas_20180629_1/ip/HLS/move/solution1/impl/verilog/move_hls_mul_32s_cud.v:39]
+INFO: [Synth 8-256] done synthesizing module 'Loop_2_proc18' (8#1) [E:/pynq_xohw18-155_vaas_20180629_1/ip/HLS/move/solution1/impl/verilog/Loop_2_proc18.v:10]
+INFO: [Synth 8-638] synthesizing module 'Loop_3_proc' [E:/pynq_xohw18-155_vaas_20180629_1/ip/HLS/move/solution1/impl/verilog/Loop_3_proc_move.v:10]
+	Parameter ap_ST_fsm_state1 bound to: 9'b000000001 
+	Parameter ap_ST_fsm_state2 bound to: 9'b000000010 
+	Parameter ap_ST_fsm_state3 bound to: 9'b000000100 
+	Parameter ap_ST_fsm_state4 bound to: 9'b000001000 
+	Parameter ap_ST_fsm_pp0_stage0 bound to: 9'b000010000 
+	Parameter ap_ST_fsm_pp0_stage1 bound to: 9'b000100000 
+	Parameter ap_ST_fsm_pp0_stage2 bound to: 9'b001000000 
+	Parameter ap_ST_fsm_pp0_stage3 bound to: 9'b010000000 
+	Parameter ap_ST_fsm_state11 bound to: 9'b100000000 
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [E:/pynq_xohw18-155_vaas_20180629_1/ip/HLS/move/solution1/impl/verilog/Loop_3_proc_move.v:76]
+INFO: [Synth 8-638] synthesizing module 'move_hls_mul_mul_dEe' [E:/pynq_xohw18-155_vaas_20180629_1/ip/HLS/move/solution1/impl/verilog/move_hls_mul_mul_dEe.v:30]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 3 - type: integer 
+	Parameter din0_WIDTH bound to: 9 - type: integer 
+	Parameter din1_WIDTH bound to: 11 - type: integer 
+	Parameter dout_WIDTH bound to: 20 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'move_hls_mul_mul_dEe_DSP48_1' [E:/pynq_xohw18-155_vaas_20180629_1/ip/HLS/move/solution1/impl/verilog/move_hls_mul_mul_dEe.v:4]
+INFO: [Synth 8-256] done synthesizing module 'move_hls_mul_mul_dEe_DSP48_1' (9#1) [E:/pynq_xohw18-155_vaas_20180629_1/ip/HLS/move/solution1/impl/verilog/move_hls_mul_mul_dEe.v:4]
+INFO: [Synth 8-256] done synthesizing module 'move_hls_mul_mul_dEe' (10#1) [E:/pynq_xohw18-155_vaas_20180629_1/ip/HLS/move/solution1/impl/verilog/move_hls_mul_mul_dEe.v:30]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [E:/pynq_xohw18-155_vaas_20180629_1/ip/HLS/move/solution1/impl/verilog/Loop_3_proc_move.v:937]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [E:/pynq_xohw18-155_vaas_20180629_1/ip/HLS/move/solution1/impl/verilog/Loop_3_proc_move.v:953]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [E:/pynq_xohw18-155_vaas_20180629_1/ip/HLS/move/solution1/impl/verilog/Loop_3_proc_move.v:959]
+INFO: [Synth 8-256] done synthesizing module 'Loop_3_proc' (11#1) [E:/pynq_xohw18-155_vaas_20180629_1/ip/HLS/move/solution1/impl/verilog/Loop_3_proc_move.v:10]
+INFO: [Synth 8-638] synthesizing module 'fifo_w9_d3_A' [E:/pynq_xohw18-155_vaas_20180629_1/ip/HLS/move/solution1/impl/verilog/fifo_w9_d3_A.v:45]
+	Parameter MEM_STYLE bound to: shiftreg - type: string 
+	Parameter DATA_WIDTH bound to: 9 - type: integer 
+	Parameter ADDR_WIDTH bound to: 2 - type: integer 
+	Parameter DEPTH bound to: 4 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'fifo_w9_d3_A_shiftReg' [E:/pynq_xohw18-155_vaas_20180629_1/ip/HLS/move/solution1/impl/verilog/fifo_w9_d3_A.v:11]
+	Parameter DATA_WIDTH bound to: 9 - type: integer 
+	Parameter ADDR_WIDTH bound to: 2 - type: integer 
+	Parameter DEPTH bound to: 4 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'fifo_w9_d3_A_shiftReg' (12#1) [E:/pynq_xohw18-155_vaas_20180629_1/ip/HLS/move/solution1/impl/verilog/fifo_w9_d3_A.v:11]
+INFO: [Synth 8-256] done synthesizing module 'fifo_w9_d3_A' (13#1) [E:/pynq_xohw18-155_vaas_20180629_1/ip/HLS/move/solution1/impl/verilog/fifo_w9_d3_A.v:45]
+INFO: [Synth 8-638] synthesizing module 'fifo_w20_d2_A' [E:/pynq_xohw18-155_vaas_20180629_1/ip/HLS/move/solution1/impl/verilog/fifo_w20_d2_A.v:45]
+	Parameter MEM_STYLE bound to: shiftreg - type: string 
+	Parameter DATA_WIDTH bound to: 20 - type: integer 
+	Parameter ADDR_WIDTH bound to: 2 - type: integer 
+	Parameter DEPTH bound to: 3 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'fifo_w20_d2_A_shiftReg' [E:/pynq_xohw18-155_vaas_20180629_1/ip/HLS/move/solution1/impl/verilog/fifo_w20_d2_A.v:11]
+	Parameter DATA_WIDTH bound to: 20 - type: integer 
+	Parameter ADDR_WIDTH bound to: 2 - type: integer 
+	Parameter DEPTH bound to: 3 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'fifo_w20_d2_A_shiftReg' (14#1) [E:/pynq_xohw18-155_vaas_20180629_1/ip/HLS/move/solution1/impl/verilog/fifo_w20_d2_A.v:11]
+INFO: [Synth 8-256] done synthesizing module 'fifo_w20_d2_A' (15#1) [E:/pynq_xohw18-155_vaas_20180629_1/ip/HLS/move/solution1/impl/verilog/fifo_w20_d2_A.v:45]
+INFO: [Synth 8-638] synthesizing module 'fifo_w8_d1_A' [E:/pynq_xohw18-155_vaas_20180629_1/ip/HLS/move/solution1/impl/verilog/fifo_w8_d1_A.v:45]
+	Parameter MEM_STYLE bound to: auto - type: string 
+	Parameter DATA_WIDTH bound to: 8 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'fifo_w8_d1_A_shiftReg' [E:/pynq_xohw18-155_vaas_20180629_1/ip/HLS/move/solution1/impl/verilog/fifo_w8_d1_A.v:11]
+	Parameter DATA_WIDTH bound to: 8 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'fifo_w8_d1_A_shiftReg' (16#1) [E:/pynq_xohw18-155_vaas_20180629_1/ip/HLS/move/solution1/impl/verilog/fifo_w8_d1_A.v:11]
+INFO: [Synth 8-256] done synthesizing module 'fifo_w8_d1_A' (17#1) [E:/pynq_xohw18-155_vaas_20180629_1/ip/HLS/move/solution1/impl/verilog/fifo_w8_d1_A.v:45]
+WARNING: [Synth 8-6014] Unused sequential element Block_Mat_exit16542_U0_ap_ready_count_reg was removed.  [E:/pynq_xohw18-155_vaas_20180629_1/ip/HLS/move/solution1/impl/verilog/move_hls.v:381]
+WARNING: [Synth 8-6014] Unused sequential element Loop_1_proc_U0_ap_ready_count_reg was removed.  [E:/pynq_xohw18-155_vaas_20180629_1/ip/HLS/move/solution1/impl/verilog/move_hls.v:389]
+INFO: [Synth 8-256] done synthesizing module 'move_hls' (18#1) [E:/pynq_xohw18-155_vaas_20180629_1/ip/HLS/move/solution1/impl/verilog/move_hls.v:12]
+WARNING: [Synth 8-3331] design move_hls_mul_mul_dEe_DSP48_1 has unconnected port rst
+WARNING: [Synth 8-3331] design Loop_3_proc has unconnected port rows[31]
+WARNING: [Synth 8-3331] design Loop_3_proc has unconnected port rows[30]
+WARNING: [Synth 8-3331] design Loop_3_proc has unconnected port rows[29]
+WARNING: [Synth 8-3331] design Loop_3_proc has unconnected port rows[28]
+WARNING: [Synth 8-3331] design Loop_3_proc has unconnected port rows[27]
+WARNING: [Synth 8-3331] design Loop_3_proc has unconnected port rows[26]
+WARNING: [Synth 8-3331] design Loop_3_proc has unconnected port rows[25]
+WARNING: [Synth 8-3331] design Loop_3_proc has unconnected port rows[24]
+WARNING: [Synth 8-3331] design Loop_3_proc has unconnected port rows[23]
+WARNING: [Synth 8-3331] design Loop_3_proc has unconnected port rows[22]
+WARNING: [Synth 8-3331] design Loop_3_proc has unconnected port rows[21]
+WARNING: [Synth 8-3331] design Loop_3_proc has unconnected port rows[20]
+WARNING: [Synth 8-3331] design Loop_3_proc has unconnected port rows[19]
+WARNING: [Synth 8-3331] design Loop_3_proc has unconnected port rows[18]
+WARNING: [Synth 8-3331] design Loop_3_proc has unconnected port rows[17]
+WARNING: [Synth 8-3331] design Loop_3_proc has unconnected port rows[16]
+WARNING: [Synth 8-3331] design Loop_3_proc has unconnected port rows[15]
+WARNING: [Synth 8-3331] design Loop_3_proc has unconnected port rows[14]
+WARNING: [Synth 8-3331] design Loop_3_proc has unconnected port rows[13]
+WARNING: [Synth 8-3331] design Loop_3_proc has unconnected port rows[12]
+WARNING: [Synth 8-3331] design Loop_3_proc has unconnected port rows[11]
+WARNING: [Synth 8-3331] design move_hls_mul_32s_cud has unconnected port reset
+WARNING: [Synth 8-3331] design move_hls_mul_mul_bkb_DSP48_0 has unconnected port rst
+WARNING: [Synth 8-3331] design Block_Mat_exit16542_s has unconnected port rows[31]
+WARNING: [Synth 8-3331] design Block_Mat_exit16542_s has unconnected port rows[30]
+WARNING: [Synth 8-3331] design Block_Mat_exit16542_s has unconnected port rows[29]
+WARNING: [Synth 8-3331] design Block_Mat_exit16542_s has unconnected port rows[28]
+WARNING: [Synth 8-3331] design Block_Mat_exit16542_s has unconnected port rows[27]
+WARNING: [Synth 8-3331] design Block_Mat_exit16542_s has unconnected port rows[26]
+WARNING: [Synth 8-3331] design Block_Mat_exit16542_s has unconnected port rows[25]
+WARNING: [Synth 8-3331] design Block_Mat_exit16542_s has unconnected port rows[24]
+WARNING: [Synth 8-3331] design Block_Mat_exit16542_s has unconnected port rows[23]
+WARNING: [Synth 8-3331] design Block_Mat_exit16542_s has unconnected port rows[22]
+WARNING: [Synth 8-3331] design Block_Mat_exit16542_s has unconnected port rows[21]
+WARNING: [Synth 8-3331] design Block_Mat_exit16542_s has unconnected port rows[20]
+WARNING: [Synth 8-3331] design Block_Mat_exit16542_s has unconnected port cols[31]
+WARNING: [Synth 8-3331] design Block_Mat_exit16542_s has unconnected port cols[30]
+WARNING: [Synth 8-3331] design Block_Mat_exit16542_s has unconnected port cols[29]
+WARNING: [Synth 8-3331] design Block_Mat_exit16542_s has unconnected port cols[28]
+WARNING: [Synth 8-3331] design Block_Mat_exit16542_s has unconnected port cols[27]
+WARNING: [Synth 8-3331] design Block_Mat_exit16542_s has unconnected port cols[26]
+WARNING: [Synth 8-3331] design Block_Mat_exit16542_s has unconnected port cols[25]
+WARNING: [Synth 8-3331] design Block_Mat_exit16542_s has unconnected port cols[24]
+WARNING: [Synth 8-3331] design Block_Mat_exit16542_s has unconnected port cols[23]
+WARNING: [Synth 8-3331] design Block_Mat_exit16542_s has unconnected port cols[22]
+WARNING: [Synth 8-3331] design Block_Mat_exit16542_s has unconnected port cols[21]
+WARNING: [Synth 8-3331] design Block_Mat_exit16542_s has unconnected port cols[20]
+WARNING: [Synth 8-3331] design Block_Mat_exit16542_s has unconnected port cols[19]
+WARNING: [Synth 8-3331] design Block_Mat_exit16542_s has unconnected port cols[18]
+WARNING: [Synth 8-3331] design Block_Mat_exit16542_s has unconnected port cols[17]
+WARNING: [Synth 8-3331] design Block_Mat_exit16542_s has unconnected port cols[16]
+WARNING: [Synth 8-3331] design Block_Mat_exit16542_s has unconnected port cols[15]
+WARNING: [Synth 8-3331] design Block_Mat_exit16542_s has unconnected port cols[14]
+WARNING: [Synth 8-3331] design Block_Mat_exit16542_s has unconnected port cols[13]
+WARNING: [Synth 8-3331] design Block_Mat_exit16542_s has unconnected port cols[12]
+WARNING: [Synth 8-3331] design Block_Mat_exit16542_s has unconnected port cols[11]
+WARNING: [Synth 8-3331] design Block_Mat_exit16542_s has unconnected port cols[1]
+WARNING: [Synth 8-3331] design Block_Mat_exit16542_s has unconnected port cols[0]
+WARNING: [Synth 8-3331] design move_hls has unconnected port in_stream_TUSER[0]
+WARNING: [Synth 8-3331] design move_hls has unconnected port in_stream_TLAST[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 456.020 ; gain = 155.156
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 456.020 ; gain = 155.156
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [E:/pynq_xohw18-155_vaas_20180629_1/ip/HLS/move/solution1/impl/verilog/move_hls.xdc]
+Finished Parsing XDC File [E:/pynq_xohw18-155_vaas_20180629_1/ip/HLS/move/solution1/impl/verilog/move_hls.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.041 . Memory (MB): peak = 826.641 ; gain = 0.371
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:20 ; elapsed = 00:00:24 . Memory (MB): peak = 826.641 ; gain = 525.777
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:20 ; elapsed = 00:00:24 . Memory (MB): peak = 826.641 ; gain = 525.777
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:20 ; elapsed = 00:00:24 . Memory (MB): peak = 826.641 ; gain = 525.777
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'wstate_reg' in module 'move_hls_CONTROL_BUS_s_axi'
+INFO: [Synth 8-5544] ROM "wnext" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "wnext" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+WARNING: [Synth 8-6014] Unused sequential element a_reg_reg was removed.  [E:/pynq_xohw18-155_vaas_20180629_1/ip/HLS/move/solution1/impl/verilog/move_hls_mul_mul_bkb.v:19]
+WARNING: [Synth 8-6014] Unused sequential element b_reg_reg was removed.  [E:/pynq_xohw18-155_vaas_20180629_1/ip/HLS/move/solution1/impl/verilog/move_hls_mul_mul_bkb.v:20]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [E:/pynq_xohw18-155_vaas_20180629_1/ip/HLS/move/solution1/impl/verilog/move_hls_mul_mul_bkb.v:19]
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+WARNING: [Synth 8-6014] Unused sequential element r_reg_169_reg was removed.  [E:/pynq_xohw18-155_vaas_20180629_1/ip/HLS/move/solution1/impl/verilog/Loop_1_proc_move.v:243]
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+WARNING: [Synth 8-6014] Unused sequential element i_reg_104_reg was removed.  [E:/pynq_xohw18-155_vaas_20180629_1/ip/HLS/move/solution1/impl/verilog/Loop_2_proc18.v:159]
+WARNING: [Synth 8-6014] Unused sequential element a_reg_reg was removed.  [E:/pynq_xohw18-155_vaas_20180629_1/ip/HLS/move/solution1/impl/verilog/move_hls_mul_mul_dEe.v:19]
+WARNING: [Synth 8-6014] Unused sequential element b_reg_reg was removed.  [E:/pynq_xohw18-155_vaas_20180629_1/ip/HLS/move/solution1/impl/verilog/move_hls_mul_mul_dEe.v:20]
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-5546] ROM "out_stream_user_V_tm_fu_297_p2" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-6014] Unused sequential element indvar_flatten_next_reg_385_reg was removed.  [E:/pynq_xohw18-155_vaas_20180629_1/ip/HLS/move/solution1/impl/verilog/Loop_3_proc_move.v:466]
+WARNING: [Synth 8-6014] Unused sequential element SRL_SIG_reg[0] was removed.  [E:/pynq_xohw18-155_vaas_20180629_1/ip/HLS/move/solution1/impl/verilog/fifo_w9_d3_A.v:36]
+WARNING: [Synth 8-6014] Unused sequential element SRL_SIG_reg[1] was removed.  [E:/pynq_xohw18-155_vaas_20180629_1/ip/HLS/move/solution1/impl/verilog/fifo_w9_d3_A.v:36]
+WARNING: [Synth 8-6014] Unused sequential element SRL_SIG_reg[2] was removed.  [E:/pynq_xohw18-155_vaas_20180629_1/ip/HLS/move/solution1/impl/verilog/fifo_w9_d3_A.v:36]
+WARNING: [Synth 8-6014] Unused sequential element SRL_SIG_reg[3] was removed.  [E:/pynq_xohw18-155_vaas_20180629_1/ip/HLS/move/solution1/impl/verilog/fifo_w9_d3_A.v:36]
+INFO: [Synth 8-5544] ROM "internal_empty_n" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "internal_full_n" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+WARNING: [Synth 8-6014] Unused sequential element SRL_SIG_reg[0] was removed.  [E:/pynq_xohw18-155_vaas_20180629_1/ip/HLS/move/solution1/impl/verilog/fifo_w20_d2_A.v:36]
+WARNING: [Synth 8-6014] Unused sequential element SRL_SIG_reg[1] was removed.  [E:/pynq_xohw18-155_vaas_20180629_1/ip/HLS/move/solution1/impl/verilog/fifo_w20_d2_A.v:36]
+WARNING: [Synth 8-6014] Unused sequential element SRL_SIG_reg[2] was removed.  [E:/pynq_xohw18-155_vaas_20180629_1/ip/HLS/move/solution1/impl/verilog/fifo_w20_d2_A.v:36]
+INFO: [Synth 8-5544] ROM "internal_empty_n" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "internal_full_n" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "internal_empty_n" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                             0001 |                               11
+*
+                  WRIDLE |                             0010 |                               00
+                  WRDATA |                             0100 |                               01
+                  WRRESP |                             1000 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'wstate_reg' using encoding 'one-hot' in module 'move_hls_CONTROL_BUS_s_axi'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 826.641 ; gain = 525.777
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 2     
+	   2 Input     10 Bit       Adders := 1     
+	   2 Input      9 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 3     
+	   2 Input      2 Bit       Adders := 2     
++---XORs : 
+	   2 Input      1 Bit         XORs := 8     
++---Registers : 
+	               32 Bit    Registers := 12    
+	               20 Bit    Registers := 3     
+	               19 Bit    Registers := 1     
+	               11 Bit    Registers := 2     
+	               10 Bit    Registers := 2     
+	                9 Bit    Registers := 7     
+	                8 Bit    Registers := 10    
+	                7 Bit    Registers := 1     
+	                6 Bit    Registers := 2     
+	                3 Bit    Registers := 4     
+	                2 Bit    Registers := 8     
+	                1 Bit    Registers := 56    
++---Multipliers : 
+	                32x32  Multipliers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 3     
+	   2 Input     20 Bit        Muxes := 3     
+	   2 Input     19 Bit        Muxes := 1     
+	   2 Input     11 Bit        Muxes := 3     
+	   3 Input      9 Bit        Muxes := 2     
+	   2 Input      9 Bit        Muxes := 2     
+	   2 Input      8 Bit        Muxes := 7     
+	   3 Input      7 Bit        Muxes := 1     
+	   8 Input      7 Bit        Muxes := 1     
+	   3 Input      6 Bit        Muxes := 2     
+	   2 Input      5 Bit        Muxes := 2     
+	   7 Input      4 Bit        Muxes := 1     
+	   4 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 17    
+	   4 Input      2 Bit        Muxes := 2     
+	   5 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 53    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module move_hls 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 3     
++---Registers : 
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module move_hls_CONTROL_BUS_s_axi 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	               32 Bit    Registers := 3     
+	                6 Bit    Registers := 1     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 11    
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   7 Input      4 Bit        Muxes := 1     
+	   5 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module move_hls_mul_mul_bkb_DSP48_0 
+Detailed RTL Component Info : 
++---Registers : 
+	               10 Bit    Registers := 1     
+Module Block_Mat_exit16542_s 
+Detailed RTL Component Info : 
++---Registers : 
+	               20 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     20 Bit        Muxes := 2     
+	   4 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+Module Loop_1_proc 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	               32 Bit    Registers := 2     
+	               19 Bit    Registers := 1     
+	                8 Bit    Registers := 3     
+	                6 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 7     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input     19 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 3     
+	   3 Input      6 Bit        Muxes := 2     
+	   2 Input      5 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 2     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 7     
+Module move_hls_mul_32s_cud_MulnS_0 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 5     
++---Multipliers : 
+	                32x32  Multipliers := 1     
+Module Loop_2_proc18 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	                7 Bit    Registers := 1     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   3 Input      7 Bit        Muxes := 1     
+	   8 Input      7 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 6     
+Module move_hls_mul_mul_dEe_DSP48_1 
+Detailed RTL Component Info : 
++---Registers : 
+	                9 Bit    Registers := 1     
+Module Loop_3_proc 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 2     
+	   2 Input     10 Bit       Adders := 1     
+	   2 Input      9 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	               32 Bit    Registers := 2     
+	               20 Bit    Registers := 2     
+	               11 Bit    Registers := 2     
+	               10 Bit    Registers := 1     
+	                9 Bit    Registers := 6     
+	                8 Bit    Registers := 3     
+	                2 Bit    Registers := 3     
+	                1 Bit    Registers := 21    
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input     20 Bit        Muxes := 1     
+	   2 Input     11 Bit        Muxes := 3     
+	   3 Input      9 Bit        Muxes := 2     
+	   2 Input      9 Bit        Muxes := 2     
+	   2 Input      8 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 10    
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 13    
+Module fifo_w9_d3_A 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 5     
+Module fifo_w20_d2_A 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 5     
+Module fifo_w8_d1_A_shiftReg 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module fifo_w8_d1_A 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 4     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5544] ROM "p_lshr_f_cast_loc_c_U/internal_full_n" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "p_lshr_f_cast_loc_c_U/internal_empty_n" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "col_packets_cast_loc_U/internal_full_n" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "col_packets_cast_loc_U/internal_empty_n" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "Loop_3_proc_U0/out_stream_user_V_tm_fu_297_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [E:/pynq_xohw18-155_vaas_20180629_1/ip/HLS/move/solution1/impl/verilog/move_hls_mul_32s_cud.v:26]
+WARNING: [Synth 8-6014] Unused sequential element Loop_2_proc18_U0/move_hls_mul_32s_cud_U10/move_hls_mul_32s_cud_MulnS_0_U/buff0_reg was removed.  [E:/pynq_xohw18-155_vaas_20180629_1/ip/HLS/move/solution1/impl/verilog/move_hls_mul_32s_cud.v:31]
+WARNING: [Synth 8-6014] Unused sequential element Loop_2_proc18_U0/move_hls_mul_32s_cud_U10/move_hls_mul_32s_cud_MulnS_0_U/buff1_reg was removed.  [E:/pynq_xohw18-155_vaas_20180629_1/ip/HLS/move/solution1/impl/verilog/move_hls_mul_32s_cud.v:32]
+WARNING: [Synth 8-6014] Unused sequential element Loop_2_proc18_U0/move_hls_mul_32s_cud_U10/move_hls_mul_32s_cud_MulnS_0_U/buff2_reg was removed.  [E:/pynq_xohw18-155_vaas_20180629_1/ip/HLS/move/solution1/impl/verilog/move_hls_mul_32s_cud.v:25]
+WARNING: [Synth 8-6014] Unused sequential element Loop_2_proc18_U0/move_hls_mul_32s_cud_U10/move_hls_mul_32s_cud_MulnS_0_U/buff0_reg was removed.  [E:/pynq_xohw18-155_vaas_20180629_1/ip/HLS/move/solution1/impl/verilog/move_hls_mul_32s_cud.v:31]
+WARNING: [Synth 8-6014] Unused sequential element Loop_2_proc18_U0/move_hls_mul_32s_cud_U10/move_hls_mul_32s_cud_MulnS_0_U/buff0_reg was removed.  [E:/pynq_xohw18-155_vaas_20180629_1/ip/HLS/move/solution1/impl/verilog/move_hls_mul_32s_cud.v:31]
+WARNING: [Synth 8-6014] Unused sequential element Loop_2_proc18_U0/move_hls_mul_32s_cud_U10/move_hls_mul_32s_cud_MulnS_0_U/buff1_reg was removed.  [E:/pynq_xohw18-155_vaas_20180629_1/ip/HLS/move/solution1/impl/verilog/move_hls_mul_32s_cud.v:32]
+WARNING: [Synth 8-6014] Unused sequential element Loop_2_proc18_U0/move_hls_mul_32s_cud_U10/move_hls_mul_32s_cud_MulnS_0_U/buff2_reg was removed.  [E:/pynq_xohw18-155_vaas_20180629_1/ip/HLS/move/solution1/impl/verilog/move_hls_mul_32s_cud.v:25]
+WARNING: [Synth 8-6014] Unused sequential element Loop_2_proc18_U0/move_hls_mul_32s_cud_U10/move_hls_mul_32s_cud_MulnS_0_U/buff0_reg was removed.  [E:/pynq_xohw18-155_vaas_20180629_1/ip/HLS/move/solution1/impl/verilog/move_hls_mul_32s_cud.v:31]
+WARNING: [Synth 8-6014] Unused sequential element Loop_2_proc18_U0/move_hls_mul_32s_cud_U10/move_hls_mul_32s_cud_MulnS_0_U/buff1_reg was removed.  [E:/pynq_xohw18-155_vaas_20180629_1/ip/HLS/move/solution1/impl/verilog/move_hls_mul_32s_cud.v:32]
+WARNING: [Synth 8-6014] Unused sequential element Loop_2_proc18_U0/move_hls_mul_32s_cud_U10/move_hls_mul_32s_cud_MulnS_0_U/buff0_reg was removed.  [E:/pynq_xohw18-155_vaas_20180629_1/ip/HLS/move/solution1/impl/verilog/move_hls_mul_32s_cud.v:31]
+WARNING: [Synth 8-6014] Unused sequential element Loop_2_proc18_U0/move_hls_mul_32s_cud_U10/move_hls_mul_32s_cud_MulnS_0_U/buff1_reg was removed.  [E:/pynq_xohw18-155_vaas_20180629_1/ip/HLS/move/solution1/impl/verilog/move_hls_mul_32s_cud.v:32]
+WARNING: [Synth 8-6014] Unused sequential element Loop_2_proc18_U0/move_hls_mul_32s_cud_U10/move_hls_mul_32s_cud_MulnS_0_U/buff0_reg was removed.  [E:/pynq_xohw18-155_vaas_20180629_1/ip/HLS/move/solution1/impl/verilog/move_hls_mul_32s_cud.v:31]
+WARNING: [Synth 8-6014] Unused sequential element Loop_2_proc18_U0/move_hls_mul_32s_cud_U10/move_hls_mul_32s_cud_MulnS_0_U/buff1_reg was removed.  [E:/pynq_xohw18-155_vaas_20180629_1/ip/HLS/move/solution1/impl/verilog/move_hls_mul_32s_cud.v:32]
+WARNING: [Synth 8-6014] Unused sequential element Loop_2_proc18_U0/move_hls_mul_32s_cud_U10/move_hls_mul_32s_cud_MulnS_0_U/buff0_reg was removed.  [E:/pynq_xohw18-155_vaas_20180629_1/ip/HLS/move/solution1/impl/verilog/move_hls_mul_32s_cud.v:31]
+WARNING: [Synth 8-6014] Unused sequential element B was removed.  [E:/pynq_xohw18-155_vaas_20180629_1/ip/HLS/move/solution1/impl/verilog/move_hls_mul_mul_bkb.v:19]
+WARNING: [Synth 8-6014] Unused sequential element Loop_3_proc_U0/move_hls_mul_mul_dEe_U16/move_hls_mul_mul_dEe_DSP48_1_U/a_reg_reg was removed.  [E:/pynq_xohw18-155_vaas_20180629_1/ip/HLS/move/solution1/impl/verilog/move_hls_mul_mul_dEe.v:19]
+WARNING: [Synth 8-6014] Unused sequential element Block_Mat_exit16542_U0/move_hls_mul_mul_bkb_U1/move_hls_mul_mul_bkb_DSP48_0_U/a_reg_reg was removed.  [E:/pynq_xohw18-155_vaas_20180629_1/ip/HLS/move/solution1/impl/verilog/move_hls_mul_mul_bkb.v:19]
+WARNING: [Synth 8-6014] Unused sequential element Loop_3_proc_U0/move_hls_mul_mul_dEe_U16/move_hls_mul_mul_dEe_DSP48_1_U/b_reg_reg was removed.  [E:/pynq_xohw18-155_vaas_20180629_1/ip/HLS/move/solution1/impl/verilog/move_hls_mul_mul_dEe.v:20]
+WARNING: [Synth 8-6014] Unused sequential element Loop_2_proc18_U0/move_hls_mul_32s_cud_U10/move_hls_mul_32s_cud_MulnS_0_U/buff0_reg was removed.  [E:/pynq_xohw18-155_vaas_20180629_1/ip/HLS/move/solution1/impl/verilog/move_hls_mul_32s_cud.v:31]
+WARNING: [Synth 8-6014] Unused sequential element Loop_2_proc18_U0/move_hls_mul_32s_cud_U10/move_hls_mul_32s_cud_MulnS_0_U/buff0_reg was removed.  [E:/pynq_xohw18-155_vaas_20180629_1/ip/HLS/move/solution1/impl/verilog/move_hls_mul_32s_cud.v:31]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [E:/pynq_xohw18-155_vaas_20180629_1/ip/HLS/move/solution1/impl/verilog/move_hls_mul_mul_bkb.v:19]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [E:/pynq_xohw18-155_vaas_20180629_1/ip/HLS/move/solution1/impl/verilog/move_hls_mul_32s_cud.v:26]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [E:/pynq_xohw18-155_vaas_20180629_1/ip/HLS/move/solution1/impl/verilog/move_hls_mul_32s_cud.v:26]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [E:/pynq_xohw18-155_vaas_20180629_1/ip/HLS/move/solution1/impl/verilog/move_hls_mul_32s_cud.v:26]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [E:/pynq_xohw18-155_vaas_20180629_1/ip/HLS/move/solution1/impl/verilog/move_hls_mul_32s_cud.v:25]
+WARNING: [Synth 8-6014] Unused sequential element Loop_1_proc_U0/r_reg_169_reg was removed.  [E:/pynq_xohw18-155_vaas_20180629_1/ip/HLS/move/solution1/impl/verilog/Loop_1_proc_move.v:243]
+WARNING: [Synth 8-6014] Unused sequential element Loop_2_proc18_U0/i_reg_104_reg was removed.  [E:/pynq_xohw18-155_vaas_20180629_1/ip/HLS/move/solution1/impl/verilog/Loop_2_proc18.v:159]
+WARNING: [Synth 8-6014] Unused sequential element Loop_3_proc_U0/indvar_flatten_next_reg_385_reg was removed.  [E:/pynq_xohw18-155_vaas_20180629_1/ip/HLS/move/solution1/impl/verilog/Loop_3_proc_move.v:466]
+DSP Report: Generating DSP Block_Mat_exit16542_U0/move_hls_mul_mul_bkb_U1/move_hls_mul_mul_bkb_DSP48_0_U/p_reg_reg, operation Mode is: (A2*B2)'.
+DSP Report: register B is absorbed into DSP Block_Mat_exit16542_U0/move_hls_mul_mul_bkb_U1/move_hls_mul_mul_bkb_DSP48_0_U/p_reg_reg.
+DSP Report: register Block_Mat_exit16542_U0/move_hls_mul_mul_bkb_U1/move_hls_mul_mul_bkb_DSP48_0_U/a_reg_reg is absorbed into DSP Block_Mat_exit16542_U0/move_hls_mul_mul_bkb_U1/move_hls_mul_mul_bkb_DSP48_0_U/p_reg_reg.
+DSP Report: register Block_Mat_exit16542_U0/move_hls_mul_mul_bkb_U1/move_hls_mul_mul_bkb_DSP48_0_U/p_reg_reg is absorbed into DSP Block_Mat_exit16542_U0/move_hls_mul_mul_bkb_U1/move_hls_mul_mul_bkb_DSP48_0_U/p_reg_reg.
+DSP Report: operator Block_Mat_exit16542_U0/move_hls_mul_mul_bkb_U1/move_hls_mul_mul_bkb_DSP48_0_U/p_reg_reg0 is absorbed into DSP Block_Mat_exit16542_U0/move_hls_mul_mul_bkb_U1/move_hls_mul_mul_bkb_DSP48_0_U/p_reg_reg.
+DSP Report: Generating DSP Loop_2_proc18_U0/move_hls_mul_32s_cud_U10/move_hls_mul_32s_cud_MulnS_0_U/buff0_reg, operation Mode is: (A2*B2)'.
+DSP Report: register B is absorbed into DSP Loop_2_proc18_U0/move_hls_mul_32s_cud_U10/move_hls_mul_32s_cud_MulnS_0_U/buff0_reg.
+DSP Report: register A is absorbed into DSP Loop_2_proc18_U0/move_hls_mul_32s_cud_U10/move_hls_mul_32s_cud_MulnS_0_U/buff0_reg.
+DSP Report: register Loop_2_proc18_U0/move_hls_mul_32s_cud_U10/move_hls_mul_32s_cud_MulnS_0_U/buff0_reg is absorbed into DSP Loop_2_proc18_U0/move_hls_mul_32s_cud_U10/move_hls_mul_32s_cud_MulnS_0_U/buff0_reg.
+DSP Report: operator Loop_2_proc18_U0/move_hls_mul_32s_cud_U10/move_hls_mul_32s_cud_MulnS_0_U/tmp_product is absorbed into DSP Loop_2_proc18_U0/move_hls_mul_32s_cud_U10/move_hls_mul_32s_cud_MulnS_0_U/buff0_reg.
+DSP Report: operator Loop_2_proc18_U0/move_hls_mul_32s_cud_U10/move_hls_mul_32s_cud_MulnS_0_U/tmp_product is absorbed into DSP Loop_2_proc18_U0/move_hls_mul_32s_cud_U10/move_hls_mul_32s_cud_MulnS_0_U/buff0_reg.
+DSP Report: Generating DSP Loop_2_proc18_U0/move_hls_mul_32s_cud_U10/move_hls_mul_32s_cud_MulnS_0_U/buff1_reg, operation Mode is: (PCIN>>17)+(A2*B)'.
+DSP Report: register A is absorbed into DSP Loop_2_proc18_U0/move_hls_mul_32s_cud_U10/move_hls_mul_32s_cud_MulnS_0_U/buff1_reg.
+DSP Report: register Loop_2_proc18_U0/move_hls_mul_32s_cud_U10/move_hls_mul_32s_cud_MulnS_0_U/buff1_reg is absorbed into DSP Loop_2_proc18_U0/move_hls_mul_32s_cud_U10/move_hls_mul_32s_cud_MulnS_0_U/buff1_reg.
+DSP Report: register Loop_2_proc18_U0/move_hls_mul_32s_cud_U10/move_hls_mul_32s_cud_MulnS_0_U/buff0_reg is absorbed into DSP Loop_2_proc18_U0/move_hls_mul_32s_cud_U10/move_hls_mul_32s_cud_MulnS_0_U/buff1_reg.
+DSP Report: operator Loop_2_proc18_U0/move_hls_mul_32s_cud_U10/move_hls_mul_32s_cud_MulnS_0_U/tmp_product is absorbed into DSP Loop_2_proc18_U0/move_hls_mul_32s_cud_U10/move_hls_mul_32s_cud_MulnS_0_U/buff1_reg.
+DSP Report: operator Loop_2_proc18_U0/move_hls_mul_32s_cud_U10/move_hls_mul_32s_cud_MulnS_0_U/tmp_product is absorbed into DSP Loop_2_proc18_U0/move_hls_mul_32s_cud_U10/move_hls_mul_32s_cud_MulnS_0_U/buff1_reg.
+DSP Report: Generating DSP Loop_2_proc18_U0/move_hls_mul_32s_cud_U10/move_hls_mul_32s_cud_MulnS_0_U/buff2_reg, operation Mode is: (PCIN+(A''*B2)')'.
+DSP Report: register Loop_2_proc18_U0/move_hls_mul_32s_cud_U10/move_hls_mul_32s_cud_MulnS_0_U/buff0_reg is absorbed into DSP Loop_2_proc18_U0/move_hls_mul_32s_cud_U10/move_hls_mul_32s_cud_MulnS_0_U/buff2_reg.
+DSP Report: register A is absorbed into DSP Loop_2_proc18_U0/move_hls_mul_32s_cud_U10/move_hls_mul_32s_cud_MulnS_0_U/buff2_reg.
+DSP Report: register Loop_2_proc18_U0/move_hls_mul_32s_cud_U10/move_hls_mul_32s_cud_MulnS_0_U/buff0_reg is absorbed into DSP Loop_2_proc18_U0/move_hls_mul_32s_cud_U10/move_hls_mul_32s_cud_MulnS_0_U/buff2_reg.
+DSP Report: register Loop_2_proc18_U0/move_hls_mul_32s_cud_U10/move_hls_mul_32s_cud_MulnS_0_U/buff2_reg is absorbed into DSP Loop_2_proc18_U0/move_hls_mul_32s_cud_U10/move_hls_mul_32s_cud_MulnS_0_U/buff2_reg.
+DSP Report: register Loop_2_proc18_U0/move_hls_mul_32s_cud_U10/move_hls_mul_32s_cud_MulnS_0_U/buff1_reg is absorbed into DSP Loop_2_proc18_U0/move_hls_mul_32s_cud_U10/move_hls_mul_32s_cud_MulnS_0_U/buff2_reg.
+DSP Report: operator Loop_2_proc18_U0/move_hls_mul_32s_cud_U10/move_hls_mul_32s_cud_MulnS_0_U/tmp_product is absorbed into DSP Loop_2_proc18_U0/move_hls_mul_32s_cud_U10/move_hls_mul_32s_cud_MulnS_0_U/buff2_reg.
+DSP Report: operator Loop_2_proc18_U0/move_hls_mul_32s_cud_U10/move_hls_mul_32s_cud_MulnS_0_U/tmp_product is absorbed into DSP Loop_2_proc18_U0/move_hls_mul_32s_cud_U10/move_hls_mul_32s_cud_MulnS_0_U/buff2_reg.
+DSP Report: Generating DSP Loop_3_proc_U0/move_hls_mul_mul_dEe_U16/move_hls_mul_mul_dEe_DSP48_1_U/p_reg_reg, operation Mode is: (A2*B2)'.
+DSP Report: register Loop_3_proc_U0/move_hls_mul_mul_dEe_U16/move_hls_mul_mul_dEe_DSP48_1_U/a_reg_reg is absorbed into DSP Loop_3_proc_U0/move_hls_mul_mul_dEe_U16/move_hls_mul_mul_dEe_DSP48_1_U/p_reg_reg.
+DSP Report: register Loop_3_proc_U0/move_hls_mul_mul_dEe_U16/move_hls_mul_mul_dEe_DSP48_1_U/b_reg_reg is absorbed into DSP Loop_3_proc_U0/move_hls_mul_mul_dEe_U16/move_hls_mul_mul_dEe_DSP48_1_U/p_reg_reg.
+DSP Report: register Loop_3_proc_U0/move_hls_mul_mul_dEe_U16/move_hls_mul_mul_dEe_DSP48_1_U/p_reg_reg is absorbed into DSP Loop_3_proc_U0/move_hls_mul_mul_dEe_U16/move_hls_mul_mul_dEe_DSP48_1_U/p_reg_reg.
+DSP Report: operator Loop_3_proc_U0/move_hls_mul_mul_dEe_U16/move_hls_mul_mul_dEe_DSP48_1_U/p_reg_reg0 is absorbed into DSP Loop_3_proc_U0/move_hls_mul_mul_dEe_U16/move_hls_mul_mul_dEe_DSP48_1_U/p_reg_reg.
+WARNING: [Synth 8-3917] design move_hls has port s_axi_CONTROL_BUS_RRESP[1] driven by constant 0
+WARNING: [Synth 8-3917] design move_hls has port s_axi_CONTROL_BUS_RRESP[0] driven by constant 0
+WARNING: [Synth 8-3917] design move_hls has port s_axi_CONTROL_BUS_BRESP[1] driven by constant 0
+WARNING: [Synth 8-3917] design move_hls has port s_axi_CONTROL_BUS_BRESP[0] driven by constant 0
+WARNING: [Synth 8-3331] design move_hls has unconnected port in_stream_TUSER[0]
+WARNING: [Synth 8-3331] design move_hls has unconnected port in_stream_TLAST[0]
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Loop_2_proc18_U0/ap_done_reg_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Loop_1_proc_U0/ap_done_reg_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Loop_3_proc_U0/ap_done_reg_reg )
+WARNING: [Synth 8-3332] Sequential element (Loop_1_proc_U0/ap_done_reg_reg) is unused and will be removed from module move_hls.
+WARNING: [Synth 8-3332] Sequential element (Loop_2_proc18_U0/ap_done_reg_reg) is unused and will be removed from module move_hls.
+WARNING: [Synth 8-3332] Sequential element (Loop_2_proc18_U0/move_hls_mul_32s_cud_U10/move_hls_mul_32s_cud_MulnS_0_U/buff1_reg[47]) is unused and will be removed from module move_hls.
+WARNING: [Synth 8-3332] Sequential element (Loop_2_proc18_U0/move_hls_mul_32s_cud_U10/move_hls_mul_32s_cud_MulnS_0_U/buff1_reg[46]) is unused and will be removed from module move_hls.
+WARNING: [Synth 8-3332] Sequential element (Loop_2_proc18_U0/move_hls_mul_32s_cud_U10/move_hls_mul_32s_cud_MulnS_0_U/buff1_reg[45]) is unused and will be removed from module move_hls.
+WARNING: [Synth 8-3332] Sequential element (Loop_2_proc18_U0/move_hls_mul_32s_cud_U10/move_hls_mul_32s_cud_MulnS_0_U/buff1_reg[44]) is unused and will be removed from module move_hls.
+WARNING: [Synth 8-3332] Sequential element (Loop_2_proc18_U0/move_hls_mul_32s_cud_U10/move_hls_mul_32s_cud_MulnS_0_U/buff1_reg[43]) is unused and will be removed from module move_hls.
+WARNING: [Synth 8-3332] Sequential element (Loop_2_proc18_U0/move_hls_mul_32s_cud_U10/move_hls_mul_32s_cud_MulnS_0_U/buff1_reg[42]) is unused and will be removed from module move_hls.
+WARNING: [Synth 8-3332] Sequential element (Loop_2_proc18_U0/move_hls_mul_32s_cud_U10/move_hls_mul_32s_cud_MulnS_0_U/buff1_reg[41]) is unused and will be removed from module move_hls.
+WARNING: [Synth 8-3332] Sequential element (Loop_2_proc18_U0/move_hls_mul_32s_cud_U10/move_hls_mul_32s_cud_MulnS_0_U/buff1_reg[40]) is unused and will be removed from module move_hls.
+WARNING: [Synth 8-3332] Sequential element (Loop_2_proc18_U0/move_hls_mul_32s_cud_U10/move_hls_mul_32s_cud_MulnS_0_U/buff1_reg[39]) is unused and will be removed from module move_hls.
+WARNING: [Synth 8-3332] Sequential element (Loop_2_proc18_U0/move_hls_mul_32s_cud_U10/move_hls_mul_32s_cud_MulnS_0_U/buff1_reg[38]) is unused and will be removed from module move_hls.
+WARNING: [Synth 8-3332] Sequential element (Loop_2_proc18_U0/move_hls_mul_32s_cud_U10/move_hls_mul_32s_cud_MulnS_0_U/buff1_reg[37]) is unused and will be removed from module move_hls.
+WARNING: [Synth 8-3332] Sequential element (Loop_2_proc18_U0/move_hls_mul_32s_cud_U10/move_hls_mul_32s_cud_MulnS_0_U/buff1_reg[36]) is unused and will be removed from module move_hls.
+WARNING: [Synth 8-3332] Sequential element (Loop_2_proc18_U0/move_hls_mul_32s_cud_U10/move_hls_mul_32s_cud_MulnS_0_U/buff1_reg[35]) is unused and will be removed from module move_hls.
+WARNING: [Synth 8-3332] Sequential element (Loop_2_proc18_U0/move_hls_mul_32s_cud_U10/move_hls_mul_32s_cud_MulnS_0_U/buff1_reg[34]) is unused and will be removed from module move_hls.
+WARNING: [Synth 8-3332] Sequential element (Loop_2_proc18_U0/move_hls_mul_32s_cud_U10/move_hls_mul_32s_cud_MulnS_0_U/buff1_reg[33]) is unused and will be removed from module move_hls.
+WARNING: [Synth 8-3332] Sequential element (Loop_2_proc18_U0/move_hls_mul_32s_cud_U10/move_hls_mul_32s_cud_MulnS_0_U/buff1_reg[32]) is unused and will be removed from module move_hls.
+WARNING: [Synth 8-3332] Sequential element (Loop_2_proc18_U0/move_hls_mul_32s_cud_U10/move_hls_mul_32s_cud_MulnS_0_U/buff1_reg[31]) is unused and will be removed from module move_hls.
+WARNING: [Synth 8-3332] Sequential element (Loop_2_proc18_U0/move_hls_mul_32s_cud_U10/move_hls_mul_32s_cud_MulnS_0_U/buff1_reg[30]) is unused and will be removed from module move_hls.
+WARNING: [Synth 8-3332] Sequential element (Loop_2_proc18_U0/move_hls_mul_32s_cud_U10/move_hls_mul_32s_cud_MulnS_0_U/buff1_reg[29]) is unused and will be removed from module move_hls.
+WARNING: [Synth 8-3332] Sequential element (Loop_2_proc18_U0/move_hls_mul_32s_cud_U10/move_hls_mul_32s_cud_MulnS_0_U/buff1_reg[28]) is unused and will be removed from module move_hls.
+WARNING: [Synth 8-3332] Sequential element (Loop_2_proc18_U0/move_hls_mul_32s_cud_U10/move_hls_mul_32s_cud_MulnS_0_U/buff1_reg[27]) is unused and will be removed from module move_hls.
+WARNING: [Synth 8-3332] Sequential element (Loop_2_proc18_U0/move_hls_mul_32s_cud_U10/move_hls_mul_32s_cud_MulnS_0_U/buff1_reg[26]) is unused and will be removed from module move_hls.
+WARNING: [Synth 8-3332] Sequential element (Loop_2_proc18_U0/move_hls_mul_32s_cud_U10/move_hls_mul_32s_cud_MulnS_0_U/buff1_reg[25]) is unused and will be removed from module move_hls.
+WARNING: [Synth 8-3332] Sequential element (Loop_2_proc18_U0/move_hls_mul_32s_cud_U10/move_hls_mul_32s_cud_MulnS_0_U/buff1_reg[24]) is unused and will be removed from module move_hls.
+WARNING: [Synth 8-3332] Sequential element (Loop_2_proc18_U0/move_hls_mul_32s_cud_U10/move_hls_mul_32s_cud_MulnS_0_U/buff1_reg[23]) is unused and will be removed from module move_hls.
+WARNING: [Synth 8-3332] Sequential element (Loop_2_proc18_U0/move_hls_mul_32s_cud_U10/move_hls_mul_32s_cud_MulnS_0_U/buff1_reg[22]) is unused and will be removed from module move_hls.
+WARNING: [Synth 8-3332] Sequential element (Loop_2_proc18_U0/move_hls_mul_32s_cud_U10/move_hls_mul_32s_cud_MulnS_0_U/buff1_reg[21]) is unused and will be removed from module move_hls.
+WARNING: [Synth 8-3332] Sequential element (Loop_2_proc18_U0/move_hls_mul_32s_cud_U10/move_hls_mul_32s_cud_MulnS_0_U/buff1_reg[20]) is unused and will be removed from module move_hls.
+WARNING: [Synth 8-3332] Sequential element (Loop_2_proc18_U0/move_hls_mul_32s_cud_U10/move_hls_mul_32s_cud_MulnS_0_U/buff1_reg[19]) is unused and will be removed from module move_hls.
+WARNING: [Synth 8-3332] Sequential element (Loop_2_proc18_U0/move_hls_mul_32s_cud_U10/move_hls_mul_32s_cud_MulnS_0_U/buff1_reg[18]) is unused and will be removed from module move_hls.
+WARNING: [Synth 8-3332] Sequential element (Loop_2_proc18_U0/move_hls_mul_32s_cud_U10/move_hls_mul_32s_cud_MulnS_0_U/buff1_reg[17]) is unused and will be removed from module move_hls.
+WARNING: [Synth 8-3332] Sequential element (Loop_2_proc18_U0/move_hls_mul_32s_cud_U10/move_hls_mul_32s_cud_MulnS_0_U/buff2_reg[47]) is unused and will be removed from module move_hls.
+WARNING: [Synth 8-3332] Sequential element (Loop_2_proc18_U0/move_hls_mul_32s_cud_U10/move_hls_mul_32s_cud_MulnS_0_U/buff2_reg[46]) is unused and will be removed from module move_hls.
+WARNING: [Synth 8-3332] Sequential element (Loop_2_proc18_U0/move_hls_mul_32s_cud_U10/move_hls_mul_32s_cud_MulnS_0_U/buff2_reg[45]) is unused and will be removed from module move_hls.
+WARNING: [Synth 8-3332] Sequential element (Loop_2_proc18_U0/move_hls_mul_32s_cud_U10/move_hls_mul_32s_cud_MulnS_0_U/buff2_reg[44]) is unused and will be removed from module move_hls.
+WARNING: [Synth 8-3332] Sequential element (Loop_2_proc18_U0/move_hls_mul_32s_cud_U10/move_hls_mul_32s_cud_MulnS_0_U/buff2_reg[43]) is unused and will be removed from module move_hls.
+WARNING: [Synth 8-3332] Sequential element (Loop_2_proc18_U0/move_hls_mul_32s_cud_U10/move_hls_mul_32s_cud_MulnS_0_U/buff2_reg[42]) is unused and will be removed from module move_hls.
+WARNING: [Synth 8-3332] Sequential element (Loop_2_proc18_U0/move_hls_mul_32s_cud_U10/move_hls_mul_32s_cud_MulnS_0_U/buff2_reg[41]) is unused and will be removed from module move_hls.
+WARNING: [Synth 8-3332] Sequential element (Loop_2_proc18_U0/move_hls_mul_32s_cud_U10/move_hls_mul_32s_cud_MulnS_0_U/buff2_reg[40]) is unused and will be removed from module move_hls.
+WARNING: [Synth 8-3332] Sequential element (Loop_2_proc18_U0/move_hls_mul_32s_cud_U10/move_hls_mul_32s_cud_MulnS_0_U/buff2_reg[39]) is unused and will be removed from module move_hls.
+WARNING: [Synth 8-3332] Sequential element (Loop_2_proc18_U0/move_hls_mul_32s_cud_U10/move_hls_mul_32s_cud_MulnS_0_U/buff2_reg[38]) is unused and will be removed from module move_hls.
+WARNING: [Synth 8-3332] Sequential element (Loop_2_proc18_U0/move_hls_mul_32s_cud_U10/move_hls_mul_32s_cud_MulnS_0_U/buff2_reg[37]) is unused and will be removed from module move_hls.
+WARNING: [Synth 8-3332] Sequential element (Loop_2_proc18_U0/move_hls_mul_32s_cud_U10/move_hls_mul_32s_cud_MulnS_0_U/buff2_reg[36]) is unused and will be removed from module move_hls.
+WARNING: [Synth 8-3332] Sequential element (Loop_2_proc18_U0/move_hls_mul_32s_cud_U10/move_hls_mul_32s_cud_MulnS_0_U/buff2_reg[35]) is unused and will be removed from module move_hls.
+WARNING: [Synth 8-3332] Sequential element (Loop_2_proc18_U0/move_hls_mul_32s_cud_U10/move_hls_mul_32s_cud_MulnS_0_U/buff2_reg[34]) is unused and will be removed from module move_hls.
+WARNING: [Synth 8-3332] Sequential element (Loop_2_proc18_U0/move_hls_mul_32s_cud_U10/move_hls_mul_32s_cud_MulnS_0_U/buff2_reg[33]) is unused and will be removed from module move_hls.
+WARNING: [Synth 8-3332] Sequential element (Loop_2_proc18_U0/move_hls_mul_32s_cud_U10/move_hls_mul_32s_cud_MulnS_0_U/buff2_reg[32]) is unused and will be removed from module move_hls.
+WARNING: [Synth 8-3332] Sequential element (Loop_2_proc18_U0/move_hls_mul_32s_cud_U10/move_hls_mul_32s_cud_MulnS_0_U/buff2_reg[31]) is unused and will be removed from module move_hls.
+WARNING: [Synth 8-3332] Sequential element (Loop_2_proc18_U0/move_hls_mul_32s_cud_U10/move_hls_mul_32s_cud_MulnS_0_U/buff2_reg[30]) is unused and will be removed from module move_hls.
+WARNING: [Synth 8-3332] Sequential element (Loop_2_proc18_U0/move_hls_mul_32s_cud_U10/move_hls_mul_32s_cud_MulnS_0_U/buff2_reg[29]) is unused and will be removed from module move_hls.
+WARNING: [Synth 8-3332] Sequential element (Loop_2_proc18_U0/move_hls_mul_32s_cud_U10/move_hls_mul_32s_cud_MulnS_0_U/buff2_reg[28]) is unused and will be removed from module move_hls.
+WARNING: [Synth 8-3332] Sequential element (Loop_2_proc18_U0/move_hls_mul_32s_cud_U10/move_hls_mul_32s_cud_MulnS_0_U/buff2_reg[27]) is unused and will be removed from module move_hls.
+WARNING: [Synth 8-3332] Sequential element (Loop_2_proc18_U0/move_hls_mul_32s_cud_U10/move_hls_mul_32s_cud_MulnS_0_U/buff2_reg[26]) is unused and will be removed from module move_hls.
+WARNING: [Synth 8-3332] Sequential element (Loop_2_proc18_U0/move_hls_mul_32s_cud_U10/move_hls_mul_32s_cud_MulnS_0_U/buff2_reg[25]) is unused and will be removed from module move_hls.
+WARNING: [Synth 8-3332] Sequential element (Loop_2_proc18_U0/move_hls_mul_32s_cud_U10/move_hls_mul_32s_cud_MulnS_0_U/buff2_reg[24]) is unused and will be removed from module move_hls.
+WARNING: [Synth 8-3332] Sequential element (Loop_2_proc18_U0/move_hls_mul_32s_cud_U10/move_hls_mul_32s_cud_MulnS_0_U/buff2_reg[23]) is unused and will be removed from module move_hls.
+WARNING: [Synth 8-3332] Sequential element (Loop_2_proc18_U0/move_hls_mul_32s_cud_U10/move_hls_mul_32s_cud_MulnS_0_U/buff2_reg[22]) is unused and will be removed from module move_hls.
+WARNING: [Synth 8-3332] Sequential element (Loop_2_proc18_U0/move_hls_mul_32s_cud_U10/move_hls_mul_32s_cud_MulnS_0_U/buff2_reg[21]) is unused and will be removed from module move_hls.
+WARNING: [Synth 8-3332] Sequential element (Loop_2_proc18_U0/move_hls_mul_32s_cud_U10/move_hls_mul_32s_cud_MulnS_0_U/buff2_reg[20]) is unused and will be removed from module move_hls.
+WARNING: [Synth 8-3332] Sequential element (Loop_2_proc18_U0/move_hls_mul_32s_cud_U10/move_hls_mul_32s_cud_MulnS_0_U/buff2_reg[19]) is unused and will be removed from module move_hls.
+WARNING: [Synth 8-3332] Sequential element (Loop_2_proc18_U0/move_hls_mul_32s_cud_U10/move_hls_mul_32s_cud_MulnS_0_U/buff2_reg[18]) is unused and will be removed from module move_hls.
+WARNING: [Synth 8-3332] Sequential element (Loop_2_proc18_U0/move_hls_mul_32s_cud_U10/move_hls_mul_32s_cud_MulnS_0_U/buff2_reg[17]) is unused and will be removed from module move_hls.
+WARNING: [Synth 8-3332] Sequential element (Loop_2_proc18_U0/move_hls_mul_32s_cud_U10/move_hls_mul_32s_cud_MulnS_0_U/b_reg0_reg[16]) is unused and will be removed from module move_hls.
+WARNING: [Synth 8-3332] Sequential element (Loop_2_proc18_U0/move_hls_mul_32s_cud_U10/move_hls_mul_32s_cud_MulnS_0_U/b_reg0_reg[15]) is unused and will be removed from module move_hls.
+WARNING: [Synth 8-3332] Sequential element (Loop_2_proc18_U0/move_hls_mul_32s_cud_U10/move_hls_mul_32s_cud_MulnS_0_U/b_reg0_reg[14]) is unused and will be removed from module move_hls.
+WARNING: [Synth 8-3332] Sequential element (Loop_2_proc18_U0/move_hls_mul_32s_cud_U10/move_hls_mul_32s_cud_MulnS_0_U/b_reg0_reg[13]) is unused and will be removed from module move_hls.
+WARNING: [Synth 8-3332] Sequential element (Loop_2_proc18_U0/move_hls_mul_32s_cud_U10/move_hls_mul_32s_cud_MulnS_0_U/b_reg0_reg[12]) is unused and will be removed from module move_hls.
+WARNING: [Synth 8-3332] Sequential element (Loop_2_proc18_U0/move_hls_mul_32s_cud_U10/move_hls_mul_32s_cud_MulnS_0_U/b_reg0_reg[11]) is unused and will be removed from module move_hls.
+WARNING: [Synth 8-3332] Sequential element (Loop_2_proc18_U0/move_hls_mul_32s_cud_U10/move_hls_mul_32s_cud_MulnS_0_U/b_reg0_reg[10]) is unused and will be removed from module move_hls.
+WARNING: [Synth 8-3332] Sequential element (Loop_2_proc18_U0/move_hls_mul_32s_cud_U10/move_hls_mul_32s_cud_MulnS_0_U/b_reg0_reg[9]) is unused and will be removed from module move_hls.
+WARNING: [Synth 8-3332] Sequential element (Loop_2_proc18_U0/move_hls_mul_32s_cud_U10/move_hls_mul_32s_cud_MulnS_0_U/b_reg0_reg[8]) is unused and will be removed from module move_hls.
+WARNING: [Synth 8-3332] Sequential element (Loop_2_proc18_U0/move_hls_mul_32s_cud_U10/move_hls_mul_32s_cud_MulnS_0_U/b_reg0_reg[7]) is unused and will be removed from module move_hls.
+WARNING: [Synth 8-3332] Sequential element (Loop_2_proc18_U0/move_hls_mul_32s_cud_U10/move_hls_mul_32s_cud_MulnS_0_U/b_reg0_reg[6]) is unused and will be removed from module move_hls.
+WARNING: [Synth 8-3332] Sequential element (Loop_2_proc18_U0/move_hls_mul_32s_cud_U10/move_hls_mul_32s_cud_MulnS_0_U/b_reg0_reg[5]) is unused and will be removed from module move_hls.
+WARNING: [Synth 8-3332] Sequential element (Loop_2_proc18_U0/move_hls_mul_32s_cud_U10/move_hls_mul_32s_cud_MulnS_0_U/b_reg0_reg[4]) is unused and will be removed from module move_hls.
+WARNING: [Synth 8-3332] Sequential element (Loop_2_proc18_U0/move_hls_mul_32s_cud_U10/move_hls_mul_32s_cud_MulnS_0_U/b_reg0_reg[3]) is unused and will be removed from module move_hls.
+WARNING: [Synth 8-3332] Sequential element (Loop_2_proc18_U0/move_hls_mul_32s_cud_U10/move_hls_mul_32s_cud_MulnS_0_U/b_reg0_reg[2]) is unused and will be removed from module move_hls.
+WARNING: [Synth 8-3332] Sequential element (Loop_2_proc18_U0/move_hls_mul_32s_cud_U10/move_hls_mul_32s_cud_MulnS_0_U/b_reg0_reg[1]) is unused and will be removed from module move_hls.
+WARNING: [Synth 8-3332] Sequential element (Loop_2_proc18_U0/move_hls_mul_32s_cud_U10/move_hls_mul_32s_cud_MulnS_0_U/b_reg0_reg[0]) is unused and will be removed from module move_hls.
+WARNING: [Synth 8-3332] Sequential element (Loop_2_proc18_U0/move_hls_mul_32s_cud_U10/move_hls_mul_32s_cud_MulnS_0_U/a_reg0_reg[16]) is unused and will be removed from module move_hls.
+WARNING: [Synth 8-3332] Sequential element (Loop_2_proc18_U0/move_hls_mul_32s_cud_U10/move_hls_mul_32s_cud_MulnS_0_U/a_reg0_reg[15]) is unused and will be removed from module move_hls.
+WARNING: [Synth 8-3332] Sequential element (Loop_2_proc18_U0/move_hls_mul_32s_cud_U10/move_hls_mul_32s_cud_MulnS_0_U/a_reg0_reg[14]) is unused and will be removed from module move_hls.
+WARNING: [Synth 8-3332] Sequential element (Loop_2_proc18_U0/move_hls_mul_32s_cud_U10/move_hls_mul_32s_cud_MulnS_0_U/a_reg0_reg[13]) is unused and will be removed from module move_hls.
+WARNING: [Synth 8-3332] Sequential element (Loop_2_proc18_U0/move_hls_mul_32s_cud_U10/move_hls_mul_32s_cud_MulnS_0_U/a_reg0_reg[12]) is unused and will be removed from module move_hls.
+WARNING: [Synth 8-3332] Sequential element (Loop_2_proc18_U0/move_hls_mul_32s_cud_U10/move_hls_mul_32s_cud_MulnS_0_U/a_reg0_reg[11]) is unused and will be removed from module move_hls.
+WARNING: [Synth 8-3332] Sequential element (Loop_2_proc18_U0/move_hls_mul_32s_cud_U10/move_hls_mul_32s_cud_MulnS_0_U/a_reg0_reg[10]) is unused and will be removed from module move_hls.
+WARNING: [Synth 8-3332] Sequential element (Loop_2_proc18_U0/move_hls_mul_32s_cud_U10/move_hls_mul_32s_cud_MulnS_0_U/a_reg0_reg[9]) is unused and will be removed from module move_hls.
+WARNING: [Synth 8-3332] Sequential element (Loop_2_proc18_U0/move_hls_mul_32s_cud_U10/move_hls_mul_32s_cud_MulnS_0_U/a_reg0_reg[8]) is unused and will be removed from module move_hls.
+WARNING: [Synth 8-3332] Sequential element (Loop_2_proc18_U0/move_hls_mul_32s_cud_U10/move_hls_mul_32s_cud_MulnS_0_U/a_reg0_reg[7]) is unused and will be removed from module move_hls.
+WARNING: [Synth 8-3332] Sequential element (Loop_2_proc18_U0/move_hls_mul_32s_cud_U10/move_hls_mul_32s_cud_MulnS_0_U/a_reg0_reg[6]) is unused and will be removed from module move_hls.
+WARNING: [Synth 8-3332] Sequential element (Loop_2_proc18_U0/move_hls_mul_32s_cud_U10/move_hls_mul_32s_cud_MulnS_0_U/a_reg0_reg[5]) is unused and will be removed from module move_hls.
+WARNING: [Synth 8-3332] Sequential element (Loop_2_proc18_U0/move_hls_mul_32s_cud_U10/move_hls_mul_32s_cud_MulnS_0_U/a_reg0_reg[4]) is unused and will be removed from module move_hls.
+WARNING: [Synth 8-3332] Sequential element (Loop_2_proc18_U0/move_hls_mul_32s_cud_U10/move_hls_mul_32s_cud_MulnS_0_U/a_reg0_reg[3]) is unused and will be removed from module move_hls.
+WARNING: [Synth 8-3332] Sequential element (Loop_2_proc18_U0/move_hls_mul_32s_cud_U10/move_hls_mul_32s_cud_MulnS_0_U/a_reg0_reg[2]) is unused and will be removed from module move_hls.
+WARNING: [Synth 8-3332] Sequential element (Loop_2_proc18_U0/move_hls_mul_32s_cud_U10/move_hls_mul_32s_cud_MulnS_0_U/a_reg0_reg[1]) is unused and will be removed from module move_hls.
+WARNING: [Synth 8-3332] Sequential element (Loop_2_proc18_U0/move_hls_mul_32s_cud_U10/move_hls_mul_32s_cud_MulnS_0_U/a_reg0_reg[0]) is unused and will be removed from module move_hls.
+WARNING: [Synth 8-3332] Sequential element (Loop_3_proc_U0/ap_done_reg_reg) is unused and will be removed from module move_hls.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:25 ; elapsed = 00:00:28 . Memory (MB): peak = 826.641 ; gain = 525.777
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+DSP: Preliminary Mapping  Report (see note below)
++-----------------------------+--------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name                  | DSP Mapping        | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++-----------------------------+--------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|move_hls                     | (A2*B2)'           | 20     | 10     | -      | -      | 30     | 1    | 1    | -    | -    | -     | 1    | 0    | 
+|move_hls                     | (A2*B2)'           | 18     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 0    | 
+|move_hls                     | (PCIN>>17)+(A2*B)' | 18     | 15     | -      | -      | 48     | 1    | 0    | -    | -    | -     | 1    | 1    | 
+|move_hls                     | (PCIN+(A''*B2)')'  | 18     | 15     | -      | -      | 48     | 2    | 1    | -    | -    | -     | 1    | 1    | 
+|move_hls_mul_mul_dEe_DSP48_1 | (A2*B2)'           | 11     | 9      | -      | -      | 20     | 1    | 1    | -    | -    | -     | 1    | 0    | 
++-----------------------------+--------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:40 ; elapsed = 00:00:44 . Memory (MB): peak = 873.719 ; gain = 572.855
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:42 ; elapsed = 00:00:46 . Memory (MB): peak = 938.555 ; gain = 637.691
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:43 ; elapsed = 00:00:47 . Memory (MB): peak = 939.563 ; gain = 638.699
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5365] Flop Loop_3_proc_U0/tmp_18_i_i_reg_371_reg[9] is being inverted and renamed to Loop_3_proc_U0/tmp_18_i_i_reg_371_reg[9]_inv.
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:44 ; elapsed = 00:00:48 . Memory (MB): peak = 939.563 ; gain = 638.699
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:44 ; elapsed = 00:00:48 . Memory (MB): peak = 939.563 ; gain = 638.699
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:44 ; elapsed = 00:00:48 . Memory (MB): peak = 939.563 ; gain = 638.699
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:44 ; elapsed = 00:00:48 . Memory (MB): peak = 939.563 ; gain = 638.699
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:44 ; elapsed = 00:00:48 . Memory (MB): peak = 939.563 ; gain = 638.699
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:44 ; elapsed = 00:00:48 . Memory (MB): peak = 939.563 ; gain = 638.699
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Dynamic Shift Register Report:
++------------+----------------+--------+------------+--------+---------+--------+--------+--------+
+|Module Name | RTL Name       | Length | Data Width | SRL16E | SRLC32E | Mux F7 | Mux F8 | Mux F9 | 
++------------+----------------+--------+------------+--------+---------+--------+--------+--------+
+|dsrl        | SRL_SIG_reg[3] | 4      | 9          | 9      | 0       | 0      | 0      | 0      | 
+|dsrl__1     | SRL_SIG_reg[2] | 4      | 20         | 20     | 0       | 0      | 0      | 0      | 
++------------+----------------+--------+------------+--------+---------+--------+--------+--------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+----------+------+
+|      |Cell      |Count |
++------+----------+------+
+|1     |CARRY4    |    28|
+|2     |DSP48E1   |     3|
+|3     |DSP48E1_2 |     1|
+|4     |DSP48E1_3 |     1|
+|5     |LUT1      |     7|
+|6     |LUT2      |    17|
+|7     |LUT3      |   174|
+|8     |LUT4      |    84|
+|9     |LUT5      |   166|
+|10    |LUT6      |   161|
+|11    |SRL16E    |    38|
+|12    |FDRE      |   663|
+|13    |FDSE      |    19|
++------+----------+------+
+
+Report Instance Areas: 
++------+-------------------------------------+-----------------------------+------+
+|      |Instance                             |Module                       |Cells |
++------+-------------------------------------+-----------------------------+------+
+|1     |top                                  |                             |  1362|
+|2     |  Block_Mat_exit16542_U0             |Block_Mat_exit16542_s        |    53|
+|3     |    move_hls_mul_mul_bkb_U1          |move_hls_mul_mul_bkb         |    22|
+|4     |      move_hls_mul_mul_bkb_DSP48_0_U |move_hls_mul_mul_bkb_DSP48_0 |    22|
+|5     |  Loop_1_proc_U0                     |Loop_1_proc                  |   279|
+|6     |  Loop_2_proc18_U0                   |Loop_2_proc18                |   127|
+|7     |    move_hls_mul_32s_cud_U10         |move_hls_mul_32s_cud         |    75|
+|8     |      move_hls_mul_32s_cud_MulnS_0_U |move_hls_mul_32s_cud_MulnS_0 |    75|
+|9     |  Loop_3_proc_U0                     |Loop_3_proc                  |   492|
+|10    |    move_hls_mul_mul_dEe_U16         |move_hls_mul_mul_dEe         |     1|
+|11    |      move_hls_mul_mul_dEe_DSP48_1_U |move_hls_mul_mul_dEe_DSP48_1 |     1|
+|12    |  col_packets_cast_loc_U             |fifo_w9_d3_A                 |    22|
+|13    |    U_fifo_w9_d3_A_ram               |fifo_w9_d3_A_shiftReg_3      |    11|
+|14    |  g_img_0_data_stream_s_U            |fifo_w8_d1_A                 |    32|
+|15    |    U_fifo_w8_d1_A_ram               |fifo_w8_d1_A_shiftReg_2      |    24|
+|16    |  g_img_1_data_stream_s_U            |fifo_w8_d1_A_0               |    32|
+|17    |    U_fifo_w8_d1_A_ram               |fifo_w8_d1_A_shiftReg        |    24|
+|18    |  move_hls_CONTROL_BUS_s_axi_U       |move_hls_CONTROL_BUS_s_axi   |   267|
+|19    |  p_lshr_f_cast_loc_c_U              |fifo_w9_d3_A_1               |    23|
+|20    |    U_fifo_w9_d3_A_ram               |fifo_w9_d3_A_shiftReg        |    11|
+|21    |  packets_cast_loc_cha_U             |fifo_w20_d2_A                |    33|
+|22    |    U_fifo_w20_d2_A_ram              |fifo_w20_d2_A_shiftReg       |    22|
++------+-------------------------------------+-----------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:44 ; elapsed = 00:00:48 . Memory (MB): peak = 939.563 ; gain = 638.699
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 148 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:30 ; elapsed = 00:00:38 . Memory (MB): peak = 939.563 ; gain = 268.078
+Synthesis Optimization Complete : Time (s): cpu = 00:00:44 ; elapsed = 00:00:48 . Memory (MB): peak = 939.563 ; gain = 638.699
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 33 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+78 Infos, 214 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:47 ; elapsed = 00:00:52 . Memory (MB): peak = 939.563 ; gain = 651.328
+INFO: [Common 17-1381] The checkpoint 'E:/pynq_xohw18-155_vaas_20180629_1/ip/HLS/move/solution1/impl/verilog/project.runs/synth_1/move_hls.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file move_hls_utilization_synth.rpt -pb move_hls_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.051 . Memory (MB): peak = 939.563 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Thu Aug  2 15:43:45 2018...

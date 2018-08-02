@@ -9,30 +9,49 @@ library IEEE;
 use IEEE.std_logic_1164.all;
 use IEEE.numeric_std.all;
 
-entity canny_edge_mac_mukbM_DSP48_3 is
+entity canny_edge_mac_mukbM_DSP48_5 is
 port (
+    clk: in  std_logic;
+    rst: in  std_logic;
+    ce:  in  std_logic;
     in0:  in  std_logic_vector(8 - 1 downto 0);
-    in1:  in  std_logic_vector(11 - 1 downto 0);
-    in2:  in  std_logic_vector(18 - 1 downto 0);
-    dout: out std_logic_vector(19 - 1 downto 0));
+    in1:  in  std_logic_vector(4 - 1 downto 0);
+    in2:  in  std_logic_vector(12 - 1 downto 0);
+    dout: out std_logic_vector(12 - 1 downto 0));
+
+    attribute use_dsp48 : string;
+    attribute use_dsp48 of canny_edge_mac_mukbM_DSP48_5 : entity is "yes";
 
 end entity;
 
-architecture behav of canny_edge_mac_mukbM_DSP48_3 is
+architecture behav of canny_edge_mac_mukbM_DSP48_5 is
     signal a       : signed(25-1 downto 0);
     signal b       : signed(18-1 downto 0);
     signal c       : signed(48-1 downto 0);
     signal m       : signed(43-1 downto 0);
     signal p       : signed(48-1 downto 0);
+    signal m_reg   : signed(43-1 downto 0);
+    signal a_reg   : signed(25-1 downto 0);
+    signal b_reg   : signed(18-1 downto 0);
 begin
 a  <= signed(resize(unsigned(in0), 25));
 b  <= signed(resize(unsigned(in1), 18));
-c  <= signed(resize(unsigned(in2), 48));
+c  <= signed(resize(signed(in2), 48));
 
-m  <= a * b;
-p  <= m + c;
+m  <= a_reg * b_reg;
+p  <= m_reg + c;
 
-dout <= std_logic_vector(resize(unsigned(p), 19));
+process (clk) begin
+    if (clk'event and clk = '1') then
+        if (ce = '1') then
+            m_reg  <= m;
+            a_reg  <= a;
+            b_reg  <= b;
+        end if;
+    end if;
+end process;
+
+dout <= std_logic_vector(resize(unsigned(p), 12));
 
 end architecture;
 
@@ -48,6 +67,9 @@ entity canny_edge_mac_mukbM is
         din2_WIDTH : INTEGER;
         dout_WIDTH : INTEGER);
     port (
+        clk : IN STD_LOGIC;
+        reset : IN STD_LOGIC;
+        ce : IN STD_LOGIC;
         din0 : IN STD_LOGIC_VECTOR(din0_WIDTH - 1 DOWNTO 0);
         din1 : IN STD_LOGIC_VECTOR(din1_WIDTH - 1 DOWNTO 0);
         din2 : IN STD_LOGIC_VECTOR(din2_WIDTH - 1 DOWNTO 0);
@@ -55,8 +77,11 @@ entity canny_edge_mac_mukbM is
 end entity;
 
 architecture arch of canny_edge_mac_mukbM is
-    component canny_edge_mac_mukbM_DSP48_3 is
+    component canny_edge_mac_mukbM_DSP48_5 is
         port (
+            clk : IN STD_LOGIC;
+            rst : IN STD_LOGIC;
+            ce : IN STD_LOGIC;
             in0 : IN STD_LOGIC_VECTOR;
             in1 : IN STD_LOGIC_VECTOR;
             in2 : IN STD_LOGIC_VECTOR;
@@ -66,8 +91,11 @@ architecture arch of canny_edge_mac_mukbM is
 
 
 begin
-    canny_edge_mac_mukbM_DSP48_3_U :  component canny_edge_mac_mukbM_DSP48_3
+    canny_edge_mac_mukbM_DSP48_5_U :  component canny_edge_mac_mukbM_DSP48_5
     port map (
+        clk => clk,
+        rst => reset,
+        ce => ce,
         in0 => din0,
         in1 => din1,
         in2 => din2,

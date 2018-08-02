@@ -1,7 +1,7 @@
 Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
-| Date         : Mon Jun 25 14:40:41 2018
+| Date         : Thu Jul 26 12:38:19 2018
 | Host         : DESKTOP-H32TPSL running 64-bit major release  (build 9200)
 | Command      : report_timing -file ./report/canny_edge_timing_synth.rpt
 | Design       : canny_edge
@@ -35,7 +35,7 @@ Slack (VIOLATED) :        -0.454ns  (required time - arrival time)
   -------------------------------------------------------------------    -------------------
                          (clock ap_clk rise edge)     0.000     0.000 r  
                                                       0.000     0.000 r  ap_clk (IN)
-                         net (fo=3298, unset)         0.973     0.973    packets_cast_loc_cha_U/ap_clk
+                         net (fo=2418, unset)         0.973     0.973    packets_cast_loc_cha_U/ap_clk
                          FDSE                                         r  packets_cast_loc_cha_U/mOutPtr_reg[0]/C
   -------------------------------------------------------------------    -------------------
                          FDSE (Prop_fdse_C_Q)         0.518     1.491 r  packets_cast_loc_cha_U/mOutPtr_reg[0]/Q
@@ -64,7 +64,7 @@ Slack (VIOLATED) :        -0.454ns  (required time - arrival time)
 
                          (clock ap_clk rise edge)     6.000     6.000 r  
                                                       0.000     6.000 r  ap_clk (IN)
-                         net (fo=3298, unset)         0.924     6.924    Loop_1_proc_U0/ap_clk
+                         net (fo=2418, unset)         0.924     6.924    Loop_1_proc_U0/ap_clk
                          FDRE                                         r  Loop_1_proc_U0/ap_CS_fsm_reg[1]/C
                          clock pessimism              0.000     6.924    
                          clock uncertainty           -0.035     6.889    

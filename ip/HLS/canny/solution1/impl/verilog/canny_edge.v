@@ -7,7 +7,7 @@
 
 `timescale 1 ns / 1 ps 
 
-(* CORE_GENERATION_INFO="canny_edge,hls_ip_2017_4,{HLS_INPUT_TYPE=cxx,HLS_INPUT_FLOAT=0,HLS_INPUT_FIXED=1,HLS_INPUT_PART=xc7z020clg400-1,HLS_INPUT_CLOCK=6.000000,HLS_INPUT_ARCH=dataflow,HLS_SYN_CLOCK=5.250000,HLS_SYN_LAT=-1,HLS_SYN_TPT=-1,HLS_SYN_MEM=19,HLS_SYN_DSP=32,HLS_SYN_FF=5690,HLS_SYN_LUT=9595}" *)
+(* CORE_GENERATION_INFO="canny_edge,hls_ip_2017_4,{HLS_INPUT_TYPE=cxx,HLS_INPUT_FLOAT=0,HLS_INPUT_FIXED=1,HLS_INPUT_PART=xc7z020clg400-1,HLS_INPUT_CLOCK=6.000000,HLS_INPUT_ARCH=dataflow,HLS_SYN_CLOCK=5.250000,HLS_SYN_LAT=-1,HLS_SYN_TPT=-1,HLS_SYN_MEM=14,HLS_SYN_DSP=14,HLS_SYN_FF=3919,HLS_SYN_LUT=7450}" *)
 
 module canny_edge (
         s_axi_CONTROL_BUS_AWVALID,
@@ -95,16 +95,16 @@ wire    ap_ready;
 wire    ap_done;
 wire    ap_idle;
 reg    ap_rst_n_AXI_LITE_clk_inv;
-wire    Block_Mat_exit29637_U0_ap_start;
-wire    Block_Mat_exit29637_U0_ap_done;
-wire    Block_Mat_exit29637_U0_ap_continue;
-wire    Block_Mat_exit29637_U0_ap_idle;
-wire    Block_Mat_exit29637_U0_ap_ready;
-wire   [8:0] Block_Mat_exit29637_U0_col_packets_out_out_din;
-wire    Block_Mat_exit29637_U0_col_packets_out_out_write;
-wire   [8:0] Block_Mat_exit29637_U0_col_packets_cast_out_out_din;
-wire    Block_Mat_exit29637_U0_col_packets_cast_out_out_write;
-wire   [19:0] Block_Mat_exit29637_U0_ap_return;
+wire    Block_Mat_exit29635_U0_ap_start;
+wire    Block_Mat_exit29635_U0_ap_done;
+wire    Block_Mat_exit29635_U0_ap_continue;
+wire    Block_Mat_exit29635_U0_ap_idle;
+wire    Block_Mat_exit29635_U0_ap_ready;
+wire   [8:0] Block_Mat_exit29635_U0_col_packets_out_out_din;
+wire    Block_Mat_exit29635_U0_col_packets_out_out_write;
+wire   [8:0] Block_Mat_exit29635_U0_col_packets_cast_out_out_din;
+wire    Block_Mat_exit29635_U0_col_packets_cast_out_out_write;
+wire   [19:0] Block_Mat_exit29635_U0_ap_return;
 wire    ap_channel_done_packets_cast_loc_cha;
 wire    packets_cast_loc_cha_full_n;
 wire    Loop_1_proc_U0_ap_start;
@@ -115,14 +115,6 @@ wire    Loop_1_proc_U0_ap_ready;
 wire    Loop_1_proc_U0_in_stream_TREADY;
 wire   [7:0] Loop_1_proc_U0_src_bw_data_stream_0_V_din;
 wire    Loop_1_proc_U0_src_bw_data_stream_0_V_write;
-wire    GaussianBlur_U0_ap_start;
-wire    GaussianBlur_U0_ap_done;
-wire    GaussianBlur_U0_ap_continue;
-wire    GaussianBlur_U0_ap_idle;
-wire    GaussianBlur_U0_ap_ready;
-wire    GaussianBlur_U0_p_src_data_stream_V_read;
-wire   [7:0] GaussianBlur_U0_p_dst_data_stream_V_din;
-wire    GaussianBlur_U0_p_dst_data_stream_V_write;
 wire    Duplicate_U0_ap_start;
 wire    Duplicate_U0_ap_done;
 wire    Duplicate_U0_ap_continue;
@@ -194,9 +186,6 @@ wire    packets_cast_loc_cha_empty_n;
 wire    src_bw_data_stream_0_full_n;
 wire   [7:0] src_bw_data_stream_0_dout;
 wire    src_bw_data_stream_0_empty_n;
-wire    src_blur_data_stream_full_n;
-wire   [7:0] src_blur_data_stream_dout;
-wire    src_blur_data_stream_empty_n;
 wire    src1_data_stream_0_s_full_n;
 wire   [7:0] src1_data_stream_0_s_dout;
 wire    src1_data_stream_0_s_empty_n;
@@ -223,15 +212,13 @@ wire    ap_sync_ready;
 reg    ap_sync_reg_Loop_1_proc_U0_ap_ready;
 wire    ap_sync_Loop_1_proc_U0_ap_ready;
 reg   [1:0] Loop_1_proc_U0_ap_ready_count;
-reg    ap_sync_reg_Block_Mat_exit29637_U0_ap_ready;
-wire    ap_sync_Block_Mat_exit29637_U0_ap_ready;
-reg   [1:0] Block_Mat_exit29637_U0_ap_ready_count;
-wire    Block_Mat_exit29637_U0_start_full_n;
-wire    Block_Mat_exit29637_U0_start_write;
+reg    ap_sync_reg_Block_Mat_exit29635_U0_ap_ready;
+wire    ap_sync_Block_Mat_exit29635_U0_ap_ready;
+reg   [1:0] Block_Mat_exit29635_U0_ap_ready_count;
+wire    Block_Mat_exit29635_U0_start_full_n;
+wire    Block_Mat_exit29635_U0_start_write;
 wire    Loop_1_proc_U0_start_full_n;
 wire    Loop_1_proc_U0_start_write;
-wire    GaussianBlur_U0_start_full_n;
-wire    GaussianBlur_U0_start_write;
 wire    Duplicate_U0_start_full_n;
 wire    Duplicate_U0_start_write;
 wire    Sobel_U0_start_full_n;
@@ -251,8 +238,8 @@ wire    Loop_2_proc_U0_start_write;
 initial begin
 #0 ap_sync_reg_Loop_1_proc_U0_ap_ready = 1'b0;
 #0 Loop_1_proc_U0_ap_ready_count = 2'd0;
-#0 ap_sync_reg_Block_Mat_exit29637_U0_ap_ready = 1'b0;
-#0 Block_Mat_exit29637_U0_ap_ready_count = 2'd0;
+#0 ap_sync_reg_Block_Mat_exit29635_U0_ap_ready = 1'b0;
+#0 Block_Mat_exit29635_U0_ap_ready_count = 2'd0;
 end
 
 canny_edge_CONTROL_BUS_s_axi #(
@@ -292,23 +279,23 @@ canny_edge_CONTROL_BUS_s_axi_U(
     .rst(ap_rst_n_AXI_LITE_clk_inv)
 );
 
-Block_Mat_exit29637_s Block_Mat_exit29637_U0(
+Block_Mat_exit29635_s Block_Mat_exit29635_U0(
     .ap_clk(ap_clk),
     .ap_rst(ap_rst_n_inv),
-    .ap_start(Block_Mat_exit29637_U0_ap_start),
-    .ap_done(Block_Mat_exit29637_U0_ap_done),
-    .ap_continue(Block_Mat_exit29637_U0_ap_continue),
-    .ap_idle(Block_Mat_exit29637_U0_ap_idle),
-    .ap_ready(Block_Mat_exit29637_U0_ap_ready),
+    .ap_start(Block_Mat_exit29635_U0_ap_start),
+    .ap_done(Block_Mat_exit29635_U0_ap_done),
+    .ap_continue(Block_Mat_exit29635_U0_ap_continue),
+    .ap_idle(Block_Mat_exit29635_U0_ap_idle),
+    .ap_ready(Block_Mat_exit29635_U0_ap_ready),
     .rows_V(rows_V),
     .cols_V(cols_V),
-    .col_packets_out_out_din(Block_Mat_exit29637_U0_col_packets_out_out_din),
+    .col_packets_out_out_din(Block_Mat_exit29635_U0_col_packets_out_out_din),
     .col_packets_out_out_full_n(1'b1),
-    .col_packets_out_out_write(Block_Mat_exit29637_U0_col_packets_out_out_write),
-    .col_packets_cast_out_out_din(Block_Mat_exit29637_U0_col_packets_cast_out_out_din),
+    .col_packets_out_out_write(Block_Mat_exit29635_U0_col_packets_out_out_write),
+    .col_packets_cast_out_out_din(Block_Mat_exit29635_U0_col_packets_cast_out_out_din),
     .col_packets_cast_out_out_full_n(col_packets_cast_loc_full_n),
-    .col_packets_cast_out_out_write(Block_Mat_exit29637_U0_col_packets_cast_out_out_write),
-    .ap_return(Block_Mat_exit29637_U0_ap_return)
+    .col_packets_cast_out_out_write(Block_Mat_exit29635_U0_col_packets_cast_out_out_write),
+    .ap_return(Block_Mat_exit29635_U0_ap_return)
 );
 
 Loop_1_proc_canny Loop_1_proc_U0(
@@ -328,24 +315,6 @@ Loop_1_proc_canny Loop_1_proc_U0(
     .src_bw_data_stream_0_V_write(Loop_1_proc_U0_src_bw_data_stream_0_V_write)
 );
 
-GaussianBlur GaussianBlur_U0(
-    .ap_clk(ap_clk),
-    .ap_rst(ap_rst_n_inv),
-    .ap_start(GaussianBlur_U0_ap_start),
-    .ap_done(GaussianBlur_U0_ap_done),
-    .ap_continue(GaussianBlur_U0_ap_continue),
-    .ap_idle(GaussianBlur_U0_ap_idle),
-    .ap_ready(GaussianBlur_U0_ap_ready),
-    .p_src_rows_V(rows_V),
-    .p_src_cols_V(cols_V),
-    .p_src_data_stream_V_dout(src_bw_data_stream_0_dout),
-    .p_src_data_stream_V_empty_n(src_bw_data_stream_0_empty_n),
-    .p_src_data_stream_V_read(GaussianBlur_U0_p_src_data_stream_V_read),
-    .p_dst_data_stream_V_din(GaussianBlur_U0_p_dst_data_stream_V_din),
-    .p_dst_data_stream_V_full_n(src_blur_data_stream_full_n),
-    .p_dst_data_stream_V_write(GaussianBlur_U0_p_dst_data_stream_V_write)
-);
-
 Duplicate_canny Duplicate_U0(
     .ap_clk(ap_clk),
     .ap_rst(ap_rst_n_inv),
@@ -356,8 +325,8 @@ Duplicate_canny Duplicate_U0(
     .ap_ready(Duplicate_U0_ap_ready),
     .src_rows_V(rows_V),
     .src_cols_V(cols_V),
-    .src_data_stream_V_dout(src_blur_data_stream_dout),
-    .src_data_stream_V_empty_n(src_blur_data_stream_empty_n),
+    .src_data_stream_V_dout(src_bw_data_stream_0_dout),
+    .src_data_stream_V_empty_n(src_bw_data_stream_0_empty_n),
     .src_data_stream_V_read(Duplicate_U0_src_data_stream_V_read),
     .dst1_data_stream_V_din(Duplicate_U0_dst1_data_stream_V_din),
     .dst1_data_stream_V_full_n(src1_data_stream_0_s_full_n),
@@ -484,14 +453,14 @@ Loop_2_proc_canny Loop_2_proc_U0(
     .out_stream_TLAST(Loop_2_proc_U0_out_stream_TLAST)
 );
 
-fifo_w9_d8_A col_packets_cast_loc_U(
+fifo_w9_d7_A col_packets_cast_loc_U(
     .clk(ap_clk),
     .reset(ap_rst_n_inv),
     .if_read_ce(1'b1),
     .if_write_ce(1'b1),
-    .if_din(Block_Mat_exit29637_U0_col_packets_cast_out_out_din),
+    .if_din(Block_Mat_exit29635_U0_col_packets_cast_out_out_din),
     .if_full_n(col_packets_cast_loc_full_n),
-    .if_write(Block_Mat_exit29637_U0_col_packets_cast_out_out_write),
+    .if_write(Block_Mat_exit29635_U0_col_packets_cast_out_out_write),
     .if_dout(col_packets_cast_loc_dout),
     .if_empty_n(col_packets_cast_loc_empty_n),
     .if_read(Loop_2_proc_U0_col_packets_cast_loc_read)
@@ -502,9 +471,9 @@ fifo_w20_d2_A packets_cast_loc_cha_U(
     .reset(ap_rst_n_inv),
     .if_read_ce(1'b1),
     .if_write_ce(1'b1),
-    .if_din(Block_Mat_exit29637_U0_ap_return),
+    .if_din(Block_Mat_exit29635_U0_ap_return),
     .if_full_n(packets_cast_loc_cha_full_n),
-    .if_write(Block_Mat_exit29637_U0_ap_done),
+    .if_write(Block_Mat_exit29635_U0_ap_done),
     .if_dout(packets_cast_loc_cha_dout),
     .if_empty_n(packets_cast_loc_cha_empty_n),
     .if_read(Loop_1_proc_U0_ap_ready)
@@ -520,19 +489,6 @@ fifo_w8_d1_A src_bw_data_stream_0_U(
     .if_write(Loop_1_proc_U0_src_bw_data_stream_0_V_write),
     .if_dout(src_bw_data_stream_0_dout),
     .if_empty_n(src_bw_data_stream_0_empty_n),
-    .if_read(GaussianBlur_U0_p_src_data_stream_V_read)
-);
-
-fifo_w8_d1_A src_blur_data_stream_U(
-    .clk(ap_clk),
-    .reset(ap_rst_n_inv),
-    .if_read_ce(1'b1),
-    .if_write_ce(1'b1),
-    .if_din(GaussianBlur_U0_p_dst_data_stream_V_din),
-    .if_full_n(src_blur_data_stream_full_n),
-    .if_write(GaussianBlur_U0_p_dst_data_stream_V_write),
-    .if_dout(src_blur_data_stream_dout),
-    .if_empty_n(src_blur_data_stream_empty_n),
     .if_read(Duplicate_U0_src_data_stream_V_read)
 );
 
@@ -629,12 +585,12 @@ fifo_w8_d1_A canny_edges_data_str_U(
 
 always @ (posedge ap_clk) begin
     if (ap_rst_n_inv == 1'b1) begin
-        ap_sync_reg_Block_Mat_exit29637_U0_ap_ready <= 1'b0;
+        ap_sync_reg_Block_Mat_exit29635_U0_ap_ready <= 1'b0;
     end else begin
         if (((ap_sync_ready & ap_start) == 1'b1)) begin
-            ap_sync_reg_Block_Mat_exit29637_U0_ap_ready <= 1'b0;
+            ap_sync_reg_Block_Mat_exit29635_U0_ap_ready <= 1'b0;
         end else begin
-            ap_sync_reg_Block_Mat_exit29637_U0_ap_ready <= ap_sync_Block_Mat_exit29637_U0_ap_ready;
+            ap_sync_reg_Block_Mat_exit29635_U0_ap_ready <= ap_sync_Block_Mat_exit29635_U0_ap_ready;
         end
     end
 end
@@ -652,10 +608,10 @@ always @ (posedge ap_clk) begin
 end
 
 always @ (posedge ap_clk) begin
-    if (((1'b0 == Block_Mat_exit29637_U0_ap_ready) & (ap_sync_ready == 1'b1))) begin
-        Block_Mat_exit29637_U0_ap_ready_count <= (Block_Mat_exit29637_U0_ap_ready_count - 2'd1);
-    end else if (((1'b1 == Block_Mat_exit29637_U0_ap_ready) & (ap_sync_ready == 1'b0))) begin
-        Block_Mat_exit29637_U0_ap_ready_count <= (Block_Mat_exit29637_U0_ap_ready_count + 2'd1);
+    if (((1'b0 == Block_Mat_exit29635_U0_ap_ready) & (ap_sync_ready == 1'b1))) begin
+        Block_Mat_exit29635_U0_ap_ready_count <= (Block_Mat_exit29635_U0_ap_ready_count - 2'd1);
+    end else if (((1'b1 == Block_Mat_exit29635_U0_ap_ready) & (ap_sync_ready == 1'b0))) begin
+        Block_Mat_exit29635_U0_ap_ready_count <= (Block_Mat_exit29635_U0_ap_ready_count + 2'd1);
     end
 end
 
@@ -667,13 +623,13 @@ always @ (posedge ap_clk) begin
     end
 end
 
-assign Block_Mat_exit29637_U0_ap_continue = packets_cast_loc_cha_full_n;
+assign Block_Mat_exit29635_U0_ap_continue = packets_cast_loc_cha_full_n;
 
-assign Block_Mat_exit29637_U0_ap_start = ((ap_sync_reg_Block_Mat_exit29637_U0_ap_ready ^ 1'b1) & ap_start);
+assign Block_Mat_exit29635_U0_ap_start = ((ap_sync_reg_Block_Mat_exit29635_U0_ap_ready ^ 1'b1) & ap_start);
 
-assign Block_Mat_exit29637_U0_start_full_n = 1'b1;
+assign Block_Mat_exit29635_U0_start_full_n = 1'b1;
 
-assign Block_Mat_exit29637_U0_start_write = 1'b0;
+assign Block_Mat_exit29635_U0_start_write = 1'b0;
 
 assign Duplicate_U0_ap_continue = 1'b1;
 
@@ -682,14 +638,6 @@ assign Duplicate_U0_ap_start = ap_start;
 assign Duplicate_U0_start_full_n = 1'b1;
 
 assign Duplicate_U0_start_write = 1'b0;
-
-assign GaussianBlur_U0_ap_continue = 1'b1;
-
-assign GaussianBlur_U0_ap_start = ap_start;
-
-assign GaussianBlur_U0_start_full_n = 1'b1;
-
-assign GaussianBlur_U0_start_write = 1'b0;
 
 assign Loop_1_proc_U0_ap_continue = 1'b1;
 
@@ -723,11 +671,11 @@ assign Sobel_U0_start_full_n = 1'b1;
 
 assign Sobel_U0_start_write = 1'b0;
 
-assign ap_channel_done_packets_cast_loc_cha = Block_Mat_exit29637_U0_ap_done;
+assign ap_channel_done_packets_cast_loc_cha = Block_Mat_exit29635_U0_ap_done;
 
 assign ap_done = Loop_2_proc_U0_ap_done;
 
-assign ap_idle = (nonmax_suppression_U0_ap_idle & hysteresis_U0_ap_idle & gradient_decompositi_U0_ap_idle & (packets_cast_loc_cha_empty_n ^ 1'b1) & Sobel_U0_ap_idle & Sobel_1_U0_ap_idle & Loop_2_proc_U0_ap_idle & Loop_1_proc_U0_ap_idle & GaussianBlur_U0_ap_idle & Duplicate_U0_ap_idle & Block_Mat_exit29637_U0_ap_idle);
+assign ap_idle = (nonmax_suppression_U0_ap_idle & hysteresis_U0_ap_idle & gradient_decompositi_U0_ap_idle & (packets_cast_loc_cha_empty_n ^ 1'b1) & Sobel_U0_ap_idle & Sobel_1_U0_ap_idle & Loop_2_proc_U0_ap_idle & Loop_1_proc_U0_ap_idle & Duplicate_U0_ap_idle & Block_Mat_exit29635_U0_ap_idle);
 
 assign ap_ready = ap_sync_ready;
 
@@ -739,7 +687,7 @@ always @ (*) begin
     ap_rst_n_inv = ~ap_rst_n;
 end
 
-assign ap_sync_Block_Mat_exit29637_U0_ap_ready = (ap_sync_reg_Block_Mat_exit29637_U0_ap_ready | Block_Mat_exit29637_U0_ap_ready);
+assign ap_sync_Block_Mat_exit29635_U0_ap_ready = (ap_sync_reg_Block_Mat_exit29635_U0_ap_ready | Block_Mat_exit29635_U0_ap_ready);
 
 assign ap_sync_Loop_1_proc_U0_ap_ready = (ap_sync_reg_Loop_1_proc_U0_ap_ready | Loop_1_proc_U0_ap_ready);
 
@@ -747,7 +695,7 @@ assign ap_sync_continue = 1'b1;
 
 assign ap_sync_done = Loop_2_proc_U0_ap_done;
 
-assign ap_sync_ready = (ap_sync_Loop_1_proc_U0_ap_ready & ap_sync_Block_Mat_exit29637_U0_ap_ready);
+assign ap_sync_ready = (ap_sync_Loop_1_proc_U0_ap_ready & ap_sync_Block_Mat_exit29635_U0_ap_ready);
 
 assign gradient_decompositi_U0_ap_continue = 1'b1;
 

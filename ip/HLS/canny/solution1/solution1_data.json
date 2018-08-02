@@ -44,90 +44,58 @@
   "Files": {
     "CSource": ["..\/canny_edge.cpp"],
     "Vhdl": [
-      "impl\/vhdl\/Block_Mat_exit29637_s.vhd",
-      "impl\/vhdl\/canny_edge_am_addtde.vhd",
-      "impl\/vhdl\/canny_edge_ama_adocq.vhd",
-      "impl\/vhdl\/canny_edge_ama_adsc4.vhd",
-      "impl\/vhdl\/canny_edge_ama_adudo.vhd",
+      "impl\/vhdl\/Block_Mat_exit29635_s.vhd",
       "impl\/vhdl\/canny_edge_CONTROL_BUS_s_axi.vhd",
-      "impl\/vhdl\/canny_edge_mac_muAem.vhd",
-      "impl\/vhdl\/canny_edge_mac_muBew.vhd",
-      "impl\/vhdl\/canny_edge_mac_muCeG.vhd",
-      "impl\/vhdl\/canny_edge_mac_muDeQ.vhd",
-      "impl\/vhdl\/canny_edge_mac_muEe0.vhd",
+      "impl\/vhdl\/canny_edge_mac_mug8j.vhd",
+      "impl\/vhdl\/canny_edge_mac_muhbi.vhd",
       "impl\/vhdl\/canny_edge_mac_muibs.vhd",
       "impl\/vhdl\/canny_edge_mac_mujbC.vhd",
+      "impl\/vhdl\/canny_edge_mac_mukbM.vhd",
       "impl\/vhdl\/canny_edge_mac_mulbW.vhd",
-      "impl\/vhdl\/canny_edge_mac_mumb6.vhd",
-      "impl\/vhdl\/canny_edge_mac_mupcA.vhd",
-      "impl\/vhdl\/canny_edge_mac_muqcK.vhd",
-      "impl\/vhdl\/canny_edge_mac_murcU.vhd",
-      "impl\/vhdl\/canny_edge_mac_muzec.vhd",
       "impl\/vhdl\/canny_edge_mul_mubkb.vhd",
-      "impl\/vhdl\/canny_edge_mul_muJfO.vhd",
-      "impl\/vhdl\/canny_edge_mul_mukbM.vhd",
-      "impl\/vhdl\/canny_edge_mul_muncg.vhd",
-      "impl\/vhdl\/canny_edge_mux_32yd2.vhd",
-      "impl\/vhdl\/canny_edge_mux_53hbi.vhd",
+      "impl\/vhdl\/canny_edge_mul_muqcK.vhd",
+      "impl\/vhdl\/canny_edge_mux_32fYi.vhd",
       "impl\/vhdl\/Duplicate.vhd",
       "impl\/vhdl\/fifo_w8_d1_A.vhd",
-      "impl\/vhdl\/fifo_w9_d8_A.vhd",
+      "impl\/vhdl\/fifo_w9_d7_A.vhd",
       "impl\/vhdl\/fifo_w16_d1_A.vhd",
       "impl\/vhdl\/fifo_w20_d2_A.vhd",
       "impl\/vhdl\/Filter2D.vhd",
-      "impl\/vhdl\/Filter2D_1.vhd",
-      "impl\/vhdl\/Filter2D_1_k_buf_cud.vhd",
-      "impl\/vhdl\/GaussianBlur.vhd",
+      "impl\/vhdl\/Filter2D_k_buf_0_cud.vhd",
       "impl\/vhdl\/gradient_decompositi.vhd",
       "impl\/vhdl\/hysteresis.vhd",
       "impl\/vhdl\/Loop_1_proc.vhd",
       "impl\/vhdl\/Loop_2_proc.vhd",
-      "impl\/vhdl\/nonmax_suppressioFfa.vhd",
+      "impl\/vhdl\/nonmax_suppressiomb6.vhd",
       "impl\/vhdl\/nonmax_suppression.vhd",
       "impl\/vhdl\/Sobel.vhd",
       "impl\/vhdl\/Sobel_1.vhd",
       "impl\/vhdl\/canny_edge.vhd"
     ],
     "Verilog": [
-      "impl\/verilog\/Block_Mat_exit29637_s.v",
-      "impl\/verilog\/canny_edge_am_addtde.v",
-      "impl\/verilog\/canny_edge_ama_adocq.v",
-      "impl\/verilog\/canny_edge_ama_adsc4.v",
-      "impl\/verilog\/canny_edge_ama_adudo.v",
+      "impl\/verilog\/Block_Mat_exit29635_s.v",
       "impl\/verilog\/canny_edge_CONTROL_BUS_s_axi.v",
-      "impl\/verilog\/canny_edge_mac_muAem.v",
-      "impl\/verilog\/canny_edge_mac_muBew.v",
-      "impl\/verilog\/canny_edge_mac_muCeG.v",
-      "impl\/verilog\/canny_edge_mac_muDeQ.v",
-      "impl\/verilog\/canny_edge_mac_muEe0.v",
+      "impl\/verilog\/canny_edge_mac_mug8j.v",
+      "impl\/verilog\/canny_edge_mac_muhbi.v",
       "impl\/verilog\/canny_edge_mac_muibs.v",
       "impl\/verilog\/canny_edge_mac_mujbC.v",
+      "impl\/verilog\/canny_edge_mac_mukbM.v",
       "impl\/verilog\/canny_edge_mac_mulbW.v",
-      "impl\/verilog\/canny_edge_mac_mumb6.v",
-      "impl\/verilog\/canny_edge_mac_mupcA.v",
-      "impl\/verilog\/canny_edge_mac_muqcK.v",
-      "impl\/verilog\/canny_edge_mac_murcU.v",
-      "impl\/verilog\/canny_edge_mac_muzec.v",
       "impl\/verilog\/canny_edge_mul_mubkb.v",
-      "impl\/verilog\/canny_edge_mul_muJfO.v",
-      "impl\/verilog\/canny_edge_mul_mukbM.v",
-      "impl\/verilog\/canny_edge_mul_muncg.v",
-      "impl\/verilog\/canny_edge_mux_32yd2.v",
-      "impl\/verilog\/canny_edge_mux_53hbi.v",
+      "impl\/verilog\/canny_edge_mul_muqcK.v",
+      "impl\/verilog\/canny_edge_mux_32fYi.v",
       "impl\/verilog\/Duplicate.v",
       "impl\/verilog\/fifo_w8_d1_A.v",
-      "impl\/verilog\/fifo_w9_d8_A.v",
+      "impl\/verilog\/fifo_w9_d7_A.v",
       "impl\/verilog\/fifo_w16_d1_A.v",
       "impl\/verilog\/fifo_w20_d2_A.v",
       "impl\/verilog\/Filter2D.v",
-      "impl\/verilog\/Filter2D_1.v",
-      "impl\/verilog\/Filter2D_1_k_buf_cud.v",
-      "impl\/verilog\/GaussianBlur.v",
+      "impl\/verilog\/Filter2D_k_buf_0_cud.v",
       "impl\/verilog\/gradient_decompositi.v",
       "impl\/verilog\/hysteresis.v",
       "impl\/verilog\/Loop_1_proc.v",
       "impl\/verilog\/Loop_2_proc.v",
-      "impl\/verilog\/nonmax_suppressioFfa.v",
+      "impl\/verilog\/nonmax_suppressiomb6.v",
       "impl\/verilog\/nonmax_suppression.v",
       "impl\/verilog\/Sobel.v",
       "impl\/verilog\/Sobel_1.v",
@@ -681,14 +649,6 @@
       "ModuleName": "canny_edge",
       "Instances": [
         {
-          "ModuleName": "GaussianBlur",
-          "InstanceName": "GaussianBlur_U0",
-          "Instances": [{
-              "ModuleName": "Filter2D_1",
-              "InstanceName": "grp_Filter2D_1_fu_84"
-            }]
-        },
-        {
           "ModuleName": "Sobel",
           "InstanceName": "Sobel_U0",
           "Instances": [{
@@ -729,13 +689,13 @@
           "InstanceName": "Duplicate_U0"
         },
         {
-          "ModuleName": "Block_Mat_exit29637_s",
-          "InstanceName": "Block_Mat_exit29637_U0"
+          "ModuleName": "Block_Mat_exit29635_s",
+          "InstanceName": "Block_Mat_exit29635_U0"
         }
       ]
     },
     "Metrics": {
-      "Block_Mat_exit29637_s": {
+      "Block_Mat_exit29635_s": {
         "Latency": {
           "LatencyBest": "2",
           "LatencyAvg": "2",
@@ -786,72 +746,6 @@
           "LUT": "297",
           "BRAM_18K": "0",
           "DSP48E": "0"
-        }
-      },
-      "Filter2D_1": {
-        "Latency": {
-          "LatencyBest": "320",
-          "LatencyAvg": "",
-          "LatencyWorst": "2102104",
-          "PipelineIIMin": "320",
-          "PipelineIIMax": "2102104",
-          "PipelineII": "320 ~ 2102104",
-          "PipelineDepth": "",
-          "PipelineType": "none"
-        },
-        "Timing": {
-          "Target": "6.00",
-          "Uncertainty": "0.75",
-          "Estimate": "5.19"
-        },
-        "Loops": [{
-            "Name": "loop_height",
-            "TripCount": "",
-            "LatencyMin": "319",
-            "LatencyMax": "2102103",
-            "Latency": "319 ~ 2102103",
-            "PipelineII": "",
-            "PipelineDepthMin": "29",
-            "PipelineDepthMax": "1941",
-            "PipelineDepth": "29 ~ 1941",
-            "Loops": [{
-                "Name": "loop_width",
-                "TripCount": "",
-                "LatencyMin": "24",
-                "LatencyMax": "1936",
-                "Latency": "24 ~ 1936",
-                "PipelineII": "1",
-                "PipelineDepth": "14"
-              }]
-          }],
-        "Area": {
-          "BRAM_18K": "5",
-          "DSP48E": "18",
-          "FF": "1762",
-          "LUT": "2074"
-        }
-      },
-      "GaussianBlur": {
-        "Latency": {
-          "LatencyBest": "321",
-          "LatencyAvg": "",
-          "LatencyWorst": "2102105",
-          "PipelineIIMin": "321",
-          "PipelineIIMax": "2102105",
-          "PipelineII": "321 ~ 2102105",
-          "PipelineDepth": "",
-          "PipelineType": "none"
-        },
-        "Timing": {
-          "Target": "6.00",
-          "Uncertainty": "0.75",
-          "Estimate": "5.19"
-        },
-        "Area": {
-          "BRAM_18K": "5",
-          "DSP48E": "18",
-          "FF": "1766",
-          "LUT": "2124"
         }
       },
       "Duplicate": {
@@ -1154,17 +1048,17 @@
           "Estimate": "5.25"
         },
         "Area": {
-          "BRAM_18K": "19",
-          "DSP48E": "32",
-          "FF": "5690",
-          "LUT": "9595"
+          "BRAM_18K": "14",
+          "DSP48E": "14",
+          "FF": "3919",
+          "LUT": "7450"
         }
       }
     }
   },
   "GenData": {
     "DataVersion": "0.1",
-    "Time": "2018-06-25 14:38:04 +0200",
+    "Time": "2018-07-26 12:35:32 +0200",
     "ToolName": "vivado_hls",
     "ToolVersion": "2017.4"
   }

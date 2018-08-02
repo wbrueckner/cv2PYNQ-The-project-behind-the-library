@@ -8,5 +8,5 @@
   <xd:arg xd:name="out_stream-&gt;user" xd:originalName="out_stream" xd:direction="out" xd:interfaceRef="out_stream" xd:busTypeRef="axis" xd:dataWidth="1"/>
   <xd:arg xd:name="out_stream-&gt;last" xd:originalName="out_stream" xd:direction="out" xd:interfaceRef="out_stream" xd:busTypeRef="axis" xd:dataWidth="1"/>
   <xd:latencyEstimates xd:best-case="undef" xd:worst-case="undef" xd:average-case="undef"/>
-  <xd:resourceEstimates xd:LUT="9595" xd:FF="5690" xd:BRAM="19" xd:DSP="32"/>
+  <xd:resourceEstimates xd:LUT="7450" xd:FF="3919" xd:BRAM="14" xd:DSP="14"/>
 </xd:acceleratorMap>

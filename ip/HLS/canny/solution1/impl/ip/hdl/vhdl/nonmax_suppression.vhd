@@ -50,7 +50,7 @@ architecture behav of nonmax_suppression is
     constant ap_const_lv31_0 : STD_LOGIC_VECTOR (30 downto 0) := "0000000000000000000000000000000";
     constant ap_const_lv32_F : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000001111";
     constant ap_const_lv2_0 : STD_LOGIC_VECTOR (1 downto 0) := "00";
-    constant ap_const_lv2_1 : STD_LOGIC_VECTOR (1 downto 0) := "01";
+    constant ap_const_lv2_3 : STD_LOGIC_VECTOR (1 downto 0) := "11";
     constant ap_const_lv2_2 : STD_LOGIC_VECTOR (1 downto 0) := "10";
     constant ap_const_lv14_0 : STD_LOGIC_VECTOR (13 downto 0) := "00000000000000";
 
@@ -197,7 +197,7 @@ architecture behav of nonmax_suppression is
     signal ap_idle_pp0 : STD_LOGIC;
     signal ap_enable_pp0 : STD_LOGIC;
 
-    component nonmax_suppressioFfa IS
+    component nonmax_suppressiomb6 IS
     generic (
         DataWidth : INTEGER;
         AddressRange : INTEGER;
@@ -217,7 +217,7 @@ architecture behav of nonmax_suppression is
 
 
 begin
-    linebuff_val_0_U : component nonmax_suppressioFfa
+    linebuff_val_0_U : component nonmax_suppressiomb6
     generic map (
         DataWidth => 16,
         AddressRange => 1920,
@@ -233,7 +233,7 @@ begin
         we1 => linebuff_val_0_we1,
         d1 => element_gd_s_fu_136);
 
-    linebuff_val_1_U : component nonmax_suppressioFfa
+    linebuff_val_1_U : component nonmax_suppressiomb6
     generic map (
         DataWidth => 16,
         AddressRange => 1920,
@@ -752,7 +752,7 @@ begin
     tmp_11_fu_365_p2 <= "1" when (signed(tmp_1_cast_fu_334_p1) > signed(r_V_2_fu_281_p2)) else "0";
     tmp_12_fu_467_p4 <= ap_reg_pp0_iter1_t_V_1_reg_243(31 downto 1);
     tmp_13_fu_483_p2 <= "1" when (current_dir_fu_453_p1 = ap_const_lv2_0) else "0";
-    tmp_14_fu_489_p2 <= "1" when (current_dir_fu_453_p1 = ap_const_lv2_1) else "0";
+    tmp_14_fu_489_p2 <= "1" when (current_dir_fu_453_p1 = ap_const_lv2_3) else "0";
     tmp_15_fu_495_p2 <= "1" when (current_dir_fu_453_p1 = ap_const_lv2_2) else "0";
     tmp_16_fu_513_p4 <= win_val_0_1_1_fu_144(15 downto 2);
     tmp_17_fu_523_p4 <= win_val_1_1_1_fu_152(15 downto 2);

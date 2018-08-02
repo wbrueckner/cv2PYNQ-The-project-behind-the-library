@@ -2,11 +2,11 @@
 # Vivado v2017.4 (64-bit)
 # SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
 # IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
-# Start of session at: Mon Jun 25 14:38:54 2018
-# Process ID: 17368
-# Current directory: C:/Users/sdi_admin/CloudStation/HLS/canny/solution1/impl/verilog/project.runs/synth_1
+# Start of session at: Thu Jul 26 12:36:38 2018
+# Process ID: 12972
+# Current directory: E:/pynq_xohw18-155_vaas_20180629_1/ip/HLS/canny/solution1/impl/verilog/project.runs/synth_1
 # Command line: vivado.exe -log canny_edge.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source canny_edge.tcl
-# Log file: C:/Users/sdi_admin/CloudStation/HLS/canny/solution1/impl/verilog/project.runs/synth_1/canny_edge.vds
-# Journal file: C:/Users/sdi_admin/CloudStation/HLS/canny/solution1/impl/verilog/project.runs/synth_1\vivado.jou
+# Log file: E:/pynq_xohw18-155_vaas_20180629_1/ip/HLS/canny/solution1/impl/verilog/project.runs/synth_1/canny_edge.vds
+# Journal file: E:/pynq_xohw18-155_vaas_20180629_1/ip/HLS/canny/solution1/impl/verilog/project.runs/synth_1\vivado.jou
 #-----------------------------------------------------------
 source canny_edge.tcl -notrace

@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
   <source>
-    <originFiles name="canny_edge.cpp" path="C:\Users\sdi_admin\CloudStation\HLS\canny\canny_edge.cpp"/>
-    <originFiles name="canny_edge.h" path="C:\Users\sdi_admin\CloudStation\HLS\canny\canny_edge.h"/>
+    <originFiles name="canny_edge.cpp" path="E:\pynq_xohw18-155_vaas_20180629_1\ip\HLS\canny\canny_edge.cpp"/>
+    <originFiles name="canny_edge.h" path="E:\pynq_xohw18-155_vaas_20180629_1\ip\HLS\canny\canny_edge.h"/>
   </source>
   <testbench>
-    <originFiles name="canny_edge_test.cpp" path="C:\Users\sdi_admin\CloudStation\HLS\canny\canny_edge_test.cpp"/>
+    <originFiles name="canny_edge_test.cpp" path="E:\pynq_xohw18-155_vaas_20180629_1\ip\HLS\canny\canny_edge_test.cpp"/>
   </testbench>
 </autopilotfilemapping:AutoPilotFileMapping>

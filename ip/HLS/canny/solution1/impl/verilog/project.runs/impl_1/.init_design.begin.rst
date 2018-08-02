@@ -1,5 +1,0 @@
-<?xml version="1.0"?>
-<ProcessHandle Version="1" Minor="0">
-    <Process Command=".planAhead." Owner="sdi_admin" Host="DESKTOP-H32TPSL" Pid="9020">
-    </Process>
-</ProcessHandle>

@@ -1,0 +1,19 @@
+
+
+Implementation tool: Xilinx Vivado v.2017.4
+Project:             threshold
+Solution:            solution1
+Device target:       xc7z020clg400-1
+Report date:         Thu Aug 02 16:05:58 +0200 2018
+
+#=== Post-Synthesis Resource usage ===
+SLICE:            0
+LUT:            703
+FF:             770
+DSP:              2
+BRAM:             0
+SRL:             38
+#=== Final timing ===
+CP required:    6.000
+CP achieved post-synthesis:    6.451
+Timing not met

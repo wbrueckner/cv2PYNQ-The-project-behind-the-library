@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Thu Aug  2 15:42:35 2018
+# Process ID: 11656
+# Current directory: E:/pynq_xohw18-155_vaas_20180629_1/ip/HLS/move/solution1/impl/verilog
+# Command line: vivado.exe -notrace -mode batch -source run_vivadosyn.tcl
+# Log file: E:/pynq_xohw18-155_vaas_20180629_1/ip/HLS/move/solution1/impl/verilog/vivado.log
+# Journal file: E:/pynq_xohw18-155_vaas_20180629_1/ip/HLS/move/solution1/impl/verilog\vivado.jou
+#-----------------------------------------------------------
+source run_vivadosyn.tcl -notrace

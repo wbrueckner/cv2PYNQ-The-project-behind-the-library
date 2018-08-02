@@ -29,47 +29,47 @@
 		<link>
 			<name>source</name>
 			<type>2</type>
-			<location>C:/Users/sdi_admin/CloudStation/HLS/canny/.apc/.src</location>
+			<location>E:/pynq_xohw18-155_vaas_20180629_1/ip/HLS/canny/.apc/.src</location>
 		</link>
 		<link>
 			<name>testbench</name>
 			<type>2</type>
-			<location>C:/Users/sdi_admin/CloudStation/HLS/canny/.apc/.tb</location>
+			<location>E:/pynq_xohw18-155_vaas_20180629_1/ip/HLS/canny/.apc/.tb</location>
 		</link>
 		<link>
 			<name>solution1/constraints</name>
 			<type>2</type>
-			<location>C:/Users/sdi_admin/CloudStation/HLS/canny/solution1/.tcls</location>
+			<location>E:/pynq_xohw18-155_vaas_20180629_1/ip/HLS/canny/solution1/.tcls</location>
 		</link>
 		<link>
 			<name>source/canny_edge.cpp</name>
 			<type>1</type>
-			<location>C:/Users/sdi_admin/CloudStation/HLS/canny/canny_edge.cpp</location>
+			<location>E:/pynq_xohw18-155_vaas_20180629_1/ip/HLS/canny/canny_edge.cpp</location>
 		</link>
 		<link>
 			<name>source/canny_edge.h</name>
 			<type>1</type>
-			<location>C:/Users/sdi_admin/CloudStation/HLS/canny/canny_edge.h</location>
+			<location>E:/pynq_xohw18-155_vaas_20180629_1/ip/HLS/canny/canny_edge.h</location>
 		</link>
 		<link>
 			<name>testbench/canny_edge_test.cpp</name>
 			<type>1</type>
-			<location>C:/Users/sdi_admin/CloudStation/HLS/canny/canny_edge_test.cpp</location>
+			<location>E:/pynq_xohw18-155_vaas_20180629_1/ip/HLS/canny/canny_edge_test.cpp</location>
 		</link>
 		<link>
 			<name>solution1/constraints/.xml.directive</name>
 			<type>1</type>
-			<location>C:/Users/sdi_admin/CloudStation/HLS/canny/solution1/solution1.directive</location>
+			<location>E:/pynq_xohw18-155_vaas_20180629_1/ip/HLS/canny/solution1/solution1.directive</location>
 		</link>
 		<link>
 			<name>solution1/constraints/directives.tcl</name>
 			<type>1</type>
-			<location>C:/Users/sdi_admin/CloudStation/HLS/canny/solution1/directives.tcl</location>
+			<location>E:/pynq_xohw18-155_vaas_20180629_1/ip/HLS/canny/solution1/directives.tcl</location>
 		</link>
 		<link>
 			<name>solution1/constraints/script.tcl</name>
 			<type>1</type>
-			<location>C:/Users/sdi_admin/CloudStation/HLS/canny/solution1/script.tcl</location>
+			<location>E:/pynq_xohw18-155_vaas_20180629_1/ip/HLS/canny/solution1/script.tcl</location>
 		</link>
 	</linkedResources>
 </projectDescription>

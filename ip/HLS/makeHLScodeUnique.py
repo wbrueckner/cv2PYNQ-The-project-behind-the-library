@@ -10,7 +10,7 @@ After that process, Vivado synthesized the IP's without any errors.
 
 import os
 
-projects = ['canny','filter2D','filter2D_f','erode','dilate','CornerHarris']
+projects = ['canny','filter2D','filter2D_5','filter2D_f','erode','dilate','move','threshold']
 replace = ['SepFilter2D','Filter2D','Loop_1_proc','Loop_2_proc','Loop_3_proc','Block_proc','Block_Mat_exit406734','Loop_loop_height_pro','Duplicate','Sobel','Sobel_1']
 
 for project in projects:
