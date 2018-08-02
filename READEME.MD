@@ -1,6 +1,7 @@
 # cv2PYNQ - The project behind the library
 
 Board used: Pynq-Z1
+
 Vivado Version: 2017.4 
 
 ## Brief description:
